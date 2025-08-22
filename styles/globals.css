@@ -2,5 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { color-scheme: dark; }
-body { @apply bg-bg text-white antialiased; }
+@layer base {
+  :root { color-scheme: dark; }
+  body { @apply bg-bg text-white antialiased; }
+}
+
+/* pour les images dans la description HTML (optionnel) */
+.prose img { max-width: 100%; height: auto; border-radius: 12px; display: block; }
