@@ -1,0 +1,24 @@
+{
+  "name": "gaming-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aboudeir-jojma/gaming-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aboudeir-jojma/gaming-website/issues"
+  },
+  "homepage": "https://github.com/aboudeir-jojma/gaming-website#readme",
+  "dependencies": {
+    "next": "^15.5.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
+}
