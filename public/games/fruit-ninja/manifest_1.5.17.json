@@ -1,0 +1,23 @@
+{
+  "short_name": "Fruit Ninja",
+  "name": "Fruit Ninja",
+  "icons": [
+    {
+      "src": "https://retrosgame.com/",
+      "type": "image/jpeg",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "https://retrosgame.com/",
+      "type": "image/png",
+      "sizes": "144x144",
+      "purpose": "any"
+    }
+  ],
+  "start_url": "/a186dc9ac7f548f884db8ff54df6dd9f/index.html",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "/a186dc9ac7f548f884db8ff54df6dd9f/",
+  "theme_color": "#3367D6"
+}

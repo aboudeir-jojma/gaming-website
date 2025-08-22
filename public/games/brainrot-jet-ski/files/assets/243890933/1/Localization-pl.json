@@ -1,0 +1,37 @@
+{
+  "header": {
+    "version": 1
+  },
+  "data": [
+    {
+      "info": {
+        "locale": "pl-PL"
+      },
+      "messages": {
+        "Click to start": "Kliknij, aby rozpocząć",
+        "1st": "1.",
+        "2nd": "2.",
+        "3rd": "3.",
+        "4th": "4.",
+        "Race Complete": "Wyścig zakończony",
+        "Continue": "Kontynuuj",
+        "JETSKI RACE!": "WYŚCIG SKUTERÓW!",
+        "Go!": "Start!",
+        "YOU WON!": "WYGRAŁEŚ!",
+        "Lap": "Okrążenie",
+        "You": "Ty",
+        "Best:": "Najlepszy:",
+        "JETSKI RACING": "WYŚCIG SKUTERÓW",
+        "NEW!": "NOWOŚĆ!",
+        "SETTINGS": "USTAWIENIA",
+        "Low": "Niski",
+        "Mid": "sredni",
+        "High": "Wysoki",
+        "Graphics": "Grafika",
+        "Language": "Język",
+        "Sound": "Dźwięk",
+        "Music": "Muzyka"
+      }
+    }
+  ]
+}

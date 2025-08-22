@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hand Slam</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+
+    <meta name="generator" content="Scirra Construct" />
+    <meta name="author" content="chc" />
+    <meta
+      name="description"
+      content="It is a casual basketball game where you can play as different characters and compete in various modes. You can choose from a variety of locations, such as the beach, the park, the rooftop, or the gym."
+    />
+    <link rel="manifest" href="appmanifest.json" />
+    <link rel="apple-touch-icon" sizes="128x128" href="icons/icon-128.png" />
+    <link rel="apple-touch-icon" sizes="256x256" href="icons/icon-256.png" />
+    <link rel="apple-touch-icon" sizes="512x512" href="icons/icon-512.png" />
+    <link rel="icon" type="image/png" href="icons/icon-512.png" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script type="text/javascript">
+      window.SDK_OPTIONS = {
+        gameId: "lyi8fzmq4dkpg71rj10y1py4ygapl348",
+        onEvent: function (a) {
+          switch (a.name) {
+            case "SDK_GAME_PAUSE":
+              break;
+            case "SDK_GAME_START":
+              break;
+            case "SDK_READY":
+              break;
+          }
+        },
+      };
+      (function (a, b, c) {
+        var d = a.getElementsByTagName(b)[0];
+        a.getElementById(c) ||
+          ((a = a.createElement(b)),
+          (a.id = c),
+          (a.src = "https://api.gamemonetize.com/sdk.js"),
+          d.parentNode.insertBefore(a, d));
+      })(document, "script", "gamemonetize-sdk");
+    </script>
+
+
+  <!-- <script type="text/javascript">
+    window["GD_OPTIONS"] = {
+    "gameId": "450d1595a9bf4223a51e45b974efc6d0",
+    "onEvent": function(event) {
+        switch (event.name) {
+            case "SDK_GAME_START":
+                // advertisement done, resume game logic and unmute audio
+                break;
+            case "SDK_GAME_PAUSE":
+                // pause game logic / mute audio
+                break;
+            case "SDK_GDPR_TRACKING":
+                // this event is triggered when your user doesn't want to be tracked
+                break;
+            case "SDK_GDPR_TARGETING":
+                // this event is triggered when your user doesn't want personalised targeting of ads and such
+                break;
+            case "SDK_REWARDED_WATCH_COMPLETE":
+                // this event is triggered when your user completely watched rewarded ad
+                break;
+        }
+    },
+};
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = 'https://html5.api.gamedistribution.com/main.min.js';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'gamedistribution-jssdk'));
+  </script> -->
+
+
+  <!-- <script async
+  data-ad-frequency-hint="30s"
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-123456789" # your publisher ID
+  crossorigin="anonymous">
+</script>
+<script>
+ window.adsbygoogle = window.adsbygoogle || [];
+ var adBreak = adConfig = function(o) {adsbygoogle.push(o);}
+</script> -->
+  </head>
+
+
+  <body>
+    <script>
+      if (location.protocol.substr(0, 4) === "file") {
+        alert(
+          "Web exports won't work until you upload them. (When running on the file: protocol, browsers block many features from working for security reasons.)"
+        );
+      }
+    </script>
+
+    <script src="box2d.wasm.js"></script>
+
+    <noscript>
+      <div id="notSupportedWrap">
+        <h2 id="notSupportedTitle">This content requires JavaScript</h2>
+        <p class="notSupportedMessage">
+          JavaScript appears to be disabled. Please enable it to view this
+          content.
+        </p>
+      </div>
+    </noscript>
+
+    <script src="scripts/supportcheck.js"></script>
+    <script src="scripts/offlineclient.js" type="module"></script>
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/register-sw.js" type="module"></script>
+
+    <!-- Écran noir pour Ad Break -->
+    <div
+      id="ad-break-screen"
+      style="
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.85);
+        color: white;
+        font-family: sans-serif;
+        font-size: 32px;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+      "
+    >
+      Ad Break
+    </div>
+
+    <!-- <script>
+      // Masquer Ad Break au cas où il serait visible
+      window.addEventListener("DOMContentLoaded", () => {
+        const adScreen = document.getElementById("ad-break-screen");
+        if (adScreen) {
+          adScreen.style.display = "none";
+        }
+      });
+
+      function showAdBreakThenAd() {
+        const adScreen = document.getElementById("ad-break-screen");
+        adScreen.style.display = "flex";
+
+        setTimeout(() => {
+          adScreen.style.display = "none";
+
+          if (
+            typeof sdk !== "undefined" &&
+            typeof sdk.showBanner !== "undefined"
+          ) {
+            sdk.showBanner();
+          }
+//ads game destribution
+
+    //       if (typeof gdsdk !== 'undefined' && gdsdk.showAd !== 'undefined') {
+    //      gdsdk.showAd();
+    // }
+
+//AD PLACEMENT API 
+
+// {adBreak(
+//    type: 'browse',                     // The type of this placement
+//    name: 'Random-balls',                  // A descriptive name for this placement
+  
+// );}
+  
+
+        }, 3000); // 3 secondes d'affichage "Ad Break"
+      }
+
+      // ✅ Démarrer après 3 minutes (180000 ms)
+      setTimeout(() => {
+        showAdBreakThenAd();
+
+        // Ensuite toutes les 30 secondes (30000 ms)
+        setInterval(() => {
+          showAdBreakThenAd();
+        }, 30000);
+      }, 30000); // 3 minutes
+    </script> -->
+  </body>
+</html>

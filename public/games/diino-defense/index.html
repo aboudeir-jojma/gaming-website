@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Dino Defense</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="generator" content="Scirra Construct" />
+  <meta name="description" content="Game" />
+  <link rel="manifest" href="appmanifest.json" />
+  <link rel="apple-touch-icon" sizes="128x128" href="icons/icon-128.png" />
+  <link rel="apple-touch-icon" sizes="256x256" href="icons/icon-256.png" />
+  <link rel="apple-touch-icon" sizes="512x512" href="icons/icon-512.png" />
+  <link rel="icon" type="image/png" href="icons/icon-512.png" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* ✅ Style de l'overlay "Ad Break" */
+    #ad-break-screen {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background-color: rgba(0, 0, 0, 0.85);
+      color: white;
+      font-family: sans-serif;
+      font-size: 32px;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+  </style>
+
+  <!-- ✅ SDK GameMonetize
+  <script type="text/javascript">
+    window.SDK_OPTIONS = {
+      gameId: "s4xog7n9ost3h7hsd0revh3yv7m75xmx", // ⚠️ remplace par ton vrai gameId
+      onEvent: function (a) {
+        switch (a.name) {
+          case "SDK_GAME_PAUSE":
+            break;
+          case "SDK_GAME_START":
+            break;
+          case "SDK_READY":
+            // ✅ SDK prêt → lancer la boucle
+            setTimeout(() => {
+              showAdBreakThenAd();
+              setInterval(showAdBreakThenAd, 180000); // toutes les 3 min
+            }, 180000); // première fois après 30 sec
+            break;
+        }
+      }
+    };
+    (function(a,b,c){
+      var d=a.getElementsByTagName(b)[0];
+      if(!a.getElementById(c)){
+        var e=a.createElement(b);
+        e.id=c; e.src="https://api.gamemonetize.com/sdk.js";
+        d.parentNode.insertBefore(e,d);
+      }
+    })(document,"script","gamemonetize-sdk");
+  </script> -->
+</head>
+
+<body>
+  <script>
+    if (location.protocol.substr(0, 4) === "file") {
+      alert("Web exports won't work until you upload them. (When running on the file: protocol, browsers block many features from working for security reasons.)");
+    }
+  </script>
+
+  <!-- ✅ Overlay "Ad Break" -->
+  <div id="ad-break-screen">Ad Break</div>
+
+  <script>
+    // ✅ Fonction pour afficher puis cacher l'overlay et lancer sdk.showBanner()
+    function showAdBreakThenAd() {
+      const adScreen = document.getElementById("ad-break-screen");
+      if (!adScreen) return;
+      adScreen.style.display = "flex";
+
+      setTimeout(() => {
+        adScreen.style.display = "none";
+        if (typeof sdk !== 'undefined' && sdk.showBanner !== 'undefined') {
+          sdk.showBanner();
+        } else {
+          console.warn("sdk.showBanner() non disponible");
+        }
+      }, 3000);
+    }
+  </script>
+
+  <noscript>
+    <div id="notSupportedWrap">
+      <h2 id="notSupportedTitle">This content requires JavaScript</h2>
+      <p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content.</p>
+    </div>
+  </noscript>
+
+  <script src="scripts/modernjscheck.js"></script>
+  <script src="scripts/supportcheck.js"></script>
+  <script src="scripts/offlineclient.js" type="module"></script>
+  <script src="scripts/main.js" type="module"></script>
+  <script src="scripts/register-sw.js" type="module"></script>
+</body>
+</html>

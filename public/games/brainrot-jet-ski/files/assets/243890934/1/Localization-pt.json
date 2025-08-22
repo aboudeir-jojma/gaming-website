@@ -1,0 +1,37 @@
+{
+  "header": {
+    "version": 1
+  },
+  "data": [
+    {
+      "info": {
+        "locale": "pt-PT"
+      },
+      "messages": {
+        "Click to start": "Clique para começar",
+        "1st": "1º",
+        "2nd": "2º",
+        "3rd": "3º",
+        "4th": "4º",
+        "Race Complete": "Corrida concluída",
+        "Continue": "Continuar",
+        "JETSKI RACE!": "CORRIDA DE JETSKI!",
+        "Go!": "Vai!",
+        "YOU WON!": "VOCÊ VENCEU!",
+        "Lap": "Volta",
+        "You": "Você",
+        "Best:": "Melhor:",
+        "JETSKI RACING": "CORRIDA DE JETSKI",
+        "NEW!": "NOVO!",
+        "SETTINGS": "CONFIGURACOES",
+        "Low": "Baixo",
+        "Mid": "Medio",
+        "High": "Alto",
+        "Graphics": "Graficos",
+        "Language": "Idioma",
+        "Sound": "Som",
+        "Music": "Musica"
+      }
+    }
+  ]
+}

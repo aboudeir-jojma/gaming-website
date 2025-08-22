@@ -1,0 +1,37 @@
+{
+  "header": {
+    "version": 1
+  },
+  "data": [
+    {
+      "info": {
+        "locale": "fr-FR"
+      },
+      "messages": {
+        "Click to start": "Cliquez pour commencer",
+        "1st": "1er",
+        "2nd": "2e",
+        "3rd": "3e",
+        "4th": "4e",
+        "Race Complete": "Course terminée",
+        "Continue": "Continuer",
+        "JETSKI RACE!": "COURSE DE JETSKI !",
+        "Go!": "Partez !",
+        "YOU WON!": "VOUS AVEZ GAGNÉ !",
+        "Lap": "Tour",
+        "You": "Toi",
+        "Best:": "Meilleur:",
+        "JETSKI RACING": "COURSE DE JETSKI",
+        "NEW!": "NOUVEAU !",
+        "SETTINGS": "PARAMETRES",
+        "Low": "Bas",
+        "Mid": "Moyen",
+        "High": "Eleve",
+        "Graphics": "Graphismes",
+        "Language": "Langue",
+        "Sound": "Son",
+        "Music": "Musique"
+      }
+    }
+  ]
+}

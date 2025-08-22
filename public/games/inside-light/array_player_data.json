@@ -1,0 +1,15 @@
+{
+  "c2array": true,
+  "size": [3, 5, 1],
+  "data": [
+    [[0], [0], [0], [0], ["HINT FOR DEV: skin"]],
+    [
+      [2],
+      [0],
+      [0],
+      [0],
+      ["HINT FOR DEV: type character (0-none, 1 - bot/2 - player)"]
+    ],
+    [[0], [0], [0], [0], ["HINT FOR DEV: local score compentitive"]]
+  ]
+}

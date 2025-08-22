@@ -1,0 +1,37 @@
+{
+  "header": {
+    "version": 1
+  },
+  "data": [
+    {
+      "info": {
+        "locale": "es-ES"
+      },
+      "messages": {
+        "Click to start": "Haga clic para comenzar",
+        "1st": "1.º",
+        "2nd": "2.º",
+        "3rd": "3.º",
+        "4th": "4.º",
+        "Race Complete": "Carrera completada",
+        "Continue": "Continuar",
+        "JETSKI RACE!": "¡CARRERA DE MOTOS ACUÁTICAS!",
+        "Go!": "¡Vamos!",
+        "YOU WON!": "¡HAS GANADO!",
+        "Lap": "Vuelta",
+        "You": "Tu",
+        "Best:": "Mejor:",
+        "JETSKI RACING": "CARRERA DE JETSKI",
+        "NEW!": "NUEVO!",
+        "SETTINGS": "AJUSTES",
+        "Low": "Bajo",
+        "Mid": "Medio",
+        "High": "Alto",
+        "Graphics": "Graficos",
+        "Language": "Idioma",
+        "Sound": "Sonido",
+        "Music": "Musica"
+      }
+    }
+  ]
+}

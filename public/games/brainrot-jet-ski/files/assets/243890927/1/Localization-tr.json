@@ -1,0 +1,37 @@
+{
+  "header": {
+    "version": 1
+  },
+  "data": [
+    {
+      "info": {
+        "locale": "tr-TR"
+      },
+      "messages": {
+        "Click to start": "Baslamak icin tikla",
+        "1st": "1.",
+        "2nd": "2.",
+        "3rd": "3.",
+        "4th": "4.",
+        "Race Complete": "Yaris Tamamlandi",
+        "Continue": "Devam Et",
+        "JETSKI RACE!": "JETSKI YARISI!",
+        "Go!": "Bas Gaza!",
+        "YOU WON!": "KAZANDIN!",
+        "Lap": "Tur",
+        "You": "Sen",
+        "Best:": "En iyi:",
+        "JETSKI RACING": "JETSKI YARISI",
+        "NEW!": "YENI!",
+        "SETTINGS": "AYARLAR",
+        "Low": "Dusuk",
+        "Mid": "Orta",
+        "High": "Yuksek",
+        "Graphics": "Grafikler",
+        "Language": "Dil",
+        "Sound": "Sesler",
+        "Music": "Muzik"
+      }
+    }
+  ]
+}

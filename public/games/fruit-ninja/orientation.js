@@ -1,0 +1,6 @@
+function _orientationFixForIOS() {
+  try {
+    window.console.log = () => {};
+  } catch (o) {}
+}
+_orientationFixForIOS();

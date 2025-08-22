@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>1930</title>
+
+  <link rel="manifest" href="appmanifest.json" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <link rel="apple-touch-icon" sizes="256x256" href="icon-256.png" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <link rel="shortcut icon" sizes="256x256" href="icon-256.png" />
+
+  <style type="text/css">
+    * { padding: 0; margin: 0; }
+    html, body {
+      background: #000;
+      color: #fff;
+      overflow: hidden;
+      touch-action: none;
+      -ms-touch-action: none;
+    }
+    canvas {
+      touch-action: none;
+      -ms-touch-action: none;
+    }
+    /* ✅ Style de l'overlay "Ad Break" */
+    #ad-break-screen {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.85);
+      color: white;
+      font-family: sans-serif;
+      font-size: 32px;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+  </style>
+
+<script type="text/javascript">
+  window.SDK_OPTIONS = {
+     gameId: "rcdgpua1uw0qxkxnzqt8anza2r6v5dst",
+     onEvent: function (a) {
+        switch (a.name) {
+           case "SDK_GAME_PAUSE":
+              // pause game logic / mute audio
+              break;
+           case "SDK_GAME_START":
+              // advertisement done, resume game logic and unmute audio
+              break;
+           case "SDK_READY":
+              // when sdk is ready
+              break;
+        }
+     }
+  };
+(function (a, b, c) {
+  var d = a.getElementsByTagName(b)[0];
+  a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk.js", d.parentNode.insertBefore(a, d))
+})(document, "script", "gamemonetize-sdk"); 
+</script>
+</head>
+
+<body>
+  <div id="fb-root"></div>
+
+  <!-- ✅ Overlay noir "Ad Break" -->
+  <div id="ad-break-screen">Ad Break</div>
+
+  <script>
+    // ✅ Fonction pour afficher l'Ad Break et lancer SDK.showInterstitial()
+    function showAdBreakThenAd() {
+      const adScreen = document.getElementById("ad-break-screen");
+      if (!adScreen) return;
+      adScreen.style.display = "flex";
+
+      setTimeout(() => {
+        adScreen.style.display = "none";
+        if (typeof SDK !== 'undefined' && typeof SDK.showInterstitial === 'function') {
+  SDK.showInterstitial();
+} else {
+  console.warn("SDK.showInterstitial() non disponible");
+}
+
+      }, 3000);
+    }
+
+    // ✅ Lancer après 30 sec, puis toutes les 3 minutes
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        showAdBreakThenAd();
+        setInterval(showAdBreakThenAd, 180000); // 180000ms = 3min
+      }, 180000); // première fois après 30s
+    });
+  </script>
+
+  <div id="c2canvasdiv">
+    <canvas id="c2canvas" width="1280" height="720">
+      <h1>
+        Your browser does not appear to support HTML5.
+        <a href="http://www.whatbrowser.org">What is a browser?</a><br /><br />
+        <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx">Microsoft Internet Explorer</a><br />
+        <a href="http://www.mozilla.com/firefox/">Mozilla Firefox</a><br />
+        <a href="http://www.google.com/chrome/">Google Chrome</a><br />
+        <a href="http://www.apple.com/safari/download/">Apple Safari</a>
+      </h1>
+    </canvas>
+  </div>
+
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="c2runtime.js"></script>
+
+  <script>
+    jQuery(document).ready(function () {
+      cr_createRuntime("c2canvas");
+    });
+
+    function onVisibilityChanged() {
+      if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+        cr_setSuspended(true);
+      else
+        cr_setSuspended(false);
+    }
+
+    document.addEventListener("visibilitychange", onVisibilityChanged, false);
+    document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+    document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+    document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+
+    function OnRegisterSWError(e) {
+      console.warn("Failed to register service worker: ", e);
+    }
+
+    window.C2_RegisterSW = function C2_RegisterSW() {
+      if (!navigator.serviceWorker) return;
+      try {
+        navigator.serviceWorker
+          .register("sw.js", { scope: "./" })
+          .then(function (reg) {
+            console.log("Registered service worker on " + reg.scope);
+          })
+          .catch(OnRegisterSWError);
+      } catch (e) {
+        OnRegisterSWError(e);
+      }
+    };
+  </script>
+</body>
+</html>

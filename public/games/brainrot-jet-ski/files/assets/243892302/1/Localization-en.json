@@ -1,0 +1,38 @@
+{
+  "header": {
+    "version": 1
+  },
+  "data": [
+    {
+      "info": {
+        "locale": "en-US"
+      },
+      "messages": {
+        "NEXT": "NEXT",
+        "Click to start": "Click to start",
+        "1st": "1st",
+        "2nd": "2nd",
+        "3rd": "3rd",
+        "4th": "4th",
+        "Race Complete": "Race Complete",
+        "Continue": "Continue",
+        "JETSKI RACE!": "JETSKI RACE!",
+        "Go!": "Go!",
+        "YOU WON!": "YOU WON!",
+        "Lap": "Lap",
+        "You": "You",
+        "Best:": "Best:",
+        "JETSKI RACING": "JETSKI RACING",
+        "NEW!": "NEW!",
+        "Low": "Low",
+        "Mid": "Mid",
+        "High": "High",
+        "Graphics": "Graphics",
+        "Language": "Language",
+        "Sound": "Sound",
+        "Music": "Music",
+        "SETTINGS": "SETTINGS"
+      }
+    }
+  ]
+}
