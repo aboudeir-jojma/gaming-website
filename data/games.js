@@ -831,6 +831,19 @@ A: It's super easy! Open the game, choose fresh ingredients, follow the helpful 
 <p><a href="https://cardgamesonlinefree.com/">Try Our Game Too !</a></p>
                        `,
   },
+
+     {
+    slug: "philosophers-merge",
+    title: "Philosophers Merge",
+    thumb: "/games/philosophers-merge/phil.jpg",
+    tag: "New",
+    category: ["Action", "Arcade"],
+    iframe: "/games/philosophers-merge/index.html",
+                      descriptionHtml: `
+
+                          `,
+  },
+
    {
     slug: "feed-pac",
     title: "Feed Pac",

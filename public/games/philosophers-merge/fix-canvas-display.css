@@ -1,0 +1,37 @@
+/* CSS pour forcer l'affichage du canvas du jeu */
+/* Problème: le canvas est créé avec display: none et ne devient jamais visible */
+
+/* Forcer l'affichage de tous les canvas */
+canvas {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: absolute !important;
+    z-index: 1 !important;
+}
+
+/* Forcer l'affichage des éléments c3htmlwrap */
+.c3htmlwrap {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: absolute !important;
+    z-index: 2 !important;
+}
+
+/* S'assurer que le body a une hauteur */
+body {
+    min-height: 100vh !important;
+    overflow: hidden !important;
+}
+
+/* Debug: ajouter une bordure rouge pour voir où sont les canvas */
+canvas {
+    border: 2px solid red !important;
+}
+
+.c3htmlwrap {
+    border: 2px solid blue !important;
+}
+
+/* Commentaire: Retirer les bordures de debug une fois que le jeu fonctionne */ 

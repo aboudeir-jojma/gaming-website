@@ -14,7 +14,7 @@ export default function Header({ onToggleSidebar }) {
         >☰</button>
 
    <Link href="/">
-     <div className="text-lg font-extrabold tracking-tight">CrazyHub</div>
+     <div className="text-lg font-extrabold tracking-tight">PcGameOn</div>
 </Link>
 
         <div className="ml-auto w-full max-w-xl">

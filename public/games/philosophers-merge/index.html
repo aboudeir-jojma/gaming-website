@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Philosopher’s Merge</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+
+    <meta name="generator" content="Scirra Construct" />
+    <meta name="author" content="Otavio Furlan" />
+
+    <link rel="manifest" href="appmanifest.json" />
+    <link rel="apple-touch-icon" sizes="128x128" href="icons/icon-128.png" />
+    <link rel="apple-touch-icon" sizes="256x256" href="icons/icon-256.png" />
+    <link rel="apple-touch-icon" sizes="512x512" href="icons/icon-512.png" />
+    <link rel="icon" type="image/png" href="icons/icon-512.png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fix-canvas-display.css" />
+
+    <style>
+      /* ✅ Style de l'écran noir "Ad Break" */
+      #ad-break-screen {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0,0,0,0.85);
+        color: white;
+        font-family: sans-serif;
+        font-size: 32px;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+      }
+
+      /* Masquer tous les boutons d'information possibles */
+button[aria-label="About"], 
+button[title="About"], 
+button[aria-label="Info"],
+button[title="Info"],
+.c3-about, 
+.about-button, 
+.info-button, 
+button:has(svg[data-name="info"]) {
+    display: none !important;
+}
+
+    </style>
+
+    <script type="text/javascript">
+      window.SDK_OPTIONS = {
+        gameId: "vpt81434vydgryhgiq8i3x9mx69qp4xr",
+        onEvent: function (a) {
+          switch (a.name) {
+            case "SDK_GAME_PAUSE":
+              // pause game logic / mute audio
+              break;
+            case "SDK_GAME_START":
+              // advertisement done, resume game logic and unmute audio
+              break;
+            case "SDK_READY":
+              // when sdk is ready
+              break;
+          }
+        }
+      };
+      (function (a, b, c) {
+        var d = a.getElementsByTagName(b)[0];
+        if (!a.getElementById(c)) {
+          var e = a.createElement(b);
+          e.id = c;
+          e.src = "https://api.gamemonetize.com/sdk.js";
+          d.parentNode.insertBefore(e, d);
+        }
+      })(document, "script", "gamemonetize-sdk");
+    </script>
+  </head>
+
+  <body>
+    <script>
+      if (location.protocol.substr(0, 4) === "file") {
+        alert(
+          "Web exports won't work until you upload them. (When running on the file: protocol, browsers block many features from working for security reasons.)"
+        );
+      }
+    </script>
+
+
+    <!-- ✅ Écran noir "Ad Break" -->
+    <div id="ad-break-screen">Ad Break</div>
+
+    <noscript>
+      <div id="notSupportedWrap">
+        <h2 id="notSupportedTitle">This content requires JavaScript</h2>
+        <p class="notSupportedMessage">
+          JavaScript appears to be disabled. Please enable it to view this content.
+        </p>
+      </div>
+    </noscript>
+
+    <script src="scripts/modernjscheck.js"></script>
+    <script src="scripts/supportcheck.js"></script>
+    <script src="scripts/offlineclient.js" type="module"></script>
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/register-sw.js" type="module"></script>
+    
+    <!-- Script de correction pour forcer l'affichage du canvas -->
+    <script src="fix-canvas-display.js"></script>
+
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+  const possibleSelectors = [
+    'button[aria-label="About"]',
+    'button[title="About"]',
+    '.c3-about',
+    '.about-button',
+    '.info-button',
+    'button[aria-label="Info"]',
+    'button[title="Info"]'
+  ];
+
+  possibleSelectors.forEach(selector => {
+    const el = document.querySelector(selector);
+    if (el) el.style.display = 'none';
+  });
+});
+
+
+    </script>
+    <!-- ✅ Script logique pour afficher Ad Break et appeler sdk.showBanner
+    <script>
+      (function () {
+        const FIRST_DELAY = 180000;     // 30 sec avant la première pub
+        const REPEAT_EVERY = 180000;    // répéter toutes les 30 sec
+        const OVERLAY_MS = 3000;       // durée écran noir
+
+        function callAd() {
+          try {
+            if (typeof sdk !== "undefined" && typeof sdk.showBanner === "function") {
+              sdk.showBanner();
+            } else {
+              console.warn("sdk.showBanner non dispo");
+            }
+          } catch (e) {
+            console.warn("Erreur lors de l'appel à sdk.showBanner:", e);
+          }
+        }
+
+        function showAdBreakThenAd() {
+          const el = document.getElementById("ad-break-screen");
+          if (!el) return;
+
+          el.style.display = "flex";
+          setTimeout(() => {
+            el.style.display = "none";
+            callAd();
+          }, OVERLAY_MS);
+        }
+
+        window.addEventListener("load", function () {
+          setTimeout(() => {
+            showAdBreakThenAd();
+            setInterval(showAdBreakThenAd, REPEAT_EVERY);
+          }, FIRST_DELAY);
+        });
+      })();
+    </script> -->
+  </body>
+</html>
