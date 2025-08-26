@@ -4,6 +4,7 @@ export const games = [
    {
     slug: "fruit-ninja",
     title: "Fruit Ninja",
+    name: "Fruit Ninja",
     thumb: "/games/fruit-ninja/fruit-ninja.jpg",
     tag: "New",
     category: ["Action", "Arcade"],
@@ -132,6 +133,7 @@ export const games = [
   {
     slug: "liquid-sort",
     title: "Liquid Sort",
+    name: "Liquid Sort",
     thumb: "/games/liquid-sort/liquid-sort.jpg",
     tag: "New",
          category: ["Puzzle", "Brain"], // ← tableau au lieu d’un seul string
@@ -269,6 +271,7 @@ export const games = [
    {
     slug: "street-skater",
     title: "Street Skater",
+      name: "Street Skater",
     thumb: "/games/street-skater/street-skater.png", // mets une image réelle du dossier (ou remplace par une URL)
     tag: "New",
     category: "Sports",
@@ -413,6 +416,7 @@ export const games = [
   {
     slug: "hungry-snake-feed",
     title: "Hungry Snake Feed",
+      name: "Hungry Snake Feed",
     thumb: "/games/hungry-snake-feed/hungry-snake-feed.jpg", // mets une image réelle du dossier (ou remplace par une URL)
     tag: "New",
     category: ["Action", "Arcade"],
@@ -685,6 +689,7 @@ export const games = [
     {
     slug: "sushi-chef",
     title: "Sushi Chef",
+    name: "Sushi Chef",
     thumb: "/games/sushi-chef/sushi-chef.jpg",
     tag: "New",
       category:  "Food",
@@ -835,6 +840,7 @@ A: It's super easy! Open the game, choose fresh ingredients, follow the helpful 
      {
     slug: "philosophers-merge",
     title: "Philosophers Merge",
+      name: "Philosophers Merge",
     thumb: "/games/philosophers-merge/phil.jpg",
     tag: "New",
     category: ["Action", "Arcade"],
@@ -847,6 +853,7 @@ A: It's super easy! Open the game, choose fresh ingredients, follow the helpful 
    {
     slug: "feed-pac",
     title: "Feed Pac",
+      name: "Feed Pac",
     thumb: "/games/feed-pac/feed-pac.jpg",
     tag: "New",
       category: ["Action", "Arcade"],
@@ -1034,6 +1041,7 @@ A: It's super easy! Open the game, choose fresh ingredients, follow the helpful 
   },   {
     slug: "food-match-game",
     title: "Food Match Game",
+      name: "Food Match Game",
     thumb: "/games/food-match-game/food.jpg",
     tag: "New",
     category: "Food",
@@ -1205,6 +1213,7 @@ The simple point-and-click controls make it easy for kids to play, and the vibra
   },   {
     slug: "tanks-of-the-galaxy",
     title: "Tanks of the Galaxy",
+      name: "Tanks of the Galaxy",
     thumb: "/games/tanks-of-the-galaxy/tanks.jpg",
     tag: "New",
     category: "Shooter",
@@ -1360,6 +1369,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     {
     slug: "subway-runner",
     title: "Subway Runner",
+    name: "Subway Runner",
     thumb: "/games/subway-runner/images.jpg",
     tag: "New",
     category: "Racing",
@@ -1615,6 +1625,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     {
     slug: "city-blocks",
     title: "City Blocks",
+      name: "City Blocks",
     thumb: "/games/city-blocks/city-bloks.jpg",
     tag: "New",
         category : ["Puzzle", "Brain"], // ← tableau au lieu d’un seul string
@@ -1772,6 +1783,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     {
     slug: "inside-light",
     title: "Inside Light",
+      name: "Inside Light",
     thumb: "/games/inside-light/Inside-Light-game.jpg",
     tag: "New",
     category: "Adventure",
@@ -1878,6 +1890,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     {
     slug: "traffic-command",
     title: "Traffic Command",
+      name: "Traffic Command",
     thumb: "/games/traffic-command/traffic-command.jpg",
     tag: "New",
     category: "Racing",
@@ -1997,6 +2010,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
    {
     slug: "pet-party-columns",
     title: "Pet Party Columns",
+      name: "Pet Party Columns",
     thumb: "/games/pet-party-columns/Pet-Party-Columns.jpg",
     tag: "New",
      category: ["Puzzle", "Brain"], // ← tableau au lieu d’un seul string
@@ -2141,6 +2155,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
   {
     slug: "galaga",
     title: "Galaga",
+      name: "Galaga",
     thumb: "/games/galaga/Galaga.jpg",
     tag: "New",
     category: ["Action", "Arcade"],
@@ -2276,6 +2291,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
   }, {
     slug: "mega-man-1930",
     title: "Mega Man 1930",
+      name: "Mega Man 1930",
     thumb: "/games/mega-man-1930/1930.jpg",
     tag: "New",
        category: ["Action", "Arcade"],
@@ -2393,6 +2409,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
   {
     slug: "random-basketball",
     title: "Random Basketball",
+      name: "Random Basketball",
     thumb: "/games/random-basketball/random.png",
     tag: "New",
     category: "Sports",
@@ -2534,6 +2551,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
   {
     slug: "twist-tactics",
     title: "Twist Tactics",
+      name: "Twist Tactics",
     thumb: "/games/twist-tactics/Twist-Tactics.png",
     tag: "New",
        category: ["Puzzle", "Brain"], // ← tableau au lieu d’un seul string
@@ -2655,6 +2673,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
   {
     slug: "box-match",
     title: "Box Match",
+      name: "Box Match",
     thumb: "/games/box-match/Box-Match.jpg",
     tag: "New",
         category: ["Puzzle", "Brain"], // ← tableau au lieu d’un seul string
@@ -2791,6 +2810,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
   {
     slug: "brick-breaker",
     title: "Brick Breaker",
+      name: "Brick Breaker",
     thumb: "/games/brick-breaker/brick-breaker.jpg",
     tag: "New",
        category: ["Action", "Arcade"],
@@ -2929,6 +2949,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     {
     slug: "mad-boy-adventures",
     title: "Mad Boy Adventures",
+      name: "Mad Boy Adventures",
     thumb: "/games/mad-boy-adventures/mad-boy-adventures.jpg",
     tag: "New",
     category: "Adventure",
@@ -3091,6 +3112,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
  {
     slug: "fruit-bucket",
     title: "Fruit Bucket",
+      name: "Fruit Bucket",
     thumb: "/games/fruit-bucket/fruit-bucket.png",
     tag: "New",
     category: ["Animals", "Nature"],
@@ -3239,6 +3261,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
  {
     slug: "throw-daggers",
     title: "Throw Daggers",
+      name: "Throw Daggers",
     thumb: "/games/throw-daggers/throw-daggers.jpg",
     tag: "New",
     category: ["Action", "Arcade"],
@@ -3538,6 +3561,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
    {
     slug: "diino-defense",
     title: "Diino Defense",
+      name: "Diino Defense",
     thumb: "/games/diino-defense/diino-defense.jpg",
     tag: "New",
     category: "Animals",
@@ -3689,6 +3713,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
    {
     slug: "robo-tracker",
     title: "Robo Tracker",
+      name: "Robo Tracker",
     thumb: "/games/robo-tracker/robotracker.png",
     tag: "New",
     category: "Adventure",
@@ -3852,6 +3877,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
    {
     slug: "car-race-game",
     title: "Car Race Game",
+      name: "Car Race Game",
     thumb: "/games/car-race-game/car-race game.jpg",
     tag: "New",
     category: "Racing",
@@ -3967,6 +3993,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
    {
     slug: "math-pop",
     title: "Math Pop",
+      name: "Math Pop",
     thumb: "/games/math-pop/math.png",
     tag: "New",
          category: ["Puzzle", "Brain"], // ← tableau au lieu d’un seul string
@@ -4150,6 +4177,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     {
     slug: "builditekt",
     title: "Builditekt",
+      name: "Builditekt",
     thumb: "/games/builditekt/buildi-tekt.jpg",
     tag: "New",
     category: ["Creative", "Simulation"],
@@ -4311,6 +4339,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
       {
     slug: "Shodow-boy-adventures",
     title: "Shodow Boy Adventures",
+      name: "Shodow Boy Adventures",
     thumb: "/games/Shodow-boy-adventures/shadow.jpg",
     tag: "New",
     category: "Adventure",
@@ -4443,6 +4472,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     {
     slug: "robotic-snake-attack",
     title: "Robotic Snake Attack",
+      name: "Robotic Snake Attack",
     thumb: "/games/robotic-snake-attack/snake-attack.png",
     tag: "New",
     category: ["Animals", "Nature"],

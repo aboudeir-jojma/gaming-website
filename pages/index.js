@@ -1,18 +1,28 @@
+import { useState } from "react";
 import Layout from "../components/Layout";
 import GameRow from "../components/GameRow";
 import { games } from "../data/games";
 
 export default function HomePage() {
+  const [search, setSearch] = useState("");
+
+  // Si recherche, filtrer les jeux
+  const filteredGames = search
+    ? games.filter(
+        g => g.name && g.name.toLowerCase().includes(search.toLowerCase())
+      )
+    : [];
+
   const featured = games.slice(0, 50);
   const news = games.filter(g => g.tag === "New").slice(0, 6);
   const originals = games.slice(0, 6);
 
   return (
-    <Layout>
+    <Layout onSearch={setSearch}>
       <section className="mx-auto mt-6 max-w-7xl rounded-2xl bg-gradient-to-br from-[#121425] to-[#0b0c12] p-6 ring-1 ring-white/5">
         <div className="text-2xl font-extrabold">Welcome to PcGameOn</div>
         <ul className="mt-3 flex flex-wrap gap-6 text-sm text-white/80">
-          <li>🎮 4000+ games</li>
+          <li>🎮 400+ games</li>
           <li>🚀 No install needed</li>
           <li>💻 Any device</li>
           <li>👥 Play with friends</li>
@@ -20,9 +30,15 @@ export default function HomePage() {
         </ul>
       </section>
 
-      <GameRow title="Featured games" items={featured} />
-      <GameRow title="New games" items={news} />
-      <GameRow title="PcGameOn Originals" items={originals} />
+      {search ? (
+        <GameRow title="Search results" items={filteredGames} />
+      ) : (
+        <>
+          <GameRow title="Featured games" items={featured} />
+          <GameRow title="New games" items={news} />
+          <GameRow title="PcGameOn Originals" items={originals} />
+        </>
+      )}
     </Layout>
   );
 }
