@@ -29,9 +29,8 @@ export default function HomePage() {
   <ul className="mt-3 flex flex-wrap gap-6 text-sm text-black/70 dark:text-white/80">
     <li>🎮 400+ games</li>
     <li>🚀 No install needed</li>
-    <li>💻 Any device</li>
     <li>👥 Play with friends</li>
-    
+    <li>✨ All for free</li>
   </ul>
 </section>
 
