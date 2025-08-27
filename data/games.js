@@ -135,7 +135,7 @@ export const games = [
     title: "Liquid Sort",
     name: "Liquid Sort",
     thumb: "/imggames/liquid-sort/liquid-sort.jpg",
-    tag: "New",
+    tag: "Updated",
          category: ["Puzzle", "Brain"], // ← tableau au lieu d’un seul string
     iframe: "https://games-gules-nu.vercel.app/liquid-sort/index.html"  ,
     descriptionHtml: `
@@ -273,7 +273,7 @@ export const games = [
     title: "Street Skater",
       name: "Street Skater",
     thumb: "/imggames/street-skater/street-skater.png", // mets une image réelle du dossier (ou remplace par une URL)
-    tag: "New",
+    tag: "Trending",
     category: "Sports",
     iframe: "https://games-gules-nu.vercel.app/street-skater/index.html",
                       descriptionHtml: `
@@ -418,7 +418,7 @@ export const games = [
     title: "Hungry Snake Feed",
       name: "Hungry Snake Feed",
     thumb: "/imggames/hungry-snake-feed/hungry.jpg", // mets une image réelle du dossier (ou remplace par une URL)
-    tag: "New",
+    tag: "Top",
     category: ["Action", "Arcade"],
     iframe: "https://games-gules-nu.vercel.app/Hungry-snake-feed/index.html",
                       descriptionHtml: `
@@ -508,7 +508,7 @@ export const games = [
     slug: "brainrot-jet-ski",
     title: "Brainrot Jet Ski",
     thumb: "/imggames/brainrot-jet-ski/brainrot-jet-ski.jpg",
-    tag: "New",
+    tag: "Updated",
     category: "Racing",
     iframe: "https://games-gules-nu.vercel.app/brainrot-jet-ski/index.html",   // fonctionne immédiatement
 
@@ -691,7 +691,7 @@ export const games = [
     title: "Sushi Chef",
     name: "Sushi Chef",
     thumb: "/imggames/sushi-chef/sushi-chef.jpg",
-    tag: "New",
+    tag: "Classic",
       category:  "Food",
     iframe: "https://games-gules-nu.vercel.app/sushi-chef/index.html",
                       descriptionHtml: `
@@ -842,7 +842,7 @@ A: It's super easy! Open the game, choose fresh ingredients, follow the helpful 
     title: "Philosophers Merge",
       name: "Philosophers Merge",
     thumb: "/imggames/philosophers-merge/phil.jpg",
-    tag: "New",
+    tag: "Hot",
     category: ["Action", "Arcade"],
     iframe: "https://games-gules-nu.vercel.app/philosophers-merge/index.html",
                       descriptionHtml: `
@@ -855,7 +855,7 @@ A: It's super easy! Open the game, choose fresh ingredients, follow the helpful 
     title: "Feed Pac",
       name: "Feed Pac",
     thumb: "/imggames/feed-pac/feed-pac.jpg",
-    tag: "New",
+    tag: "Trending",
       category: ["Action", "Arcade"],
     iframe: "https://games-gules-nu.vercel.app/feed-pac/index.html",
                       descriptionHtml: `
@@ -1043,7 +1043,7 @@ A: It's super easy! Open the game, choose fresh ingredients, follow the helpful 
     title: "Food Match Game",
       name: "Food Match Game",
     thumb: "/imggames/food-match-game/food.jpg",
-    tag: "New",
+    tag: "Hot",
     category: "Food",
     iframe: "https://games-gules-nu.vercel.app/food-match-game/index.html",
                     descriptionHtml: `
@@ -1215,7 +1215,7 @@ The simple point-and-click controls make it easy for kids to play, and the vibra
     title: "Tanks of the Galaxy",
       name: "Tanks of the Galaxy",
     thumb: "/imggames/tanks-of-the-galaxy/tanks.jpg",
-    tag: "New",
+    tag: "Classic",
     category: "Shooter",
     iframe: "https://games-gules-nu.vercel.app/tanks-of-the-galaxy/index.html",
                     descriptionHtml: `
@@ -1371,7 +1371,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     title: "Subway Runner",
     name: "Subway Runner",
     thumb: "/imggames/subway-runner/images.jpg",
-    tag: "New",
+    tag: "Top",
     category: "Racing",
     iframe: "https://games-gules-nu.vercel.app/subway-runner/index.html",
                     descriptionHtml: `
@@ -1785,7 +1785,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     title: "Inside Light",
       name: "Inside Light",
     thumb: "/imggames/inside-light/Inside-Light-game.jpg",
-    tag: "New",
+    tag: "Updated",
     category: "Adventure",
     iframe: "https://games-gules-nu.vercel.app/inside-light/index.html"  ,
                           descriptionHtml: `
@@ -1892,7 +1892,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     title: "Traffic Command",
       name: "Traffic Command",
     thumb: "/imggames/traffic-command/traffic-command.jpg",
-    tag: "New",
+    tag: "Hot",
     category: "Racing",
     iframe: "https://games-gules-nu.vercel.app/traffic-command/index.html"  ,
                   descriptionHtml: `
@@ -2157,7 +2157,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     title: "Galaga",
       name: "Galaga",
     thumb: "/imggames/galaga/Galaga.jpg",
-    tag: "New",
+    tag: "Hot",
     category: ["Action", "Arcade"],
     iframe: "https://games-gules-nu.vercel.app/galaga/index.html"  ,
     descriptionHtml: `
@@ -2293,7 +2293,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     title: "Mega Man 1930",
       name: "Mega Man 1930",
     thumb: "/imggames/mega-man-1930/1930.jpg",
-    tag: "New",
+    tag: "Trending",
        category: ["Action", "Arcade"],
     iframe: "https://games-gules-nu.vercel.app/mega-man-1930/index.html"  ,
     descriptionHtml: `
@@ -2411,7 +2411,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     title: "Random Basketball",
       name: "Random Basketball",
     thumb: "/imggames/random-basketball/random.png",
-    tag: "New",
+    tag: "Updated",
     category: "Sports",
     iframe: "https://games-gules-nu.vercel.app/random-basketball/index.html"  ,
     descriptionHtml: `
@@ -2675,7 +2675,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     title: "Box Match",
       name: "Box Match",
     thumb: "/imggames/box-match/Box-Match.jpg",
-    tag: "New",
+    tag: "Hot",
         category: ["Puzzle", "Brain"], // ← tableau au lieu d’un seul string
     iframe: "https://games-gules-nu.vercel.app/box-match/index.html"  ,
     descriptionHtml: `
@@ -2812,7 +2812,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     title: "Brick Breaker",
       name: "Brick Breaker",
     thumb: "/imggames/brick-breaker/brick-breaker.jpg",
-    tag: "New",
+    tag: "Trending",
        category: ["Action", "Arcade"],
     iframe: "https://games-gules-nu.vercel.app/brick-breaker/index.html"  ,
     descriptionHtml: `
@@ -2951,7 +2951,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     title: "Mad Boy Adventures",
       name: "Mad Boy Adventures",
     thumb: "/imggames/mad-boy-adventures/mad-boy-adventures.jpg",
-    tag: "New",
+    tag: "Classic",
     category: "Adventure",
     iframe: "https://games-gules-nu.vercel.app/mad-boy-adventures/index.html"  ,
     descriptionHtml: `
@@ -3114,7 +3114,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     title: "Fruit Bucket",
       name: "Fruit Bucket",
     thumb: "/imggames/fruit-bucket/fruit-bucket.png",
-    tag: "New",
+    tag: "Top",
     category: ["Animals", "Nature"],
     iframe: "https://games-gules-nu.vercel.app/fruit-bucket/index.html"  ,
     descriptionHtml: `
@@ -3397,7 +3397,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     title: "Diino Defense",
       name: "Diino Defense",
     thumb: "/imggames/diino-defense/diino-defense.jpg",
-    tag: "New",
+    tag: "Updated",
     category: "Animals",
     iframe: "https://games-gules-nu.vercel.app/diino-defense/index.html"  ,
     descriptionHtml: `
@@ -3549,7 +3549,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     title: "Robo Tracker",
       name: "Robo Tracker",
     thumb: "/imggames/robo-tracker/robotracker.png",
-    tag: "New",
+    tag: "Trending",
     category: "Adventure",
     iframe: "https://games-gules-nu.vercel.app/robo-tracker/index.html"  ,
     descriptionHtml: `
@@ -3713,7 +3713,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     title: "Car Race Game",
       name: "Car Race Game",
     thumb: "/imggames/car-race-game/car-race game.jpg",
-    tag: "New",
+    tag: "Hot",
     category: "Racing",
     iframe: "https://games-gules-nu.vercel.app/car-race-game/index.html"  ,
     descriptionHtml: `
@@ -4013,7 +4013,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     title: "Builditekt",
       name: "Builditekt",
     thumb: "/imggames/builditekt/buildi-tekt.jpg",
-    tag: "New",
+    tag: "Trending",
     category: ["Creative", "Simulation"],
     iframe: "https://games-gules-nu.vercel.app/builditekt/index.html"  ,
     descriptionHtml: `
@@ -4175,7 +4175,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     title: "Shodow Boy Adventures",
       name: "Shodow Boy Adventures",
     thumb: "/imggames/Shodow-boy-adventures/shadow.jpg",
-    tag: "New",
+    tag: "Classic",
     category: "Adventure",
     iframe: "https://games-gules-nu.vercel.app/Shodow-boy-adventures/index.html"  ,
     descriptionHtml: `
@@ -4308,7 +4308,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     title: "Robotic Snake Attack",
       name: "Robotic Snake Attack",
     thumb: "/imggames/robotic-snake-attack/snake-attack.png",
-    tag: "New",
+    tag: "Top",
     category: ["Animals", "Nature"],
     iframe: "https://games-gules-nu.vercel.app/robotic-snake-attack/index.html"  ,
     descriptionHtml: `

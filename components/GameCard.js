@@ -13,11 +13,27 @@ export default function GameCard({ game }) {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover transition-transform duration-300 group-hover:scale-105"
         />
-        {game.tag && (
-          <span className="absolute left-2 top-2 rounded-full bg-accent px-2 py-1 text-[10px] font-bold uppercase">
-            {game.tag}
-          </span>
-        )}
+       {game.tag && (
+  <span
+    className={`absolute left-2 top-2 rounded-full px-2 py-1 text-[10px] font-bold uppercase ${
+      game.tag === "New"
+        ? "bg-purple-500 text-white"
+        : game.tag === "Hot"
+        ? "bg-red-500 text-white"
+        : game.tag === "Trending"
+        ? "bg-orange-500 text-white"
+        : game.tag === "Updated"
+        ? "bg-blue-500 text-white"
+        : game.tag === "Top"
+        ? "bg-emerald-500 text-white"
+        : game.tag === "Classic"
+        ? "bg-zinc-500 text-white"
+        : "bg-accent text-white" // fallback
+    }`}
+  >
+    {game.tag}
+  </span>
+)}
       </div>
       <div className="p-3">
         <div className="truncate font-semibold">{game.title}</div>
