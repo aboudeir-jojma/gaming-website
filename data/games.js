@@ -5,10 +5,10 @@ export const games = [
     slug: "fruit-ninja",
     title: "Fruit Ninja",
     name: "Fruit Ninja",
-    thumb: "/games/fruit-ninja/fruit-ninja.jpg",
+    thumb: "/imggames/fruit-ninja/fruit-ninja.jpg",
     tag: "New",
     category: ["Action", "Arcade"],
-    iframe: "/games/fruit-ninja/index.html"  ,
+    iframe: "https://games-gules-nu.vercel.app/fruit-ninja/index.html"  ,
     descriptionHtml: `
                                     <h3>🥗Fruit Ninja Online: Slice, Score, and Have Fun</h3>
                                 <p>Jump into the colorful world of Fruit Ninja online! It’s free to play and packed with bright, juicy fruit. Your mission is simple: swipe fast to slice as many fruits as you can and watch your score soar.</p>
@@ -134,10 +134,10 @@ export const games = [
     slug: "liquid-sort",
     title: "Liquid Sort",
     name: "Liquid Sort",
-    thumb: "/games/liquid-sort/liquid-sort.jpg",
+    thumb: "/imggames/liquid-sort/liquid-sort.jpg",
     tag: "New",
          category: ["Puzzle", "Brain"], // ← tableau au lieu d’un seul string
-    iframe: "/games/liquid-sort/index.html"  ,
+    iframe: "https://games-gules-nu.vercel.app/liquid-sort/index.html"  ,
     descriptionHtml: `
                       <h3>⭐Play Liquid Sort Online for Free</h3>
                   <p>Get ready to splash into the bright, colorful world of Liquid Sort! This free online puzzle game for kids turns science and color sorting into pure fun. Start your adventure and see how many puzzles you can solve.</p>
@@ -272,10 +272,10 @@ export const games = [
     slug: "street-skater",
     title: "Street Skater",
       name: "Street Skater",
-    thumb: "/games/street-skater/street-skater.png", // mets une image réelle du dossier (ou remplace par une URL)
+    thumb: "/imggames/street-skater/street-skater.png", // mets une image réelle du dossier (ou remplace par une URL)
     tag: "New",
     category: "Sports",
-    iframe: "/games/street-skater/index.html",
+    iframe: "https://games-gules-nu.vercel.app/street-skater/index.html",
                       descriptionHtml: `
 
                   <h3>🎲Play Street Skater Online for Free!</h3>
@@ -417,10 +417,10 @@ export const games = [
     slug: "hungry-snake-feed",
     title: "Hungry Snake Feed",
       name: "Hungry Snake Feed",
-    thumb: "/games/hungry-snake-feed/hungry-snake-feed.jpg", // mets une image réelle du dossier (ou remplace par une URL)
+    thumb: "/imggames/hungry-snake-feed/hungry-snake-feed.jpg", // mets une image réelle du dossier (ou remplace par une URL)
     tag: "New",
     category: ["Action", "Arcade"],
-    iframe: "/games/hungry-snake-feed/index.html",
+    iframe: "https://games-gules-nu.vercel.app/Hungry-snake-feed/index.html",
                       descriptionHtml: `
                   <h3>🕹️Play Hungry Snake Feed Online for Free!</h3>
                   <p>Dive into an exciting world where your mission is to guide a hungry snake as it munches its way to glory. Help your snake gobble up delicious treats such as juicy apples and crunchy carrots. Be careful of walls and sneaky rival snakes as you work to become the biggest reptile in the garden.</p>
@@ -507,10 +507,10 @@ export const games = [
     {
     slug: "brainrot-jet-ski",
     title: "Brainrot Jet Ski",
-    thumb: "/games/brainrot-jet-ski/brainrot-jet-ski.jpg",
+    thumb: "/imggames/brainrot-jet-ski/brainrot-jet-ski.jpg",
     tag: "New",
     category: "Racing",
-    iframe: "/games/brainrot-jet-ski/index.html",   // fonctionne immédiatement
+    iframe: "https://games-gules-nu.vercel.app/brainrot-jet-ski/index.html",   // fonctionne immédiatement
 
                   descriptionHtml: `
                               <h3>🎮Ride the Brainrot Jet Ski</h3>
@@ -690,13 +690,13 @@ export const games = [
     slug: "sushi-chef",
     title: "Sushi Chef",
     name: "Sushi Chef",
-    thumb: "/games/sushi-chef/sushi-chef.jpg",
+    thumb: "/imggames/sushi-chef/sushi-chef.jpg",
     tag: "New",
       category:  "Food",
-    iframe: "/games/sushi-chef/index.html",
+    iframe: "https://games-gules-nu.vercel.app/sushi-chef/index.html",
                       descriptionHtml: `
 
-                      <h3>Play Sushi Chef: A Fast and Fun Free Online Game</h3>
+                      <h3>⭐Play Sushi Chef: A Fast and Fun Free Online Game</h3>
 <p>Get ready to cook like a pro with Sushi Chef, a free online game for kids and families. Step into the colorful world of Japan and become a sushi master right in your browser.</p>
 <p>Tap or click to slice fresh fish, roll rice, and beat the ticking timer. Prepare tasty sushi orders and serve them to hungry customers as fast as you can.</p>
 <p>Each level brings bigger orders and faster speeds, so stay sharp and keep your cool. The controls are simple, the action is quick, and the fun never stops.</p>
@@ -704,7 +704,7 @@ export const games = [
 <p>Ready to cook? Put on your chef’s hat, start your first order, and see how many sushi plates you can serve today!</p>
 
 &nbsp;
-h3>What is Sushi Chef?</h3>
+<h3>🌍What is Sushi Chef?</h3>
 <p>Sushi Chef is a magical online world where every click turns you into a sushi-making superstar! Here, kids can jump right into their virtual sushi kitchens, slice fresh fish, roll sticky rice, and create colorful sushi artwork through fun, easy-to-follow steps. The game loads instantly with no downloads needed, and its bright graphics, simple menus, and silly sounds make it a joy to play.</p>
 <p>Perfect for kids aged 6 and up, Sushi Chef helps you improve your hand-eye coordination and lets your creativity shine while you learn the basics of making sushi. Whether you're getting your California roll just right or crafting a vibrant sashimi rainbow, Sushi Chef transforms cooking into a thrilling adventure right on your screen!</p>
 &nbsp;
@@ -720,7 +720,7 @@ h3>What is Sushi Chef?</h3>
 <p>Sushi Chef offers a safe, family-friendly environment where fun and learning go hand in hand, ensuring every moment is enjoyable and educational!</p>
 
 &nbsp;
- <h3>How to Play Sushi Chef</h3>
+ <h3>💎How to Play Sushi Chef</h3>
 <p>
 Welcome to the exciting world of the Sushi Chef game! Get ready for a fun kitchen adventure. Simply tap on the bright icons to select fluffy rice, fresh fish, crispy seaweed, and crunchy veggies. Use these to create sushi rolls just the way your customers like them.
 </p>
@@ -731,13 +731,13 @@ Watch the order bubbles at the top carefully. Mix the right ingredients before t
 What's your goal? It's to make every customer happy by serving delicious and beautifully made sushi as fast as you can. So, chop quickly, stay focused, and most importantly, have fun!
 </p>
 &nbsp;
-<h3>Controls for Our Browser-Based Kids Sushi Chef Game</h3>
+<h3>🍄Controls for Our Browser-Based Kids Sushi Chef Game</h3>
 <p>Guide your little chef using the ← and → arrow keys to move around, and press ↑ to climb ladders. Tap the spacebar to jump over rolling rice balls and leap onto higher shelves. Press Z to slice fresh fish, avocado, cucumber, and more. Then, press X to serve each delicious sushi roll perfectly to eager customers. The best part? Everything happens right in your browser—no downloads or installations are needed!</p>
 &nbsp;
 <img src="/games/sushi-chef/img2.jpg" alt="sushi chef" />
 &nbsp;
 
-<h3>Supercharged Sushi Chef Secrets for Kids</h3>
+<h3>⭐Supercharged Sushi Chef Secrets for Kids</h3>
 
 <p>Are you ready to become a sushi superstar without needing to download anything? Here are some exciting and easy tips to make your online game sparkle, perfect for young chefs!</p>
 
@@ -768,7 +768,7 @@ y day to get free rice packs and soy sauce boosts.<br>
 - Spend your coins wisely on upgrades that help refill ingredients faster.</p>
 
 &nbsp;
-<h3>Features of Sushi Chef</h3>
+<h3>🦋Features of Sushi Chef</h3>
 
 <p>Get ready to become a sushi superstar in this exciting and free online sushi cooking game! Sushi Chef welcomes young players with its bright, cheerful graphics and friendly characters who guide you on how to build each delicious roll. It’s all about fun and easy play—just right for kids who love food adventures.</p>
 
@@ -780,7 +780,7 @@ y day to get free rice packs and soy sauce boosts.<br>
 
 &nbsp;
 
-<h3>Play Sushi Chef Online – A Fun Browser Cooking Game for Kids</h3>
+<h3>🍭Play Sushi Chef Online – A Fun Browser Cooking Game for Kids</h3>
 
 <p>Dive right into Sushi Chef Online, the easiest cooking game you can play directly in your browser! This game is specially designed for kids, and the best part? No downloads or installations are needed! Just open the game on your phone, tablet, or computer and start creating colorful sushi rolls in seconds.</p>
 
@@ -788,7 +788,7 @@ y day to get free rice packs and soy sauce boosts.<br>
 
 <p>Are you ready to show off your sushi-making skills and become the town's favorite chef? Let's roll!</p>
 &nbsp;
-<h3>Sushi Chef Adventure: Unblocked Fun in Your Browser</h3>
+<h3>🍣Sushi Chef Adventure: Unblocked Fun in Your Browser</h3>
 
 <p>Hey young chefs! Are you ready to make delicious sushi without any downloads or barriers? Sushi Chef Adventure is an exciting browser game that you can enjoy anywhere you have Wi-Fi—whether at school, home, or on the go. Just open your browser, click on the game, and you'll find yourself in a vibrant sushi kitchen.</p>
 
@@ -799,7 +799,7 @@ y day to get free rice packs and soy sauce boosts.<br>
 
 &nbsp;
 
-<h3>Platform Compatibility</h3>
+<h3>🌐Platform Compatibility</h3>
 <p>
 Our online sushi game is designed to work perfectly on any device, whether it's a desktop, tablet, or smartphone. This means you can start rolling sushi whenever you want without needing to download or install anything. Just open your browser, click the game link, and you’re ready to play! Whether you're at home, in school (with permission!), or traveling in the car, the fun goes wherever you do. The game loads instantly and runs smoothly, making your sushi kitchen ready for action, all while fitting right into your pocket or backpack.
 </p>
@@ -807,14 +807,14 @@ Our online sushi game is designed to work perfectly on any device, whether it's 
 
 &nbsp;
 
-<h3>Sushi Chef Games</h3>
+<h3>🍣Sushi Chef Games</h3>
 <p>Welcome to the exciting world of Sushi Chef Games! Here, young chefs can roll, slice, and serve delicious sushi masterpieces right in their browser—no downloads required!</p>
 <p>In each game, you'll face the fun challenge of slicing fresh fish, layering sticky rice, and decorating rolls with tasty sauces. Some levels will test your speed in busy kitchens where managing time is key, while others transform sushi-making into a fun puzzle adventure.</p>
 <p>Designed especially for kids, these free online games help build cooking skills, boost concentration, and reward you with high scores and virtual sushi badges.</p>
 <p>Are you ready to become a top sushi master? Grab your virtual bamboo mat and get ready for hours of delightful, family-friendly fun!</p>
 
 &nbsp;
-<h3>Frequently Asked Questions – Sushi Chef</h3>
+<h3>💡Frequently Asked Questions – Sushi Chef</h3>
 
 <p><strong>Q: Do I have to download or install anything?</strong><br>
 A: No, you don't! Sushi Chef works right in your web browser. Just click the game link, and you'll be making sushi in seconds—no waiting, no installations.</p>
@@ -841,10 +841,10 @@ A: It's super easy! Open the game, choose fresh ingredients, follow the helpful 
     slug: "philosophers-merge",
     title: "Philosophers Merge",
       name: "Philosophers Merge",
-    thumb: "/games/philosophers-merge/phil.jpg",
+    thumb: "/imggames/philosophers-merge/phil.jpg",
     tag: "New",
     category: ["Action", "Arcade"],
-    iframe: "/games/philosophers-merge/index.html",
+    iframe: "https://games-gules-nu.vercel.app/philosophers-merge/index.html",
                       descriptionHtml: `
 
                           `,
@@ -854,10 +854,10 @@ A: It's super easy! Open the game, choose fresh ingredients, follow the helpful 
     slug: "feed-pac",
     title: "Feed Pac",
       name: "Feed Pac",
-    thumb: "/games/feed-pac/feed-pac.jpg",
+    thumb: "/imggames/feed-pac/feed-pac.jpg",
     tag: "New",
       category: ["Action", "Arcade"],
-    iframe: "/games/feed-pac/index.html",
+    iframe: "https://games-gules-nu.vercel.app/feed-pac/index.html",
                       descriptionHtml: `
                       <h3>⭐Play Feed Pac Online for Free!</h3>
                 <p>Step into a lively maze where you become the hero on an exciting mission. Explore twisting paths, gobble up tasty pellets, and discover special fruits that give you amazing bonuses.</p>
@@ -1042,19 +1042,19 @@ A: It's super easy! Open the game, choose fresh ingredients, follow the helpful 
     slug: "food-match-game",
     title: "Food Match Game",
       name: "Food Match Game",
-    thumb: "/games/food-match-game/food.jpg",
+    thumb: "/imggames/food-match-game/food.jpg",
     tag: "New",
     category: "Food",
-    iframe: "/games/food-match-game/index.html",
+    iframe: "https://games-gules-nu.vercel.app/food-match-game/index.html",
                     descriptionHtml: `
-<h3>Play Food Match: A Tasty Memory Game for Kids</h3>
+<h3>🍭Play Food Match: A Tasty Memory Game for Kids</h3>
 <p>Play Food Match is a free memory match game for kids. Join the tasty fun. It is packed with delicious food cards and exciting challenges.</p>
 <p>Think your memory is strong? Test it here. Flip two cards. Look for matching foods. Make a pair. Clear the board to win. It is easy to learn and super fun to play.</p>
 <p>Kids love the bright, colorful graphics and smooth, addictive gameplay. You can choose from different difficulty levels, so everyone can play and improve. This game helps build memory, focus, and problem-solving skills while you have a great time.</p>
 <p>It is more than a game. It is a mouthwatering adventure that makes your brain buzz and your imagination grow.</p>
 <p>Ready to match and smile? Start Play Food Match now and have the best time ever.</p>
 &nbsp;
-<h3>What are Food Match Games?</h3>
+<h3>🌍What are Food Match Games?</h3>
 <p>
 Food match games are exciting and colorful memory adventures perfect for kids! Imagine flipping over cards to find delicious treats like juicy strawberries, crunchy carrots, or gooey cupcakes, and then trying to pair them up. These games are designed with bright colors and cheerful sounds to make the experience super fun. Plus, they’re great for practicing concentration, sharpening short-term memory, and learning the names of different foods—all while playing!
 </p>
@@ -1069,7 +1069,7 @@ By transforming healthy fruits and veggies into friendly game characters, these 
 &nbsp;
 <p><a href="https://retrosgame.com/">More!</a></p>
 &nbsp;
-<h3>Why Choose Food Match Game?</h3>
+<h3>⭐Why Choose Food Match Game?</h3>
 <p>
 Are you looking for a way to enjoy fun games right in your web browser without any hassle? The Food Match Game is ready for you in just seconds—no downloads needed and no waiting time! Kids can tap on colorful food icons and pair juicy fruits, crunchy veggies, and delightful sweets.
 </p>
@@ -1084,7 +1084,7 @@ The simple point-and-click controls make it easy for kids to play, and the vibra
 
 
 
-<h3>How to Play the Food Match Game</h3>
+<h3>💡How to Play the Food Match Game</h3>
 
 <p>Are you ready for a fun and delicious memory challenge? Follow these steps to become a Food Match master!</p>
 
@@ -1123,7 +1123,7 @@ The simple point-and-click controls make it easy for kids to play, and the vibra
 &nbsp;
 
 
-<h3>Controls</h3>
+<h3>🦋Controls</h3>
 <p>Guide your tiny chef using the left (←) and right (→) arrow keys as they swiftly move across the countertop. Press the spacebar to jump over sticky spills or rolling pins, and tap the down (↓) arrow key to crouch under swinging ladles. Match two identical snacks to earn points—and if you connect three in a row, you'll activate a special bonus! Best of all, the Food Match Game starts right in your browser without any downloads, so you can begin enjoying the fun immediately!</p>
 
 &nbsp;
@@ -1140,7 +1140,7 @@ The simple point-and-click controls make it easy for kids to play, and the vibra
 <p>4. You can play instantly in your web browser. There's no need to download anything, so you can jump into the fun anytime, anywhere!</p>
 
 &nbsp;
-<h3>Exciting Features of the Food Match Game</h3>
+<h3>⭐Exciting Features of the Food Match Game</h3>
 
 <p>Welcome to a vibrant world filled with cartoon fruits, candies, and delicious treats in this kid-friendly match-3 game! It's a fun adventure where you can tap and swipe to match tasty snacks like juicy strawberries or colorful cupcakes against the clock. As you clear each level, you'll earn exciting power-ups like a chocolate bomb or a sugar-sparkle booster to help conquer tough puzzles.</p>
 
@@ -1163,7 +1163,7 @@ The simple point-and-click controls make it easy for kids to play, and the vibra
 
 &nbsp;
 
-<h3>Food Match Game Unblocked</h3>
+<h3>✅Food Match Game Unblocked</h3>
 
 <p>Get ready for a tasty brain workout with Food Match Game Unblocked, a free online match-3 puzzle game made especially for kids! This safe game can be played anywhere, whether you're at home, in the classroom, or at the library, and it requires no downloads. Just open it in your browser and start matching delicious treats like cheesy pizza slices, frosty ice cream scoops, crunchy fries, and juicy burgers on a bright, colorful grid.</p>
 
@@ -1172,13 +1172,13 @@ The simple point-and-click controls make it easy for kids to play, and the vibra
 &nbsp;
 
 
-<h3>Platform Compatibility</h3>
+<h3>💎Platform Compatibility</h3>
 <p>Whether you're using a desktop computer, a tablet at the breakfast table, or a smartphone on the go, the Food Match Game works perfectly for you. No downloads or installations are needed—just open your favorite web browser, tap the play button, and dive into a world of delicious puzzles.</p>
 <p>The game's bright graphics and kid-friendly buttons adjust smoothly to any screen size. This means you'll always see clear pictures of tasty snacks and enjoy simple touch or click controls. Ready for a quick brain break or a longer matching spree? The Food Match Game is just one click away, anytime and anywhere—perfect for snack-loving adventurers of all ages!</p>
 
 &nbsp;
 
-<h3>Food Match Game Collection</h3>
+<h3>🍔Food Match Game Collection</h3>
 
 <p>Attention all little chefs and matching game enthusiasts! Come and explore our collection of free online food match games designed just for kids. Spot the pairs in exciting games like Pizza Party Puzzle, Burger Stack Match, and Ice Cream Scoop Showdown. You don't need to download anything, so you can start playing right away on any device!</p>
 
@@ -1189,7 +1189,7 @@ The simple point-and-click controls make it easy for kids to play, and the vibra
 &nbsp;
 
 
-<h3>Frequently Asked Questions – Food Match Game</h3>
+<h3>💡Frequently Asked Questions – Food Match Game</h3>
 
 <h3>Do I have to install or download anything first?</h3>
 <p>No, you don't! The Food Match Game runs directly in your web browser. Simply visit the game page and click “Play” to start the fun.</p>
@@ -1203,7 +1203,7 @@ The simple point-and-click controls make it easy for kids to play, and the vibra
 <h3>Who is Food Match Game good for?</h3>
 <p>Everyone can join the fun! It's great for preschoolers learning food names, school-aged children practicing colors, and even parents who want to play along. Kids and adults can enjoy it together.</p>
 
-<h3>How can I jump right into the game?</h3>
+<h3>⭐How can I jump right into the game?</h3>
 <p>It's simple! Click the “Start” button, follow the on-screen tips, and start matching fruits, veggies, and snacks to earn points. Each level gets a bit more challenging, so you'll always have something new to enjoy!</p>
 &nbsp;
 &nbsp;
@@ -1214,13 +1214,13 @@ The simple point-and-click controls make it easy for kids to play, and the vibra
     slug: "tanks-of-the-galaxy",
     title: "Tanks of the Galaxy",
       name: "Tanks of the Galaxy",
-    thumb: "/games/tanks-of-the-galaxy/tanks.jpg",
+    thumb: "/imggames/tanks-of-the-galaxy/tanks.jpg",
     tag: "New",
     category: "Shooter",
-    iframe: "/games/tanks-of-the-galaxy/index.html",
-                    descriptionHtml: ` 
-                    
-                    <h3>Play Tanks of the Galaxy Online for Free</h3>
+    iframe: "https://games-gules-nu.vercel.app/tanks-of-the-galaxy/index.html",
+                    descriptionHtml: `
+
+                    <h3>🌍Play Tanks of the Galaxy Online for Free</h3>
 <p>Dive into Tanks of the Galaxy and play online for free. Pilot a powerful space tank across bright, starry battlefields. Move, aim, and fire as you travel from one exciting fight to the next. The controls are simple, and the action is fast and fun for kids.</p>
 
 <h3>Why You’ll Love It</h3>
@@ -1234,7 +1234,7 @@ The simple point-and-click controls make it easy for kids to play, and the vibra
 
 &nbsp;
 
-<h3>What Are Tanks of the Galaxy?</h3>
+<h3>🍄What Are Tanks of the Galaxy?</h3>
 <p>
 Tanks of the Galaxy is an exciting browser game full of colorful adventures. In this vibrant world, young commanders can drive their very own tanks across amazing space-themed battlefields. Best of all, it's free! Players can collect all sorts of unique tank models, each equipped with cool weapons and armor. As you play and earn points, you can even upgrade them! 
 </p>
@@ -1250,7 +1250,7 @@ With regular updates, there's always something new to enjoy, like fresh maps, ex
 <p><a href="https://retrosgame.com/">More!</a></p>
 &nbsp;
 
-<h3>Why Choose "Galaxy Tanks"?</h3>
+<h3>⭐Why Choose "Galaxy Tanks"?</h3>
 
 <p>When you open the "Galaxy Tanks" game in your browser, you're instantly transported into a brightly colored neon battlefield without needing to download any software. Its playful cartoon graphics help kids easily explore the exciting world of space. By using just the arrow keys to move and a simple click to fire, the game offers a smooth and straightforward playing experience.</p>
 
@@ -1259,19 +1259,19 @@ With regular updates, there's always something new to enjoy, like fresh maps, ex
 &nbsp;
 
 
-<h3>How to Play Tanks of the Galaxy</h3>
+<h3>🦋How to Play Tanks of the Galaxy</h3>
 <p>Are you ready to race through the stars in your very own space tank? Let's get started! First, grab the controls. Use the arrow keys or W-A-S-D to steer your tank around floating rocks and alien bases. To fire your laser gun at enemy tanks, space spiders, and flying drones, press the space bar or click the left mouse button.</p>
 
 <p>Keep an eye out for glowing crates! Green shield bubbles will block attacks, blue bursts will give you extra speed to dodge danger, and red power cores will let you fire super-strong blasts. Your mission is simple: complete each level by defeating all the enemy tanks before time runs out. Try to earn as many points as you can and help save the galaxy from the invaders.</p>
 
 
 &nbsp;
-<h3>Controls</h3>
+<h3>🌍Controls</h3>
 <p>Guide your tank along glowing asteroid highways using the left and right arrow keys. Tap the up arrow to jump over star craters and reach secret ledges. Press the spacebar to fire your laser cannon at incoming alien ships. Hit Z to activate your energy shield and block those massive explosions. Ready for action? Dive into Tanks of the Galaxy right in your web browser—no download required!</p>
 
 &nbsp;
 
-<h3>Tips and Tricks for Tanks of the Galaxy</h3>
+<h3>⭐Tips and Tricks for Tanks of the Galaxy</h3>
 
 <p>Are you ready to embark on a cosmic tank adventure? Follow these simple tips, specially designed for young commanders, to navigate space, collect treasures, and outsmart every alien foe!</p>
 
@@ -1296,7 +1296,7 @@ With regular updates, there's always something new to enjoy, like fresh maps, ex
 
 
 
-<h3>Features of Tanks of the Galaxy</h3>
+<h3>❤️Features of Tanks of the Galaxy</h3>
 <p>Welcome to the exciting world of Tanks of the Galaxy, a fun browser game made just for kids! You don't need to download anything—simply open your web browser and jump in. You'll find tanks zooming around colorful space arenas, each with its own theme and challenge. The bright, cartoon-style graphics and easy tap-and-swipe controls make it simple for young pilots to steer, shoot, and grab power-ups effortlessly. As you play, you'll unlock special tank characters, achieve high scores, and enjoy sounds that make every explosion and engine roar come alive.</p>
 
 <h3>Key Game Highlights</h3>
@@ -1315,7 +1315,7 @@ With regular updates, there's always something new to enjoy, like fresh maps, ex
 
 &nbsp;
 
-<h3>Galaxy Tank Adventure—Play Instantly in Your Browser!</h3>
+<h3>🌌Galaxy Tank Adventure—Play Instantly in Your Browser!</h3>
 
 <p>Get ready to soar into space with Galaxy Tank Adventure! This exciting, free online tank game works on any computer, tablet, or smartphone—no downloads needed! You get to control a shiny, kid-friendly tank as you zoom between glowing asteroids, dodge laser beams, and team up with friends for thrilling action. Each round only lasts a few minutes, making it perfect for a quick playtime at home or on the go.</p>
 
@@ -1323,7 +1323,7 @@ With regular updates, there's always something new to enjoy, like fresh maps, ex
 
 &nbsp;
 
-<h3>Tanks of the Galaxy Unblocked</h3>
+<h3>✅Tanks of the Galaxy Unblocked</h3>
 <p>Climb aboard your own space tank and journey through sparkling star systems—no download needed! This delightful browser game, perfect for school computers and public Wi-Fi, lets kids easily click to steer, aim, and shoot at cheerful alien ships. </p><p>Explore bright planets, master the simple controls, and enjoy lightning-fast loading. It's the ultimate quick-play adventure, whether you're learning or playing. Are you ready for an epic galactic tank mission? Hit "Play" and let the galaxy's biggest battle commence!</p>
 &nbsp;
 
@@ -1335,14 +1335,14 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 &nbsp;*
 
 
-<h3>More Out-of-This-World Games Like Tanks of the Galaxy</h3>
+<h3>🍭More Out-of-This-World Games Like Tanks of the Galaxy</h3>
 
 <p>Hey space explorers! If steering armored tanks through cosmic clashes in <i>Tanks of the Galaxy</i> made you shout “awesome,” get ready for even more galactic thrills. Our kid-friendly game hub is filled with exciting browser games where you can zoom star cruisers, protect alien bases, and race across colorful planets with friendly robots and sparkling power-ups—just like in your favorite tank adventure. No downloads, no waiting: just click and play instantly in your browser. Let the new space missions begin!</p>
 
 
 &nbsp;
 
-<h3>Frequently Asked Questions – Tanks of the Galaxy</h3>
+<h3>⭐Frequently Asked Questions – Tanks of the Galaxy</h3>
 
 <p><strong>1. Do I have to install anything to play?</strong></p>
 <p>Nope! Tanks of the Galaxy is a 100% browser-based tank game. Just open your favorite web browser, and you're ready to roll.</p>
@@ -1370,10 +1370,10 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     slug: "subway-runner",
     title: "Subway Runner",
     name: "Subway Runner",
-    thumb: "/games/subway-runner/images.jpg",
+    thumb: "/imggames/subway-runner/images.jpg",
     tag: "New",
     category: "Racing",
-    iframe: "/games/subway-runner/index.html",
+    iframe: "https://games-gules-nu.vercel.app/subway-runner/index.html",
                     descriptionHtml: `
                     <p>🌍Play <strong>Subway Runner</strong> online for free and experience one of the most thrilling offline games you can enjoy anytime!</p>
 
@@ -1626,12 +1626,12 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     slug: "city-blocks",
     title: "City Blocks",
       name: "City Blocks",
-    thumb: "/games/city-blocks/city-bloks.jpg",
+    thumb: "/imggames/city-blocks/city-bloks.jpg",
     tag: "New",
         category : ["Puzzle", "Brain"], // ← tableau au lieu d’un seul string
-    iframe: "/games/city-blocks/index.html"  ,
+    iframe: "https://games-gules-nu.vercel.app/city-blocks/index.html"  ,
                           descriptionHtml: `
-                          <h3>Play City Blocks Online for Free!</h3>
+                          <h3>🎲Play City Blocks Online for Free!</h3>
                           <p>Dive into a delightful world where you can build your very own city. With just a few taps, you can create towering buildings, spread out lush parks, and connect winding roads.</p>
                           <p>Every level brings new challenges and exciting rewards. Unlock unique shapes, bright patterns, and funky decorations that make your city one-of-a-kind.</p>
                           <p>Solve engaging puzzles to expand your city even more. Challenge your friends and proudly showcase your creative designs!</p>
@@ -1639,13 +1639,13 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
 
                           &nbsp;
-                          <h3>What Are City Blocks?</h3>
+                          <h3>🎯What Are City Blocks?</h3>
                           <p>In the City Blocks browser game, every neighborhood, park, and skyscraper begins with one simple idea: building blocks. Imagine you have a colorful set of tiles, each one a square filled with possibilities. As you drag and drop these blocks onto your unique blank grid, you'll start crafting the city of your dreams!</p>
                           <p>Every block has its own special role—some become busy roads where cars zoom around, while others turn into cozy homes, sparkling shops, or lush, green parks. As you piece together these lively blocks, you will discover how neighborhoods grow, how traffic flows, and how your imagination can turn an empty plot into a bustling town.</p>
                           <p>With just a few taps, you'll be the architect, planner, and mayor of your very own blocky world!</p>
 
 
-                          <h3>Why Choose City Blocks?</h3>
+                          <h3>🎮Why Choose City Blocks?</h3>
                           <p>
                           City Blocks offers an exciting and interactive puzzle experience right in your web browser—no need for downloads! Kids will enjoy meeting friendly mascots and playing with colorful shapes as they learn the basics of drag-and-drop building. Each click turns into a thrilling brain game, making learning fun and engaging.
                           </p>
@@ -1657,7 +1657,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
                           </p>
 
                           &nbsp;
-                          <h3>How to Play City Blocks</h3>
+                          <h3>👾How to Play City Blocks</h3>
                           <p>Get ready to build the coolest little city ever with City Blocks! This easy-to-learn block puzzle is perfect for kids who love colorful shapes and smart challenges.</p>
 
                           <h3>Drag and Drop Your Blocks</h3>
@@ -1680,7 +1680,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
                           <p>Jump in now and see how big your mini-metropolis can grow. City Blocks turns simple drag-and-drop action into a colorful block puzzle adventure—perfect for budding architects and city builders of all ages!</p>
 
                           &nbsp;
-                          <h3>Game Controls</h3>
+                          <h3>🍄Game Controls</h3>
                           <p>Get ready to explore the fun world of City Blocks with super-simple controls that make it easy for everyone to play!</p>
                           <p>• Use the Left Arrow to move left and the Right Arrow to move right.</p>
                           <p>• Press the Spacebar to bounce up to the next platform.</p>
@@ -1711,18 +1711,18 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
 
                           &nbsp;
-                          <h3>Why City Blocks Is Perfect for Young Adventurers</h3>
+                          <h3>💎Why City Blocks Is Perfect for Young Adventurers</h3>
                           <p>City Blocks invites young explorers into a world full of bright and magical landscapes that work smoothly on any web browser. Friendly heroes along with their sidekicks possess unique abilities to help kids bounce, slide, and cleverly navigate fun challenges. With easy one-tap controls, even the smallest fingers can master every jump and dash. Each new world uncovers hidden treasures, thought-provoking puzzles, and lively music that celebrates every victory. Best of all, this free online adventure doesn't require any downloads—just click, play, and enjoy endless colorful fun!</p>
 
 
                           &nbsp;
-                          <h3>Platform Compatibility</h3>
+                          <h3>🖥️Platform Compatibility</h3>
                           <p>City Blocks is a browser-based game that you can play on computers, tablets, and smartphones—without needing to download or install anything. Simply open your web browser, click "Play," and start your city-building adventure in seconds. As you design roads, build parks, and construct skyscrapers, your progress saves automatically, so you can easily continue where you left off. Whether you're at home, in the classroom, or on the go, City Blocks is ready for fun anytime, anywhere!</p>
 
 
 
                           &nbsp;
-                          <h3>City Blocks Unblocked – Build Your Dream Skyline Anywhere!</h3>
+                          <h3>🏙️City Blocks Unblocked – Build Your Dream Skyline Anywhere!</h3>
 
                           <p>Are you ready to stack, build, and play without any limits? City Blocks Unblocked is the ultimate block-stacking game for kids that you can play in your web browser at school, in the library, or on public Wi-Fi—no downloads or installations needed!</p>
 
@@ -1732,7 +1732,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
 
                           &nbsp;
-                          <h3>City Blocks Games</h3>
+                          <h3>🎮City Blocks Games</h3>
                           <p>City Blocks Games offer an exciting world of online fun where you don't need to download anything! Kids can stack colorful blocks, twist roads into fun patterns, and watch towering structures pop up on the screen. Some games cleverly turn each building session into a puzzle, challenging young architects to solve road mazes or fit interesting shapes together.</p>
 
                           <p>Other games encourage players to dream bigger—building giant cities filled with busy streets, green parks, or delightful cartoon towns complete with colorful shops and homes. Everything works smoothly in any web browser—just click and start building!</p>
@@ -1740,7 +1740,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
                           <p>Exploring these different block-building adventures helps kids boost creativity, improve planning skills, and come up with fantastic new ideas for their next project. So, why choose just one? Dive into all the City Blocks Games and see how many incredible worlds you can build!</p>
 
                           &nbsp;
-                          <h3>City Blocks Online</h3>
+                          <h3>🦋City Blocks Online</h3>
                           <p>
                           Jump into the fun with City Blocks Online—the ultimate block-building game made just for kids! No need to download or install anything; just click the link on any device and start stacking colorful cubes right away.
                           </p>
@@ -1755,7 +1755,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
 
                           &nbsp;
-                          <h3>City Blocks FAQ for Young Builders</h3>
+                          <h3>⭐City Blocks FAQ for Young Builders</h3>
 
                           <p><strong>1. Do I have to install anything to play City Blocks?</strong><br>
                             Nope! City Blocks lives right in your browser. Just visit the game page, and you’re all set—no downloads, no waiting.</p>
@@ -1784,19 +1784,19 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     slug: "inside-light",
     title: "Inside Light",
       name: "Inside Light",
-    thumb: "/games/inside-light/Inside-Light-game.jpg",
+    thumb: "/imggames/inside-light/Inside-Light-game.jpg",
     tag: "New",
     category: "Adventure",
-    iframe: "/games/inside-light/index.html"  ,
+    iframe: "https://games-gules-nu.vercel.app/inside-light/index.html"  ,
                           descriptionHtml: `
-                          <h3>Play Inside Light Online for Free!</h3>
+                          <h3>🎯Play Inside Light Online for Free!</h3>
                     <p>Dive into a magical world filled with glowing light and exciting adventures around every corner. In this whimsical game, you help a tiny, sparkling friend explore mysterious hallways full of puzzles and surprises.</p>
                     <p>Collect shiny crystals to unlock new levels and solve clever challenges by bending beams of light. Watch as brilliant colors swirl and dance around you!</p>
                     <p>Inside Light is easy to pick up, yet full of fun twists that keep your mind curious and engaged. With cheerful graphics and happy sounds, every round is packed with excitement and discovery.</p>
                     <p>Jump in and let your imagination shine as you play this enchanting game!</p>
                     &nbsp;
 
-                    <h3>What Is Inside Light?</h3>
+                    <h3>👾What Is Inside Light?</h3>
                     <p>Inside Light is your magical gateway to the wonderful world of kids' browser games! Here, you'll discover easy-to-understand game guides, colorful screenshots, and helpful tips that whisk you away to fun filled adventures without the hassle of downloads. Whether you're solving puzzles in an enchanted kingdom or zooming through space with cute characters, we spotlight the coolest games that run right in your web browser. Our simple guides and honest reviews make it easy to choose the best games, and our news updates ensure you're always the first to hear about exciting new releases. At Inside Light, every article is crafted to spark your imagination, enhance your skills, and make your playtime more enjoyable.</p>
                     &nbsp;
 
@@ -1806,7 +1806,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
                     </p>
 
                     &nbsp;
-                    <h3>How to Play Inside Light</h3>
+                    <h3>🍄How to Play Inside Light</h3>
 
                     <p>Step into a glowing adventure with Inside Light! Guide your little, shiny friend by pressing the arrow keys or WASD. Whenever you need to jump over holes or floating barriers, simply hit the spacebar. As you journey through the game, collect sparkling light orbs to fill up your shine meter and keep your glow strong.</p>
 
@@ -1814,7 +1814,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
                     &nbsp;
 
-                    <h3>Controls</h3>
+                    <h3>💎Controls</h3>
                     <p>Are you ready to play Inside Light? It's really easy and fun!</p>
                     <p>Use the ← and → arrow keys to move your hero left and right through the glowing caves.</p>
                     <p>Press ↑ or the Space bar to jump over rocks and gaps.</p>
@@ -1824,25 +1824,25 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
                     &nbsp;
 
-                    <h3>Inside Light Game Tips for Young Adventurers</h3>
+                    <h3>👾Inside Light Game Tips for Young Adventurers</h3>
 
                     <p>Get ready to shine in Inside Light with these simple secrets! First, always jump when platforms start to wobble to ensure you land safely every time. Keep an eye out for glowing keys and bright orbs—they open hidden doors and unlock extra stages. Take your time to explore your surroundings; you might discover secret tunnels or invisible paths that lead to surprise treasures. Listen closely for subtle sound hints—they’ll guide you to solve puzzles. Best of all, Inside Light is a free browser game, so no downloads are needed! Dive in now, explore every corner, collect rewards, and become the ultimate Inside Light champion!</p>
 
                     &nbsp;
 
-                    <h3>Features of Inside Light</h3>
+                    <h3>🍭Features of Inside Light</h3>
                     <p>Inside Light invites young adventurers to a magical online playground filled with vibrant colors and friendly characters. The game is easy to play—just tap and glide—allowing kids to focus on jumping across glowing platforms and discovering exciting surprises.</p>
                     <p>With each new stage, players encounter clever puzzles, stunning graphics, and lively music that enhances every jump and dash. Best of all, this fun and free browser-based game for kids requires no downloads. Just click to begin your thrilling light-filled adventure in seconds!</p>
 
                     &nbsp;
 
-                    <h3>Inside Light Unblocked</h3>
+                    <h3>⭐Inside Light Unblocked</h3>
                     <p>Are you ready for an exciting adventure full of glowing lights? Inside Light Unblocked offers a fun way to solve radiant puzzles directly in your web browser—no installation needed! Whether you're at school, in the library, or at a local café, you can dive into bright and colorful light challenges that work smoothly on any network.</p>
                     <p>Your mission is to guide streams of sparkling beams to hit their targets, unlock new levels, and watch each stage come alive with magic. It's the perfect quick-play game for kids who enjoy fun puzzles they can conquer without any technical trouble!</p>
 
                     &nbsp;
 
-                    <h3>Inside Light Online: A Bright Puzzle Adventure</h3>
+                    <h3>🌍Inside Light Online: A Bright Puzzle Adventure</h3>
 
                     <p>Inside Light Online brings a world of glowing puzzles straight to your browser—no downloads, no delays! This free, kid-friendly web game works on computers, tablets, and phones. Just click to enter a sparkly realm where colorful shapes and friendly fireflies guide you through each challenge.</p>
 
@@ -1852,13 +1852,13 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
                     &nbsp;
 
-                    <h3>Sparkling Light Puzzle Adventures for Kids</h3>
+                    <h3>✨Sparkling Light Puzzle Adventures for Kids</h3>
                     <p>Dive into a world of glowing fun right in your web browser—no downloads needed! If you love Inside Light, you'll adore these bright puzzle games too. Try Glow Quest, where you guide a tiny spark through twisting tunnels, or Neon Paths, where colorful lines light up with every clever move.</p>
                     <p>Don't miss Shadow Spark, a game of secret beams and hidden switches that challenges your brain in the best way. Each game uses simple clicks, bold colors, and friendly characters so you can learn and play safely. Jump in today and see how many light puzzles you can solve!</p>
 
                     &nbsp;
 
-                    <h3>Frequently Asked Questions – Inside Light</h3>
+                    <h3>💡Frequently Asked Questions – Inside Light</h3>
 
                     <p><strong>Q: Do I have to install or download anything before playing Inside Light?</strong><br>
                     A: Not at all! Inside Light works directly in your web browser. Simply open your favorite browser, visit the game page, and jump into your adventure—no downloads required!</p>
@@ -1877,7 +1877,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
                     &nbsp;
 
-                    <h3>Inside Light – Educational Benefits for Kids</h3>
+                    <h3>🎯Inside Light – Educational Benefits for Kids</h3>
                     <p>This glowing adventure isn’t just fun—it’s a great way for children to boost their brain power! Every level filled with beams and reflections helps develop logical thinking, memory, and hand-eye coordination.</p>
                     <p>As young players explore bright environments and solve clever challenges, they sharpen their minds in a safe and engaging setting. It’s a wonderful option for parents and teachers seeking educational browser games that combine learning with excitement.</p>
                     <p>Best of all, the entire experience is available right in your browser—no downloads needed, just endless imagination!</p>
@@ -1891,22 +1891,22 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     slug: "traffic-command",
     title: "Traffic Command",
       name: "Traffic Command",
-    thumb: "/games/traffic-command/traffic-command.jpg",
+    thumb: "/imggames/traffic-command/traffic-command.jpg",
     tag: "New",
     category: "Racing",
-    iframe: "/games/traffic-command/index.html"  ,
+    iframe: "https://games-gules-nu.vercel.app/traffic-command/index.html"  ,
                   descriptionHtml: `
-                  <h3>Play Traffic Command for Free!</h3>
+                  <h3>🎲Play Traffic Command for Free!</h3>
             <p>Step into a vibrant city where you become the superhero of the streets! In Traffic Command, colorful cars and buses zoom by, and buzzing horns fill the air as you tap and swipe to stop crashes and clear traffic jams. Your quick thinking earns you points, and each level unlocks even more exciting challenges.</p>
             <p>With every level, your reflexes and strategy skills grow sharper, unlocking amazing maps and cool upgrades along the way. Traffic Command is easy to learn but hard to stop playing. It offers endless fun and friendly competition—perfect for kids who enjoy thrilling puzzles and adventurous challenges!</p>
 
             &nbsp;
 
-            <h3>What Are Traffic Command?</h3>
+            <h3>🎯What Are Traffic Command?</h3>
             <p>Welcome to Traffic Command, your ultimate online playground filled with fun and colorful browser games that turn busy roads and exciting car chases into an adventure! It's specifically designed for kids, so you can jump right in without any downloads. In no time, you'll be helping emergency vehicles navigate intersections, racing against time, or solving tricky traffic puzzles. With easy controls, bright graphics, and cheerful sound effects, every game is an exciting challenge that helps you improve your reflexes and thinking skills. It's perfect for young adventurers who love action-packed fun and parents who want a safe gaming spot. Traffic Command brings the excitement of the open road right to your browser.</p>
             &nbsp;
 
-            <h3>Why Choose Traffic Command?</h3>
+            <h3>🎮Why Choose Traffic Command?</h3>
             <p>
             Traffic Command is an exciting and free online game for kids that you can play right in your web browser—no downloads or installations required. In this colorful traffic-control adventure, young players guide cars and buses through bustling intersections, improving their reflexes and planning skills with each level. The simple tap-and-click mechanics make it easy for beginners to jump in, while the hidden layers of challenge entice young strategists to beat their own records. 
             </p>
@@ -1916,18 +1916,18 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
             &nbsp;
 
-            <h3>How to Play Traffic Command</h3>
+            <h3>❤️How to Play Traffic Command</h3>
             <p>Traffic Command is a fun and colorful game designed just for kids! You get to be in charge of a busy intersection. When you see a moving car, tap it once to make it stop at the red line. Tap it again to let it go safely on its way. Be careful though—a crash will end your game!</p>
             <p>For every car you help cross the road, you'll earn points. The more points you earn, the more stages you'll unlock. Each new stage has extra lanes and faster cars. Are you ready to become the master of rush hour? Start tapping and watch your high score soar!</p>
 
             &nbsp;
 
-            <h3>Controls</h3>
+            <h3>🍄Controls</h3>
             <p>Hop into your car and help keep the busy streets running smoothly! Use the ← and → keys to switch between lanes. If you want to go faster, press the ↑ key. To slow down, just hit the ↓ key. Need to stop quickly? Press the spacebar for an instant brake. If traffic gets backed up, simply click on a traffic light to turn it green and let everyone move along. Traffic Command runs directly in your browser, so no downloads are needed—just start your driving adventure in seconds!</p>
 
             &nbsp;
 
-            <h3>Tips and Tricks for Traffic Command</h3>
+            <h3>💎Tips and Tricks for Traffic Command</h3>
 
             <p>Are you ready to become a Street Safety Star? Traffic Command is a super fun browser game that kids really enjoy, and you don't even need to download anything! Follow these awesome tips to score big and impress your friends:</p>
 
@@ -1942,7 +1942,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
             &nbsp;
 
-            <h3>Features of Traffic Command</h3>
+            <h3>🍭Features of Traffic Command</h3>
 
             <p>Jump into the driver's seat of lively taxis, fast sports cars, and quirky delivery vans as you explore the vibrant, animated city in Traffic Command. This browser game enchants with its cheerful, hand-drawn graphics and fun sound effects—from playful engine noises to friendly horn honks—making every drive feel like an exciting adventure.</p>
 
@@ -1951,13 +1951,13 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
             <p>Best of all, Traffic Command launches directly in your web browser—no downloads or waiting time—so you can start playing in just a few seconds!</p>
 
             &nbsp;
-            <h3>Platform Compatibility</h3>
+            <h3>🌐Platform Compatibility</h3>
             <p>
             Traffic Command is an exciting game that works on any device you have—whether it's a PC, laptop, tablet, or phone. The best part? You don’t need to install an app or download any files! Just open your browser, go to the game page, and jump straight into the fun. Whether you're at home, taking a break at school (with permission!), or on a car ride with an adult, you can start directing cars and trucks in just seconds. The game’s design adapts perfectly to any screen size, ensuring smooth controls and vibrant graphics. Are you ready for endless fun wherever you are? Traffic Command is ready for you!
             </p>
 
             &nbsp;
-            <h3>Traffic Command Unblocked</h3>
+            <h3>🚦Traffic Command Unblocked</h3>
 
             <p>Welcome to the exciting world of city traffic control! No downloads, no waiting, and no blocked access—anywhere from a school computer to a library laptop. Just open your browser and jump into the adventure. Your mission? Help guide cars, bikes, and buses safely through intersections by tapping the signals at just the right time.</p>
 
@@ -1967,7 +1967,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
             &nbsp;
 
-            <h3>Traffic Command Online</h3>
+            <h3>🚦Traffic Command Online</h3>
             <p>Dive into the action of Traffic Command Online, the thrilling browser-based game that transforms you into the city's traffic hero! No downloads or installations are needed—just open your favorite web browser on a computer, tablet, or smartphone and start playing right away. The bright and colorful graphics, combined with kid-friendly controls, make it easy to guide cars, buses, and bikes through bustling intersections.</p>
 
             <p>Each level introduces new challenges, like longer rush hours, tricky turns, and unexpected roadblocks, all designed to sharpen your reflexes and test your planning skills. Earn points by keeping the traffic flowing smoothly and unlock bonus stages as you improve. Whether you play between classes, on a weekend afternoon, or before bedtime, Traffic Command Online promises a quick burst of fun and an opportunity to boost your brainpower.</p>
@@ -1975,7 +1975,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
             <p>Perfect for young players who enjoy puzzles and problem-solving, this free online game lets you compete against your own high score or challenge your friends to see who can manage the busiest streets. Begin your traffic adventure now and become the ultimate city controller—no app store required!</p>
 
             &nbsp;
-            <h3>Traffic Command Games</h3>
+            <h3>🚦Traffic Command Games</h3>
             <p>
             Become the hero of the highway with our free, browser-based Traffic Command Games—no downloads required! Perfect for kids, these colorful traffic control adventures teach road-safety skills while keeping the fun rolling. Simply click or tap to guide cars, buses, and bikes through bustling intersections without causing a jam. Rack up stars for flawless timing and smooth traffic flow, then unlock new challenges that sharpen your focus and reaction time.
             </p>
@@ -1985,7 +1985,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
             &nbsp;
 
-            <h3>Traffic Command: Kid-Friendly FAQs</h3>
+            <h3>🚦Traffic Command: Kid-Friendly FAQs</h3>
 
             <p>1. Do I have to install anything to play?</p>
             <p>No way! Just open your favorite browser, head to Traffic Command, and you’re off. No downloads, no extra apps—just instant fun.</p>
@@ -2011,17 +2011,17 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     slug: "pet-party-columns",
     title: "Pet Party Columns",
       name: "Pet Party Columns",
-    thumb: "/games/pet-party-columns/Pet-Party-Columns.jpg",
+    thumb: "/imggames/pet-party-columns/Pet-Party-Columns.jpg",
     tag: "New",
      category: ["Puzzle", "Brain"], // ← tableau au lieu d’un seul string
-    iframe: "/games/pet-party-columns/index.html"  ,
+    iframe: "https://games-gules-nu.vercel.app/pet-party-columns/index.html"  ,
     descriptionHtml: `
-                       <h3>Discover a World of Fun with Pet Party Columns</h3>
+                       <h3>🎯Discover a World of Fun with Pet Party Columns</h3>
                           <p>Play Pet Party Columns online for free and step into a colorful world of excitement! In this game, you match sparkling gems and adorable creatures to clear the board and earn awesome power-ups. Each level is filled with lively animations and secret bonus pets waiting to join your adventure.</p>
                           <p>Enjoy cheerful tunes, fast-paced combos, and fun challenges that make every moment exciting. This game is perfect for kids who love bright colors, cute animals, and puzzling adventures. Get ready for endless hours of family-friendly fun with Pet Party Columns!</p>
 
                           &nbsp;
-                          <h3>What Are Pet Party Columns?</h3>
+                          <h3>🎮What Are Pet Party Columns?</h3>
                           <p>
                           Pet Party Columns is an engaging puzzle game you can play right in your browser! It features adorable pet icons, such as kittens, puppies, and bunnies, that fall in vertical stacks. Your goal is to slide and swap these columns to match up three or more of the same pet, causing them to disappear with a burst of color and delightful sound effects!
                           </p>
@@ -2035,7 +2035,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
 
 
-                          <h3>Why Choose Pet Party Columns?</h3>
+                          <h3>💎Why Choose Pet Party Columns?</h3>
 
                           <p>
                           Pet Party Columns is a delightful online puzzle game designed just for kids. It's completely free and doesn't require any installations—simply open your browser and start playing! Children will fall in love with the cute animal tokens and bright gem blocks that light up the screen. With just a tap, little fingers can swap pieces to create exciting match-3 combos.
@@ -2047,7 +2047,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
                           &nbsp;
 
-                          <h3>How to Play Pet Party Columns</h3>
+                          <h3>🌍How to Play Pet Party Columns</h3>
 
                           <p>Are you ready for a paw-some adventure? In Pet Party Columns, you'll guide a stack of three adorable pet tokens—like puppies, kittens, or bunnies—as they gently fall down the screen.</p>
 
@@ -2057,7 +2057,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
                           &nbsp;
 
-                          <h3>Controls</h3>
+                          <h3>🍄Controls</h3>
                           <p>
                           Moving your pet blocks is super easy! Tap the ← and → arrows to slide your trio across the grid. Press ↑ to twist them into perfect positions, and press ↓ when you’re ready to drop them swiftly—match faster and score more points! If you see obstacles in your path, hit the Spacebar to make your little pet jumper spring over hurdles and collect surprise power-ups.
                           </p>
@@ -2067,7 +2067,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
                           &nbsp;
 
 
-                          <h3>Master Pet Party Columns: Fun and Easy Tips for Young Adventurers!</h3>
+                          <h3>🎮Master Pet Party Columns: Fun and Easy Tips for Young Adventurers!</h3>
 
                           <p>Are you ready to become a pro at Pet Party Columns? Follow these simple tips to jump higher, collect treasures, and explore every corner of the game—all from your web browser!</p>
 
@@ -2088,7 +2088,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
                           &nbsp;
 
 
-                          <h3>Features of Pet Party Columns</h3>
+                          <h3>🍭Features of Pet Party Columns</h3>
 
                           <p>Pet Party Columns invites you into a world filled with bright and playful art, accompanied by lively music that celebrates every move you make. Just swipe or tap to arrange stacks of colorful gems and adorable pet faces into matches of three or more. This clears the screen quickly and keeps the excitement going!</p>
 
@@ -2097,7 +2097,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
                           &nbsp;
 
 
-                          <h3>Platform Compatibility</h3>
+                          <h3>🌐Platform Compatibility</h3>
 
                           <p>Pet Party Columns can be played on any device you have—whether it's a desktop, laptop, tablet, or smartphone. Just open your web browser, like Chrome, Safari, Firefox, or Edge, and start having fun! There's no need to download or install anything. Whether you're at home, in class (with permission!), or traveling, the game’s bright colors and simple taps or clicks make it easy to play. Because it's a browser-based, mobile-friendly pet puzzle game, you can enjoy smooth and fast gameplay on both big and small screens. Ready to match adorable pets anytime, anywhere? Pet Party Columns is waiting for you!</p>
 
@@ -2105,7 +2105,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
                           &nbsp;
 
 
-                          <h3>Pet Party Columns Unblocked</h3>
+                          <h3>🎮Pet Party Columns Unblocked</h3>
                           <p>Dive into the fun world of Pet Party Columns Unblocked, a bright and playful puzzle game made especially for kids! There's no need to download anything or wait—just open it in any web browser, even if you're on school or public Wi-Fi. Your goal? Line up adorable pets in colorful columns!</p>
 
                           <p>With every click, you'll match tails wagging and paws fluttering, clearing the board and earning stars as you go. This game is super safe, lightning-fast, and perfect for a quick brain break or a friendly challenge with classmates.</p>
@@ -2114,7 +2114,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
                           &nbsp;
 
-                          <h3>Pet Party Columns Online</h3>
+                          <h3>🎮Pet Party Columns Online</h3>
 
                           <p>Step into a colorful, online puzzle adventure made just for kids! No downloads or waits needed. Simply open Pet Party Columns Online on any phone, tablet, or computer and start playing. Match three or more cute puppies, curious kittens, fluffy bunnies, or tasty treats in each level. Every board is filled with lively animations and happy sounds that keep you smiling as you stack combos and clear rows.</p>
 
@@ -2122,13 +2122,13 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
                           &nbsp;
 
-                          <h3>Pet Party Columns Games – Free Online Pet Puzzle Fun for Kids</h3>
+                          <h3>🎮Pet Party Columns Games – Free Online Pet Puzzle Fun for Kids</h3>
                           <p>Welcome to an exciting puzzle adventure in Pet Party Columns Games, where playful pets come together in colorful columns! Your mission is simple: line up three or more matching gems to help your animal friends celebrate. There’s no need to download anything—just click, swap the jewels, and watch as kittens, puppies, and fish happily wiggle their tails.</p>
                           <p>Each round offers new and exciting themes, ranging from jungle adventures to colorful reefs, ensuring that there’s always a fresh challenge waiting for you. With easy-to-use controls and bright, cheerful artwork, this game is the perfect brain-boosting adventure for young players.</p>
                           <p>Are you ready to ignite your imagination? Start matching now and discover your new favorite pet puzzle game!</p>
 
                           &nbsp;
-                          <h3>Frequently Asked Questions – Pet Party Columns</h3>
+                          <h3>🎮Frequently Asked Questions – Pet Party Columns</h3>
 
                           <p><strong>Q: Do I have to install Pet Party Columns before I play?</strong></p>
                           <p>A: No way! Just open your favorite web browser—like Chrome, Safari, or Firefox—and jump straight into the fun. There's no need for an app store, installer, or any waiting.</p>
@@ -2156,31 +2156,31 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     slug: "galaga",
     title: "Galaga",
       name: "Galaga",
-    thumb: "/games/galaga/Galaga.jpg",
+    thumb: "/imggames/galaga/Galaga.jpg",
     tag: "New",
     category: ["Action", "Arcade"],
-    iframe: "/games/galaga/index.html"  ,
+    iframe: "https://games-gules-nu.vercel.app/galaga/index.html"  ,
     descriptionHtml: `
-              <h3>Play Galaga Online for Free!</h3>
+              <h3>🎯Play Galaga Online for Free!</h3>
                     <p>Get ready for an action-packed space adventure where you become the captain of your very own starfighter. Dodge enemy fire, collect bonus ships, and blast through waves of quirky, bug-like aliens in a battle for the high score. With bright, colorful graphics and toe-tapping music, every level challenges your speed and skill.</p>
                     <p>This classic arcade game is easy to learn and tons of fun to master. Enjoy endless excitement, cool power-ups, and the chance to earn serious bragging rights. Perfect for players of all ages, Galaga invites you to embark on an out-of-this-world adventure with your friends!</p>
 
                     &nbsp;
 
-                    <h3>What Is Galaga?</h3>
+                    <h3>🎲What Is Galaga?</h3>
                     <p>Galaga is an amazing space shooter game that you can enjoy directly in your web browser! In this exciting journey, you become the pilot of a courageous starfighter, battling wave after wave of colorful alien ships that zip and zoom in wild patterns. Every time you shoot down an enemy, you earn points, and as you advance through each level, you will encounter even tougher foes and exciting new challenges. The best part? It's super easy to play—just move your starfighter left or right and fire away. With a blend of cool retro graphics and modern-day gaming fun, kids everywhere can jump in, defeat those aliens, and keep aiming for the highest scores!</p>
 
                     &nbsp;
 
 
-                    <h3>Why Choose Galaga?</h3>
+                    <h3>👾Why Choose Galaga?</h3>
                     <p>Get ready for a cosmic adventure without any downloads! Galaga brightens your screen with vibrant pixel graphics and easy controls, making it perfect for young space adventurers to dive right in. Each level brings playful alien ships for you to tackle, offering the perfect blend of fun and challenge to enhance your skills.</p>
                     <p>As you dodge beams, rescue trapped ships, and grab power-ups, you’re actually sharpening your reflexes and problem-solving abilities—without even knowing it! With happy sound effects and smooth gameplay in any modern browser, this free online arcade game is designed for curious young minds. Are you excited for your first mission? Galaga is the ultimate pick-and-play journey for every aspiring space explorer!</p>
 
                     &nbsp;
 
 
-                    <h3>Galaga Made Easy: A Kid’s Guide to Zapping Aliens</h3>
+                    <h3>❤️Galaga Made Easy: A Kid’s Guide to Zapping Aliens</h3>
 
                     <p>Are you ready for an exciting space adventure? In Galaga, you get to pilot a brave little starfighter across the bottom of the screen to defend the universe from sneaky alien invaders. Use the left and right arrows to move your ship side to side.</p>
 
@@ -2190,7 +2190,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
                     &nbsp;
 
-                    <h3>Fly, Fire, and Freeze – Your Kid-Friendly Control Guide</h3>
+                    <h3>🍄Fly, Fire, and Freeze – Your Kid-Friendly Control Guide</h3>
 
                     <p>Are you ready to take off in our amazing alien shooter game that you can play right in your browser without any downloads? With just three simple keys, you can become a galactic hero!</p>
 
@@ -2204,7 +2204,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
                     &nbsp;
 
-                    <h3>Galaga Tips for Kids – Blast Off to Epic High Scores!</h3>
+                    <h3>💎Galaga Tips for Kids – Blast Off to Epic High Scores!</h3>
 
                     <p>Are you ready to soar through space in the classic Galaga game? These simple tips can help you score more points, stay protected, and enjoy the game without needing any downloads!</p>
 
@@ -2223,7 +2223,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
                     <h3>Practice Patiently Every Day</h3>
                     <p>The more you play this fun online Galaga shooter, the better you'll get at noticing patterns and power-up icons. Stay calm, have fun, and watch your skills—and score—reach for the stars!</p>
                     &nbsp;
-                    <h3>Features of Galaga</h3>
+                    <h3>⭐Features of Galaga</h3>
 
                     <p>Galaga is a classic arcade game designed especially for kids and beginners. With just a tap, you can move your little starfighter left or right, and then press "shoot" to hit every colorful alien that zooms onto the screen. There's no need for complicated joysticks or extra buttons—just simple controls that let you focus on having fun.</p>
 
@@ -2234,14 +2234,14 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
                     <p>Galaga maintains excitement with upbeat sound effects and catchy electronic tunes. Best of all, you can play it right in your browser—no downloads or waiting required! Jump in, master each colorful level, and see how high you can climb on the leaderboard!</p>
                     &nbsp;
 
-                    <h3>Platform Compatibility</h3>
+                    <h3>🌐Platform Compatibility</h3>
                     <p>Play Galaga on any computer, tablet, or smartphone—no software installation is required! Just open your favorite web browser, visit the Galaga website, and your starfighter is ready in one click. To play, use the left and right arrow keys on a PC, click with a mouse, or simply tap the screen on a mobile device to move and fire.</p>
                     <p>No matter where you are—at home, in class, or on a family trip—Galaga is always ready for a quick space battle. Team up with friends, defend your ship, and blast those alien invaders wherever you are!</p>
 
 
                     &nbsp;
 
-                    <h3>Galaga Unblocked: Blast Through Alien Armadas Anytime, Anywhere</h3>
+                    <h3>🎮Galaga Unblocked: Blast Through Alien Armadas Anytime, Anywhere</h3>
 
                     <p>Jump right into the excitement of arcade games with Galaga Unblocked! This fun, browser-based space shooter doesn't require any downloads and even works at school. You'll take control of a starfighter zooming across vibrant pixel landscapes, shooting down endless waves of alien ships, and rescuing your fellow pilots. It's the perfect game for quick breaks during recess, library time, or any short pause in your day.</p>
 
@@ -2250,21 +2250,21 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
                     &nbsp;
 
-                    <h3>Galaga Online</h3>
+                    <h3>🦋Galaga Online</h3>
                     <p>Welcome to Galaga Online, a fun and free space adventure game perfect for kids! There's no need to download anything—just open the game on your computer, tablet, or phone, and you're ready to embark on an exciting journey.</p>
                     <p>Use easy taps or arrow keys to guide your starfighter through space. Collect amazing power-ups and defeat groups of alien ships in the sky. Race against time, aim for the top of the leaderboard, or challenge your friends to see who can save the galaxy with the highest score.</p>
                     <p>This game is fast, friendly, and perfect for every young space hero. So, jump in and start your mission now!</p>
 
                     &nbsp;
 
-                    <h3>Galaga Games</h3>
+                    <h3>🌍Galaga Games</h3>
                     <p>Get ready for epic space battles with Galaga Games! You don't need any downloads or special software—just open your browser and blast off into a world of fun. You'll discover fan favorites like Galaxian, Galaga '88, Space Invaders, Xevious, and Phoenix, all styled like the classic Galaga shooter you love.</p>
                     <p>Each game features bright alien armies, speedy starships, and awesome power-ups that make every level more exciting. These free online arcade games are perfect for kids, helping to sharpen your reflexes and hand-eye coordination while delivering nonstop action.</p>
                     <p>Grab a buddy, choose your favorite ship, and see who can earn the highest score in the ultimate intergalactic showdown!</p>
 
                     &nbsp;
 
-                    <h3>Frequently Asked Questions – Galaga</h3>
+                    <h3>⭐Frequently Asked Questions – Galaga</h3>
 
                     <p><strong>1. Do I have to install Galaga before playing?</strong></p>
                     <p>No way! Galaga runs directly in your web browser, which means no downloads or plugins are needed. Just open the game page and you’re all set to start your adventure.</p>
@@ -2292,31 +2292,31 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     slug: "mega-man-1930",
     title: "Mega Man 1930",
       name: "Mega Man 1930",
-    thumb: "/games/mega-man-1930/1930.jpg",
+    thumb: "/imggames/mega-man-1930/1930.jpg",
     tag: "New",
        category: ["Action", "Arcade"],
-    iframe: "/games/mega-man-1930/index.html"  ,
+    iframe: "https://games-gules-nu.vercel.app/mega-man-1930/index.html"  ,
     descriptionHtml: `
-                <h3>Play Mega Man 1930 Online for Free!</h3>
+                <h3>🎲Play Mega Man 1930 Online for Free!</h3>
                 <p>Step into a dazzling world of neon colors and embark on an exciting adventure as a time-traveling hero. Dodge pesky robots, battle gigantic bosses, and leap from rooftop to rooftop in this retro action game.</p>
                 <p>Collect amazing power-ups and zoom through secret levels designed just for young explorers who love vivid graphics, catchy music, and fast-paced challenges. Jump, bounce, and solve puzzles to unlock cool costumes and discover hidden surprises.</p>
                 <p>Thanks to its user-friendly controls and surprising twists, Mega Man 1930 delivers an exhilarating trip through time that will keep you on your toes. Are you ready to save the world and have loads of fun? Let the pixel-powered adventure begin!</p>
 
                 &nbsp;
 
-                <h3>What Is Mega Man 1930?</h3>
+                <h3>🎯What Is Mega Man 1930?</h3>
                 <p>Mega Man 1930 is a fantastic and action-packed browser game that takes our favorite blue hero on a thrilling adventure set in a world that seems like it came straight out of the 1930s! Imagine guiding Mega Man as he jumps across rooftops, dodges sneaky traps, and collects cool power-ups—all in a game that looks like classic arcade adventures but can be played directly in your web browser. No downloads or installations are needed; just click "Play," and you're ready to explore a world full of exciting rescue missions, quirky bad guy battles, and tons of points to score.</p>
                 <p>With its bright and cheerful colors, super simple controls, and challenges that become more exciting as you progress, Mega Man 1930 is the perfect game for kids to enjoy fast-paced and super fun gaming thrills anytime, anywhere!</p>
 
                 &nbsp;
-                <h3>Why Choose Mega Man 1930?</h3>
+                <h3>👾Why Choose Mega Man 1930?</h3>
                 <p>
                 Explore a world where classic arcade fun meets modern convenience! Mega Man 1930 welcomes children with bright, pixel-art levels that load instantly in any web browser—no downloads or installs required. With just arrow keys to move and one button to jump or shoot, kids can quickly master each level, facing quirky bosses and solving playful platform puzzles. The upbeat chiptune music and vibrant graphics keep the energy high, while the gentle difficulty curve lets children feel proud as they progress. Best of all, this free, safe, and ad-light game is available entirely online, making it the perfect quick play for classroom breaks, rainy afternoons, or any time your little gamers need a cheerful challenge.
                 </p>
 
                 &nbsp;
 
-                <h3>Mastering Mega Man 1930: A Kid-Friendly Guide</h3>
+                <h3>🎮Mastering Mega Man 1930: A Kid-Friendly Guide</h3>
 
                 <p>Dive into a thrilling time-travel adventure with Mega Man 1930, where classic action combines with playful fun! Follow these simple steps to become a hero who battles robots:</p>
 
@@ -2328,78 +2328,78 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
                 &nbsp;
 
-                <h3>Controls</h3>
+                <h3>🍄Controls</h3>
                 <p>Take command of Mega Man 1930 with simple controls that bring retro action to life!</p> <p><strong>Move your hero:</strong> Use the ← or → arrow keys to walk through dangerous platforms filled with enemies and traps.</p> <p><strong>Jump over obstacles:</strong> Hit the space bar to leap across chasms and dodge enemy fire.</p> <p><strong>Shoot enemies:</strong> Press the Z key to fire your classic energy blaster and clear your path.</p> <p><strong>Touch controls:</strong> On mobile devices, use on-screen buttons to run, jump, and shoot like a true pixel warrior.</p> <p>No downloads required—Mega Man 1930 runs directly in your browser. Just press play and start your mission!</p>
 
 
 
-                <h3>Tips and Tricks for Mega Man 1930</h3>
+                <h3>⭐Tips and Tricks for Mega Man 1930</h3>
                 <p><strong>Master the Timing</strong><br> In this retro platformer, timing is everything! Jump just as you hit the edge of a platform and fire as soon as an enemy appears. Perfect timing makes you unbeatable.</p> <p><strong>Watch Your Health</strong><br> Your life bar can disappear fast. Keep an eye on it, grab health power-ups, and avoid getting hit too often. Sometimes running is smarter than fighting!</p> <p><strong>Explore Every Platform</strong><br> There are secret paths and hidden rooms tucked away in every stage. Jump higher, break weak walls, or search behind crates—you might find bonuses or shortcut doors.</p> <p><strong>Upgrade Strategically</strong><br> Pick up new weapons and power-ups, but choose wisely. Some enemies require specific strategies, and switching to the right weapon can make all the difference.</p>
 
                 &nbsp;
 
-                <h3>Features of Mega Man 1930</h3>
+                <h3>💡Features of Mega Man 1930</h3>
                 <p><strong>1. Classic 8-Bit Style:</strong> Step into a pixel-perfect world inspired by 1930s-style platformers and retro arcade games.</p> <p><strong>2. Fast-Paced Shooter Action:</strong> Jump, run, and blast your way through enemies using your energy blaster and quick reflexes.</p> <p><strong>3. Challenging Boss Fights:</strong> Face off against powerful retro bosses with unique patterns and weaknesses.</p> <p><strong>4. Platforming Precision:</strong> Dodge spikes, moving platforms, and tricky jumps that test your skills with every level.</p> <p><strong>5. Epic Chiptune Soundtrack:</strong> Enjoy classic-style music that pumps you up and adds to the nostalgic vibe.</p> <p><strong>6. Instant Play:</strong> No downloads, no installs—just open your browser and start blasting!</p>
                 &nbsp;
 
-                <h3>Mega Man 1930 Online</h3>
+                <h3>🎮Mega Man 1930 Online</h3>
                 <p> Jump into action with Mega Man 1930 Online, a retro-style arcade shooter you can play instantly in your browser. Whether you're on a PC, tablet, or smartphone, this pixel adventure loads fast and delivers intense platforming fun with no download required. Shoot enemies, defeat bosses, and feel the nostalgia! </p>
 
                 &nbsp;
 
-                <h3>Platform Compatibility</h3>
+                <h3>🌐Platform Compatibility</h3>
                 <p> Mega Man 1930 runs smoothly on all modern devices—computers, tablets, and mobile phones. Play it in your favorite browser: Chrome, Firefox, Safari, or Edge. Wherever you are, just open the page and get ready to save the pixel world with no lag and no installation needed. </p>
 
                 &nbsp;
 
-                <h3>Mega Man 1930 Unblocked</h3>
+                <h3>✅Mega Man 1930 Unblocked</h3>
                 <p> Want to play at school, at the library, or on a restricted Wi-Fi? No problem! Mega Man 1930 Unblocked lets you access the full retro action experience from anywhere. No blocks, no limits—just pure old-school gameplay. Just press play and dive into the world of platforming heroes! </p>
 
                 &nbsp;
 
-                <h3>Mega Man 1930 Games</h3>
+                <h3>⭐Mega Man 1930 Games</h3>
                 <p> Enter the universe of Mega Man 1930, where brave heroes battle robotic enemies in explosive side-scrolling action. Each game level brings new platforms, enemy types, and hidden secrets to discover. With classic pixel graphics and tight gameplay, this is a must-play for fans of old-school arcade shooters. </p> <p> Whether you’re blasting robots or leaping over fire pits, Mega Man 1930 Games deliver non-stop excitement with just a keyboard and a dream. Unlock new powers, survive epic stages, and prove yourself as the ultimate retro hero! </p>
 
                 &nbsp;
 
-                <h3>Exciting Retro Arcade Games to Play Right Now</h3>
+                <h3>🍄Exciting Retro Arcade Games to Play Right Now</h3>
                 <p> If you enjoy Mega Man 1930, you’ll love these browser-based retro platformers that bring the arcade vibe right to your screen. No downloads, just action! </p> <p><strong>1. Pixel Blaster X</strong><br> Fight through neon cities filled with flying drones and electric bosses.</p> <p><strong>2. Robo Runner Reloaded</strong><br> Jump over spikes and shoot lasers in this fast-paced pixel shooter.</p> <p><strong>3. Cyber Ninja Retro</strong><br> Slash and dash through futuristic rooftops with a katana!</p> <p><strong>4. Dungeon Pixel Quest</strong><br> Battle goblins and avoid traps in a dark dungeon full of secrets.</p> <p><strong>5. Bit Hero Adventure</strong><br> Climb, blast, and rescue the pixel world with your trusty blaster.</p>
 
                 &nbsp;
 
-                <h3>Why You’ll Love Them</h3>
+                <h3>🌍Why You’ll Love Them</h3>
                 <p> • Instant action—no downloads or installs.<br> • Classic pixel style with modern smoothness.<br> • Designed for browser play on any device.<br> • Perfect for fans of Mega Man, Contra, and retro platform shooters. </p>
 
                 &nbsp;
 
-                <h3>Mega Man 1930 Game FAQs – Ready, Set, Blast!</h3>
+                <h3>🎯Mega Man 1930 Game FAQs – Ready, Set, Blast!</h3>
                 <p><strong>1. Do I need to download Mega Man 1930?</strong><br> Nope! You can play it instantly in your browser with no installs or updates.</p> <p><strong>2. Is the game mobile-friendly?</strong><br> Yes! You can play Mega Man 1930 on your phone or tablet with touch controls.</p> <p><strong>3. Is it free to play?</strong><br> Yes—Mega Man 1930 is completely free with no hidden charges or subscriptions.</p> <p><strong>4. Is it safe for kids?</strong><br> Yes. It’s action-packed but family-friendly, with pixel violence and no gore or ads.</p> <p><strong>5. How do I beat the bosses?</strong><br> Learn their attack patterns, dodge quickly, and aim your blaster at their weak points. Each boss has its own rhythm—study it, then strike!</p>
 
                 &nbsp;
 
-                <h3>Play a Retro Shooter Browser Game</h3>
+                <h3>⭐Play a Retro Shooter Browser Game</h3>
                 <p> Mega Man 1930 brings back the golden era of 8-bit shooters in a browser-friendly format. Blast your way through robotic enemies, dodge classic traps, and explore challenging levels—all in a pixelated retro universe. </p> <p> This <strong>retro shooter browser game</strong> combines the thrill of fast action with the charm of nostalgic graphics. Play now and experience arcade greatness, directly in your browser! </p>
 
                 &nbsp;
 
-                <h3>Free Platformer Game With Classic Vibes</h3>
+                <h3>🦋Free Platformer Game With Classic Vibes</h3>
                 <p> Looking for a <strong>free platformer game</strong> that feels like the old days? Mega Man 1930 captures that classic run-jump-shoot formula you love, with modern responsiveness and easy online access. </p> <p> Run through levels, unlock new powers, and face off against mechanical bosses—no installation, no sign-up. It’s pure arcade action at your fingertips! </p>
 
                 &nbsp;
-                <h3>Old-School Arcade Game Online</h3>
+                <h3>🎮Old-School Arcade Game Online</h3>
                 <p> Mega Man 1930 is the perfect choice for fans of <strong>old-school arcade games</strong>. If you miss the days of coin-op machines and 8-bit challenges, this game will hit the spot. </p> <p> Each level feels like stepping into a retro cabinet game—except this time, it's 100% free and playable anywhere online. Grab your keyboard and start the pixel adventure! </p>
 
                 &nbsp;
-                <h3>Robot Fighting Game for Kids</h3>
+                <h3>🤖Robot Fighting Game for Kids</h3>
                 <p> Mega Man 1930 is a great <strong>robot fighting game for kids</strong> who love action and fast reflexes. With its cartoon-style robots and friendly gameplay, it's exciting without being violent. </p> <p> Kids can jump into the adventure, defeat mechanical enemies, and improve their skills through fun, engaging missions—all in a safe, ad-free browser game. </p>
 
                 &nbsp;
-                <h3>Pixel Blaster Action for Retro Fans</h3>
+                <h3>👾Pixel Blaster Action for Retro Fans</h3>
                 <p> Get ready for pixel-perfect shooting in Mega Man 1930, the ultimate <strong>pixel blaster game</strong> made for fans of retro gaming. Whether you grew up with NES or you're discovering it for the first time, this game hits all the right notes. </p> <p> Blast enemies, upgrade your weapons, and defeat classic-style bosses across multiple worlds. It’s fast, fun, and packed with retro charm. </p>
 
                 &nbsp;
 
-                <h3>Play Mega Man Online Free – No Download</h3>
+                <h3>🎮Play Mega Man Online Free – No Download</h3>
                 <p> Want to <strong>play Mega Man online for free</strong>? Mega Man 1930 is a browser-based tribute that keeps the fun alive—without downloads, subscriptions, or wait times. </p> <p> Enjoy classic platforming and shooting gameplay with modern accessibility. Just open your browser, hit “Start,” and get ready for retro action that never gets old. </p>
 
 
@@ -2410,18 +2410,18 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     slug: "random-basketball",
     title: "Random Basketball",
       name: "Random Basketball",
-    thumb: "/games/random-basketball/random.png",
+    thumb: "/imggames/random-basketball/random.png",
     tag: "New",
     category: "Sports",
-    iframe: "/games/random-basketball/index.html"  ,
+    iframe: "https://games-gules-nu.vercel.app/random-basketball/index.html"  ,
     descriptionHtml: `
-                    <h3>Play Basketball and Have Fun</h3>
+                    <h3>🎯Play Basketball and Have Fun</h3>
                     <p>Play Random Basketball online for free! Get ready for an exciting adventure where you can shoot hoops, make amazing trick shots, and meet incredible characters on colorful courts. You’ll enjoy fun challenges like racing against the clock and mastering creative moves—all while collecting shimmering power-ups that boost your skills.</p>
                     <p>With bright graphics, cheerful sounds, and plenty of friendly competition, every game feels like a real, thrilling basketball match. It’s the perfect game for kids who love fast-paced fun and delightful surprises!</p>
 
                     &nbsp;
 
-                    <h3>What is Random Basketball?</h3>
+                    <h3>👾What is Random Basketball?</h3>
                     <p>
                     Imagine a vibrant basketball court full of colors where each shot, bounce, and twist brings a big, fun surprise—that's the joy of Random Basketball right in your browser! This free online game is a magical mix of classic hoop-shooting excitement and constantly changing challenges. One moment, you're aiming for an easy free throw, and the next, you're dodging spinning obstacles or racing against a fast-ticking clock.
                     </p>
@@ -2436,7 +2436,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
                     &nbsp;
 
-                    <h3>Why Choose Random BasketBall?</h3>
+                    <h3>🎲Why Choose Random BasketBall?</h3>
                     <p>Random BasketBall transforms your browser into a vibrant basketball court where young players can start playing immediately—no waiting, no downloads! The bright and bouncing graphics ignite your imagination, and each new level offers a fresh arena filled with funny hoops and playful challenges.</p>
 
                     <h3>Simple Click-and-Play Controls</h3>
@@ -2448,7 +2448,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
                     &nbsp;
 
 
-                    <h3>How to Play Random Basketball</h3>
+                    <h3>🍄How to Play Random Basketball</h3>
                     <p>Are you ready to jump into the most exciting kids’ basketball game online? Random Basketball turns every match into a fun, fast-paced adventure. Follow these simple steps and power-up tricks to score points before the clock runs out!</p>
 
                     <h3>1. Move Your Player</h3>
@@ -2479,68 +2479,68 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
                     &nbsp;
 
-                    <h3>Controls</h3>
+                    <h3>🍭Controls</h3>
                     <p>Get ready to shoot some crazy hoops with Random Basketball’s simple, fun controls!</p> <p><strong>Move and aim:</strong> Use the arrow keys or A/D to position your player.</p> <p><strong>Shoot the ball:</strong> Press the space bar to jump and release to shoot at just the right angle.</p> <p><strong>Two players:</strong> Share your keyboard for local 2-player action—each side has its own keys!</p> <p>No downloads or installs needed—just open Random Basketball in your browser and start scoring baskets!</p>
 
 
                     &nbsp;
 
-                    <h3>Tips and Tricks for Random Basketball</h3>
+                    <h3>⭐Tips and Tricks for Random Basketball</h3>
                     <p><strong>Master the Arc</strong><br> Jump timing is everything! The key to winning in Random Basketball is controlling the arc of your shot. Release the space bar just before you reach the peak of your jump for the perfect swish.</p> <p><strong>Use the Walls</strong><br> Sometimes the court has crazy shapes! Use bouncing surfaces and edges to pull off clever trick shots.</p> <p><strong>Stay Unpredictable</strong><br> In two-player mode, don’t be too obvious—jump fake, move fast, and shoot from unexpected spots to surprise your opponent.</p> <p><strong>Practice Shooting from Distance</strong><br> Long-range shots give you time to reposition after the jump—and they look awesome when they land!</p>
 
                     &nbsp;
 
-                    <h3>Features of Random Basketball</h3>
+                    <h3>🌍Features of Random Basketball</h3>
                     <p><strong>1. Hilarious One-Button Gameplay:</strong> Anyone can pick it up and start playing in seconds.</p> <p><strong>2. Random Courts and Physics:</strong> Each round feels fresh with new arenas and silly movement.</p> <p><strong>3. 1 or 2 Player Mode:</strong> Play solo or battle a friend on the same screen for chaotic fun.</p> <p><strong>4. Funky Characters:</strong> Unlock and play as quirky basketball players with funny animations.</p> <p><strong>5. No Downloads Needed:</strong> Random Basketball is a browser game—play instantly on any device.</p> <p><strong>6. Free to Play:</strong> No ads, no payment, just pure basketball silliness!</p>
 
                     &nbsp;
 
-                    <h3>Random Basketball Online</h3>
+                    <h3>🍄Random Basketball Online</h3>
                     <p> Random Basketball Online is the ultimate casual basketball game that anyone can enjoy. Whether you're on your laptop, tablet, or phone, this game runs directly in your browser—no downloads required. Take crazy shots, jump like a pro, and try to outscore your friends in hilarious, fast-paced matches. </p>
 
                     &nbsp;
 
-                    <h3>Platform Compatibility</h3>
+                    <h3>⭐Platform Compatibility</h3>
                     <p> Play Random Basketball on desktop, tablet, or mobile—no matter the device, the fun is always on. Just open your favorite browser like Chrome, Safari, Firefox, or Edge, load the game, and you're ready to jump and shoot. It's 100% web-based and doesn’t require installation. </p>
 
                     &nbsp;
 
-                    <h3>Random Basketball Unblocked</h3>
+                    <h3>🍄Random Basketball Unblocked</h3>
                     <p> Want to play at school, work, or anywhere with limited internet access? Random Basketball Unblocked lets you enjoy the full game without restrictions. It works perfectly on school computers and public Wi-Fi—just open and play. Perfect for short breaks, fun duels, or solo training! </p>
 
                     &nbsp;
 
-                    <h3>Random Basketball Games</h3>
+                    <h3>💎Random Basketball Games</h3>
                     <p> Dive into the world of <strong>Random Basketball Games</strong>, where every match is different and every shot is a surprise! This collection of funny, chaotic, and endlessly replayable basketball games lets you shoot hoops like never before—with funky physics, silly courts, and lovable characters. </p> <p> Whether you're playing against the computer or battling a friend, the unpredictable gameplay will keep you laughing and coming back for more. Jump, shoot, and score in the most random way possible! </p>
 
                     &nbsp;
-                    <h3>Exciting Online Basketball Games to Play Right Now</h3>
+                    <h3>🌍Exciting Online Basketball Games to Play Right Now</h3>
                     <p>If you love Random Basketball, here are some other great basketball browser games to check out:</p> <p><strong>1. Dunk Slam Heroes</strong><br> Fly through the air and dunk over giant hoops in this over-the-top jam fest.</p> <p><strong>2. Street Ball Legends</strong><br> 1v1 duels on the street with fast dribbling, quick shots, and fierce blocks.</p> <p><strong>3. Crazy Court Battle</strong><br> A wacky court layout every round keeps you guessing where the ball will bounce.</p> <p><strong>4. Basket Brawl</strong><br> Smash your opponent while trying to shoot—half fighting game, half sports game.</p> <p><strong>5. Sky Dunk Challenge</strong><br> How many mid-air hoops can you hit before time runs out?</p>
 
                     &nbsp;
 
-                    <h3>Why You’ll Love Them</h3>
+                    <h3>⭐Why You’ll Love Them</h3>
                     <p> • Fast, no-install basketball fun in your browser<br> • Perfect for quick matches or intense 2-player showdowns<br> • Bright, cartoon-style graphics and hilarious physics<br> • Great for kids, teens, and anyone who loves creative sports games </p>
 
                     &nbsp;
 
-                    <h3>Random Basketball Game FAQs – Ready, Set, Shoot!</h3>
+                    <h3>🦋Random Basketball Game FAQs – Ready, Set, Shoot!</h3>
                     <p><strong>1. Do I need to download Random Basketball?</strong><br> Nope! The game works instantly in your browser with no installation or sign-up.</p> <p><strong>2. Can I play it with a friend?</strong><br> Yes! There's a fun local 2-player mode so you can share the keyboard and compete together.</p> <p><strong>3. Is it free?</strong><br> Completely free—play as much as you want with no ads or hidden fees.</p> <p><strong>4. Does it work on phones or tablets?</strong><br> Yes! Random Basketball plays well on mobile browsers with tap controls for jumping and shooting.</p> <p><strong>5. Is the game safe for kids?</strong><br> Absolutely. It’s cartoonish, silly, and non-violent—great for all ages.</p>
 
 
                     &nbsp;
 
-                    <h3>Fun Basketball Browser Game for All Ages</h3>
+                    <h3>⭐Fun Basketball Browser Game for All Ages</h3>
                     <p> Random Basketball is a <strong>fun basketball browser game</strong> packed with laughter, quick jumps, and wild shots! Whether you’re playing solo or with a friend, the unpredictable physics and silly moves make each round unique and exciting. </p> <p> Perfect for school breaks, weekend play, or friendly duels—this is basketball, but not as you know it. No rules, no pressure, just random fun in every match! </p>
 
                     &nbsp;
 
-                    <h3>Crazy Basketball Game – No Download Needed</h3>
+                    <h3>🎮Crazy Basketball Game – No Download Needed</h3>
                     <p> Want to shoot hoops without downloading anything? Random Basketball is a <strong>crazy basketball game</strong> you can play instantly in your browser. With unpredictable jumps and ridiculous court designs, each match is a new surprise. </p> <p> Enjoy short, hilarious matches on any device—no setup required. Just open the page and start scoring! </p>
 
                     &nbsp;
 
-                    <h3>Basketball Game for Kids – Simple, Safe, and Silly</h3>
+                    <h3>🏀Basketball Game for Kids – Simple, Safe, and Silly</h3>
                     <p> Looking for a <strong>basketball game for kids</strong> that’s fun and family-friendly? Random Basketball keeps things simple with one-button gameplay and cute animations. It’s safe, colorful, and easy to pick up for young players. </p> <p> No violence, no ads, no distractions—just jump, shoot, and have fun with every round! </p>
 
 
@@ -2552,31 +2552,31 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     slug: "twist-tactics",
     title: "Twist Tactics",
       name: "Twist Tactics",
-    thumb: "/games/twist-tactics/Twist-Tactics.png",
+    thumb: "/imggames/twist-tactics/Twist-Tactics.png",
     tag: "New",
        category: ["Puzzle", "Brain"], // ← tableau au lieu d’un seul string
-    iframe: "/games/twist-tactics/index.html"  ,
+    iframe: "https://games-gules-nu.vercel.app/twist-tactics/index.html"  ,
     descriptionHtml: `
-                      <h3>Join the Fun with Twist Tactics!</h3>
+                      <h3>🎲Join the Fun with Twist Tactics!</h3>
               <p>Play Twist Tactics online for free and dive into a colorful world of puzzles! Twist, turn, and slide your way to victory as you help cute characters escape from tricky mazes filled with surprises.</p>
               <p>Every level is like a fun workout for your brain, where you slide shapes and solve clever puzzles. Explore new worlds brimming with shiny gems, friendly companions, and playful challenges that will make you smile while you plan your next smart move.</p>
               <p>Perfect for young adventurers who love bright graphics, exciting challenges, and the sweet taste of victory, Twist Tactics turns every moment into a delightful quest. Get ready to puzzle, play, and have endless fun!</p>
 
               &nbsp;
 
-              <h3>What Are Twist Tactics?</h3>
+              <h3>🎮What Are Twist Tactics?</h3>
               <p>Twist Tactics is an exciting strategy game that you can play right in your web browser! It's like a board game where each move can bring a magical twist—maybe you'll switch places with a friend or even freeze an opponent for a while. You'll explore bright, colorful maps that are fun and easy to navigate.</p>
               <p>The best part? You don't have to download anything. Just open your web browser to start playing quick games. You can team up with friends or challenge opponents from around the world!</p>
               <p>With simple controls, a helpful guide, and lots of cute characters to collect, Twist Tactics makes using your brain just as fun as a game of tag!</p>
 
 
               &nbsp;
-              <h3>Why Choose Twist Tactics?</h3>
+              <h3>👾Why Choose Twist Tactics?</h3>
               <p>Welcome to a world filled with colorful blocks and exciting puzzles that inspire curiosity and joy in young minds. Twist Tactics is accessible right from your web browser—no need to download an app—allowing kids to jump into the fun within seconds. Each level combines simple, easy-to-understand rules with unexpected challenges, encouraging children to think ahead and solve problems like little experts.</p>
               <p>With friendly graphics, lively sound effects, and a straightforward drag-and-click interface, even beginners find it easy to play. Whether racing against the clock or enjoying a relaxed, step-by-step approach, Twist Tactics offers quick, safe entertainment that boosts brainpower, one colorful move at a time.</p>
 
               &nbsp;
-              <h3>How to Play Twist Tactics</h3>
+              <h3>⭐How to Play Twist Tactics</h3>
 
               <p>Welcome to Twist Tactics, the colorful and kid-friendly tile-matching puzzle game! Ready to have some fun? Here's how to play:</p>
 
@@ -2590,79 +2590,79 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
 
               &nbsp;
-              <h3>Controls</h3>
+              <h3>🍄Controls</h3>
               <p>Master your moves in Twist Tactics with clean, easy-to-learn controls that put strategy at your fingertips!</p> <p><strong>Select your unit:</strong> Click or tap to choose a piece on the board.</p> <p><strong>Plan your move:</strong> Use the mouse or arrow keys to select where you want to go—or which enemy to defeat.</p> <p><strong>Trigger the twist:</strong> Each turn has surprises! Click the twist button (or press T) to flip the board or change the battlefield unexpectedly.</p> <p>No installations required—Twist Tactics works instantly in your browser. Just open and start planning your path to victory!</p>
 
 
               &nbsp;
-              <h3>Tips and Tricks for Twist Tactics</h3>
+              <h3>🌍Tips and Tricks for Twist Tactics</h3>
               <p><strong>Think Two Turns Ahead</strong><br> Like chess, every move counts—but in Twist Tactics, the battlefield can change in an instant. Always consider what happens *after* your move.</p> <p><strong>Use the Twist Wisely</strong><br> Don’t waste your twist mechanic early! Wait until your opponent is in a tight spot and use it to turn the tide.</p> <p><strong>Control the Corners</strong><br> Some maps reward corner control. Holding those spots may unlock powerful bonuses or block enemy advances.</p> <p><strong>Combo Your Actions</strong><br> Chain your actions for maximum effect. Move, attack, twist—the perfect combo can completely reverse the match.</p>
 
               &nbsp;
-              <h3>Features of Twist Tactics</h3>
+              <h3>❤️Features of Twist Tactics</h3>
               <p><strong>1. Turn-Based Strategy Fun:</strong> Every match is a battle of wits with unexpected twists and reversals.</p> <p><strong>2. Puzzle-Like Challenges:</strong> Solve each map using logic, planning, and perfect timing.</p> <p><strong>3. Unique Twist Mechanic:</strong> Flip, rotate, or shuffle the battlefield to gain advantage in battle.</p> <p><strong>4. Single & Multiplayer Modes:</strong> Play against AI or challenge a friend in competitive tactics.</p> <p><strong>5. Fast Browser Play:</strong> No download needed—launch the game instantly on any device.</p> <p><strong>6. Great for All Ages:</strong> Simple enough for kids, but deep enough for strategy fans.</p>
 
               &nbsp;
-              <h3>Twist Tactics Online</h3>
+              <h3>🎮Twist Tactics Online</h3>
               <p> Twist Tactics Online is a clever browser-based strategy game that brings new life to tactical battles. With a unique twist mechanic that changes the battlefield mid-game, every round feels fresh and exciting. </p> <p> Whether you're playing solo or against a friend, each match is full of logic, planning, and surprise victories. Play now on any device—no installation required. </p>
 
               &nbsp;
 
-              <h3>Platform Compatibility</h3>
+              <h3>🌍Platform Compatibility</h3>
               <p> Play Twist Tactics on your computer, tablet, or phone—directly in your web browser. Compatible with Chrome, Firefox, Safari, and Edge. The game runs smoothly on any screen and doesn’t need any downloads or installations. </p> <p> Wherever you are—at home, school, or on the go—you can launch your next strategic battle in seconds. </p>
 
               &nbsp;
-              <h3>Twist Tactics Unblocked</h3>
+              <h3>🍄Twist Tactics Unblocked</h3>
               <p> Need a smart game to play at school or on restricted networks? Twist Tactics Unblocked gives you full access to the complete game, with no blocks, popups, or download delays. </p> <p> It’s a great strategy game for schools, libraries, and safe spaces—easy to open, hard to master! </p>
 
               &nbsp;
 
-              <h3>Twist Tactics Games</h3>
+              <h3>⭐Twist Tactics Games</h3>
               <p> Dive into a growing collection of <strong>Twist Tactics Games</strong>—each with new maps, characters, and ways to outthink your opponents. Whether it’s grid-based battles, rotating arenas, or reverse logic puzzles, there’s always a new twist to keep things interesting. </p> <p> Perfect for fans of turn-based strategy, tactical puzzles, and brainy competition. Plan your next move and twist your way to victory! </p>
 
               &nbsp;
 
-              <h3>Exciting Strategy Games to Play Right Now</h3>
+              <h3>👾Exciting Strategy Games to Play Right Now</h3>
               <p>Love Twist Tactics? Check out these other browser-based brain games and turn-based challenges:</p> <p><strong>1. Grid Battle Heroes</strong><br> A fast-paced turn-based combat game with different hero types and attack patterns.</p> <p><strong>2. Flip the Fortress</strong><br> Defend or attack a castle with board-flipping mechanics and tactical zones.</p> <p><strong>3. Puzzle War Tactics</strong><br> Each move must solve a puzzle while eliminating enemy units—perfect for thinkers.</p> <p><strong>4. Hexa Clash Arena</strong><br> Tactical battles on a hex map with special skills and terrain bonuses.</p> <p><strong>5. Trap Grid Showdown</strong><br> Lay traps, trick your enemies, and use the board against them in every round.</p>
 
               &nbsp;
-              <h3>Why You’ll Love Them</h3>
+              <h3>💎Why You’ll Love Them</h3>
               <p> • Easy to learn, hard to master—perfect for casual and competitive players<br> • Browser-based—play anywhere, anytime<br> • Creative game mechanics that surprise and challenge<br> • Designed for solo players or friendly duels </p>
 
               &nbsp;
 
-              <h3>Twist Tactics Game FAQs – Ready, Set, Outsmart!</h3>
+              <h3>💡Twist Tactics Game FAQs – Ready, Set, Outsmart!</h3>
               <p><strong>1. Do I need to download Twist Tactics?</strong><br> No. The game plays directly in your browser with no installation or setup needed.</p> <p><strong>2. Can I play against a friend?</strong><br> Yes! There’s a 2-player mode where you can face off in clever tactical duels.</p> <p><strong>3. Is Twist Tactics free?</strong><br> Yes, it’s 100% free with no ads, no paywalls, and no distractions.</p> <p><strong>4. Is it kid-friendly?</strong><br> Absolutely. With turn-based logic, simple graphics, and safe gameplay, it’s perfect for kids and teens.</p> <p><strong>5. How does the twist mechanic work?</strong><br> Each level lets you activate a twist—flipping the board, changing positions, or rotating spaces—to shake up the match and surprise your opponent!</p>
 
               &nbsp;
 
-              <h3>Play Twist Strategy Game Online</h3>
+              <h3>✅Play Twist Strategy Game Online</h3>
               <p> Twist Tactics is not your average tactics game—it’s a <strong>twist strategy game online</strong> where the rules can change mid-match! Every round includes surprise turns, board changes, and unexpected flips that force you to adapt and outthink your opponent. </p> <p> It’s smart, fast, and always different. No downloads, just pure strategy in your browser. </p>
 
               &nbsp;
-              <h3>Strategy Puzzle Game for Smart Thinkers</h3>
+              <h3>🎲Strategy Puzzle Game for Smart Thinkers</h3>
               <p> Looking for a <strong>strategy puzzle game</strong> that really makes you think? Twist Tactics blends logic puzzles and tactical decisions in a way that rewards planning and clever plays. </p> <p> Perfect for kids, teens, and adults who love brain games and decision-based combat. </p>
 
               &nbsp;
 
-              <h3>Turn-Based Tactics Browser Game</h3>
+              <h3>⭐Turn-Based Tactics Browser Game</h3>
               <p> Twist Tactics is a <strong>turn-based tactics browser game</strong> where each move can change the outcome. Take turns controlling units, activating twists, and surprising your enemy with strategy—not speed. </p> <p> Plan carefully, anticipate your rival’s next step, and win the match with brains over brawn. </p>
 
 
 
               &nbsp;
 
-              <h3>Logic-Based Tactics Game for All Ages</h3>
+              <h3>🧩Logic-Based Tactics Game for All Ages</h3>
               <p> This is a <strong>logic-based tactics game</strong> that challenges players to think several moves ahead. Instead of relying on reflexes, you win through smart decisions, positional control, and timing your twists. </p> <p> It’s a perfect fit for young learners, puzzle lovers, and anyone who enjoys strategic gameplay without violence. </p>
 
 
               &nbsp;
 
-              <h3>Free Online Tactics Game – No Download</h3>
+              <h3>🎮Free Online Tactics Game – No Download</h3>
               <p> Twist Tactics is a <strong>free tactics game</strong> you can play online in seconds—no account, no install. Whether you're at home, at school, or taking a break, this browser-based game loads fast and lets you jump straight into tactical fun. </p> <p> With new challenges and clever maps each time, you’ll keep coming back for more. </p>
 
               &nbsp;
-              <h3>Tactical Board Game With a Twist</h3>
+              <h3>🎲Tactical Board Game With a Twist</h3>
               <p> Like classic board games? Twist Tactics is a digital <strong>tactical board game</strong> that adds a twist—literally. Flip parts of the board, change the layout, and force your enemy into tight spots. </p> <p> Each round is short, strategic, and packed with surprises. It’s the perfect modern twist on traditional tactics! </p>
 
 
@@ -2674,18 +2674,18 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     slug: "box-match",
     title: "Box Match",
       name: "Box Match",
-    thumb: "/games/box-match/Box-Match.jpg",
+    thumb: "/imggames/box-match/Box-Match.jpg",
     tag: "New",
         category: ["Puzzle", "Brain"], // ← tableau au lieu d’un seul string
-    iframe: "/games/box-match/index.html"  ,
+    iframe: "https://games-gules-nu.vercel.app/box-match/index.html"  ,
     descriptionHtml: `
-            <h3>Play Box Match Online for Free!</h3>
+            <h3>🎯Play Box Match Online for Free!</h3>
             <p>Step into a vibrant world bursting with colors and exciting puzzles. In Box Match, your goal is simple: match all the boxes to clear the board and win amazing prizes. Every level features eye-catching graphics and catchy tunes that turn each game into a fun celebration for your brain.</p>
             <p>Discover cool power-ups, race against the clock, and invite your friends to challenge your high score. Box Match is easy to start, hard to put down, and perfect for curious kids who enjoy quick-thinking games with a splash of color!</p>
 
             &nbsp;
 
-            <h3>What Is Box Match?</h3>
+            <h3>🎲What Is Box Match?</h3>
 
             <p>Box Match is a delightful online puzzle game where you match colorful boxes to clear the board and earn lots of points! It's perfect for kids who enjoy a fun challenge. In each level, you'll search for pairs of matching boxes and connect them with just a click or a tap.</p>
 
@@ -2696,7 +2696,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
             &nbsp;
 
 
-            <h3>Why Choose Box Match?</h3>
+            <h3>🎮Why Choose Box Match?</h3>
             <p>Are you searching for a free online puzzle game created just for kids? Box Match is the perfect choice! It lights up your screen with bright, tappable boxes and offers super-simple drag-and-drop gameplay—no downloads needed!</p>
             <p>Each level starts with easy challenges, gradually adding a little more brain exercise, so kids feel proud each time they unlock a new puzzle. With cheerful artwork, fun sound effects, and cleverly designed stages, every click sharpens problem-solving skills.</p>
             <p>Plus, Box Match runs perfectly in any web browser—whether on a desktop, tablet, or phone—so kids can dive into colorful adventures anytime, anywhere, without waiting. It’s the perfect spot for curious minds who love instant action, vibrant visuals, and puzzles that grow with them!</p>
@@ -2704,7 +2704,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
             &nbsp;
 
-            <h3>How to Play Box Match</h3>
+            <h3>💎How to Play Box Match</h3>
 
             <p>Welcome to Box Match, the vibrant memory game designed especially for kids! You'll find a grid filled with bright boxes, each hiding an exciting picture. Tap any two boxes to reveal the pictures underneath. If the pictures match, they stay face up—hooray! If they don't match, the boxes will flip back over, and you can try again.</p>
 
@@ -2714,92 +2714,92 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
 
             &nbsp;
-            <h3>Controls</h3>
+            <h3>⭐Controls</h3>
             <p>Get ready to punch, dodge, and win in Box Match with fast and simple controls!</p> <p><strong>Move your boxer:</strong> Use the ← and → arrow keys to move left and right.</p> <p><strong>Jump:</strong> Press ↑ to jump over opponents or obstacles.</p> <p><strong>Punch:</strong> Press the space bar to throw a punch at the right moment.</p> <p>No downloads or installations needed—just open Box Match in your browser and start the solo fight!</p>
 
             &nbsp;
 
-            <h3>Tips and Tricks for Box Match</h3>
+            <h3>🌍Tips and Tricks for Box Match</h3>
             <p><strong>Master Timing</strong><br> In this <strong>1 player boxing game</strong>, precision matters. Wait for your opponent to strike, then counter with the perfect punch!</p> <p><strong>Dodge, Don’t Spam</strong><br> Constant punching won’t win the match. Learn to move, dodge, and strike at the best moment to knock out your rival.</p> <p><strong>Use the Whole Ring</strong><br> Move around to control space. Keep your distance when needed and attack from smart angles.</p> <p><strong>React Quickly</strong><br> Enemies get faster as the game goes on. Sharpen your reflexes to survive every round!</p>
 
             &nbsp;
 
-            <h3>Features of Box Match</h3>
+            <h3>⭐Features of Box Match</h3>
             <p><strong>1. Solo Cartoon Boxing:</strong> Enter the ring alone and face a series of funny, unpredictable opponents.</p> <p><strong>2. Simple One-Button Gameplay:</strong> Easy to learn but hard to master—great for all ages.</p> <p><strong>3. Fun Knockout Animations:</strong> Enjoy hilarious physics when you land the winning punch.</p> <p><strong>4. Progressive Difficulty:</strong> Each round gets harder, testing your focus and speed.</p> <p><strong>5. No Downloads Needed:</strong> Play directly in your browser, no setup required.</p> <p><strong>6. Perfect for Quick Play:</strong> Short matches, fast loading, and instant fun.</p>
 
             &nbsp;
-            <h3>Box Match Online</h3>
+            <h3>⭐Box Match Online</h3>
             <p> Box Match Online is a free <strong>solo boxing browser game</strong> built for quick, satisfying matches. It’s just you and your AI opponent—no distractions, no sign-ups, and no downloads. </p> <p> Play anywhere, anytime, and see how many boxers you can defeat before the final bell! </p>
 
             &nbsp;
 
-            <h3>Box Match Unblocked</h3>
+            <h3>✅Box Match Unblocked</h3>
             <p> Box Match Unblocked lets you play from anywhere—even at school or on public Wi-Fi. No firewalls, no setup—just click and play. </p> <p> It’s the perfect <strong>free boxing game for kids</strong> who love cartoon fights and quick challenges. </p>
 
 
             &nbsp;
 
-            <h3>Cartoon Boxing Game for Kids</h3>
+            <h3>🍄Cartoon Boxing Game for Kids</h3>
             <p> Box Match is a silly, safe, and fun <strong>boxing game for kids</strong> of all ages. With colorful animations, goofy enemies, and fast gameplay, it delivers action without violence or stress. </p> <p> Whether you're 7 or 17, it's a great way to blow off steam and test your reflexes. </p>
 
             &nbsp;
-            <h3>Play a Solo Boxing Game Online</h3>
+            <h3>🦋Play a Solo Boxing Game Online</h3>
             <p> Box Match is a fast and fun <strong>solo boxing game</strong> where you face off against wild cartoon fighters using timing, reflexes, and strategy. Each opponent has a different pattern—learn their moves, dodge punches, and strike at the perfect moment! </p> <p> Perfect for players who enjoy fighting games without the stress of multiplayer, Box Match lets you train, punch, and win all on your own. </p>
 
 
             &nbsp;
-            <h3>Boxing Game for Browser – No Installation</h3>
+            <h3>💎Boxing Game for Browser – No Installation</h3>
             <p> Don’t want to install anything? No problem! Box Match is a 100% <strong>boxing game for browser</strong> that works instantly on Chrome, Firefox, Safari, or Edge. No account needed—just press play and start the fight. </p> <p> Whether you’re at school, at home, or on break, the ring is always ready. </p>
 
 
 
             &nbsp;
 
-            <h3>Reflex-Based Boxing Game</h3>
+            <h3>💎Reflex-Based Boxing Game</h3>
             <p> Box Match is not just about punching—it’s about reacting fast. This <strong>reflex boxing game</strong> rewards quick decision-making and smart counter-attacks. The more rounds you win, the faster your opponents become! </p> <p> Improve your timing and focus in each match. It's the perfect workout for your fingers and your brain! </p>
 
 
             &nbsp;
 
-            <h3>Cartoon Boxing Fight with a Twist</h3>
+            <h3>👾Cartoon Boxing Fight with a Twist</h3>
             <p> This isn’t a serious boxing simulation—it’s a goofy, over-the-top <strong>cartoon boxing fight</strong> where anything can happen. From exaggerated punches to bouncing reactions, each match will make you smile. </p> <p> Great for players of all ages who want action with humor, not violence. </p>
 
 
             &nbsp;
-            <h3>Boxing Game for Kids – Safe and Fun</h3>
+            <h3>🍭Boxing Game for Kids – Safe and Fun</h3>
             <p> Looking for a <strong>boxing game for kids online</strong>? Box Match is a perfect choice. It’s colorful, non-violent, and super fun. There’s no blood, no scary content—just silly animations and light-hearted boxing challenges. </p> <p> It’s safe, browser-based, and ideal for young players who love action games without intensity. </p>
 
             &nbsp;
-            <h3>Play Boxing Online Without Download</h3>
+            <h3>⭐Play Boxing Online Without Download</h3>
             <p> Skip the app store—just play! Box Match is a <strong>boxing game you can play online without download</strong>. It launches instantly in your browser and works on desktop, tablet, or mobile. </p> <p> No waiting, no setup, just open the game and start landing punches! </p>
 
 
             &nbsp;
 
-            <h3>Best Boxing Game for Browser in 1 Player Mode</h3>
+            <h3>🌍Best Boxing Game for Browser in 1 Player Mode</h3>
             <p> Looking for the <strong>best boxing game for browser</strong> that you can play alone? Box Match offers the perfect balance of fun, reflex, and simple controls. It's ideal for solo players who want quick matches without complexity. </p> <p> No complicated combos—just clean, responsive gameplay you can enjoy anytime. Whether you're a beginner or a casual gamer, it's your ring to dominate! </p>
 
             &nbsp;
 
-            <h3>Online Boxing Game for Beginners</h3>
+            <h3>💡Online Boxing Game for Beginners</h3>
             <p> Box Match is a perfect <strong>online boxing game for beginners</strong>. With one-button controls, cartoon visuals, and straightforward mechanics, it’s made for players who are new to fighting games and just want to have fun. </p> <p> Train your timing, dodge smarter, and enjoy matches that are easy to learn, but fun to replay! </p>
 
             &nbsp;
-            <h3>Free Cartoon Fighting Game in Your Browser</h3>
+            <h3>⭐Free Cartoon Fighting Game in Your Browser</h3>
             <p> Box Match brings the action in a light, silly, and colorful style. It’s a <strong>free cartoon fighting game</strong> you can play instantly, featuring bouncy physics, goofy knockouts, and no pressure. </p> <p> Play on your break, after school, or whenever you want to laugh while throwing digital punches! </p>
 
 
             &nbsp;
-            <h3>Light Boxing Challenge for Quick Fun</h3>
+            <h3>🌍Light Boxing Challenge for Quick Fun</h3>
             <p> Need a <strong>light boxing challenge</strong> without long tutorials or intense competition? Box Match is a great pick. Matches last less than a minute and every round feels like a fun mini-game. </p> <p> Perfect for relaxing, warming up your reflexes, or blowing off steam without stress. </p>
 
             &nbsp;
 
-            <h3>No Install Boxing Game Online</h3>
+            <h3>💡No Install Boxing Game Online</h3>
             <p> Say goodbye to downloads and updates. Box Match is a <strong>no install boxing game</strong> that runs directly in your browser. Whether you're on a Chromebook, mobile phone, or public computer, it loads instantly. </p> <p> Great for classrooms, cafés, or shared devices where you want fast fun—no setup needed. </p>
 
             &nbsp;
-            <h3>Arcade Boxing Game Free and Instant</h3>
+            <h3>💡Arcade Boxing Game Free and Instant</h3>
             <p> Love retro fun? Box Match is a <strong>free arcade boxing game</strong> that gives you fast-paced action with pixel-perfect responsiveness. Inspired by classic arcade mechanics, it’s built for speed, simplicity, and replayability. </p> <p> Fight round after round, improve your score, and punch your way through a wave of opponents. Just like the arcades—minus the quarters! </p>
 
             &nbsp;
@@ -2811,18 +2811,18 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     slug: "brick-breaker",
     title: "Brick Breaker",
       name: "Brick Breaker",
-    thumb: "/games/brick-breaker/brick-breaker.jpg",
+    thumb: "/imggames/brick-breaker/brick-breaker.jpg",
     tag: "New",
        category: ["Action", "Arcade"],
-    iframe: "/games/brick-breaker/index.html"  ,
+    iframe: "https://games-gules-nu.vercel.app/brick-breaker/index.html"  ,
     descriptionHtml: `
-                <h3>Play Brick Breaker Online for Free!</h3>
+                <h3>🎯Play Brick Breaker Online for Free!</h3>
                 <p>Enter a lively arcade world where you control a paddle to bounce a fast-moving ball. Your goal is to break colorful bricks before they fall apart. Each level features exciting power-ups—such as splitting the ball into multiple pieces, shooting lasers, or even giving you a sticky paddle—that make the game more fun.</p>
                 <p>This friendly challenge is ideal for testing your reflexes and aiming for high scores. Kids will enjoy watching the vibrant blocks burst into a splash of colors and will love an adventure that makes them want to play "just one more round!"</p>
 
                 &nbsp;
 
-                <h3>What Are Brick Breaker  ?</h3>
+                <h3>🍄What Are Brick Breaker  ?</h3>
                 <p>Imagine playing a fun game where you use a paddle to stop a super-bouncy ball from escaping! This is what  Brick Breaker games are all about. You start with a bunch of colorful bricks neatly arranged at the top of the screen. Your mission is to smash them to pieces by bouncing the ball off your paddle.</p>
                 <p>Watch out for special surprises! Sometimes, when you break a brick, cool power-ups like extra balls, laser beams, or a bigger paddle will appear. These power-ups make the game even more exciting! Each new level presents trickier brick patterns and a faster ball, keeping the game fun and challenging for kids.</p>
                 <p>The best part is, you can play these games right in your web browser. No need to wait—just click, start smashing bricks, and see how far you can go! Have fun!</p>
@@ -2830,7 +2830,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
                 &nbsp;
 
-                <h3>Why Choose  Brick Breaker  ?</h3>
+                <h3>🌟Why Choose  Brick Breaker  ?</h3>
 
                 <p>Are you searching for a fun browser game that kids can enjoy without needing to download anything? Brick Breaker   is the perfect choice! The game is filled with bright colors and easy paddle action—just slide back and forth to keep the ball bouncing!</p>
 
@@ -2839,7 +2839,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
                 <p>With snappy sound effects, smooth controls on both desktop and tablet, and eye-catching graphics, it feels like having a tiny arcade right in your browser. Quick to start, endlessly replayable, and packed with surprises, Brick Breaker Breakout  is perfect for rainy days, play breaks, or friendly high-score contests!</p>
 
                 &nbsp;
-                <h3>How to Play Brick Breaker: A Kid-Friendly Guide</h3>
+                <h3>🦋How to Play Brick Breaker: A Kid-Friendly Guide</h3>
 
                 <p>Are you ready to jump into the exciting and colorful world of Breakout, also known as Brick Breaker? Follow these easy steps to keep that ball bouncing, break every brick, and score big points—all while having loads of fun!</p>
 
@@ -2866,11 +2866,11 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
 
                 &nbsp;
-                <h3>Controls</h3>
+                <h3>🍄Controls</h3>
                 <p> Use smooth and simple controls to dominate the bricks in Brick Breaker! </p> <p><strong>Move the paddle:</strong> Use the ← and → arrow keys (or move your mouse/tap on mobile) to control the paddle and bounce the ball back up.</p> <p><strong>Don’t drop the ball!</strong> Missing the ball means losing a life—stay focused and time your moves.</p> <p>That’s it! Brick Breaker is easy to learn and instantly fun. No downloads, no waiting—just launch and play!</p>
 
                 &nbsp;
-                <h3>Tips and Tricks for Brick Breaker</h3>
+                <h3>🌍Tips and Tricks for Brick Breaker</h3>
                 <p><strong>Angle Your Shots</strong><br> Where the ball hits your paddle affects its direction—try hitting the ball with the edges for sharper angles and faster clears.</p> <p><strong>Catch Power-Ups</strong><br> Falling bonuses can give you extra balls, larger paddles, or laser shots. Don’t miss them—they can change the game!</p> <p><strong>Clear the Corners First</strong><br> Break the hard-to-reach bricks early before the ball gets too fast. It’ll save you time later in the level.</p> <p><strong>Stay Calm When the Ball Speeds Up</strong><br> Later levels get faster. Keep your paddle centered and don’t overreact—focus and patience win!</p>
 
                 &nbsp;
@@ -2878,25 +2878,25 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
 
                 &nbsp;
-                <h3>Brick Breaker Online</h3>
+                <h3>❤️Brick Breaker Online</h3>
                 <p> Play <strong>Brick Breaker Online</strong> anywhere and anytime. It’s the ultimate browser-based arcade game where your mission is simple: destroy every brick, keep the ball alive, and climb through levels of increasing difficulty. </p> <p> No installation, no ads, and no sign-up—just pure fun with the click of a button! </p>
 
                 &nbsp;
-                <h3>Platform Compatibility</h3>
+                <h3>👾Platform Compatibility</h3>
                 <p> Brick Breaker runs smoothly on all devices—desktop, tablet, and mobile. Compatible with Chrome, Firefox, Safari, Edge, and more. Whether you're on a phone at school or a laptop at home, you can break bricks with ease. </p> <p> The game adjusts to your screen and control method automatically! </p>
 
 
                 &nbsp;
-                <h3>Brick Breaker Unblocked</h3>
+                <h3>⭐Brick Breaker Unblocked</h3>
                 <p> Looking for <strong>Brick Breaker Unblocked</strong>? You found it! Our version works from anywhere—even on restricted school or public networks. No firewall can stop this classic arcade action. </p> <p> Quick to load and totally free, it’s the perfect break-time game you can count on. </p>
 
                 &nbsp;
-                <h3>Brick Breaker Games</h3>
+                <h3>🎮Brick Breaker Games</h3>
                 <p> Explore more variations of <strong>Brick Breaker Games</strong>—including multi-ball chaos, boss bricks, moving obstacles, and themed levels. Whether you want a retro look or a modern twist, there’s always a new brick wall to destroy. </p> <p> These ball-and-paddle games never go out of style. Try different modes, earn high scores, and challenge your reflexes round after round. </p>
 
 
                 &nbsp;
-                <h3>Exciting Arcade Games to Play Right Now</h3>
+                <h3>🍄Exciting Arcade Games to Play Right Now</h3>
                 <p>Like Brick Breaker? Try these other addicting browser arcade games:</p> <p><strong>1. Space Paddle Blaster</strong><br> Break bricks in space with alien-style power-ups and low gravity!</p> <p><strong>2. Retro Bounce Challenge</strong><br> Old-school visuals and precision ball control make every level count.</p> <p><strong>3. Neon Brick Rush</strong><br> Fast-paced, colorful, and crazy hard—perfect for speed lovers.</p> <p><strong>4. Laser Break Deluxe</strong><br> Use paddle-mounted lasers to blast bricks without the ball!</p> <p><strong>5. Bubble Breaker Puzzle</strong><br> A casual twist on brick breaker with color-matching and puzzles.</p>
 
 
@@ -2905,35 +2905,35 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
 
                 &nbsp;
-                <h3>Brick Breaker Game FAQs – Ready, Set, Smash!</h3>
+                <h3>🎯Brick Breaker Game FAQs – Ready, Set, Smash!</h3>
                 <p><strong>1. Do I need to install anything to play Brick Breaker?</strong><br> Nope! It works instantly in your browser—no downloads needed.</p> <p><strong>2. Can I play Brick Breaker on mobile?</strong><br> Yes! It works perfectly on phones and tablets with touch controls.</p> <p><strong>3. Is Brick Breaker free?</strong><br> Totally free. No ads, no sign-ups—just arcade fun.</p> <p><strong>4. Is the game safe for kids?</strong><br> Absolutely. There’s no violence or ads—just clean, classic gameplay anyone can enjoy.</p> <p><strong>5. What happens when I lose all my lives?</strong><br> You restart from the last checkpoint or the beginning—challenge yourself to get further each time!</p>
 
                 &nbsp;
-                h3>Best Brick Breaker Game Online – Classic Made Better</h3>
+                <h3>🎮Best Brick Breaker Game Online – Classic Made Better</h3>
                 <p> Brick Breaker is one of the <strong>best brick breaker games online</strong> thanks to its responsive controls, fun power-ups, and colorful visuals. Whether you're a fan of the original arcade versions or a new player, this remake delivers satisfying gameplay without complications. </p> <p> Break every brick, catch every bonus, and beat your high score—all in your browser, instantly. </p>
 
                 &nbsp;
-                <h3>Reflex Ball Game for Browser – Test Your Speed</h3>
+                <h3>🕹️Reflex Ball Game for Browser – Test Your Speed</h3>
                 <p> Looking for a <strong>reflex ball game</strong> that pushes your timing to the limit? Brick Breaker will test your precision and reaction speed. With each level, the ball gets faster and bricks get trickier! </p> <p> Stay sharp, keep your paddle moving, and don’t blink—this is pure browser reflex action. </p>
 
                 &nbsp;
-                <h3>Free Arcade Brick Breaker With Power-Ups</h3>
+                <h3>🆓Free Arcade Brick Breaker With Power-Ups</h3>
                 <p> This <strong>free arcade brick breaker</strong> brings modern features to a timeless format. Collect power-ups like paddle extenders, multi-balls, and lasers to shake things up and clear levels faster. </p> <p> No paywalls, no popups—just pure arcade satisfaction, round after round. </p>
 
 
                 &nbsp;
-                <h3>No Mouse Game – Perfect for Keyboard or Touch</h3>
+                <h3>🎮No Mouse Game – Perfect for Keyboard or Touch</h3>
                 <p> Brick Breaker is a great <strong>no mouse game</strong> for anyone who prefers keyboard arrows or touchscreen play. Just move left and right and bounce the ball—no clicking, no menus, just action. </p> <p> Ideal for kids, classrooms, or mobile users who want a fast game without using a mouse. </p>
 
 
                 &nbsp;
-                <h3>Paddle and Ball Game With a Retro Twist</h3>
+                <h3>🍄Paddle and Ball Game With a Retro Twist</h3>
                 <p> Step into a classic <strong>paddle and ball game</strong> with a modern feel. Brick Breaker combines nostalgia with new visuals and smooth physics, creating a retro experience that never gets old. </p> <p> From neon bricks to laser power-ups, it’s the evolution of a true arcade legend. </p>
 
 
 
                 &nbsp;
-                <h3>Simple Browser Game for Kids</h3>
+                <h3>⭐Simple Browser Game for Kids</h3>
                 <p> Brick Breaker is a <strong>simple browser game for kids</strong>—easy to play, safe to explore, and super fun to master. There are no complex controls or violent content, just clean gameplay and bright graphics. </p> <p> Perfect for short play sessions and safe for any age group. </p>
 
 
@@ -2950,23 +2950,23 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     slug: "mad-boy-adventures",
     title: "Mad Boy Adventures",
       name: "Mad Boy Adventures",
-    thumb: "/games/mad-boy-adventures/mad-boy-adventures.jpg",
+    thumb: "/imggames/mad-boy-adventures/mad-boy-adventures.jpg",
     tag: "New",
     category: "Adventure",
-    iframe: "/games/brick-breaker/index.html"  ,
+    iframe: "https://games-gules-nu.vercel.app/mad-boy-adventures/index.html"  ,
     descriptionHtml: `
-                    <h3>Mad Boy Adventures: A Thrilling Online Game</h3>
+                    <h3>🎲Mad Boy Adventures: A Thrilling Online Game</h3>
                     <p>Play Mad Boy Adventures online for free! Explore a vibrant world filled with bright islands, bouncy jumps, and hidden treasures as you guide the brave Mad Boy through exciting levels full of surprises.</p>
                     <p>Collect glittering coins, unlock powerful upgrades, and dodge playful monsters while you master challenging obstacle courses. With simple controls and vivid graphics, this game guarantees endless fun as you race against the clock and compete with friends for the highest score.</p>
                     <p>Whether you're uncovering secret caves, sprinting across rainbow bridges, or meeting fascinating characters, every moment is an exciting adventure in Mad Boy Adventures!</p>
 
                     &nbsp;
-                    <h3>What Are Mad Boy Adventures?</h3>
+                    <h3>🎯What Are Mad Boy Adventures?</h3>
                     <p>Mad Boy Adventures takes you on a journey filled with imagination and excitement, perfect for kids who love to explore new worlds. Picture yourself stepping into Mad Boy's adventures, discovering magical forests, pirate ships, and even futuristic space stations—all without downloading &nbsp;a&nbsp; thing!</p>
                     <p>Each game offers simple controls, entertaining puzzles, and cheerful surprises at every turn. Help Mad Boy navigate twisty mazes, take daring leaps, and solve clever puzzles to earn stars, unlock new challenges, and collect special items to personalize your hero. With its vivid graphics and a never-ending array of adventures, Mad Boy Adventures transforms your browser into a playground brimming with exciting quests and joyful challenges, all in a secure and fast environment.</p>
 
 
-                    <h3>Why Choose Mad Boy Adventures?</h3>
+                    <h3>🎮Why Choose Mad Boy Adventures?</h3>
 
                     <p>Are you ready for endless fun right in your browser? Mad Boy Adventures offers kids a safe, fast, and colorful playground—no downloads or wait times needed! Here's why it's extra special:</p>
 
@@ -2978,7 +2978,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
                     &nbsp;
 
-                    <h3>How to Play Mad Boy Adventures</h3>
+                    <h3>💎How to Play Mad Boy Adventures</h3>
 
                     <p>Get ready to join Mad Boy on a colorful quest! In Mad Boy Adventures, you’ll hop, dash, and yo-yo your way through exciting levels. Follow these simple steps to become a gem-collecting champion:</p>
 
@@ -3022,48 +3022,48 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
 
                     &nbsp;
-                    <h3>Controls</h3>
+                    <h3>🍄Controls</h3>
                     <p> Join Mad Boy on his epic journey with responsive and intuitive controls designed for quick platforming action! </p> <p><strong>Move:</strong> Use ← and → arrow keys to run left or right.</p> <p><strong>Jump:</strong> Press the space bar (or ↑ arrow) to jump over gaps and enemies.</p> <p><strong>Attack:</strong> Press X to shoot or perform your special move (if enabled).</p> <p>No download needed—Mad Boy Adventures works directly in your browser. Start playing instantly!</p>
 
 
 
                     &nbsp;
-                    <h3>Tips and Tricks for Mad Boy Adventures</h3>
+                    <h3>💡Tips and Tricks for Mad Boy Adventures</h3>
                     <p><strong>Time Your Jumps</strong><br> Whether you’re leaping over pits or bouncing on enemies’ heads, timing is everything. Wait until the last second to get more distance from your jumps.</p> <p><strong>Look for Hidden Blocks</strong><br> Some bricks contain bonus coins, power-ups, or even secret paths. Try hitting blocks from below—even the suspicious ones!</p> <p><strong>Watch Enemy Patterns</strong><br> Enemies follow specific paths—learn them, then strike at the right time or jump past them safely.</p> <p><strong>Grab All Coins</strong><br> Collecting coins helps boost your score and may unlock hidden levels or items in some versions.</p>
 
 
                     &nbsp;
-                    <h3>Features of Mad Boy Adventures</h3>
+                    <h3>⭐Features of Mad Boy Adventures</h3>
                     <p><strong>1. Classic Side-Scrolling Fun:</strong> Explore colorful levels filled with obstacles, enemies, and secrets.</p> <p><strong>2. Smooth Keyboard Controls:</strong> Move, jump, and fight with easy-to-use arrow keys and buttons.</p> <p><strong>3. Pixel Art Style:</strong> Retro visuals give it that 90s platformer charm, perfect for all ages.</p> <p><strong>4. Power-Ups and Coins:</strong> Grab hearts, shields, or special powers to stay alive longer!</p> <p><strong>5. No Install Needed:</strong> Play directly from your browser with no downloads or logins.</p> <p><strong>6. Family-Friendly Adventure:</strong> No violence, no stress—just a fun jump-and-run journey!</p>
 
 
                     &nbsp;
-                    <h3>Mad Boy Adventures Online</h3>
+                    <h3>🍭Mad Boy Adventures Online</h3>
                     <p> Play <strong>Mad Boy Adventures Online</strong> and dive into an exciting pixel platformer made for all types of players. Run, jump, dodge, and attack your way through vibrant levels filled with tricky enemies and hidden goodies. </p> <p> It’s fast, fun, and 100% browser-based—no download, no waiting. Start your next adventure now! </p>
 
 
                     &nbsp;
-                    <h3>Platform Compatibility</h3>
+                    <h3>🌍Platform Compatibility</h3>
                     <p> Mad Boy Adventures works perfectly across devices: desktop, laptop, tablet, or mobile. Compatible with Chrome, Firefox, Safari, and Edge, the game adjusts automatically to your screen and control method. </p> <p> Whether you're playing at school, at home, or on the go—Mad Boy is always ready for action. </p>
 
 
                     &nbsp;
-                    <h3>Mad Boy Adventures Unblocked</h3>
+                    <h3>✅Mad Boy Adventures Unblocked</h3>
                     <p> Want to play at school or on public Wi-Fi? <strong>Mad Boy Adventures Unblocked</strong> is available anywhere—no firewall or restriction will stop your journey! </p> <p> It’s the perfect platform game for breaks between classes, lunchtime fun, or relaxed after-school gaming. </p>
 
 
                     &nbsp;
-                    <h3>Mad Boy Adventure Games</h3>
+                    <h3>❤️Mad Boy Adventure Games</h3>
                     <p> Enter a world of <strong>Mad Boy Adventure Games</strong> where every jump leads to discovery, and every level is a test of timing and skill. Collect coins, beat bosses, and find hidden areas as you go deeper into this retro-inspired universe. </p> <p> Mad Boy might be small, but his adventures are huge. Can you reach the final stage and unlock all his powers? </p>
 
 
                     &nbsp;
-                    <h3>Exciting Platform Games to Play Right Now</h3>
+                    <h3>💎Exciting Platform Games to Play Right Now</h3>
                     <p>If you enjoy Mad Boy Adventures, you’ll love these other online platformer games:</p> <p><strong>1. Jungle Jumper Hero</strong><br> Explore a tropical world of vines, spikes, and swinging platforms.</p> <p><strong>2. Pixel Knight Run</strong><br> A medieval-themed jump-and-slash game with retro charm.</p> <p><strong>3. Lava Escape Challenge</strong><br> Jump for your life across rising lava levels!</p> <p><strong>4. Crystal Dash</strong><br> Collect glowing gems and avoid traps in icy caverns.</p> <p><strong>5. Forest Coin Quest</strong><br> Solve puzzles and gather treasure in this calm forest adventure.</p>
 
 
                     &nbsp;
-                    <h3>Why You’ll Love Them</h3>
+                    <h3>🎯Why You’ll Love Them</h3>
                     <p> • Simple platforming fun, great for all ages<br> • No installation required—just open and play<br> • Bright, pixel-perfect visuals with smooth performance<br> • Perfect for fans of Mario-style side-scrollers and 2D action games </p>
 
 
@@ -3113,12 +3113,12 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     slug: "fruit-bucket",
     title: "Fruit Bucket",
       name: "Fruit Bucket",
-    thumb: "/games/fruit-bucket/fruit-bucket.png",
+    thumb: "/imggames/fruit-bucket/fruit-bucket.png",
     tag: "New",
     category: ["Animals", "Nature"],
-    iframe: "/games/fruit-bucket/index.html"  ,
+    iframe: "https://games-gules-nu.vercel.app/fruit-bucket/index.html"  ,
     descriptionHtml: `
-                    <h3>Fruit Bucket: Free Online Fruit-Collecting Fun for Kids</h3>
+                    <h3>🦋Fruit Bucket: Free Online Fruit-Collecting Fun for Kids</h3>
               <p>Step into a bright, colorful world in Fruit Bucket, a free online game for kids and families. It’s easy to play and packed with fun.</p>
               <p>Catch berries, bananas, oranges, and more as they fall from the sky. Move fast to scoop each fruit into your bucket and watch your score grow.</p>
               <p>But look out—some things are not fruit! Sneaky bombs try to trick you. Dodge them with quick fingers and smart moves.</p>
@@ -3129,13 +3129,13 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
               &nbsp;
 
-              <h3>What Are Fruit Bucket?</h3>
+              <h3>💎What Are Fruit Bucket?</h3>
               <p>Fruit Bucket is like a splash of rainbow fun in an online paradise! It's an amazing place where kids can dive into an exciting world filled with awesome browser games inspired by juicy, colorful fruits and thrilling adventures. With bright, cheerful graphics and simple controls, Fruit Bucket lets young adventurers slice, match, and gather fruits while they secretly enhance their hand-eye coordination and problem-solving skills.</p>
               <p>And guess what? There's no need to wait for downloads or deal with complicated tech stuff because every game zooms straight into your web browser! Kids can jump right in and begin their fruity fun journey. With new levels to conquer, exciting seasonal events to enjoy, and cheerful characters to meet, Fruit Bucket is always buzzing with excitement, ensuring everyone has a safe and smart screen-time blast!</p>
 
 
               &nbsp;
-              <h3>Why Choose Fruit Bucket?</h3>
+              <h3>🎯Why Choose Fruit Bucket?</h3>
               <p>
               Jump into the most exciting fruit-catching challenge designed just for kids! Fruit Bucket welcomes you with colorful, smiling fruits and big, easy-to-press buttons that even the smallest hands can use. In each round, you'll race against the clock to collect apples, bananas, and berries before they fall to the ground, unlocking fun boosts like rainbow buckets and speed bursts.
               </p>
@@ -3145,7 +3145,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
               &nbsp;
 
-              <h3>How to Play Fruit Bucket</h3>
+              <h3>🍄How to Play Fruit Bucket</h3>
 
               <p>Are you ready to become the ultimate Fruit Bucket champion? Just follow these simple steps, and you'll be collecting juicy treats in no time!</p>
 
@@ -3157,13 +3157,13 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
 
               &nbsp;
-              <h3>Controls</h3>
+              <h3>⭐Controls</h3>
               <p>Are you ready to jump into the fun of Fruit Bucket? Use the ← and → arrow keys to move your basket from side to side. Press the spacebar to make it hop and catch delicious apples, ripe bananas, and sweet strawberries as they fall down. If a fruit slips through or a spoiled one sneaks in, don't worry—just keep playing to climb up the leaderboard!</p>
               <p>Fruit Bucket is a free browser game that begins right away—no downloads or installations needed. Have a great time catching fruit and aiming for that top score!</p>
 
               &nbsp;
 
-              <h3>Fruit Bucket Game: Simple Tricks for Young Players</h3>
+              <h3>💡Fruit Bucket Game: Simple Tricks for Young Players</h3>
 
               <p>Are you ready to score big in the Fruit Bucket game? Follow these fun and easy tips designed just for kids:</p>
 
@@ -3185,7 +3185,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
               <p>Follow these simple tricks and watch your Fruit Bucket score soar high! Enjoy collecting all those colorful, yummy treasures.</p>
 
               &nbsp;
-              <h3>Features of Fruit Bucket</h3>
+              <h3>✅Features of Fruit Bucket</h3>
 
               <p>Welcome to a world of colorful, fruit-filled fun designed just for kids! Fruit Bucket is an exciting online game that you can play right in your browser—no downloads or installations needed. Let’s explore why it’s a favorite for young players and their parents:</p>
 
@@ -3208,33 +3208,33 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
               <p>Whether you're looking for a lively after-school distraction or a family-friendly activity, Fruit Bucket offers vibrant visuals, catchy sounds, and simple gameplay that keep kids smiling and coming back for more.</p>
 
 
-              <h3>Fruit Bucket Unblocked</h3>
+              <h3>👾ruit Bucket Unblocked</h3>
               <p>Get ready for a fruity adventure with your very own fruit basket! In this fun and free browser puzzle game, you can match delicious grapes, oranges, and pears without needing to download anything or wait around. "Fruit Bucket Unblocked" is designed to work on any school or library computer, so you won't have to worry about pesky filters getting in your way.</p>
               <p>Just open up Chrome, Edge, or Firefox, and you're all set to start linking three or more of the same fruit to clear the board. With its bright colors, simple tap controls, and easy-to-understand levels, kids can dive in right away. They can aim for high scores and enjoy endless fruity adventures wherever they are!</p>
 
               &nbsp;
 
 
-              <h3>Fruit Bucket Online</h3>
+              <h3>🍭Fruit Bucket Online</h3>
               <p>Welcome to the bright and colorful world of Fruit Bucket Online, a free game you can play right in your browser! It's perfect for kids and doesn't need any downloads or installs. Just open the game on your computer, tablet, or phone and start having fun by sorting juicy apples, bananas, and grapes into their matching buckets.</p>
               <p>With a friendly timer, bright graphics, and cheerful sounds, each round transforms fruit matching into an exciting and educational adventure. Try to beat your best score, learn the names and colors of different fruits, and enjoy endless fruity fun whenever you like!</p>
 
               &nbsp;
 
-              <h3>Platform Compatibility</h3>
+              <h3>🌍Platform Compatibility</h3>
               <p>
               Whether you're using a desktop, smartphone, or tablet, Fruit Bucket is always ready for fun—no downloads or updates required! Just open your web browser, click the game link, and watch as the vibrant levels adjust perfectly to your screen. Whether you're in your cozy bedroom, the backseat of a car, or on a picnic blanket at the park, this online fruit game remains fast and smooth. Designed especially for kids, Fruit Bucket offers juicy, interactive fun wherever there's internet—just one click, and you're in the game!
               </p>
 
               &nbsp;
 
-              <h3>Fruit Bucket Games – More Fruity Fun for Kids, No Download Needed!</h3>
+              <h3>🍓Fruit Bucket Games – More Fruity Fun for Kids, No Download Needed!</h3>
               <p>Do you love tossing apples into a basket? Dive into our collection of free online fruit games made just for kids! In "Fruit Drop," tiny strawberries shower down—catch as many as you can before they touch the ground. In "Fruit Stack," balance bright oranges in a wobbly tower without letting it tumble. And in "Berry Connect," link matching grapes to clear the board and win big.</p>
               <p>Each game is full of colorful graphics, easy-to-understand rules, and friendly sounds that entertain little hands and keep young minds smiling. There's no need to download anything: simply open your browser, choose a game, and start playing instantly. Ready to enhance your fruit skills? Explore our whole collection of free online fruit games for kids today and enjoy endless fruity adventures!</p>
 
               &nbsp;
 
-              <h3>Fruit Bucket FAQs – Quick Answers for Kids</h3>
+              <h3>❤️Fruit Bucket FAQs – Quick Answers for Kids</h3>
 
               <p><strong>1. Do I have to install anything?</strong></p>
               <p>No way! Fruit Bucket is ready to go right in your browser or our app. Just click or tap to start playing—no setup needed!</p>
@@ -3262,12 +3262,12 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     slug: "throw-daggers",
     title: "Throw Daggers",
       name: "Throw Daggers",
-    thumb: "/games/throw-daggers/throw-daggers.jpg",
+    thumb: "/imggames/throw-daggers/throw-daggers.jpg",
     tag: "New",
     category: ["Action", "Arcade"],
-    iframe: "/games/throw-daggers/index.html"  ,
+    iframe: "https://games-gules-nu.vercel.app/throw-daggers/index.html"  ,
     descriptionHtml: `
-                                <h3>Play Throw Daggers Online for Free</h3>
+                                <h3>🎮Play Throw Daggers Online for Free</h3>
                           <p>Jump in and join the fun. Throw Daggers Online is a free dagger-throwing game for everyone. Aim for the bullseye, time your throws, and dodge the spinning obstacles. Can you land the perfect hit?</p>
                           <p>Each new level brings a fresh test and shiny new daggers to unlock. The rules are simple, but the challenge grows as you play. Miss a shot? No problem. Learn from it and try again. Your aim will get better fast.</p>
                           <p>Enjoy bright graphics, easy, kid-friendly controls, and a lively leaderboard to show your best scores. Play for fun, practice your timing, and see how high you can climb.</p>
@@ -3275,19 +3275,19 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
                           &nbsp;
 
-                          <h3>What Are Throw Daggers?</h3>
+                          <h3>🎲What Are Throw Daggers?</h3>
                           <p>Throw Daggers is an exciting browser game that invites you to become a heroic knife thrower! Your mission? Hit colorful targets and rack up high scores! Each level presents a new and thrilling adventure where your timing and concentration are put to the test. You'll unlock amazing new daggers and tackle moving targets along the way. With its vibrant graphics and super-easy controls, Throw Daggers makes learning precision as enjoyable as watching your favorite cartoon. Young players can jump right in, improve their aim, and enjoy countless hours of fun, all safely within their web browser!</p>
 
 
                           &nbsp;
 
-                          <h3>Why Choose Throw Daggers?</h3>
+                          <h3>👾Why Choose Throw Daggers?</h3>
                           <p>Throw Daggers is the perfect online browser game for kids—no downloads needed, no hassle. With just one click, young players step into a world filled with bright colors and playful sounds, making aiming practice feel like an exciting adventure. Each level presents new targets and cheerful backdrops, helping children improve their focus and timing while earning shiny coins and unlocking cool dagger skins.</p>
                           <p>Simple controls ensure a smooth learning experience, but mastering every bull’s-eye offers endless fun and a true sense of achievement. Whether it’s for a quick break after homework or a lively family game night, Throw Daggers provides safe, skill-building excitement in seconds. Jump in now for free and watch your little ones sharpen their aim with every toss!</p>
 
                           &nbsp;
 
-                          <h3>How to Play Throw Daggers – A Kid’s Guide to Hitting the Mark</h3>
+                          <h3>🍄How to Play Throw Daggers – A Kid’s Guide to Hitting the Mark</h3>
 
                           <p>Are you ready to test your ninja reflexes in the Throw Daggers game? Follow these simple steps and become the ultimate knife-throwing champion!</p>
 
@@ -3316,19 +3316,19 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
                           &nbsp;
 
-                          <h3>Controls</h3>
+                          <h3>⭐Controls</h3>
                           <p>
                           Let’s dive in! Use the ← and → arrow keys to move your hero left and right across each platform. Tap the ↑ arrow to jump over spikes, pits, and tricky gaps. When a sneaky monster appears, hit the spacebar to throw your trusty dagger and watch them go “thwack!” Perfect your timing, sharpen your aim, and you’ll clear every level with a smile. Best of all, it’s completely free and ready to play in any web browser—no downloads, no fuss!
                           </p>
 
 
-                          <h3>Tips and Tricks for Throwing Daggers</h3>
+                          <h3>🌍Tips and Tricks for Throwing Daggers</h3>
                           <p>Do you want to throw daggers like a ninja hero? Perfect timing is your best friend! Jump over spikes or rolling barrels, then throw your dagger while you're still in the air to make an exciting trick shot! Always be on the lookout for glowing crystals and secret potions. Collecting them not only boosts your score but also unlocks cooler blades.</p>
                           <p>Don't forget to explore behind crates or under platforms. These hidden spots often have surprise passages filled with valuable treasures. To get better, practice hitting moving targets and try to chain your throws quickly, one after another, to zoom through levels at top speed. The best part? There's no need to install anything. Just click play in your browser and start mastering those epic dagger moves today!</p>
 
                           &nbsp;
 
-                          <h3>Features of Throw Daggers</h3>
+                          <h3>✅Features of Throw Daggers</h3>
                           <p>Welcome to the exciting world of Throw Daggers! With just a flick of your finger, you can send dazzling blades flying towards wobbly bottles, bouncing balloons, and silly monsters. Explore a wide array of colorful, hand-drawn levels that become more challenging as you encounter moving platforms, swinging targets, and unexpected obstacles.</p>
                           <p>The game uses a simple tap-and-swipe control scheme, making aiming incredibly easy. Even new players can hit the bull's-eye in no time! Enjoy fun "thwack" sound effects and happy cheers that celebrate each perfect hit, keeping the excitement alive as you climb the leaderboard.</p>
                           <p>What's great is that this free browser game starts instantly on any device—no downloads, no hassles—just endless arcade fun that's perfect for kids!</p>
@@ -3336,7 +3336,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
                           &nbsp;
 
-                          <h3>Throw Daggers Unblocked</h3>
+                          <h3>🎲Throw Daggers Unblocked</h3>
                           <p>Welcome to Throw Daggers Unblocked, the ultimate game you can play anywhere—at school, in the library, or even on busy public Wi-Fi. There's no need to download or install anything. Just click "Play," and you're ready to start! Your mission is to aim your trusty daggers at the colorful spinning wheels, launch them, and watch your score rise with every perfect hit.</p>
                           <p>As you get better, you'll unlock cooler blades, different backgrounds, and tricky targets that will test your timing. The simple controls let you jump right into the action, while the bright graphics and cheerful sounds keep the fun going. Best of all, it's completely free and safe for kids—perfect for a quick break between your studies.</p>
                           <p>Are you excited to become a dagger-throwing champion? Grab your web browser and start playing today!</p>
@@ -3344,7 +3344,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
                           &nbsp;
 
-                          <h3>Throw Daggers Online</h3>
+                          <h3>⭐Throw Daggers Online</h3>
                           <p>Are you ready to test your aim and have lots of fun? Throw Daggers Online lets you hurl magical daggers at colorful targets right in your web browser—no downloads needed, no waiting required. Whether you're on a computer, tablet, or phone, you'll be tossing blades in seconds. The simple click-and-drag controls make it easy for everyone: just pull back, aim at the moving shapes, and let go for an exciting throw.</p>
                           <p>Earn shiny stars, unlock new levels, and challenge yourself to beat your own high score. Perfect for quick playtimes, rainy days, or whenever you want a fun brain break, Throw Daggers Online is a free browser game that keeps kids coming back for more enjoyment. Click “Play” and start your dagger-throwing adventure today!</p>
 
@@ -3352,7 +3352,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
                           &nbsp;
 
 
-                          <h3>Platform Compatibility</h3>
+                          <h3>🍭Platform Compatibility</h3>
                           <p>
                           No matter what gadget you have—a laptop, tablet, or smartphone—Throw Daggers is ready to play! Just open your favorite web browser, visit the game page, and start throwing daggers right away. There's nothing to download or install.
                           </p>
@@ -3361,14 +3361,14 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
                           </p>
 
 
-                          <h3>Throw Daggers Games</h3>
+                          <h3>💎Throw Daggers Games</h3>
                           <p>Do you love the excitement of throwing knives in Throw Daggers? Dive into a world of fun with a selection of free, browser-based knife-throwing games—no need to download anything!</p>
                           <p>Games like Balloon Blast Blades, Ninja Knife Toss, and Sharp Edge Showdown allow you to carefully aim, pop colorful balloons, and complete thrilling levels with pinpoint precision. Each game is available right in your web browser, meaning there's no waiting time—just click, aim, and let your knife fly!</p>
                           <p>Challenge your friends, climb the leaderboards, and improve your knife-throwing skills as you work to become the ultimate dagger champion!</p>
 
                           &nbsp;
 
-                          <h3>Frequently Asked Questions – Throw Daggers</h3>
+                          <h3>🍭Frequently Asked Questions – Throw Daggers</h3>
 
                           <p><strong>Q: Do I need to install anything before playing Throw Daggers?</strong><br>
                           A: Not at all! Throw Daggers is a browser-based game, so you just need to open your favorite web browser, visit the game page, and you’re ready to start playing. No downloads or app store visits are required.</p>
@@ -3391,183 +3391,17 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
                                           `,
   },
-//  {
-//     slug: "moto-beach-ride",
-//     title: "Moto Beach Ride",
-//     thumb: "/games/moto-beach-ride/moto.png",
-//     tag: "New",
-//     category: "arcade",
-//     iframe: "/games/moto-beach-ride/index.html"  ,
-//     descriptionHtml: `
-//                           <h3>Moto Beach Ride: Play Free Online</h3>
-//                     <p>Jump into Moto Beach Ride, a free online motorbike game made for fast fun. Zip across sunny beaches and splash through the waves. It’s easy to start, and exciting to master.</p>
-//                     <p>This is no ordinary ride. Balance your bike, climb tall ramps, and watch out for deep sinkholes. Each level gets a little harder, so time your jumps and keep your cool.</p>
-//                     <p>Collect stars along the way to boost your score. Use your stars to unlock new bikes. Each bike is faster, cooler, and ready for bigger thrills.</p>
-//                     <p>Enjoy bright graphics, funny animations, and thrilling speed that bring a beach day right to your screen. It feels like a mini vacation with a motorbike!</p>
-//                     <p>Ready to ride? Start your engine, grab those stars, and hit the beach in Moto Beach Ride—play now for free.</p>
 
-//                     &nbsp;
-
-//                     <h3>What Is Moto Beach Ride?</h3>
-//                     <p>Moto Beach Ride is a thrilling online motorbike game perfect for young riders. In Moto Beach Ride, players race across sunny beaches, skillfully avoiding palm trees along the way. Using just a few taps of the arrow keys, kids can perform incredible stunts, collect shiny coins, and unlock exciting new bikes.</p>
-//                     <p>The game is easy to access—no downloads or complicated menus required. It features colorful graphics, catchy tunes, and smooth, simple controls. Whether you're a beginner or a pro, this game offers a fun challenge for everyone!</p>
-//                     <p>Moto Beach Ride is a great way to enjoy a quick game between homework sessions or to chase away boredom on a rainy day. It guarantees a safe yet exhilarating adventure right on your screen!</p>
-
-
-//                     &nbsp;
-
-//                     <h3>Why Choose Moto Beach Ride?</h3>
-//                     <p>
-//                     Are you ready for a motorbike adventure that's just a click away? With Moto Beach Ride, young racers can hop on colorful bikes and zoom across sunny sand dunes without needing to download a thing. The game’s simple, one-click controls make it easy for kids to jump, flip, and collect shiny coins at every corner. As they play, children can unlock exciting upgrades like faster engines, cooler wheels, and special boosts to keep every ride fun and thrilling. With cheerful cartoon graphics, gentle physics, and safe, family-friendly challenges, this online motorbike game ignites imagination and encourages friendly competition every time.
-//                     </p>
-
-//                     &nbsp;
-
-//                     <h3>How to Play Moto Beach Ride</h3>
-
-//                     <p>Welcome to Moto Beach Ride, where an exciting beachside adventure awaits you! Get ready to ride your bike over soft sand and daring ramps. Use the arrow keys on your keyboard to control your bike: press the up arrow to speed ahead, the down arrow to slow down or lean back, and the left/right arrows to keep your balance on the tricky dunes.</p>
-
-//                     <p> Moto Beach Ride While you race along the shore, collect shiny coins to boost your score and stay ahead of the ticking timer. Be on the lookout for bumps and steep drops. Tilting forward just before a jump helps you glide smoothly, and leaning back on landings keeps you steady and upright.</p>
-
-//                     <p>Every level you complete unlocks new, cooler motorcycles and tougher tracks. From easy beginner courses to wild seaside loops, this game promises endless fun for young racers. So, put on your helmet, master those arrow keys, and see how many coins you can collect before the time runs out. Ready, set, ride!</p>
-
-//                     &nbsp;
-
-//                     <h3>Moto Beach Ride Controls</h3>
-//                     <p>
-//                     Moto Beach Ride Grab your beach bike and get ready for sunshine, sand, and exciting stunts in Moto Beach Ride! Use the up arrow key to speed past seashells on the shore, and press the down arrow key to slow down safely. Lean forward or backward with the left and right arrow keys to maintain balance and perform cool tricks on ramps. When you're ready to soar over palm logs, press the spacebar to jump high—land perfectly every time! Best of all, game is a free browser game—no download needed, just click and play!
-//                     </p>
-
-
-//                     &nbsp;
-
-//                     <h3>Tips and Tricks for Moto Beach Ride</h3>
-//                     <p>Are you excited to race along the sunny shores and feel the ocean breeze on your face? Get ready for some fun because here are some easy tips to help you earn points, discover surprises, and have a great time in Moto Beach Ride—all perfect for kids!</p>
-
-//                     <h3>1. Pop Off Dunes with a Quick Push</h3>
-
-//                     <p>When you reach a sandy hill, lean forward a bit and gently hit the gas. You'll glide smoothly over the top, land softly, and keep your speed up.</p>
-
-//                     <h3>2. Snag the Glimmering Sea Stars</h3>
-
-//                     <p>Look out for the shiny star tokens along the beach near driftwood or rock outcrops. Grab them to increase your score and unlock awesome new bike colors and patterns!</p>
-
-//                     <h3>3. Slip Through Secret Beach Paths</h3>
-
-//                     <p>Don't always follow the main track—sneak under piers or weave between the palm trees. These hidden paths often have extra coins or special power-ups that can help you beat the competition.</p>
-
-//                     <h3>4. Bounce Over Soft Sand Like a Pro</h3>
-
-//                     <p>When you hit soft sand, rise up on your bike's pegs and bend your knees. This riding stance helps you handle bumps and prevents you from falling over.</p>
-
-//                     <h3>5. Jump Back In—No Download Needed</h3>
-
-//                     <p> runs right in your browser. Just click “Play,” put on your helmet, and get ready for a seaside adventure with no waiting or extra downloads!</p>
-
-//                     <p>Have fun zooming through the waves and collecting all the treasures on the shore!</p>
-//                     &nbsp;
-
-//                     <h3>Features of Moto Beach Ride</h3>
-
-//                     <p><strong>Bright Beach Worlds</strong><br /> Zoom into sunny shorelines filled with colorful palm trees, soft sand, and sparkling waves. Every level feels like a fun day at the seaside.</p>
-
-//                     <p><strong> Super-Simple Controls</strong><br />  Just tap or swipe to speed up, brake, and tilt your bike. No complicated buttons—perfect for young riders who want instant fun.</p>
-
-//                     <p><strong>Wacky Characters to Unlock</strong><br /> Meet a lineup of playful heroes—from a surfing cat to a roller-skating robot—each with its own bike design and special style.</p>
-
-//                     <p><strong>Ramps, Loops & Surprise Obstacles</strong><br />Jump off sand dunes, loop under piers, and dodge surprise beach balls or crabs. Every track has fresh twists that keep you laughing.</p>
-
-//                     <p><strong>Power-Ups for Extra Speed</strong><br /> Grab rockets, shields, or magnet boosts as you race. Use them wisely to blast past friends and set new high scores.</p>
-
-//                     <p><strong>Catchy Tunes & Happy Sounds</strong><br /> Feel the beach party vibe with upbeat music and cheerful cheers whenever you nail a trick or finish a level.</p>
-
-//                     <p><strong>Instant Play on Any Device</strong><br /> No download needed! Launch in your web browser on a tablet, phone, or computer and hit the sand right away.</p>
-
-//                     <p><strong>Safe, Kid-Friendly Fun</strong><br /> Designed for young players, Moto Beach Ride keeps controls easy, themes bright, and challenges just right for ages 6 and up.</p>
-
-//                     &nbsp;
-
-//                     <h3>Moto Beach Ride Unblocked</h3>
-//                     <p>Ready... Set... Vroom! Moto Beach Ride Unblocked offers an exciting motorbike adventure under the sun, right in your web browser—no need to download any apps. It's perfect for kids who want to zoom across sandy beaches during their break time. This free Moto Beach Ride game can be played on any school or library computer, even with strong firewalls.</p>
-
-//                     <h3>Why Kids Love It:</h3>
-//                     <p>
-//                     • <strong>Easy Controls:</strong> Use simple arrow keys to speed up, brake, and lean back for awesome wheelies.  
-//                     <br>• <strong>Bright Beach Levels:</strong> Race past palm trees, colorful boardwalks, and exciting ramps.  
-//                     <br>• <strong>Unlockable Bikes:</strong> Earn coins while playing to upgrade your bike and improve performance.  
-//                     <br>• <strong>Instant Action:</strong> Just click "Play", choose a track, and you're ready to go—no waiting around!
-//                     </p>
-
-//                     <p>Whether you're racing against time, aiming for high scores, or showing off cool stunts, Moto Beach Ride Unblocked is the perfect free motorbike Moto Beach Ride  game for young thrill-seekers. Jump in, hit play, and let the beachside adventure begin!</p>
-
-//                     &nbsp;
-
-//                     <h3>Moto Beach Ride Online</h3>
-
-//                     <p>Get ready for an exciting turbo-charged adventure right in your browser! Moto Beach Ride Online lets young racers hop on a speedy dirt bike and zoom across sunlit shorelines without the need to wait or install anything. Whether you're on a laptop, tablet, or smartphone, you'll discover smooth, touch-friendly controls that make steering around palm trees and soaring over sand ramps a breeze.</p>
-
-//                     <p>As you race, collect sparkling coins and dodge drifting crabs to boost your score. With its lively seaside backdrop and simple, kid-friendly gameplay, every session feels like a fun-filled beach party. Just click "Play" and dive into the waves of excitement!</p>
-
-//                     &nbsp;
-//                     <h3>Moto Beach Ride Platform Compatibility</h3>
-//                     <p>Kids can enjoy the excitement of Moto Beach Ride on any device they have! Whether it's a PC, tablet, or smartphone, all you need is a web browser. There's no need to download or install anything—just tap "Play" and you're ready to zoom off on the sunny beach track in seconds! The    Moto Beach Ride game runs quickly and smoothly, no matter where you are, so you can have fun with this speedy, sandy action at home, at a friend's house, or even while you're out and about.</p>
-
-//                     &nbsp;
-
-//                     <h3>More Games Like Moto Beach Ride</h3>
-
-//                     <p>Are you ready for more thrilling two-wheeled adventures? Check out these exciting bike games that children absolutely love, all available to play for free in your web browser!</p>
-
-//                     <h3>Moto X3M</h3>
-//                     <p>Get ready for exhilarating loops and high-speed jumps across colorful desert and city tracks. The easy controls make it perfect for young riders who are learning new stunts.</p>
-
-//                     <h3>Dirt Bike Unchained</h3>
-//                     <p>Race against friends or computer opponents on muddy paths and snowy hills. Collect coins and stars to unlock new dirt bikes and helmets.</p>
-
-//                     <h3>Uphill Rush 8</h3>
-//                     <p>More than just a bike game—zoom around in cars, jetskis, and hoverboards too! Each level brings exciting new obstacles and power-ups to make you faster.</p>
-
-//                     <h3>Trial Bike Pro</h3>
-//                     <p>Navigate twisting paths full of ramps, seesaws, and moving platforms. With simple keyboard or touch controls, you'll master incredible tricks that defy gravity.</p>
-
-//                     <h3>Bike Racing Challenge</h3>
-//                     <p>Feel the breeze in your hair as you dodge obstacles, collect stars, and upgrade your bike. The colorful graphics and catchy music add to the fun experience.</p>
-
-//                     <p>All these games are playable right in your browser—no downloads needed! Choose your favorite, hit the gas, and become the ultimate bike champion on the beach!</p>
-
-//                     &nbsp;
-
-
-//                     <h3>Frequently Asked Questions – Moto Beach Ride</h3>
-
-//                     <p><strong>1. Do I have to install anything to play Moto Beach Ride?</strong><br>
-//                     No, you don’t! Moto Beach Ride plays right in your browser. Just visit the Moto Beach Ride page, and you’re ready for a seaside adventure—no download or setup needed.</p>
-
-//                     <p><strong>2. Can I play Moto Beach Ride on both phones and computers?</strong><br>
-//                     Yes, indeed! Whether you’re using a smartphone, tablet, or desktop, Moto Beach Ride adjusts perfectly to your screen. Simply open the site and start racing wherever you like.</p>
-
-//                     <p><strong>3. Is Moto Beach Ride really free?</strong><br>
-//                     Absolutely, it’s 100% free! Race across the sandy tracks, pull off amazing drifts, and gather seashells without spending a cent.</p>
-
-//                     <p><strong>4. Who can play Moto Beach Ride?</strong><br>
-//                     Everyone can join in! With bright, friendly graphics and easy controls, kids, teens, and adults all have a blast cruising the beach on two wheels.</p>
-
-//                     <p><strong>5. How do I get started in seconds?</strong><br>
-//                     Just tap the big Play button, choose your favorite bike, then use the arrow keys, on-screen buttons, or swipes to speed up, brake, and slide around turns. Ready, set, ride!</p>
-
-//                     &nbsp;
-//                                                               `,
-//   },
    {
     slug: "diino-defense",
     title: "Diino Defense",
       name: "Diino Defense",
-    thumb: "/games/diino-defense/diino-defense.jpg",
+    thumb: "/imggames/diino-defense/diino-defense.jpg",
     tag: "New",
     category: "Animals",
-    iframe: "/games/diino-defense/index.html"  ,
+    iframe: "https://games-gules-nu.vercel.app/diino-defense/index.html"  ,
     descriptionHtml: `
-                        <h3>Diino Defense: Play Free Online and Protect Your Dino Kingdom</h3>
+                        <h3>🎲Diino Defense: Play Free Online and Protect Your Dino Kingdom</h3>
                   <p>Jump into the world of Diino Defense and play for free online. It’s a fun dinosaur strategy game made for kids and families.</p>
                   <p>Become a brave dinosaur guardian. Plan smart defenses to protect your land from every challenger.</p>
                   <p>Set clever traps. Build giant walls. Dig deep moats. Raise sky-high castles. Shape the battlefield and outsmart your rivals at every turn.</p>
@@ -3578,14 +3412,14 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
                   &nbsp;
 
-                  <h3>What Is Diino Defense?</h3>
+                  <h3>🦋What Is Diino Defense?</h3>
                   <p>Diino Defense is like a colorful playground right in your browser, perfect for kids who love fun strategy games! Imagine placing magical towers, upgrading friendly cannons, and casting simple spells to defend your kingdom from sneaky invaders.</p>
                   <p>With its bright graphics and cheerful sounds, Diino Defense turns strategic thinking into a thrilling adventure. As you level up, you’ll unlock cool new defenses, earn awesome rewards, and find clever ways to beat each wave of creatures.</p>
                   <p>Whether you're just starting out or already a mini-general, Diino Defense is packed with hours of fun and excitement!</p>
 
 
 
-                  <h3>Why Choose Diino Defense?</h3>
+                  <h3>👾Why Choose Diino Defense?</h3>
 
                   <p>Diino Defense is a fantastic online tower-defense game crafted especially for kids. There's no need for downloads or waiting times—just open your browser and jump into a vibrant world where friendly dinos are ready to defend their land. With easy click-and-drag controls, children can place fun dino towers in just seconds, allowing them to spend more time enjoying the game rather than figuring out complicated controls.</p>
 
@@ -3594,7 +3428,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
                   &nbsp;
 
 
-                  <h3>Diino Defense Guide for Kids: Easy Steps to Shield Every Egg</h3>
+                  <h3>🍄Diino Defense Guide for Kids: Easy Steps to Shield Every Egg</h3>
 
                   <p>Jump right into Diino Defense, the colorful tower-defense game made just for young strategists! Your job is to stop waves of tiny monsters from stealing those precious Diino eggs. Here’s how to become the ultimate egg protector:</p>
 
@@ -3616,12 +3450,12 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
                   <p>Follow these simple steps, adapt your tactics as you go, and you’ll be the hero who saves every Diino egg in style!</p>
 
                   &nbsp;
-                  <h3>Controls</h3>
+                  <h3>⭐Controls</h3>
                   <p>Guide your adventurous Dino through glowing lava tunnels by tapping the ← and → arrow keys. If you spot a rocky blockade or a swooping pterodactyl, press the space bar (or ↑ arrow) to jump into the air and glide right over them. When enemies get close, click your mouse to launch bouncy dino eggs that bounce off walls and defeat your foes. Need to catch your breath or plan your next move? Just hit P to pause the fun. Best of all, this free browser game runs instantly—no downloads, no waits—perfect for kids who love fast, exciting dino action!</p>
 
                   &nbsp;
 
-                  <h3>Tips and Tricks for Diino Defense</h3>
+                  <h3>🦋Tips and Tricks for Diino Defense</h3>
                   <p>Are you ready to become a Diino Defense expert and protect your dinosaur buddy? Here's how you can improve your skills and score big!</p>
 
                   <h3>1. Perfect Your Timing</h3>
@@ -3640,7 +3474,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
 
                   &nbsp;
-                  <h3>Diino Defense: A Fun Castle-Guarding Adventure for Kids</h3>
+                  <h3>🎮Diino Defense: A Fun Castle-Guarding Adventure for Kids</h3>
 
                   <p>Get ready for action with Diino Defense, a fun and free tower defense game made just for young strategists. You don't need to download anything; just open your favorite browser and start playing!</p>
 
@@ -3649,7 +3483,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
                   <p>With simple controls perfect for little hands and many levels that bring new challenges—like fast-moving foes, tricky obstacles, and special boss rounds—Diino Defense promises endless fun. Cheerful sound effects make each victory more exciting, and the game's playful characters help kids learn basic strategy skills while defending their kingdom with big smiles.</p>
 
 
-                  <h3>Discover Diino Defense Unblocked</h3>
+                  <h3>🦋Discover Diino Defense Unblocked</h3>
                   <p>
                   Are you looking for a fun and exciting tower-defense game that you can play anywhere and anytime? Diino Defense Unblocked is the perfect choice for you! There's no need to download anything—just open your browser at home, in the library, or even on public Wi-Fi, and click "Play." Instantly, you'll enter vibrant battlefields where small but mighty towers defend against waves of sneaky invaders.
                   </p>
@@ -3659,7 +3493,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
                   &nbsp;
 
-                  <h3>Diino Defense Online</h3>
+                  <h3>🎯Diino Defense Online</h3>
                   <p>
                   Jump into Diino Defense Online with just a click—no downloads, no waiting! Simply open your browser on any computer, tablet, or phone, press Play, and you’re instantly transported to a bright battlefield filled with daring towers and cheeky invaders. With a simple tap or click, you can plant archers, magic spires, and cannon turrets, then watch them come to life as they battle waves of sneaky enemies. 
                   </p>
@@ -3670,7 +3504,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
                   &nbsp;
 
-                  <h3>Platform Compatibility</h3>
+                  <h3>🎲Platform Compatibility</h3>
 
                   <p>
                   Diino Defense is available on all devices—desktops, laptops, tablets, or smartphones—and doesn't require any installation. Simply open your web browser, connect to the internet, and dive into the action. Whether you're at home, in class, or on a road trip, the game loads in seconds. No downloads, no updates—just a tap or click to start your castle-defending adventure anytime, anywhere!
@@ -3678,7 +3512,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
                   &nbsp;
 
-                  <h3>Diino Defense Games</h3>
+                  <h3>🌍Diino Defense Games</h3>
                   <p>Are you looking for free, browser-based tower defense games that kids will love? Diino Defense Games is the perfect place to start your strategy adventure! No downloads needed—just open your web browser and dive into colorful battlefields. Build fun towers, recruit tiny heroes and silly monsters, and watch them work together to protect your base from waves of playful invaders.</p>
 
                   <p>Each game has its own unique twist: unlock special power-ups like lightning bolts or ice blasts, upgrade your defenses with earned coins, and uncover secret levels hidden behind enchanted forests or futuristic skylines. Some versions even let you team up with friends online, turning your defense into an exciting cooperative challenge.</p>
@@ -3689,7 +3523,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
                   &nbsp;
 
 
-                  <h3>Diino Defense: Kids' Quick-Start FAQ</h3>
+                  <h3>🍭Diino Defense: Kids' Quick-Start FAQ</h3>
 
                   <p><strong>1. Do I have to install anything to play?</strong></p>
                   <p>No, you don’t need to install anything! Diino Defense is a fun tower-defense game that you play right in your internet browser. Just open your browser, visit the Diino Defense page, and you're all set to start playing—no downloads or installations required.</p>
@@ -3714,30 +3548,30 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     slug: "robo-tracker",
     title: "Robo Tracker",
       name: "Robo Tracker",
-    thumb: "/games/robo-tracker/robotracker.png",
+    thumb: "/imggames/robo-tracker/robotracker.png",
     tag: "New",
     category: "Adventure",
-    iframe: "/games/robo-tracker/index.html"  ,
+    iframe: "https://games-gules-nu.vercel.app/robo-tracker/index.html"  ,
     descriptionHtml: `
-                                          <h3>Play RoboTracker  Online for Free</h3>
+                                          <h3>🎯Play RoboTracker  Online for Free</h3>
                                       <p>Get ready to track, monitor, and manage like never before! With RoboTracker, you can follow your robots, drones, or vehicles in real time. See their location, speed, and status all in one place.</p>
                                       <p>Set alerts to know when a device moves, changes location, or needs attention. Stay informed and in control without stress. Keep your eyes on the map and your mind at ease.</p>
                                       <p>This tracking tool is fast, accurate, and simple to use. It’s perfect for beginners and powerful enough for experts. Whether for work or fun, game makes tracking easy and reliable.</p>
                                       <p>Ready to start? Connect your device, open the dashboard, and watch RoboTracker bring your world into focus. Stay connected, stay informed, and enjoy smarter tracking.</p>
                                       &nbsp;
 
-                                      <h3>What Is RoboTracker?</h3>
+                                      <h3>🎲What Is RoboTracker?</h3>
                                       <p>this game is your go-to place for all things related to browser gaming, making it perfect for kids who are excited to jump into fun adventures without needing any downloads or tricky installations. It’s designed to neatly keep track of every young player's achievements, high scores, and virtual trophies in a fun and vibrant dashboard.</p>
                                       <p>The game controls are super easy to learn, and the play space is incredibly safe. Plus, there's a library that’s always growing with amazing robot-themed puzzles, races, and adventures. RoboTracker is like a ticket to exploring new things and having friendly competitions.</p>
                                       <p>Whether you're unlocking new levels on your own or teaming up with friends, RoboTracker makes gaming simple, secure, and tons of fun—all directly from your web browser.</p>
 
-                                      <h3>Why Choose RoboTracker?</h3>
+                                      <h3>🎮Why Choose RoboTracker?</h3>
                                       <p>Are you searching for a free online game for kids that mixes fun with learning? Look no further than this game! This browser-based adventure lets young detectives jump right into the action—no downloads or updates required.</p>
                                       <p>The game's bright graphics and cheerful sounds grab your attention, and the easy arrow or tap controls make it simple for kids to guide their robot investigator around. Each level is created to enhance critical thinking and becomes a bit more challenging as you go, keeping children entertained without frustration.</p>
                                       <p>RoboTracker is perfect whether you're on a desktop, tablet, or smartphone. It's great for quick play breaks or longer gaming sessions. Enter the glowing circuit mazes, solve each secret case, and see your problem-solving skills light up with every mission!</p>
                                       &nbsp;
 
-                                      <h3>Play RoboTracker: A Kid's Fun Guide</h3>
+                                      <h3>👾Play RoboTracker: A Kid's Fun Guide</h3>
 
                                       <p>Get ready to dash through glowing hallways in RoboTracker, your new favorite robot-chasing adventure! Use the arrow keys or WASD to steer your tracker left, right, up, and down. Your mission? Tag every runaway robot and bring it back safely to the charging station before the timer runs out.</p>
 
@@ -3746,7 +3580,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
                                       <p>Each round becomes more challenging with twistier paths and faster bots—so think quick, dodge obstacles, and collect every robot in record time. Have a blast, little tracker, and see if you can become the ultimate this game hero!</p>
 
                                       &nbsp;
-                                      <h3>Controls</h3>
+                                      <h3>⭐Controls</h3>
                                       <p>
                                       Steer your RoboTracker through exciting neon tunnels using the simple arrow keys:
                                       </p>
@@ -3760,7 +3594,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
                                       </p>
 
                                       &nbsp;  
-                                      <h3>Tips and Tricks for RoboTracker</h3>
+                                      <h3>💎Tips and Tricks for RoboTracker</h3>
 
                                       <p>Are you ready to dive into this fun and free online game for kids? Start by visiting the Training Arena where you can learn how to dash and climb walls without losing any lives. When you find a Dash Boost crystal, use it to smash through weak barriers and uncover hidden coin chambers.</p>
 
@@ -3770,14 +3604,14 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
                                       &nbsp;
 
-                                      <h3>RoboTracker’s Fun-Packed Features for Young Explorers</h3>
+                                      <h3>🦋RoboTracker’s Fun-Packed Features for Young Explorers</h3>
 
                                       <p>Dive right into the adventure—no downloads or long waits needed! Game welcomes you with bright, cartoon-style robots and twisty mazes that spark curiosity. With simple tap-and-swipe controls, even first-time players can master each level within minutes. Cheerful sound effects and catchy background tunes keep young adventurers smiling from start to finish.</p>
 
                                       <p>Watch out for sneaky obstacles that will challenge your reflexes. Grab speedy power-ups to zoom past tricky spots, and meet a new robot friend in every stage. As you explore deeper, the puzzles become more creative, turning every maze into a brand-new adventure!</p>
 
                                       &nbsp;
-                                      <h3>RoboTracker Unblocked</h3>
+                                      <h3>🍭RoboTracker Unblocked</h3>
                                       <p>
                                       Embark on an amazing robot adventure directly in your browser—no need for downloads or installations, and it's completely accessible! Lead your personalized robot through glowing, maze-like paths and collect shiny chips while cleverly avoiding tricky laser beams. You can play this exciting game on any school or public network without any blocks.
                                       </p>
@@ -3786,7 +3620,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
                                       </p>
 
                                       &nbsp;  
-                                      <h3>RoboTracker Online</h3>
+                                      <h3>🎮RoboTracker Online</h3>
 
                                       <p>
                                       Welcome to RoboTracker Online! Dive into this exciting game directly from your browser with no installations or delays. It's perfect for playing on computers, tablets, or smartphones. In this free, robot-chase game, kids can guide a friendly little robot through bright and twisty mazes filled with hidden gadgets and delightful surprises.
@@ -3801,19 +3635,19 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
                                       </p>
 
                                       &nbsp;
-                                      <h3>Platform Compatibility</h3>
+                                      <h3>💎Platform Compatibility</h3>
 
                                       <p>
                                       Whether you're relaxing at home with a big desktop computer, snuggling up with a tablet, or on the move with a smartphone, RoboTracker is ready for action. There's no need to download or install anything—simply open your favorite browser and start playing. The game's design adjusts automatically, so everything—from buttons to colorful robot graphics—fits your screen perfectly. This ensures clear images and easy controls, regardless of the device you use. Plus, you won't use up your device's memory. All you need is an internet connection and a spirit of adventure, and game will zoom into action!
                                       </p>
                                       &nbsp;
 
-                                      <h3>More Games Like RoboTracker</h3>
+                                      <h3>❤️More Games Like RoboTracker</h3>
                                       <p>Are you ready for more robot fun? Dive into these amazing browser games that combine high-speed racing, clever puzzles, and fantastic power-ups! Lead your brave robot through colorful, mechanical worlds, collect shiny stars, and outsmart sneaky foes—all while racing against the clock. The best part? There's nothing to install: simply click "Play" in your browser and jump right into the action. It's perfect for young adventurers who love speedy thrills and clever challenges. Get ready for hours of robo-racing excitement!</p>
 
 
                                       &nbsp; 
-                                      <h3>Frequently Asked Questions – RoboTracker</h3>
+                                      <h3>🎲Frequently Asked Questions – RoboTracker</h3>
 
                                       <p><strong>1. Do I have to install RoboTracker on my device?</strong></p>
                                       <p>Nope! RoboTracker is a browser game, so there's nothing to download or update. Just open the game link in Chrome, Safari, or any web browser and you’re set to start the robot-chasing adventure!</p>
@@ -3838,7 +3672,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
                                       
                                       &nbsp;
 
-                                      <h3>RoboTracker Adventure</h3>
+                                      <h3>💎RoboTracker Adventure</h3>
                                       <p>
                                       Step into a neon-lit world full of twists, turns, and surprises. RoboTracker Adventure challenges you to outsmart tricky robots, overcome laser traps, and solve brain-teasing puzzles. Each level is a brand-new journey, with hidden paths and secret rewards waiting to be discovered.
                                       </p>
@@ -3878,22 +3712,22 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     slug: "car-race-game",
     title: "Car Race Game",
       name: "Car Race Game",
-    thumb: "/games/car-race-game/car-race game.jpg",
+    thumb: "/imggames/car-race-game/car-race game.jpg",
     tag: "New",
     category: "Racing",
-    iframe: "/games/car-race-game/index.html"  ,
+    iframe: "https://games-gules-nu.vercel.app/car-race-game/index.html"  ,
     descriptionHtml: `
-                <h3>Play the Free Car Race Game!</h3>
+                <h3>🎲Play the Free Car Race Game!</h3>
             <p>Experience the thrill of high-speed racing in this fun and free car game. Customize your car, zoom along colorful tracks, and dodge wacky obstacles as you race against friends and climb the leaderboards.</p>
             <p>Collect sparkling coins to unlock turbo boosts and special upgrades. Every lap offers a new adventure with exciting turns, daring jumps, and plenty of action.</p>
             <p>With bright graphics and catchy sound effects, this game is perfect whether you’re a beginner or a seasoned racer. Get ready to jump ramps, avoid traffic, and race toward your well-deserved victory!</p>
             &nbsp;
-            <h3>What Are Car Race Games?</h3>
+            <h3>🎮What Are Car Race Games?</h3>
             <p>Car race games are thrilling online adventures where kids can leap into colorful, speedy cars and race across exciting tracks right on their computers. Whether it's drifting around winding mountain roads or zooming through lively city streets glowing with neon lights, each car race game offers simple controls and playful graphics that are perfect for newcomers. Kids can customize their cars, collect amazing power-ups, and race against their friends or computer opponents to see who can reach the finish line first. These browser-based races are perfect for quick play sessions, fostering friendly competition, and improving hand-eye coordination, all while delivering endless fun at every turn!</p>
 
             &nbsp;
 
-            <h3>Why Choose Car Race Game?</h3>
+            <h3>❤️Why Choose Car Race Game?</h3>
             <p>Car Race Game lets kids become the drivers in an exciting, fast-paced adventure that you can play right in your browser—no download required!</p>
             <p>The tracks are bright and cartoon-like, with colorful loops, thrilling ramps, and secret shortcuts to discover. With just a click, young racers can accelerate, drift around corners, and collect cool power-ups like rockets, shields, and speed boosts.</p>
             <p>Each level brings new surprises such as bouncy obstacles, unlockable cars with awesome designs, and even tighter lap times to challenge. The friendly leaderboards and simple controls make it easy to challenge friends or race against your own best times.</p>
@@ -3901,51 +3735,51 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
 
             &nbsp;
-            <h3>How to Play Car Race Game</h3>
+            <h3>⭐How to Play Car Race Game</h3>
             <p>Get ready, little racers, to jump into the driver’s seat of the Car Race Game! First, choose a car that sparks your imagination—perhaps it's red and speedy or neon green with big wheels. Press the up arrow key to zoom off from the starting line. Want to turn a corner or avoid a cone? Press the left and right arrows to steer your car safely around each bend. If a tight turn feels tricky, hit the down arrow to gently brake and keep your racer on track.</p>
             <p>As you speed through each lap, look out for shiny coins and colorful power-ups scattered along the way. Grab a turbo boost for a sudden speed burst, collect extra points, or pick up a protective shield to glide past oil spills and obstacles. Your goal is to cross the finish line before time runs out—and try to beat your own best time or challenge friends for the top spot!</p>
             <p>Every victory unlocks new cars and exciting tracks, so each race is a chance to discover fresh wheels and fun challenges. Start your engines, hit the gas, and become the ultimate track champion!</p>
 
             &nbsp;
-            <h3>Controls</h3>
+            <h3>✅Controls</h3>
             <p> Get behind the wheel in Car Race Game with easy controls and fast reactions! </p> <p><strong>Accelerate:</strong> Press ↑ to move forward.</p> <p><strong>Steer:</strong> Use ← and → to turn your car left or right.</p> <p><strong>Brake/Reverse:</strong> Press ↓ to slow down or go backward.</p> <p> Simple and responsive for beginners and pros alike. No install, just play directly in your browser! </p>
 
             &nbsp;
-            <h3>Tips and Tricks for Car Race Game</h3>
+            <h3>🎲Tips and Tricks for Car Race Game</h3>
             <p><strong>Stay on the Track</strong><br> Off-road slows you down—stay on the road to keep your top speed and beat the competition!</p> <p><strong>Master the Corners</strong><br> Brake before the turn, then accelerate out of it for the fastest lap times.</p> <p><strong>Watch for Boosts</strong><br> Grab speed boosts and avoid oil slicks—they can make or break your race.</p> <p><strong>Replay to Improve</strong><br> Each race helps you learn the course better. Come back and improve your time!</p>
 
             &nbsp;
-            <h3>Features of Car Race Game</h3>
+            <h3>❤️Features of Car Race Game</h3>
             <p><strong>1. Fast-Paced Racing Fun:</strong> Speed through colorful tracks with smooth controls and fast gameplay.</p> <p><strong>2. Free to Play:</strong> 100% browser-based—no install, no login, just race!</p> <p><strong>3. Solo Gameplay:</strong> Designed as a <strong>single player racing game</strong> that’s easy to start and hard to stop.</p> <p><strong>4. Great for All Ages:</strong> Kid-friendly design with no violence or complex systems.</p> <p><strong>5. Mobile Friendly:</strong> Play on phone, tablet, or computer—your car, your rules.</p> <p><strong>6. Addictive Challenge:</strong> Beat your own time, dodge obstacles, and climb the leaderboard!</p>
 
             &nbsp;
-            <h3>Car Race Game Online</h3>
+            <h3>🍄Car Race Game Online</h3>
             <p> Play <strong>Car Race Game Online</strong> and hit the road instantly! This is the perfect browser racing game for players who love cars, speed, and competition. No download, no registration—just pure racing action. </p> <p> Start your engine and show your driving skills today! </p>
 
             &nbsp;
-            <h3>Platform Compatibility</h3>
+            <h3>🦋Platform Compatibility</h3>
             <p> Whether you’re playing on Chrome, Firefox, Safari, or Edge, Car Race Game runs smoothly on every modern browser. It works on desktops, laptops, tablets, and phones with full screen responsiveness. </p> <p> Wherever you are, the race is ready when you are! </p>
 
             &nbsp;
-            <h3>Car Race Game Unblocked</h3>
+            <h3>💎Car Race Game Unblocked</h3>
             <p> Need a racing break at school or work? Try <strong>Car Race Game Unblocked</strong>—a free game you can play on any connection, even restricted networks. No barriers, no installs—just launch and drive. </p> <p> It’s perfect for short breaks, classroom fun, or a quick race on the go. </p>
 
             &nbsp;
-            <h3>Car Race Games</h3>
+            <h3>✅Car Race Games</h3>
             <p> Explore a world of <strong>Car Race Games</strong> with exciting tracks, varied environments, and different challenges. Whether you love off-road adventures, city races, or endless highways, this genre has it all. </p> <p> Play more browser-based car games to boost your reflexes, collect trophies, and become the fastest racer online. </p>
 
 
             &nbsp;
-            <h3>Exciting Racing Games to Play Right Now</h3>
+            <h3>🎲Exciting Racing Games to Play Right Now</h3>
             <p>Love Car Race Game? Try these other speed-filled browser games:</p> <p><strong>1. Speed Drift Challenge</strong><br> Race around corners with realistic physics and drifting mechanics.</p> <p><strong>2. Highway Rush 3D</strong><br> Dodge traffic and reach the finish line in this endless road challenge.</p> <p><strong>3. Mini Circuit Racers</strong><br> Top-down arcade-style racing fun on tight curves and fast laps.</p> <p><strong>4. Monster Truck Sprint</strong><br> Take on hills, loops, and obstacles in this crazy truck adventure.</p> <p><strong>5. Turbo Kart Battle</strong><br> A fun kart game with power-ups, jumps, and chaos at every corner!</p>
 
             &nbsp;
-            <h3>Why You’ll Love Them</h3>
+            <h3>🎮Why You’ll Love Them</h3>
             <p> • Instant gameplay—no login or install required<br> • Simple controls and bright visuals for kids and casual players<br> • Great variety of cars, tracks, and difficulty levels<br> • Play on mobile, tablet, or computer without lag </p>
 
             &nbsp;
 
-            <h3>Car Race Game FAQs – Ready, Set, Go!</h3>
+            <h3>🍄Car Race Game FAQs – Ready, Set, Go!</h3>
             <p><strong>1. Do I need to download Car Race Game?</strong><br> No! It runs directly in your browser without downloading or installing anything.</p> <p><strong>2. Can I play on mobile?</strong><br> Yes! The game works on all mobile devices with responsive controls.</p> <p><strong>3. Is it multiplayer?</strong><br> Currently, it’s a <strong>solo racing game</strong> where you race against time and obstacles.</p> <p><strong>4. Is it free to play?</strong><br> Absolutely. The game is 100% free with no ads or purchases.</p> <p><strong>5. Is Car Race Game good for kids?</strong><br> Yes—it’s designed for all ages with no violence, just fun driving action.</p>
 
             &nbsp;
@@ -3994,19 +3828,19 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     slug: "math-pop",
     title: "Math Pop",
       name: "Math Pop",
-    thumb: "/games/math-pop/math.png",
+    thumb: "/imggames/math-pop/math.png",
     tag: "New",
          category: ["Puzzle", "Brain"], // ← tableau au lieu d’un seul string
-    iframe: "/games/math-pop/index.html"  ,
+    iframe: "https://games-gules-nu.vercel.app/math-pop/index.html"  ,
     descriptionHtml: `
 
-              <h3>Play Math Pop Online for Free!</h3>
+              <h3>✅Play Math Pop Online for Free!</h3>
               <p>Jump into a colorful world where solving math puzzles is as fun as popping balloons! In this exciting game, you will add, subtract, and even multiply big numbers, all while racing against the clock and watching your score grow.</p>
               <p>Each level offers a fresh adventure and engaging challenges. Meet friendly characters, unlock amazing power-ups, and compete with your friends and family to earn the title of Math Champion.</p>
               <p>Every pop improves your math skills, turning learning into a joyful game. Get started today for a fun and interactive way to enjoy mathematics while celebrating every burst of a balloon!</p>
 
               &nbsp;
-              <h3>Math Pop</h3>
+              <h3>⭐Math Pop</h3>
               <p>
               Math Pop is an incredibly fun online game that brings together the excitement of popping colorful bubbles with the joy of solving math puzzles! It's perfect for young explorers. Each level is filled with friendly characters and bright bubbles adorned with numbers and math symbols.
               </p>
@@ -4020,7 +3854,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
 
               &nbsp;
-              <h3>Why Choose Math Pop?</h3>
+              <h3>🎲Why Choose Math Pop?</h3>
 
               <p>Math Pop transforms math practice into a fun bubble-popping game that your child will love. In each level, colorful bubbles float across the screen, each containing a simple math question—just tap the right bubble to pop it! There's no need to download or install anything: kids can dive straight into the fun from any web browser.</p>
 
@@ -4030,7 +3864,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
               &nbsp;
 
-              <h3>How to Play Math Pop</h3>
+              <h3>🍄How to Play Math Pop</h3>
               <p>Are you ready to turn practicing numbers into a bubble-popping adventure? Math Pop is the perfect blend of bright colors, quick thinking, and simple math—just right for curious kids!</p>
 
               <h3>1. Read the Question</h3>
@@ -4059,7 +3893,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
               <h3>7. Climb the Leaderboard</h3>
               <p>Aim for the top score! Challenge yourself or race against friends to see who can pop the most bubbles and build the highest combo streak.</p>
 
-              <h3>Tips for Tiny Math Wizards</h3>
+              <h3>❤️Tips for Tiny Math Wizards</h3>
               <ul>
                 <li>Play often to sharpen your speed and accuracy.</li>
                 <li>Focus on one operation at a time—addition, subtraction, multiplication, or division.</li>
@@ -4070,18 +3904,18 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
               &nbsp;
 
-              <h3>Controls</h3>
+              <h3>🎮Controls</h3>
               <p>
                   Mastering Math Pop is easy and fun! Use the left and right arrow keys to move your hero across the screen. Press the spacebar to jump over any gaps in your way. When you see math bubbles rising, click or tap on the one with the correct answer before it floats away. Make sure to keep an eye on the countdown timer and watch as your score gets higher in this exciting math game for kids. You don’t need to download anything—just open your browser and start playing!
               </p>
               &nbsp;
 
-              <h3>Math Pop Game Secrets</h3>
+              <h3>⭐Math Pop Game Secrets</h3>
               <p>Are you ready to zoom to the top of Math Pop's leaderboard? Start by practicing your timing skills to make sure your hero jumps perfectly over gaps and grabs sparkling stars before they disappear. Keep a lookout for shiny coins and colorful boosters—these special power-ups can unlock hidden doors nestled behind rainbow arcs!</p>
               <p>Don't rush past any ledges or walls, because some of them might hide breakable bricks and secret ladders that lead straight to bonus math puzzles. And guess what? You can play Math Pop directly in your web browser—no downloads or waiting—so kids can jump into quick, fun, brain-training adventures instantly. Pop, calculate, explore—and watch your high score climb higher and higher!</p>
 
               &nbsp;
-              <h3>Exciting Adventures with Math Pop</h3>
+              <h3>🌟Exciting Adventures with Math Pop</h3>
               <p>
               Math Pop is the ultimate online math game for kids, and the best part is, you don’t need to download or install anything! Dive into a fun world full of colorful, cartoon-style bubbles and friendly characters. Just tap or click to match numbers and solve puzzles—it’s that easy!
               </p>
@@ -4096,7 +3930,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
               &nbsp;
 
 
-              <h3>Platform Compatibility</h3>
+              <h3>🎲Platform Compatibility</h3>
               <p>
               Math Pop is built to work seamlessly on any device you choose! Whether you're using a desktop computer, a laptop, an iPad in class, or a smartphone on the go, Math Pop fits right in. Because it operates directly in your web browser, there's no need to download any apps or wait for updates. Simply open your favorite browser, visit the Math Pop website, and dive straight into the fun!
               </p>
@@ -4107,7 +3941,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
               &nbsp;
 
 
-              <h3>Math Pop Unblocked</h3>
+              <h3>🍄Math Pop Unblocked</h3>
               <p>
               Welcome to Math Pop Unblocked—a fun, free math game you can play right in your browser! There's no need to download anything or install any software. Just start playing on any computer, even at school or the library, when other games might be blocked. 
               </p>
@@ -4120,7 +3954,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
               &nbsp;
 
-              <h3>Platform Compatibility</h3>
+              <h3>🎮Platform Compatibility</h3>
               <p>
               Math Pop is built to work seamlessly on any device you choose! Whether you're using a desktop computer, a laptop, an iPad in class, or a smartphone on the go, Math Pop fits right in. Because it operates directly in your web browser, there's no need to download any apps or wait for updates. Simply open your favorite browser, visit the Math Pop website, and dive straight into the fun!
               </p>
@@ -4130,14 +3964,14 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
               &nbsp;
 
-              <h3>Math Pop Games</h3>
+              <h3>✅Math Pop Games</h3>
               <p>Are you searching for a fun way to boost your brain power? Look no further! Math Pop Games brings you colorful, kid-friendly puzzles right to your browser, with no downloads or installations needed!</p>
               <p>Pop bubbles to solve addition, subtraction, and even simple fraction challenges. Race against the clock or compete with friends to see who can pop the most bubbles. Each level is filled with bright graphics and cheerful sounds to make learning exciting and fun.</p>
               <p>These free online pop-and-learn adventures are perfect for quick math breaks at home or in the classroom. They're designed to help children build confidence and improve their number skills with every click. Jump in now and discover how many math bubbles you can pop!</p>
 
 
               &nbsp;
-              <h3>Math Pop Online</h3>
+              <h3🦋>Math Pop Online</h3>
 
               <p>Dive into Math Pop Online, the browser-based game that turns numbers into nonstop fun—no downloads required! Just grab your laptop, tablet, or phone and start popping bright bubbles filled with math questions. Each correct answer earns you shiny stars and unlocks new, colorful worlds. Friendly animations and upbeat sounds make every challenge feel like a celebration.</p>
 
@@ -4145,7 +3979,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
               &nbsp;
 
-              <h3>Frequently Asked Questions - Math Pop</h3>
+              <h3>🌍Frequently Asked Questions - Math Pop</h3>
 
               <p><strong>1. Can I play Math Pop online without installing anything?</strong><br>
               Yes! Math Pop is a browser-based math game—no downloads or apps needed. Just open your web browser, go to the Math Pop page, and start popping bubbles right away.</p>
@@ -4178,14 +4012,14 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     slug: "builditekt",
     title: "Builditekt",
       name: "Builditekt",
-    thumb: "/games/builditekt/buildi-tekt.jpg",
+    thumb: "/imggames/builditekt/buildi-tekt.jpg",
     tag: "New",
     category: ["Creative", "Simulation"],
-    iframe: "/games/builditekt/index.html"  ,
+    iframe: "https://games-gules-nu.vercel.app/builditekt/index.html"  ,
     descriptionHtml: `
 
 
-                    <h3>Play Builditekt Online for Free!</h3>
+                    <h3>✅Play Builditekt Online for Free!</h3>
 
                 <p>Jump into a world full of color and creativity where you become a master builder! In Builditekt, you can stack bright blocks, design amazing towers, bridges, and castles, and solve fun puzzles along your journey.</p>
 
@@ -4195,7 +4029,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
 
                 &nbsp;
-                <h3>What is Builditekt?</h3>
+                <h3>⭐What is Builditekt?</h3>
                 <p>
                 Builditekt is a magical online playground where kids become little architects and engineers, creating, constructing, and decorating their own virtual masterpieces. With a delightful assortment of colorful building games, our kid-friendly platform sparks imagination and introduces the basic principles of architecture and physics.
                 </p>
@@ -4205,127 +4039,127 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
 
                 &nbsp;
-                <h3>Why Choose Builditekt?</h3>
+                <h3>🎮Why Choose Builditekt?</h3>
                 <p>Builditekt is the perfect online building game just for kids — no need to download or wait! With a variety of colorful blocks, you can create castles, race cars, rocket ships, and anything else you can imagine. Each level presents a fun puzzle that encourages critical thinking, never becoming too difficult. If you want to try a new design, just click once to reset and start again quickly.</p>
                 <p>Throughout the game, lively music and playful sound effects motivate you, and a helpful guide is ready with tips whenever you need help. As you build, organize, and balance, you're also learning basic STEM concepts like shapes, patterns, and gravity, making screen time a creative learning experience.</p>
                 <p>Safe, easy to use, and endlessly fun, Builditekt is where young inventors gain confidence, one block at a time!</p>
 
                 &nbsp;
-                <h3>Controls</h3>
+                <h3>⭐Controls</h3>
                 <p> Building your world in Builditekt is as simple as clicking and creating. These intuitive controls make it perfect for kids, teens, and sandbox fans of all ages. </p> <p><strong>Move Around:</strong> Use the arrow keys or W-A-S-D to explore the map in all directions.</p> <p><strong>Place Blocks:</strong> Click the left mouse button (or tap on screen) to place a block at the selected location.</p> <p><strong>Delete Blocks:</strong> Right-click (or double-tap) to remove blocks and redesign your world.</p> <p><strong>Select Materials:</strong> Use the number keys (1–9) or the block menu to pick from grass, stone, bricks, wood, and more.</p> <p>No downloads or installation needed. Just launch Builditekt in your browser and start building immediately!</p>
 
 
                 &nbsp;
-                <h3>Tips and Tricks for Builditekt</h3>
+                <h3>🎲Tips and Tricks for Builditekt</h3>
                 <p><strong>Plan Before You Build</strong><br> Want to create amazing structures? Start by sketching your ideas mentally or on paper before placing your first block. Visualizing your layout helps you create smarter designs, whether it’s a house, a castle, or a maze.</p> <p><strong>Use Height to Your Advantage</strong><br> Don’t forget to build vertically! Add towers, multi-story buildings, or even sky bridges to make your world more dynamic. Climbing high adds depth and excitement to your construction style.</p> <p><strong>Mix Materials</strong><br> Combine stone, brick, and glass to give your buildings texture and color. Switching materials helps your creations stand out and adds a touch of realism to your pixel art world.</p> <p><strong>Explore and Rebuild</strong><br> There’s no pressure to get it perfect the first time. Builditekt is all about experimentation. Feel free to destroy, redesign, and rebuild until your vision comes to life!</p>
 
 
                 &nbsp;
-                <h3>Features of Builditekt</h3>
+                <h3>💡Features of Builditekt</h3>
                 <p><strong>1. Creative Mode Freedom:</strong> Build whatever you want with unlimited blocks and space—your imagination is the only limit.</p> <p><strong>2. Colorful Pixel Graphics:</strong> Enjoy smooth and vibrant visuals that bring your creations to life in a retro-art style.</p> <p><strong>3. Instant Play in Browser:</strong> No downloads, no login. Just click and start building your world!</p> <p><strong>4. Kid-Friendly Gameplay:</strong> Safe, calm, and creative—perfect for younger players who love building games.</p> <p><strong>5. Wide Material Selection:</strong> Choose from a variety of blocks, including grass, sand, stone, wood, and more.</p> <p><strong>6. Works on Any Device:</strong> Compatible with computers, tablets, and phones with full touch support.</p> <p><strong>7. Simple Controls:</strong> Easy click-and-build interface for stress-free play.</p>
 
 
                 &nbsp;
-                <h3>Builditekt Online</h3>
+                <h3>🍄Builditekt Online</h3>
                 <p> Launch Builditekt online from your favorite browser and dive into a world of endless building. Whether you're using a computer, tablet, or phone, the game loads quickly and plays smoothly. There's no setup required—just creativity, fun, and freedom! </p> <p> Ideal for school breaks, calm afternoons, or late-night design sessions. Builditekt Online is always ready to play. </p>
 
 
                 &nbsp;
-                <h3>Platform Compatibility</h3>
+                <h3>🎮Platform Compatibility</h3>
                 <p> Builditekt works perfectly across all platforms—desktop, mobile, or tablet. You can play on Chrome, Firefox, Safari, Edge, or any modern browser. Whether you're on Windows, macOS, Android, or iOS, just open your browser and start creating instantly. </p>
 
 
 
                 &nbsp;
-                <h3>Builditekt Unblocked</h3>
+                <h3>🌍Builditekt Unblocked</h3>
                 <p> Want to play anywhere—even at school or on public Wi-Fi? Try <strong>Builditekt Unblocked</strong>, the free online building game with no restrictions. Play directly in your browser with no downloads or logins required. Just open the page, select your blocks, and let your imagination build the world around you! </p>
 
 
 
                 &nbsp;
-                <h3>Builditekt Game FAQs – Build Smarter</h3>
+                <h3>⭐Builditekt Game FAQs – Build Smarter</h3>
                 <p><strong>1. Do I need to install Builditekt?</strong><br> Nope! It’s a browser-based game, so just open the site and start building instantly—no download needed.</p> <p><strong>2. Is Builditekt free to play?</strong><br> Yes, 100% free. There are no hidden fees, subscriptions, or in-app purchases. Just pure creative fun!</p> <p><strong>3. Can I play on mobile?</strong><br> Absolutely. Builditekt is optimized for phones and tablets, with responsive touch controls and fast load times.</p> <p><strong>4. Is this game good for kids?</strong><br> Definitely! Builditekt is a safe and educational sandbox game where children can explore creativity, logic, and spatial thinking.</p> <p><strong>5. Can I save my builds?</strong><br> Some versions allow saving via local storage. If not, just screenshot your work or rebuild it next time—practice makes perfect!</p>
 
 
 
                 &nbsp;
-                <h3>Free Sandbox Building Game</h3>
+                <h3>🎮Free Sandbox Building Game</h3>
                 <p> Builditekt is the ultimate <strong>free sandbox building game</strong> where your creativity shapes the world. There are no rules, no goals—just pure building freedom with blocks, textures, and colorful terrain. Let your imagination run wild in this relaxing and open-ended pixel playground. </p>
 
                 &nbsp;
-                <h3>Free Sandbox Building Game</h3>
+                <h3>✅Free Sandbox Building Game</h3>
                 <p> Builditekt is the ultimate <strong>free sandbox building game</strong> where your creativity shapes the world. There are no rules, no goals—just pure building freedom with blocks, textures, and colorful terrain. Let your imagination run wild in this relaxing and open-ended pixel playground. </p>
 
 
                 &nbsp;
-                <h3>Browser-Based Minecraft Alternative</h3>
+                <h3>⭐Browser-Based Minecraft Alternative</h3>
                 <p> Looking for a fun, simple, and free <strong>Minecraft alternative online</strong>? Builditekt runs in your browser—no installs, no accounts. With pixel graphics, sandbox freedom, and intuitive controls, it's the perfect mini-builder for young players and casual gamers. </p>
 
 
                 &nbsp;
-                <h3>Block Craft Game for Kids</h3>
+                <h3>🎲Block Craft Game for Kids</h3>
                 <p> With bright visuals and no violence, Builditekt is a safe and fun <strong>block craft game for kids</strong>. Young builders can explore, design, and express their ideas while learning spatial logic and creativity. Ideal for classrooms, after-school play, or weekend projects. </p>
 
 
 
 
                 &nbsp;
-                <h3>Creative Building Simulator</h3>
+                <h3>✅Creative Building Simulator</h3>
                 <p> Builditekt is a relaxing <strong>creative building simulator</strong> where you can build at your own pace. There’s no timer, no enemies, just blocks and imagination. Build sculptures, pixel art, or realistic cities—all in a calm, user-friendly environment. </p>
 
 
                 &nbsp;
-                <h3>Play Block Game Without Download</h3>
+                <h3>💡Play Block Game Without Download</h3>
                 <p> No download? No problem. Builditekt is a <strong>block game you can play without downloading</strong> anything. It works right inside your browser, perfect for Chrome, Firefox, Safari, and mobile too. Play anywhere, anytime—at school, at home, or on the go! </p>
 
 
                 &nbsp;
-                <h3>Build Games Online Without Login</h3>
+                <h3>❤️Build Games Online Without Login</h3>
                 <p> Want to build without limits or logins? <strong>Builditekt</strong> is a <strong>builder game online with no sign-up</strong> required. Just open your browser, start creating, and save your masterpieces locally. Perfect for quick play sessions and spontaneous creativity. </p>
 
                 &nbsp;
-                <h3>Explore a Block World Sandbox</h3>
+                <h3>🌍Explore a Block World Sandbox</h3>
                 <p> Dive into a massive <strong>block world sandbox</strong> where you can explore endless terrain and craft new spaces from scratch. From forests to floating islands, Builditekt gives you the tools to shape your own pixel universe freely. </p>
 
                 &nbsp;
-                <h3>Pixel Construction Game for All Ages</h3>
+                <h3>❤️Pixel Construction Game for All Ages</h3>
                 <p> Whether you're a kid building your first house or an adult designing a digital city, Builditekt is a <strong>pixel construction game</strong> made for everyone. With easy tools, relaxing gameplay, and colorful visuals, it's both fun and therapeutic. </p>
 
                 &nbsp;
-                <h3>Creative Mode Game in Your Browser</h3>
+                <h3>💎Creative Mode Game in Your Browser</h3>
                 <p> Enjoy the freedom of <strong>creative mode gaming</strong> with Builditekt. There are no limits—just blocks, creativity, and a world waiting to be shaped by your ideas. Play anytime, anywhere with no installs or downloads. </p>
 
 
 
                 &nbsp;
-                <h3>Best Free Builder Game Online</h3>
+                <h3>✅Best Free Builder Game Online</h3>
                 <p> Looking for the <strong>best free builder game online</strong>? Builditekt delivers smooth gameplay, intuitive controls, and unlimited building blocks—right in your browser. It’s a top pick for fans of sandbox creativity and pixel art exploration. </p>
 
                 &nbsp;
-                <h3>Play Construction Game at School</h3>
+                <h3>⭐Play Construction Game at School</h3>
                 <p> Builditekt is one of the few <strong>unblocked construction games</strong> you can enjoy at school or in public spaces. It runs smoothly without downloading anything and doesn’t need an account. Safe, fun, and full of creative potential! </p>
 
 
 
 
                 &nbsp;
-                <h3>Play Free Building Games Like Minecraft in Browser</h3>
+                <h3>✅Play Free Building Games Like Minecraft in Browser</h3>
                 <p> Looking for a <strong>free game like Minecraft</strong> without download or install? Builditekt is a lightweight alternative that lets you build anything in your imagination—right in your web browser. From castles to pixel cities, enjoy a full <strong>block building experience online</strong> for free. </p>
 
 
 
                 &nbsp;
-                <h3>Online World Builder Game for Creative Minds</h3>
+                <h3>❤️Online World Builder Game for Creative Minds</h3>
                 <p> Create your dream world from scratch in this <strong>world builder sandbox game</strong>. Whether you’re a fan of pixel art, urban design, or digital landscaping, Builditekt gives you the tools to sculpt entire environments—block by block. </p>
 
 
 
                 &nbsp;
-                <h3>Top Free Browser-Based Building Game 2025</h3>
+                <h3>⭐Top Free Browser-Based Building Game 2025</h3>
                 <p> Builditekt is trending as one of the <strong>best free browser games of 2025</strong> in the building category. With smooth performance, no registration, and unlimited creative freedom, it’s a go-to pick for players of all ages who want a break from complex installs. </p>
 
                 &nbsp;
-                <h3>Pixel Sandbox Game for Creative Builders</h3>
+                <h3>🎮Pixel Sandbox Game for Creative Builders</h3>
                 <p> Builditekt lets you unleash your imagination in a colorful <strong>pixel sandbox environment</strong>. Whether you're building pixel sculptures, dream homes, or fantasy lands, the only limit is your creativity. Play solo or let your kids express their ideas safely. </p>
 
 
@@ -4340,25 +4174,25 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     slug: "Shodow-boy-adventures",
     title: "Shodow Boy Adventures",
       name: "Shodow Boy Adventures",
-    thumb: "/games/Shodow-boy-adventures/shadow.jpg",
+    thumb: "/imggames/Shodow-boy-adventures/shadow.jpg",
     tag: "New",
     category: "Adventure",
-    iframe: "/games/Shodow-boy-adventures/index.html"  ,
+    iframe: "https://games-gules-nu.vercel.app/Shodow-boy-adventures/index.html"  ,
     descriptionHtml: `
-                <h3>Play Shadow Boy Adventures for free</h3>
+                <h3>💎Play Shadow Boy Adventures for free</h3>
                 <p>Play Shadow Boy Adventures for free. Step into a bright, magical world made for curious minds.
                 Solve fun, brain-tickling puzzles. Outsmart sneaky enemies with clever tricks. Use your smarts to clear each level.Explore colorful lands, find hidden treasures, and uncover secret paths. Every step brings a new surprise.
                 As Shadow Boy, you run, jump, and dodge with quick moves. Think fast, try new ideas, and let your creativity shine.
                 This game blends adventure, imagination, and pure fun. It is easy to learn and exciting to master.
                 Ready to begin? Start Shadow Boy Adventures now, and let your magical journey begin!</p>
                 &nbsp;
-                <h3>What Are Shadow Boy Adventures?</h3>
+                <h3>🦋What Are Shadow Boy Adventures?</h3>
 
                 <p>Shadow Boy Adventures is a thrilling game series you can enjoy right in your web browser, created especially for children like you! In this game, you’ll meet a brave young hero who loves to explore spooky castles, mysterious caves, and magical forests. Each level presents a brand-new adventure where you dodge tricky traps, outsmart silly skeleton guards, and collect bright gems and keys that unlock hidden paths. With easy-to-use arrow keys, colorful cartoon graphics, and a cheerful soundtrack, exploring this adventure world is a breeze. You don’t need to download anything—just click “Play,” help our hero tackle fun obstacles, and watch your skills grow as you discover amazing treasures on your journey!</p>
 
 
 
-                <h3>Why Choose Shadow Boy Adventures?</h3>
+                <h3>💡Why Choose Shadow Boy Adventures?</h3>
                 <p>
                 Shadow Boy Adventures is a lively, online playland, bursting with happy heroes and colorful scenes—no downloads or waiting, just instant fun! Designed just for kids, this game has easy controls and bright graphics that let young adventurers explore without any fuss. The game’s cleverly paced challenges help boost your child’s thinking and creativity.</p>
                 <p>
@@ -4368,7 +4202,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
                 &nbsp;
 
-                <h3>How to Play Shadow Boy Adventures</h3>
+                <h3>🍄How to Play Shadow Boy Adventures</h3>
 
                 <p>Welcome to the magical world of Shadow Boy Adventures. Get ready to become the ultimate hero! First, use the left and right arrow keys to explore the glowing forests and shadowy tunnels. When you see a gap, spike pit, or sneaky trap, press the up arrow or tap the spacebar to jump safely over it.</p>
 
@@ -4381,11 +4215,11 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
                 &nbsp;
 
-                <h3>Controls</h3>
+                <h3>🎲Controls</h3>
                 <p>Getting started with Shadow Boy is as easy as pie! Use the ← and → arrow keys to guide him through enchanted forests and spooky caves. Tap the spacebar whenever you see spikes, rivers, or cheeky critters blocking your way—Shadow Boy will leap right over them! When a sneaky monster shows up, press Z to swing his trusty sword. Best of all, this browser game loads in a flash—no downloads, no delays—so young heroes can dive into the fun in seconds!</p>
 
                 &nbsp;
-                <h3>Tips and Tricks for Shadow Boy Adventures</h3>
+                <h3>✅Tips and Tricks for Shadow Boy Adventures</h3>
 
                 <p>Are you ready to become a Shadow Boy champion? In this exciting browser-based platform game, timing is everything. Make sure to tap your jump at just the right moment when you reach a gap or an enemy. This way, our hero can glide smoothly over obstacles without slowing down.</p>
 
@@ -4396,13 +4230,13 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
                 <p>Follow these simple tips, and soon you'll be racing through shadowy worlds like a true pro!</p>
 
                 &nbsp;
-                <h3>Features of Shadow Boy Adventures</h3>
+                <h3>🍄Features of Shadow Boy Adventures</h3>
                 <p>Welcome to a vibrant and colorful browser game where Shadow Boy comes to life without needing any downloads or extra plugins! The game offers bright, cartoon-style backgrounds and bold character designs, filling the screen with excitement. Young players can easily tap or press a single key to watch their hero sprint, jump, and slide through each amazing scene. The controls are super simple—perfect for little hands—and the game runs smoothly on laptops, tablets, or phones.</p>
                 <p>Adventure awaits at every corner with more than 50 unique stages ready to explore. Kids will meet funny sidekicks, solve delightful puzzles, and dodge wacky obstacles like spinning gears and bouncing mushrooms. Each level concludes with a fun-filled boss showdown that challenges both speed and clever thinking. Add in bubbly sound effects, catchy music, and surprise power-ups for nonstop excitement that will thrill adventurers of all ages. Shadow Boy Adventures turns playtime into a thrilling quest that’s easy to start and hard to stop!</p>
 
 
                 &nbsp;
-                <h3>Discover Shadow Boy Adventures Unblocked</h3>
+                <h3>🔓Discover Shadow Boy Adventures Unblocked</h3>
                 <p>
                 Explore the exciting world of Shadow Boy Adventures Unblocked! This kid-friendly browser game is perfect for playing anywhere – at school, in the library, or even at a café with free Wi-Fi.
                 </p>
@@ -4415,7 +4249,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
 
                 &nbsp;
-                <h3>Play Shadow Boy Adventures Online—Instant Fun for Kids!</h3>
+                <h3>🍄Play Shadow Boy Adventures Online—Instant Fun for Kids!</h3>
 
                 <p>Dive into the world of Shadow Boy Adventures Online with just one click—no downloads or extra apps required! Simply open your web browser on any device and start exploring right away. In this vibrant and kid-friendly universe, you can:</p>
 
@@ -4429,12 +4263,12 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
                 &nbsp;
 
-                <h3>Platform Compatibility</h3>
+                <h3>🍄Platform Compatibility</h3>
                 <p>Play Shadow Boy Adventures on any device—whether it's a laptop, smartphone, or tablet—directly in your web browser! There’s no need to download or install anything. Just click the game link, and you're instantly ready to start your next adventure. Whether you're at home, on the school bus, or hanging out with friends, your epic journey is always just one tap away. The game loads quickly, runs smoothly, and looks fantastic on any screen—so you can have fun without any delays!</p>
 
                 &nbsp;
 
-                <h3>Frequently Asked Questions – Shadow Boy Adventures</h3>
+                <h3>✅Frequently Asked Questions – Shadow Boy Adventures</h3>
 
                 <p><strong>1. Do I have to install anything before playing?</strong><br>
                   Nope! Shadow Boy Adventures runs right in your web browser. Just visit the game page, hit the "Play" button, and you’re off on your next big adventure—no downloads, no waiting.</p>
@@ -4452,7 +4286,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
                   It’s easy-peasy: go to the Shadow Boy Adventures website, click "Play Now," choose your character, and follow the glowing arrows. You’ll soon be running, jumping, and collecting stars!</p>
 
                 &nbsp;
-                <h3>Shadow Boy Adventures – Fun Challenges for Everyone</h3>
+                <h3>✅Shadow Boy Adventures – Fun Challenges for Everyone</h3>
                 <p>
                 Step into a world where every corner hides a new surprise! In Shadow Boy Adventures, each level offers a fresh challenge designed to test your reflexes, creativity, and puzzle-solving skills.
                 </p>
@@ -4473,24 +4307,24 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     slug: "robotic-snake-attack",
     title: "Robotic Snake Attack",
       name: "Robotic Snake Attack",
-    thumb: "/games/robotic-snake-attack/snake-attack.png",
+    thumb: "/imggames/robotic-snake-attack/snake-attack.png",
     tag: "New",
     category: ["Animals", "Nature"],
-    iframe: "/games/robotic-snake-attack/index.html"  ,
+    iframe: "https://games-gules-nu.vercel.app/robotic-snake-attack/index.html"  ,
     descriptionHtml: `
-                  <h3>Play Robotic Snake Attack Online</h3>
+                  <h3>🍄Play Robotic Snake Attack Online</h3>
 
               <p>Enter the fast-paced world of Robotic Snake Attack, where speed, strategy, and quick reflexes decide your fate. Take control of a futuristic, mechanical serpent as it slithers through glowing arenas, collecting stars and growing longer with each bite. Every move counts—one wrong turn and it’s game over. Outsmart rivals, dodge obstacles, and see how big and powerful you can become in this thrilling, high-tech challenge.</p>
 
               &nbsp;
 
-              <h3>What Are Robotic Snake Attack Games?</h3>
+              <h3>✅What Are Robotic Snake Attack Games?</h3>
               <p>Robotic Snake Attack games offer a fantastic and exciting twist on the classic "eat-and-grow" idea, making it a thrilling adventure for your child to enjoy. Picture guiding a shiny, glowing snake through colorful mazes right in your web browser! You control this cool mechanical snake using simple click-and-drag actions or arrow keys, collecting energy orbs and dodging tricky obstacles along the journey. It's a game that even the youngest adventurers can easily explore.</p>
               <p>Every level brims with excitement, featuring awesome robot skins to unlock, special power-ups to discover, and new challenges that ignite your child's imagination and keep the excitement alive. It's the perfect choice for kids who adore fast-paced and creative play, right at their fingertips!</p>
 
 
 
-              <h3>Why Choose Robotic Snake Attack?</h3>
+              <h3>💡Why Choose Robotic Snake Attack?</h3>
               <p>
               Robotic Snake Attack is the ideal free browser game for curious kids who enjoy twisting through vibrant mazes. No downloads or installs are needed—just open your favorite web browser and start playing immediately. Bright, cartoon-style graphics and friendly sound effects keep children engaged, while simple tap-and-swipe controls make steering the shiny metal snake easy and fun.
               </p>
@@ -4500,7 +4334,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
               &nbsp;
 
-              <h3>How to Play Robotic Snake Attack</h3>
+              <h3>⭐How to Play Robotic Snake Attack</h3>
 
               <p>Take control of a shiny robot snake as it slithers through a bright, checkerboard grid, collecting glowing energy bolts. Use the arrow keys or the W, A, S, D keys to move your snake up, down, left, and right. Be careful not to crash into the walls or your own tail!</p>
 
@@ -4513,7 +4347,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
               &nbsp;
 
-              <h3>Controls</h3>
+              <h3>❤️Controls</h3>
               <p>
                 Guide your shiny robotic snake Attack on an epic, twisty adventure with just a few easy taps! Here's how you can control it:
               </p>
@@ -4528,7 +4362,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
               &nbsp;
 
-              <h3>Robotic Snake Attack: Top Tips for Young Adventurers</h3>
+              <h3>⭐Robotic Snake Attack: Top Tips for Young Adventurers</h3>
 
               <p>Are you ready to guide your shiny metal snake through exciting new levels? First, listen to the rhythm of each stage. Jump just before reaching a wall so you can safely soar over spikes and traps. Keep collecting those glowing cogs and zap-power orbs—they boost your speed and help you squeeze through the tightest tunnels.</p>
 
@@ -4538,13 +4372,13 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
 
               &nbsp;
 
-              <h3>Features of Robotic Snake Attack</h3>
+              <h3>🎮Features of Robotic Snake Attack</h3>
               <p>Welcome to the exciting world of Robotic Snake Attack, where every level shines with bright neon colors and unexpected surprises around each corner! In this online game, you control a sleek robot snake with simple taps or arrow keys—no need to download anything. Glide through winding tracks, gobble up glowing orbs to go faster, and gather special power-ups to become a super-slithering champion.</p>
               <p>Along your journey, you'll meet quirky robot friends and encounter fun challenges like laser gates, spinning gears, and speedy bot chasers. Each stage presents a new puzzle: time your movements perfectly, dodge tricky traps, and discover secret shortcuts to earn high scores. With lively sound effects and catchy music, Robotic Snake Attack offers endless fun for kids and families right in your web browser!</p>
 
               &nbsp;
 
-              <h3>Robotic Snake Attack Unblocked</h3>
+              <h3>🍄Robotic Snake Attack Unblocked</h3>
 
               <p>Are you ready for a high-tech adventure that you can enjoy anywhere—whether at school, the library, or home? In Robotic Snake Attack Unblocked, you can take control of a sleek metal serpent that zooms through glowing mazes! There’s no need to install or download anything. Just open any browser, hit "Play," and start slithering!</p>
 
@@ -4553,21 +4387,21 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
               <p>Perfect for quick breaks between classes or a fun challenge on public Wi-Fi, Robotic Snake Attack  Unblocked offers endless replay value. Jump in now—watch your snake stretch longer, beat your own high score, and become the ultimate maze-slithering champion!</p>
 
 
-              <h3>Robotic Snake Attack Online</h3>
+              <h3>✅Robotic Snake Attack Online</h3>
               <p>Welcome to an exciting browser game where you guide a smart robotic snake Attack through bright and winding paths. You don’t need to download or install anything! Just open the game link on your computer, tablet, or phone and tap or click to help your snake glide and collect glowing gears. Each gear makes your snake grow longer, so watch it coil and stretch as you explore colorful mazes filled with surprises.</p>
               <p>With cheerful animations, fun sound effects, and instant playability wherever you go, Robotic Snake Attack Online is the perfect no-download game for kids. It's great for quick breaks, after-school fun, or anytime you're ready for an exciting challenge.</p>
 
 
               &nbsp;
 
-              <h3>Platform Compatibility</h3>
+              <h3>🍄Platform Compatibility</h3>
               <p>Robotic Snake Attack is a super fun browser-based game that works perfectly on any screen, whether big or small! Whether you're using a desktop computer, laptop, tablet, or smartphone, you can start playing without the need to download or install anything. Simply open your favorite web browser, like Chrome, Firefox, or Safari, visit the game's website, and dive right into the action. The game automatically adjusts to fit different devices, so you'll always enjoy smooth controls and vibrant graphics wherever you play—whether at home, in the car, or at a friend's house. Robotic Snake Attack is always ready to bring you joy, anytime and anywhere!</p>
 
 
               &nbsp;
 
 
-              <h3>Robotic Snake Attack Games</h3>
+              <h3>✅Robotic Snake Attack Games</h3>
               <p>Welcome to the world of Robotic Snake Attack Games! Here, you can pilot your very own metal serpent directly in your browser—no downloads required and no waiting time needed!</p>
               <p>In each game, young players get to collect shiny gears and circuit parts to boost their snake's speed, strength, and special abilities. Choose vibrant color schemes and fun patterns to make your snake-bot truly unique.</p>
               <p>Feeling adventurous? Pick your challenge! Whether it's solving twisty puzzle mazes filled with moving barriers or racing in friendly multiplayer competitions alongside other kids, the excitement never ends.</p>
@@ -4575,7 +4409,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
               <p>Are you ready to stretch your robo-serpent to epic lengths? The fun begins the moment you hit Play!</p>
 
 
-              <h3>Frequently Asked Questions – Robotic Snake Attack</h3>
+              <h3>⭐Frequently Asked Questions – Robotic Snake Attack</h3>
 
               <p><strong>Q1:</strong> Do I have to install anything before playing?</p>
               <p><strong>A1:</strong> No need! Simply open your favorite browser, visit the Robotic Snake Attack online game page, and start playing right away—no downloads or installations required.</p>
