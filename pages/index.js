@@ -19,16 +19,21 @@ export default function HomePage() {
 
   return (
     <Layout onSearch={setSearch}>
-      <section className="mx-auto mt-6 max-w-7xl rounded-2xl bg-gradient-to-br from-[#121425] to-[#0b0c12] p-6 ring-1 ring-white/5">
-        <div className="text-2xl font-extrabold">Welcome to PcGameOn</div>
-        <ul className="mt-3 flex flex-wrap gap-6 text-sm text-white/80">
-          <li>🎮 400+ games</li>
-          <li>🚀 No install needed</li>
-          <li>💻 Any device</li>
-          <li>👥 Play with friends</li>
-          <li>✨ All for free</li>
-        </ul>
-      </section>
+     <section
+  className="mx-auto mt-6 max-w-7xl rounded-2xl 
+             bg-white text-black 
+             dark:bg-gradient-to-br dark:from-[#121425] dark:to-[#0b0c12] dark:text-white 
+             p-6 ring-1 ring-black/5 dark:ring-white/5 transition-colors duration-300"
+>
+  <div className="text-2xl font-extrabold">Welcome to PcGameOn</div>
+  <ul className="mt-3 flex flex-wrap gap-6 text-sm text-black/70 dark:text-white/80">
+    <li>🎮 400+ games</li>
+    <li>🚀 No install needed</li>
+    <li>💻 Any device</li>
+    <li>👥 Play with friends</li>
+    <li>✨ All for free</li>
+  </ul>
+</section>
 
       {search ? (
         <GameRow title="Search results" items={filteredGames} />
