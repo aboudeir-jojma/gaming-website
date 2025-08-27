@@ -31,7 +31,7 @@ export default function HomePage() {
     <li>🚀 No install needed</li>
     <li>💻 Any device</li>
     <li>👥 Play with friends</li>
-    <li>✨ All for free</li>
+    
   </ul>
 </section>
 
