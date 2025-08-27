@@ -417,7 +417,7 @@ export const games = [
     slug: "hungry-snake-feed",
     title: "Hungry Snake Feed",
       name: "Hungry Snake Feed",
-    thumb: "/imggames/hungry-snake-feed/hungry-snake-feed.jpg", // mets une image réelle du dossier (ou remplace par une URL)
+    thumb: "/imggames/hungry-snake-feed/hungry.jpg", // mets une image réelle du dossier (ou remplace par une URL)
     tag: "New",
     category: ["Action", "Arcade"],
     iframe: "https://games-gules-nu.vercel.app/Hungry-snake-feed/index.html",
