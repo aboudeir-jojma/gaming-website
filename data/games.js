@@ -417,7 +417,7 @@ export const games = [
     slug: "hungry-snake-feed",
     title: "Hungry Snake Feed",
       name: "Hungry Snake Feed",
-    thumb: "/imggames/hungry-snake-feed/hungry.jpg", // mets une image réelle du dossier (ou remplace par une URL)
+    thumb: "/imggames/hungry-snake-feed/hungry.jpg",
     tag: "Top",
     category: ["Action", "Arcade"],
     iframe: "https://games-gules-nu.vercel.app/Hungry-snake-feed/index.html",
@@ -2011,7 +2011,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     slug: "pet-party-columns",
     title: "Pet Party Columns",
       name: "Pet Party Columns",
-    thumb: "/imggames/pet-party-columns/Pet-Party-Columns.jpg",
+    thumb: "/imggames/pet-party-columns/pet-party-columns.jpg",
     tag: "New",
      category: ["Puzzle", "Brain"], // ← tableau au lieu d’un seul string
     iframe: "https://games-gules-nu.vercel.app/pet-party-columns/index.html"  ,
@@ -2156,7 +2156,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     slug: "galaga",
     title: "Galaga",
       name: "Galaga",
-    thumb: "/imggames/galaga/Galaga.jpg",
+    thumb: "/imggames/galaga/galaga.jpg",
     tag: "Hot",
     category: ["Action", "Arcade"],
     iframe: "https://games-gules-nu.vercel.app/galaga/index.html"  ,
@@ -2552,7 +2552,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     slug: "twist-tactics",
     title: "Twist Tactics",
       name: "Twist Tactics",
-    thumb: "/imggames/twist-tactics/Twist-Tactics.png",
+    thumb: "/imggames/twist-tactics/twist-tactics.png",
     tag: "New",
        category: ["Puzzle", "Brain"], // ← tableau au lieu d’un seul string
     iframe: "https://games-gules-nu.vercel.app/twist-tactics/index.html"  ,
@@ -2674,7 +2674,7 @@ Explore Tanks of the Galaxy on any device you have, whether it's a computer, tab
     slug: "box-match",
     title: "Box Match",
       name: "Box Match",
-    thumb: "/imggames/box-match/Box-Match.jpg",
+    thumb: "/imggames/box-match/box-match.jpg",
     tag: "Hot",
         category: ["Puzzle", "Brain"], // ← tableau au lieu d’un seul string
     iframe: "https://games-gules-nu.vercel.app/box-match/index.html"  ,
