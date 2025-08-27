@@ -44,19 +44,21 @@ export default function GameCard({ game }) {
             </span>
           )}
           {/* Overlay Play Now */}
-          <div
-            className={`absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 transition-opacity ${
-              isTouch ? "opacity-100" : "group-hover:opacity-100"
-            }`}
-          >
-            <Link
-              href={`/game/${game.slug}`}
-              className="flex items-center gap-2 rounded-xl bg-black px-4 py-2 font-bold text-white shadow-lg hover:bg-white hover:text-black transition"
-            >
-              <PlayCircle className="w-5 h-5" />
-              Play Now
-            </Link>
-          </div>
+         <div
+  className="absolute inset-0 flex items-center justify-center 
+             bg-black/60 opacity-0 transition-opacity 
+             group-hover:opacity-100"
+>
+  <Link
+    href={`/game/${game.slug}`}
+    className="flex items-center gap-2 rounded-xl bg-black px-4 py-2 
+               font-bold text-white shadow-lg 
+               hover:bg-white hover:text-black transition"
+  >
+    <PlayCircle className="w-5 h-5" />
+    Play Now
+  </Link>
+</div>
         </div>
         <div className="p-3">
           <div className="truncate font-semibold">{game.title}</div>

@@ -102,7 +102,7 @@ export const games = [
                                 </p>
 
                                 <h3>🍇Platform Compatibility</h3>
-                                <p>Fruit Ninja is available on every device, whether big or small! You can play on a desktop, laptop, tablet, or smartphone. All you need to do is open your favorite web browser like Chrome, Safari, Firefox, or Edge. There's no need to download an app or install anything. Just click, tap, or swipe to start slicing delicious fruit in seconds. Whether you're in your living room or riding in the back seat of a car, Fruit Ninja brings instant fun wherever you go!</p>
+                                <p>Fruit Ninja is available on every device, whether big or small! You can play on a desktop, laptop, tablet, or smartphone. All you need to do is open your favorite web browser like Chrome, Safari, Firefox, or Edge. There's no need to download an app or install anything. Just click, tap, or swipe to start slicing delicious fruit in seconds. Whether you're in your living room or riding in the seat of a car, Fruit Ninja brings instant fun wherever you go!</p>
 
                                 <h3>🌳Fruit Ninja Games</h3>
 
