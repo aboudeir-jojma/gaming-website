@@ -504,6 +504,346 @@ export const games = [
                  
                       `,
   },
+   {
+    slug: "pool-puzzle",
+    title: "Pool Puzzle",
+    thumb: "/imggames/pool-puzzle/Pool.jpg",
+    tag: "NEW",
+    category: "Racing",
+    iframe: "https://games-gules-nu.vercel.app/pool-puzzle/index.html",   // fonctionne immédiatement
+
+                  descriptionHtml: `
+                  <h3>🌐Dive Into a Free Online Pool Puzzle Game</h3>
+<p>Splash into a bright world of fun with this free online pool puzzle game.</p>
+<p>It is more than entertainment. It is a friendly test of your strategy skills.</p>
+<p>Guide smooth billiard balls around the table. Plan your shot, aim, and release.</p>
+<p>The game blends classic pool with simple brain teasers. Every move matters.</p>
+<p>Shoot your ball through a maze of unique barriers. Bounce off walls and chase high scores.</p>
+<p>Each level brings a fresh surprise that keeps you thinking and smiling.</p>
+<p>Whimsical animations and fair challenges make playtime unforgettable.</p>
+<p>You will build strong problem-solving skills while you play. Kids and families can enjoy it together.</p>
+<p>Ready to start? Dive in, aim true, and have a splashing good time!</p>
+
+&nbsp;
+
+<h3>🌍What Is Pool Puzzle?</h3>
+<p>Pool Puzzle is an incredibly fun online game that combines the excitement of billiards with mind-bending puzzles! Imagine a colorful pool table right on your screen. Your mission? Aim and shoot the cue ball just right to sink the colored balls into the pockets, using as few shots as possible!</p>
+<p>Each level brings new surprises. You might encounter moving obstacles, tricky angles to figure out, or even special balls that behave in unexpected ways. Pool Puzzle works perfectly in any web browser and is ideal for kids of all ages who love solving problems and enjoy playing games.</p>
+<p>With its simple controls and cheerful graphics, whether you're new to the game or a budding pool pro, each round is fresh, exciting, and full of discoveries!</p>
+&nbsp;
+<img src="/imggames/wrench-puzzle/wrench.jpg" alt="pool puzzle" />
+&nbsp;
+<p><a href="https://retrosgame.com/">More!</a></p>
+&nbsp;
+<h3>🛡️Why Choose Pool Puzzle?</h3>
+<p>
+Pool Puzzle is the ideal online game for children who adore bright colors and love engaging brain challenges. It operates smoothly on any web browser—meaning no downloads or waiting time involved—so kids can jump right into matching bubbly balls almost instantly. With easy-to-use drag-and-drop controls and delightful, cartoon-style graphics, each level presents a mini adventure.
+</p>
+
+<p>
+Young players will encounter new surprises at every stage—such as color-changing balls, fast-paced rounds, and clever layouts—that help sharpen their logic and focus. As they advance through the levels, kids enhance their problem-solving skills and concentration without even realizing they're learning. Safe, simple, and endlessly enjoyable, Pool Puzzle transforms screen time into an exciting brain workout for young minds. Dive in today and watch your child conquer each colorful challenge!
+</p>
+
+&nbsp;
+<h3>💡How to Play Pool Puzzle</h3>
+
+<p>Welcome to Pool Puzzle, the perfect billiards challenge for kids! Here’s how to get started: click and drag your cue stick, or swipe on a touchscreen, to aim your shot. Pull back to adjust the power, then release and watch the cue ball swiftly glide across the table.</p>
+
+<p>Your goal? Sink each colorful ball into the pockets using the fewest shots possible. Consider your angle and shot strength carefully before releasing, as these small tweaks can make a big difference!</p>
+
+<p>Did you miss a ball? No worries! That's how true champions learn. Keep playing each level, beat your high score, and become the Pool Puzzle master!</p>
+
+&nbsp;
+
+<h3>🛡️Controls</h3>
+<p>In Pool Puzzle, you can guide your cue ball through each level by tapping the left and right arrow keys. If you need to hop over obstacles, press the up arrow or hit the spacebar. Made a tricky shot? No worries! Just press the 'R' key or click the round restart icon to try again instantly. The best part? It's a browser game, so there's no need to download anything!</p>
+
+
+<h3>💡Tips and Tricks for Pool Puzzle</h3>
+<p>
+Dive into the exciting world of Pool Puzzle with these handy tips and tricks! Whether you're a beginner or a seasoned player, these strategies will help you become a pool puzzle pro.
+</p>
+
+<h3>Nail the Perfect Jump</h3>
+<p>
+In Pool Puzzle, every leap counts! Wait until the platform is super close, then tap to jump. This way, you can pass tricky water zones without making a splash. Practice a bit, and soon you’ll jump perfectly every time.
+</p>
+
+<h3>Gather Sparkling Rewards</h3>
+<p>
+Keep your eyes open for stars, keys, and bright gems scattered around each level. These shiny treasures boost your score and unlock secret stages. Try to collect them all before heading to the exit!
+</p>
+
+<h3>Discover Hidden Passages</h3>
+<p>
+Some pools hide surprise shortcuts behind waterfalls or beneath loose tiles. Tap or click near any odd-looking spot to find these secret routes. You might discover extra lives, speed boosts, or even new areas to explore.
+</p>
+
+<h3>Master the Double Jump</h3>
+<p>
+Stuck on a high ledge? Use a quick second jump while you’re in midair to reach higher platforms. This double jump trick opens up more of the map and helps you grab hard-to-reach stars quickly.
+</p>
+
+<h3>Stay Calm and Explore</h3>
+<p>
+If a level seems too tough, take a deep breath and check out your surroundings. Sometimes the easiest path is just off to the side or above your starting point. Slow exploration can turn a tricky stage into a fun challenge!
+</p>
+
+<p>
+With these simple yet powerful tips, you’ll sail through levels, score big points, and unlock hidden secrets. Jump back into Pool Puzzle today and show off your new skills—no download needed, right from your browser!
+</p>
+
+&nbsp;
+
+
+<h3>✅Features of Pool Puzzle</h3>
+
+<p>Ready to create endless smiles and sharpen little minds? Pool Puzzle is a delightful, kid-friendly brain game designed specifically for curious children aged 4 and up. Here's what makes it a splash hit:</p>
+
+<h3>Colorful, Storybook Art</h3>
+
+<p>Each game board is like a magical underwater tale, filled with friendly fish, playful crabs, and sparkling seashells that guide each shot. The bold shapes and gentle shading keep players engaged without straining their eyes.</p>
+
+<h3>Effortless Tap-and-Drag Controls</h3>
+
+<p>Little fingers learn quickly: tap a ball, drag to aim, and release to watch it roll. There's no complicated gestures or confusing menus—just simple gameplay that builds confidence with every ball sunk.</p>
+
+<h3>Growing Levels & Tiny Rewards</h3>
+
+<p>Start with easy tutorials and then explore a variety of pool layouts featuring new shapes, obstacles, and hidden treasures. Collect shiny star tokens and unlock adorable hat decorations for your cue stick!</p>
+
+<h3>Gentle Time Challenges</h3>
+
+<p>A friendly countdown adds a touch of excitement, but there's always a grace period. It's perfect for kids who love racing against the clock without feeling pressured.</p>
+
+<h3>Cheerful Sounds & Positive Feedback</h3>
+
+<p>Each successful shot triggers a happy chime, and vibrant pop-up banners cheer "Great Job!" or "Awesome Shot!"—boosting enthusiasm and helping children learn from their mistakes.</p>
+
+<h3>Instant Play, No Download</h3>
+
+<p>Jump straight into tournament mode or free play directly from your browser. No need for installs or updates—just full-screen fun anytime, anywhere on your desktop or tablet.</p>
+
+<h3>Safe, Ad-Free Environment</h3>
+
+<p>Pool Puzzle keeps young players focused on fun. There are no pop-ups or third-party ads—only color, challenge, and achievement badges that celebrate every victory.</p>
+
+<p>Designed by game experts and child educators, Pool Puzzle turns every match into a mini learning adventure. Give it a try today and watch your child's skills and confidence soar!</p>
+
+&nbsp;
+<h3>💡Pool Puzzle Online</h3>
+<p>Immerse yourself in a bright and bubbly pool adventure right in your web browser—no downloads needed and no waiting! This free browser game invites kids to drag and drop colorful puzzle pieces under the sea, unlocking new levels as they play.</p>
+<p>Friendly sounds and cheerful shapes make every challenge feel like a splashy party, while sharpening young minds and keeping boredom away. Just open your favorite device—phone, tablet, or computer—and let the underwater puzzle fun begin!</p>
+
+&nbsp;
+
+<h3>Pool Puzzle Unblocked</h3>
+<p>Jump into the world of Pool Puzzle Unblocked and turn any screen into your very own billiards arena—no downloads needed, no waiting, and always accessible! This fun online game loads quickly on school, library, or café Wi-Fi. Just click, drag, and release to send the cue ball rolling toward its target.</p>
+<p>With bright graphics and cheerful sounds, you'll enjoy hundreds of levels designed to improve your problem-solving skills. Count your moves, plan your trick shots, and earn stars as you master each level. Ideal for a quick brain break, Pool Puzzle Unblocked offers hours of splashy fun without any installation or annoying pop-ups. Ready, set... let the pocketing begin!</p>
+&nbsp;
+
+
+<h3>✅Platform Compatibility</h3>
+<p>
+Do you have a desktop computer, tablet, or smartphone? No worries—our Pool Puzzle game works perfectly in any web browser! There is no need to install anything or wait for downloads. Just click, tap, or swipe, and you are immediately immersed in the vibrant world of puzzles. Whether you're at home, taking a break at school (with permission!), or on a trip in the car, Pool Puzzle is ready to play instantly on any screen size. Fun is always just one click away!
+</p>
+
+&nbsp;
+
+<h3>🎮More Games Like Pool Puzzle</h3>
+<p>Are you looking for more bubble-bursting fun? If Pool Puzzle got you popping colorful balls and cracking clever brainteasers, then these free online puzzle games are just what you need! Join cute characters in wacky worlds as you match, pop, and clear tricky levels—no download required.</p>
+<p>Each game offers fast-paced action and vibrant themes, from candy lands to underwater kingdoms, with new challenges to enhance your puzzle skills. Just click, play in your browser, and dive into hours of kid-friendly entertainment today!</p>
+
+
+&nbsp;
+
+<h3>🌍Everything You Should Know About Pool Puzzle Game</h3>
+
+<p><strong>Question:</strong> Do I have to install software to play?</p>
+<p><strong>Answer:</strong> Not at all! Pool Puzzle runs right in your web browser. Just visit the game page and dive in—no downloads or installations needed.</p>
+
+<p><strong>Question:</strong> Can I play on different devices?</p>
+<p><strong>Answer:</strong> Yes! Whether you’re on a smartphone, tablet, laptop, or desktop, Pool Puzzle adapts perfectly. Pick your favorite gadget and start solving.</p>
+
+<p><strong>Question:</strong> Is there any cost to play?</p>
+<p><strong>Answer:</strong> Nope—Pool Puzzle is totally free. No hidden charges or subscriptions, just endless hours of fun and brain-teasing pool action.</p>
+
+<p><strong>Question:</strong> Who can play Pool Puzzle?</p>
+<p><strong>Answer:</strong> Everyone! Little kids, big kids, teens, and grown-ups will love the bright colors and easy-to-learn rules. It’s a family-friendly puzzle game.</p>
+
+<p><strong>Question:</strong> How do I begin my first game?</p>
+<p><strong>Answer:</strong> It’s a breeze. Open the Pool Puzzle page, tap the Play button, and follow the simple tips on screen. You’ll be pocketing balls in no time!</p>
+
+&nbsp;
+
+&nbsp;
+<p><a href="https://cardgamesonlinefree.com/">Try Our Game Too !</a></p>
+                      `,
+  },
+  {
+    slug: "wrench-puzzle",
+    title: "Wrench Puzzle",
+    thumb: "/imggames/wrench-puzzle/wrench.jpg",
+    tag: "Updated",
+    category: "Racing",
+    iframe: "https://games-gules-nu.vercel.app/wrench-puzzle/index.html",  
+     descriptionHtml: `
+
+    <h3>🎮Play Wrench Puzzle Online: A Magical Adventure for Kids</h3>
+<p>Get ready to step into the magical world of Wrench Puzzle, a free online game made for curious kids and clever thinkers. Become a brave explorer and travel through colorful mazes packed with fun challenges.</p>
+<p>In Wrench Puzzle, you do more than match colors and shapes. You plan your moves, think ahead, and solve smart puzzles. Every level brings a fresh twist, a surprise turn, and a little story to enjoy.</p>
+<p>Find sparkling treasures, unlock secret paths, and outsmart tricky obstacles. Each new round feels exciting and new, so you can play for a few minutes or stay for hours of happy fun.</p>
+<p>Whether you are new to puzzles or already a pro, the controls are simple and the goals are clear. Learn step by step, try different strategies, and celebrate every win.</p>
+<p>Ready to play for free online? Jump into the bright world of Wrench Puzzle today, where smart thinking and big fun come together in one amazing adventure!</p>
+&nbsp;
+<h3>🌍What Are Wrench Puzzles?</h3>
+<p>Wrench puzzle games are like tiny treasures that you can play right in your web browser—no tricky downloads or setups needed. Imagine bright, colorful challenges inviting you to drag, drop, and swap pieces, or find hidden shapes while honing your memory and problem-solving skills. It's like having a blast while learning new things!</p>
+<p>With simple instructions and helpful hints, kids of all ages can jump into a world full of jigsaw, sliding, and pattern puzzles that become more clever with each level. Perfect for a quick play between homework or chores, Wrench puzzles transform screen time into an exciting learning adventure.</p>
+
+&nbsp;
+<img src="/imggames/pool-puzzle/téléchargement.jpg" alt="Wrench puzzle" />
+&nbsp;
+<p><a href="https://retrosgame.com/">More!</a></p>
+&nbsp;
+<h3>💡Why Choose Wrench Puzzle?</h3>
+<p>Wrench Puzzle brings joy to every click, turning them into mini celebrations of colors, sounds, and brainpower—right in your child’s web browser! There’s no need to install or update anything: just open the game, and your little one can start dragging bright shapes into place. As they play each new level, young players learn to recognize patterns, enhance hand-eye coordination, and solve smart puzzles that feel more like playtime than homework.</p>
+
+<p>Wrench Puzzle grows with your child. The early rounds teach basic matching skills, while later stages add fun twists to keep curious minds engaged. Best of all, the game is completely ad-free and designed to protect your family’s privacy. Whether they want a quick five-minute brain boost or a longer adventure in solving problems, Wrench Puzzle offers a safe, friendly space for kids to build confidence and creativity, one colorful piece at a time. Let your little explorers enjoy a playful challenge that’s always ready—no downloads, no distractions, just pure puzzling fun!</p>
+
+&nbsp;
+
+<h3>💎How to Play the Wrench Puzzle</h3>
+
+<p>1. <strong>Mix Up the Tiles</strong></p>
+<p>Tap the "Shuffle" button to jumble the picture into a grid of small squares.</p>
+
+<p>2. <strong>Drag and Drop</strong></p>
+<p>Click or touch a tile, then slide it over to any empty spot. When you find the right place, the piece will lock in with a friendly click.</p>
+
+<p>3. <strong>Try, Try Again</strong></p>
+<p>If a tile doesn't fit, lift it up and move it somewhere else. Don't worry, it's all part of the fun!</p>
+
+<p>4. <strong>Finish Your Masterpiece</strong></p>
+<p>Keep swapping pieces until every square is filled and the full picture comes together. You can race the clock or play at your own pace.</p>
+
+<p>5. <strong>Celebrate Your Win</strong></p>
+<p>Once the image is complete, give yourself a high-five! You just solved a colorful puzzle and sharpened your problem-solving skills.</p>
+
+&nbsp;
+
+<h3>💡Controls</h3>
+<p>Dive straight into the action with these super-simple, kid-friendly controls. Tap the left and right arrow keys to guide your character on exciting adventures. Then, press the spacebar to leap over any pitfalls and hurdles. When it’s puzzle time, just click and drag each piece into its perfect spot with your mouse.
+</p>
+<p>
+Got stuck on a tricky level? Hit the "R" key to restart instantly, or press "M" if you need to mute the sounds for a quiet break. No downloads are needed and no fuss—just open your browser and jump right into the fun!
+</p>
+
+
+
+&nbsp;
+
+<h3>🌐Smart Moves for Wrench Puzzle Champions</h3>
+
+<p>Are you ready to shine in the Wrench Puzzle adventure? Let’s explore some friendly expert tips that are just perfect for young adventurers!</p>
+
+<h3>Time Your Bounce</h3>
+
+<p>Count “1–2–3” in your head before you leap! Jumping to the same beat helps you clear tricky gaps and land on moving platforms with ease.</p>
+
+<h3>Spot the Shiny Clues</h3>
+
+<p>Keep an eye out for glowing gems and golden keys. Each gem you collect boosts your score and offers hints for secret shortcuts. Keys unlock special doors with bonus coins!</p>
+
+<h3>Explore Every Corner</h3>
+
+<p>Some walls hide one-way tunnels, and floors can open like trapdoors. Move slowly along edges and peek around obstacles—hidden paths often lead to extra surprises.</p>
+
+<h3>Use the Mini-Map Trick</h3>
+
+<p>Press Ctrl + “-” (or pinch out on a touch screen) to zoom out. A wider view reveals secret routes and unseen platforms so you never miss a hidden passage.</p>
+
+<h3>Collect Extra Lives with Friends</h3>
+
+<p>Link your game account to share lives and power-ups with friends. When a companion sends you an extra heart, you get one more chance to finish that tough level!</p>
+
+<h3>Play Instantly in Your Browser</h3>
+
+<p>No downloads and no waiting—Wrench Puzzle launches right in your browser. Jump back into the action anytime, on any computer or tablet.</p>
+
+<p>With these tips, you’ll score high, uncover every secret, and become a true Wrench Puzzle champ—happy gaming!</p>
+
+&nbsp;
+
+&nbsp;
+<h3>✅Features of Wrench Puzzle</h3>
+<p>Wrench Puzzle is a delightful and colorful game designed especially for kids. It captivates with its bright illustrations and gentle animations. With just a simple tap or click, children can glide puzzle pieces into place, making each move exciting and rewarding.</p>
+<p>Each level is a new adventure, introducing lovable sidekicks, creative puzzles, and hidden worlds to explore. This keeps their curiosity alive and engaged on every turn.</p>
+<p>The game is perfectly balanced: it's exciting enough to keep kids thrilled, yet calm enough to encourage thoughtful play. The playful sound effects and charming animations celebrate each victory, ensuring that children feel proud of their progress.</p>
+<p>Best of all, Wrench Puzzle runs directly in your browser, so there's no need to download an app—making the fun start instantly!</p>
+
+
+&nbsp;
+
+<h3>🌍Wrench Puzzle Online</h3>
+
+<p>Dive into the colorful world of Wrench Puzzle Online! No downloads or delays needed. This free puzzle game is perfect for curious kids. It welcomes you with bright images and big, chunky pieces that you can move around with just a tap or click.</p>
+
+<p>Whether you have a quick five minutes or are ready for a longer challenge, each level loads instantly on your phone, tablet, or computer. It's designed for little hands and growing minds. Wrench Puzzle Online combines easy controls, vibrant artwork, and smooth gameplay, making every moment feel like playtime. Ready, set, puzzle!</p>
+
+&nbsp;
+
+<h3>🌐Wrench Puzzle Unblocked</h3>
+<p>Are you searching for a free and fun brain teaser that you can play at school, the library, or anywhere with Wi-Fi? Explore Wrench Puzzle Unblocked! This vibrant, browser-based puzzle game lets you piece together colorful shapes, tackle exciting challenges, and exercise your mind—all without needing downloads or worrying about blocked networks.</p>
+<p>It's perfect for taking quick breaks between classes or enjoying lazy afternoons at home. You'll improve your problem-solving skills while sparking your imagination. Just click "Play," and each level springs to life in seconds!</p>
+<p>Join countless kids choosing safe, unblocked games for endless puzzle fun. Are you ready to turn your downtime into a colorful adventure? Start playing Wrench Puzzle Unblocked now!</p>
+
+&nbsp;
+
+<h3>🌍Platform Compatibility</h3>
+<p>
+  With Wrench Puzzle, you can have fun anytime, anywhere! This exciting game works directly from your web browser, so you don't need to download or install anything. Whether you're on a desktop, laptop, tablet, or phone, you'll enjoy solving bright, colorful puzzles quickly. It’s compatible with all major browsers like Chrome, Safari, and Edge, so there's no need to worry about extra apps taking up space. Whether at home, taking a quick break at school, or having fun on the go, Wrench Puzzle is ready to entertain you whenever and wherever you want!
+</p>
+
+&nbsp;
+
+<h3>🎮Puzzle Games from Wrench</h3>
+
+<p>Welcome to the world of puzzle games from Wrench! Enjoy a unique experience directly in your browser, no downloads needed. All you need to do is select your level, then match shapes and solve puzzles to unlock new challenges ahead. These games feature colorful graphics that captivate children and turn learning into fun playtime. Each stage is designed to develop creativity and problem-solving skills in an interactive and safe way.</p>
+
+<p>Want more fun? Try new titles in the same series or discover similar brain-boosting games. Every click provides you with a fresh idea and a chance to break your own records! Start playing now and embark on a journey to boost your memory and logical thinking.</p>
+
+&nbsp;
+
+<h3>💡Frequently Asked Questions – Wrench Puzzle</h3>
+
+<p><strong>1. Do I need to install anything to play Wrench Puzzle?</strong></p>
+<p>No installation is needed! You can enjoy Wrench Puzzle right in your web browser. Just visit the game page and start playing—no downloads or installs required.</p>
+
+<p><strong>2. Can I enjoy Wrench Puzzle on my phone, tablet, or computer?</strong></p>
+<p>Absolutely! Whether you're using a smartphone, tablet, laptop, or desktop, Wrench Puzzle adapts perfectly to your screen. Play at home or on the go—any device with an internet connection works great.</p>
+
+<p><strong>3. Is Wrench Puzzle really free?</strong></p>
+<p>Yes, it is! Every level and every minute of play is completely free. There are no hidden fees or in-app purchases—it’s just endless, free fun.</p>
+
+<p><strong>4. Is Wrench Puzzle safe for kids and families?</strong></p>
+<p>Definitely! All puzzles are designed to be kid-friendly and help improve problem-solving skills. Parents can play along or let their children explore safely—perfect for ages 4 to 104!</p>
+
+<p><strong>5. How do I get started with Wrench Puzzle?</strong></p>
+<p>It’s easy as pie:</p>
+<p>
+   • Open your browser and go to the Wrench Puzzle page.<br>
+   • Click the big “Play Now” button.<br>
+   • Choose your first puzzle and follow the on-screen hints.<br>
+   You’ll be solving shapes, colors, and patterns like a pro in no time!
+</p>
+
+&nbsp;
+
+&nbsp;
+<p><a href="https://cardgamesonlinefree.com/">Try Our Game Too !</a></p>
+
+                      `,
+  },
     {
     slug: "brainrot-jet-ski",
     title: "Brainrot Jet Ski",

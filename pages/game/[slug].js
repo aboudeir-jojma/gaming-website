@@ -56,11 +56,12 @@ export default function GamePage() {
 
       
         {/* DESCRIPTION HTML stylée */}
-        {game.descriptionHtml && (
-          <section className="prose prose-invert max-w-none mt-6 rounded-2xl bg-card p-5 ring-1 ring-white/5">
-            <div  className="bg-bg text-white" dangerouslySetInnerHTML={{ __html: game.descriptionHtml }} />
-          </section>
-        )}
+{game.descriptionHtml && (
+  <section className="prose max-w-none mt-6 rounded-2xl p-5 ring-1 ring-black/10 dark:prose-invert dark:ring-white/5 bg-white text-black dark:bg-card dark:text-white">
+    <div dangerouslySetInnerHTML={{ __html: game.descriptionHtml }} />
+  </section>
+)}
+
 
     </Layout>
   );
