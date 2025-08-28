@@ -2,8 +2,19 @@ import { useState } from "react";
 import Layout from "../components/Layout";
 import GameRow from "../components/GameRow";
 import { games } from "../data/games";
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  };
+}
 
 export default function HomePage() {
+  const { t } = useTranslation('common');
   const [search, setSearch] = useState("");
 
   // Si recherche, filtrer les jeux
@@ -25,12 +36,12 @@ export default function HomePage() {
              dark:bg-gradient-to-br dark:from-[#121425] dark:to-[#0b0c12] dark:text-white 
              p-6 ring-1 ring-black/5 dark:ring-white/5 transition-colors duration-300"
 >
-  <div className="text-2xl font-extrabold">Welcome to PcGameOn</div>
+  <div className="text-2xl font-extrabold">{t('welcome')}</div>
   <ul className="mt-3 flex flex-wrap gap-6 text-sm text-black/70 dark:text-white/80">
-    <li>🎮 400+ games</li>
-    <li>🚀 No install needed</li>
-    <li>👥 Play with friends</li>
-    <li>✨ All for free</li>
+    <li>🎮 {t('gamesCount')}</li>
+    <li>🚀 {t('noInstall')}</li>
+    <li>👥 {t('playWithFriends')}</li>
+    <li>✨ {t('allFree')}</li>
   </ul>
 </section>
 

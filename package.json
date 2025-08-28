@@ -17,6 +17,7 @@
     "isomorphic-dompurify": "^2.26.0",
     "lucide-react": "^0.542.0",
     "next": "^15.4.6",
+    "next-i18next": "^15.4.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },

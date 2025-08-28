@@ -2,8 +2,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { PlayCircle } from "lucide-react";
+import { useTranslation } from 'next-i18next';
 
 export default function GameCard({ game }) {
+  const { t } = useTranslation('common');
   const [isTouch, setIsTouch] = useState(false);
 
   useEffect(() => {
@@ -56,7 +58,7 @@ export default function GameCard({ game }) {
                hover:bg-white hover:text-black transition"
   >
     <PlayCircle className="w-5 h-5" />
-    Play Now
+    {t('playNow')}
   </Link>
 </div>
         </div>

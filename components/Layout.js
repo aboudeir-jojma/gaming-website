@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
+import Footer from "./Footer";
 
 export default function Layout({ children, onSearch }) {
   const [collapsed, setCollapsed] = useState(true);
@@ -27,6 +28,8 @@ export default function Layout({ children, onSearch }) {
         <Sidebar collapsed={collapsed} />
         <main className="flex-1 overflow-y-auto">{children}</main>
       </div>
+        {/* Footer ajouté ici */}
+        <Footer />
     </div>
     </div>
   );
