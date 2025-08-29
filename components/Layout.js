@@ -18,19 +18,18 @@ export default function Layout({ children, onSearch }) {
   }, []);
 
   return (
-    <div className="bg-white text-black dark:bg-[#0b0c12] dark:text-white">
-    <div className="flex flex-col min-h-dvh">
+    <div className="bg-white text-black dark:bg-[#0b0c12] dark:text-white min-h-screen flex flex-col">
       {/* Header occupe 100% en haut */}
       <Header onToggleSidebar={() => setCollapsed(c => !c)} onSearch={onSearch} />
 
       {/* Zone en dessous = Sidebar + contenu */}
-      <div className="flex flex-1">
+      <div className="flex flex-1 overflow-hidden">
         <Sidebar collapsed={collapsed} />
-        <main className="flex-1 overflow-y-auto">{children}</main>
+        <main className="flex-1 overflow-y-auto pt-[56px]">{children}</main>
       </div>
-        {/* Footer ajouté ici */}
-        <Footer />
-    </div>
+
+      {/* Footer fixé en bas */}
+      <Footer />
     </div>
   );
 }

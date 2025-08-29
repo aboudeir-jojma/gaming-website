@@ -29,7 +29,7 @@ export default function Sidebar({ collapsed }) {
 // ...existing code...
   return (
     <aside
-      className={`flex flex-col h-[calc(100dvh-56px)] shrink-0 border-r border-white/5 bg-white text-black dark:bg-[#0b0c12] dark:text-white transition-all duration-200
+      className={`flex flex-col shrink-0 border-r border-white/5 bg-white text-black dark:bg-[#0b0c12] dark:text-white transition-all duration-200 sticky top-0 z-30 overflow-y-auto
       ${collapsed ? "w-14" : "w-56"}`}
     >
       <nav className="flex flex-col flex-1 gap-1 p-2">
