@@ -94,16 +94,20 @@ export default function GameRow({ title, items }) {
         </div>
 
         {/* Carrousel */}
-        <div className="relative overflow-hidden">{/* overflow-hidden pour éviter la scrollbar de page */}
-          {/* Flèche gauche */}
+        <div className="relative overflow-hidden">
+          {/* Flèche gauche (clair: fond blanc + icône noire / sombre: fond noir + icône blanche) */}
           <button
             onClick={() => scrollByPages("left")}
             aria-label="Scroll left"
             className="absolute left-0 top-1/2 -translate-y-1/2 z-10
-                       grid place-items-center h-24 w-8 rounded-r-full bg-black/70 text-white
-                       shadow-lg hover:bg-black/80 transition"
+                       grid place-items-center h-24 w-8 rounded-r-full
+                       bg-white/70 text-black dark:bg-black/70 dark:text-white
+                       ring-1 ring-black/10 dark:ring-white/10
+                       shadow-lg hover:bg-white/90 dark:hover:bg-black/80
+                       transition-colors duration-300"
           >
-            <svg viewBox="0 0 24 24" className="h-6 w-6" stroke="currentColor" strokeWidth="3" fill="none"
+            <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none"
+                 stroke="currentColor" strokeWidth="3"
                  strokeLinecap="round" strokeLinejoin="round">
               <path d="M15 6l-6 6 6 6" />
             </svg>
@@ -114,10 +118,14 @@ export default function GameRow({ title, items }) {
             onClick={() => scrollByPages("right")}
             aria-label="Scroll right"
             className="absolute right-0 top-1/2 -translate-y-1/2 z-10
-                       grid place-items-center h-24 w-8 rounded-l-full bg-black/70 text-white
-                       shadow-lg hover:bg-black/80 transition"
+                       grid place-items-center h-24 w-8 rounded-l-full
+                       bg-white/70 text-black dark:bg-black/70 dark:text-white
+                       ring-1 ring-black/10 dark:ring-white/10
+                       shadow-lg hover:bg-white/90 dark:hover:bg-black/80
+                       transition-colors duration-300"
           >
-            <svg viewBox="0 0 24 24" className="h-6 w-6" stroke="currentColor" strokeWidth="3" fill="none"
+            <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none"
+                 stroke="currentColor" strokeWidth="3"
                  strokeLinecap="round" strokeLinejoin="round">
               <path d="M9 6l6 6-6 6" />
             </svg>
