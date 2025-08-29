@@ -18,5 +18,24 @@
   "privacy": "Privacidad",
   "terms": "Términos",
   "followUs": "Síguenos",
-  "rights": "Todos los derechos reservados."
+  "rights": "Todos los derechos reservados.",
+  "sidebar": {
+    "home": "Inicio",
+    "racing": "Carreras",
+    "puzzle": "Rompecabezas",
+    "action": "Acción",
+    "sports": "Deportes",
+    "adventure": "Aventura",
+    "simulation": "Simulación",
+    "food": "Comida",
+    "nature": "Naturaleza",
+    "animals": "Animales",
+    "arcade": "Arcade",
+    "brain": "Cerebro",
+    "strategy": "Estrategia",
+    "creative": "Creativo",
+    "horror": "Terror",
+    "shooter": "Disparos",
+    "multiplayer": "Multijugador"
+  }
 }

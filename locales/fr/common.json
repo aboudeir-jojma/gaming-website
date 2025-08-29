@@ -4,9 +4,9 @@
   "noInstall": "Pas d'installation nécessaire",
   "playWithFriends": "Jouez avec des amis",
   "allFree": "Tout est gratuit",
-  "featuredGames": "Jeux en vedette",
+  "featuredGames": "Jeux ",
   "newGames": "Nouveaux jeux",
-  "pcgameonOriginals": "PcGameOn Originals",
+  "pcgameonOriginals": "PcGameOn Originaux",
   "searchResults": "Résultats de recherche",
   "viewMore": "Voir plus",
   "searchPlaceholder": "Rechercher des jeux...",
@@ -18,5 +18,24 @@
   "privacy": "Confidentialité",
   "terms": "Conditions",
   "followUs": "Suivez-nous",
-  "rights": "Tous droits réservés."
+  "rights": "Tous droits réservés.",
+  "sidebar": {
+    "home": "Accueil",
+    "racing": "Course",
+    "puzzle": "Puzzle",
+    "action": "Action",
+    "sports": "Sports",
+    "adventure": "Aventure",
+    "simulation": "Simulation",
+    "food": "Nourriture",
+    "nature": "Nature",
+    "animals": "Animaux",
+    "arcade": "Arcade",
+    "brain": "Cerveau",
+    "strategy": "Stratégie",
+    "creative": "Créatif",
+    "horror": "Horreur",
+    "shooter": "Tireur",
+    "multiplayer": "Multijoueur"
+  }
 }

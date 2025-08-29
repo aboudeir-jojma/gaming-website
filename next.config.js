@@ -2,7 +2,7 @@
 const nextConfig = {
   // retire cette ligne: output: 'export',
   i18n: {
-    locales: ['en', 'fr'],
+    locales: ['en', 'fr', 'es'],
     defaultLocale: 'en',
   },
 };

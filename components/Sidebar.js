@@ -1,25 +1,29 @@
 "use client";
 import Link from "next/link";
+import { useTranslation } from 'next-i18next';
+
 
 export default function Sidebar({ collapsed }) {
+  const { t } = useTranslation('common');
+  
   const items = [
-    {href:"/", label:"Home", icon:"🏠"},
-    {href:"/category/racing", label:"Racing", icon:"🏎️"},
-    {href:"/category/puzzle", label:"Puzzle", icon:"🧩"},
-    {href:"/category/action", label:"Action", icon:"⚔️"},
-    {href:"/category/sports", label:"Sports", icon:"🏀"},
-    {href:"/category/adventure", label:"Adventure", icon:"🧗"},
-    {href:"/category/simulation", label:"Simulation", icon:"🧑‍💻"},
-    {href:"/category/food", label:"Food", icon:"🥗"},
-    {href:"/category/nature", label:"Nature", icon:"🌍"},
-    {href:"/category/animals", label:"Animals", icon:"🦋"},
-    {href:"/category/arcade", label:"Arcade", icon:"👾"},
-    {href:"/category/brain", label:"Brain", icon:"🧠"},
-    {href:"/category/strategy", label:"Strategy", icon:"🏰"},
-    {href:"/category/creative", label:"Creative", icon:"🎨"},
-    {href:"/category/horror", label:"Horror", icon:"🧟"},
-    {href:"/category/shooter", label:"Shooter", icon:"💣"},
-    {href:"/category/multiplayer", label:"Multiplayer", icon:"🌐"},
+    {href:"/", label:t('sidebar.home'), icon:"🏠"},
+    {href:"/category/racing", label:t('sidebar.racing'), icon:"🏎️"},
+    {href:"/category/puzzle", label:t('sidebar.puzzle'), icon:"🧩"},
+    {href:"/category/action", label:t('sidebar.action'), icon:"⚔️"},
+    {href:"/category/sports", label:t('sidebar.sports'), icon:"🏀"},
+    {href:"/category/adventure", label:t('sidebar.adventure'), icon:"🧗"},
+    {href:"/category/simulation", label:t('sidebar.simulation'), icon:"🧑‍💻"},
+    {href:"/category/food", label:t('sidebar.food'), icon:"🥗"},
+    {href:"/category/nature", label:t('sidebar.nature'), icon:"🌍"},
+    {href:"/category/animals", label:t('sidebar.animals'), icon:"🦋"},
+    {href:"/category/arcade", label:t('sidebar.arcade'), icon:"👾"},
+    {href:"/category/brain", label:t('sidebar.brain'), icon:"🧠"},
+    {href:"/category/strategy", label:t('sidebar.strategy'), icon:"🏰"},
+    {href:"/category/creative", label:t('sidebar.creative'), icon:"🎨"},
+    {href:"/category/horror", label:t('sidebar.horror'), icon:"🧟"},
+    {href:"/category/shooter", label:t('sidebar.shooter'), icon:"💣"},
+    {href:"/category/multiplayer", label:t('sidebar.multiplayer'), icon:"🌐"},
   ];
 
 // ...existing code...

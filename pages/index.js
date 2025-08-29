@@ -49,9 +49,9 @@ export default function HomePage() {
         <GameRow title="Search results" items={filteredGames} />
       ) : (
         <>
-          <GameRow title="Featured games" items={featured} />
-          <GameRow title="New games" items={news} />
-          <GameRow title="PcGameOn Originals" items={originals} />
+          <GameRow title={t('featuredGames')} items={featured} />
+          <GameRow title={t('newGames')} items={news} />
+          <GameRow title={t('pcgameonOriginals')} items={originals} />
         </>
       )}
     </Layout>

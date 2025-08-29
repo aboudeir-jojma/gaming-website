@@ -18,5 +18,24 @@
   "privacy": "Privacy",
   "terms": "Terms",
   "followUs": "Follow Us",
-  "rights": "All rights reserved."
+  "rights": "All rights reserved.",
+  "sidebar": {
+    "home": "Home",
+    "racing": "Racing",
+    "puzzle": "Puzzle",
+    "action": "Action",
+    "sports": "Sports",
+    "adventure": "Adventure",
+    "simulation": "Simulation",
+    "food": "Food",
+    "nature": "Nature",
+    "animals": "Animals",
+    "arcade": "Arcade",
+    "brain": "Brain",
+    "strategy": "Strategy",
+    "creative": "Creative",
+    "horror": "Horror",
+    "shooter": "Shooter",
+    "multiplayer": "Multiplayer"
+  }
 }
