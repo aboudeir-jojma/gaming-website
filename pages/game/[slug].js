@@ -3,6 +3,37 @@ import Image from "next/image";
 import Link from "next/link";
 import Layout from "../../components/Layout";
 import { games } from "../../data/games";
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
+import nextI18NextConfig from '../../next-i18next.config';
+
+export async function getStaticPaths() {
+  const paths = [];
+
+  const locales = nextI18NextConfig.i18n.locales;
+
+  games.forEach((game) => {
+    locales.forEach((locale) => {
+      paths.push({
+        params: { slug: game.slug },
+        locale,
+      });
+    });
+  });
+
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  };
+}
 
 export default function GamePage() {
   const { query } = useRouter();
@@ -37,11 +68,9 @@ export default function GamePage() {
         <div className="mt-4 flex items-center gap-3 text-white/70">
           <Image src={game.thumb} alt="" width={48} height={48} className="rounded-lg" />
           <div className="text-sm">Category: {game.category ?? "misc"}</div>
-      
-</div>
+        </div>
 
-
-         {/* 💬 Description du jeu */}
+         {/* 💬 Description du jeu */} 
         {game.description && (
           <section className="mt-6 rounded-2xl bg-card p-5 ring-1 ring-white/5">
             <h2 className="text-lg font-bold">À propos du jeu</h2>
@@ -52,16 +81,12 @@ export default function GamePage() {
         )}
       </div>
 
-
-
-      
-        {/* DESCRIPTION HTML stylée */}
-{game.descriptionHtml && (
-  <section className="prose max-w-none mt-6 rounded-2xl p-5 ring-1 ring-black/10 dark:prose-invert dark:ring-white/5 bg-white text-black dark:bg-card dark:text-white">
-    <div dangerouslySetInnerHTML={{ __html: game.descriptionHtml }} />
-  </section>
-)}
-
+        {/* DESCRIPTION HTML stylée */} 
+        {game.descriptionHtml && (
+          <section className="prose max-w-none mt-6 rounded-2xl p-5 ring-1 ring-black/10 dark:prose-invert dark:ring-white/5 bg-white text-black dark:bg-card dark:text-white">
+            <div dangerouslySetInnerHTML={{ __html: game.descriptionHtml }} />
+          </section>
+        )}
 
     </Layout>
   );
