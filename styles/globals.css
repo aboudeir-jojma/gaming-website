@@ -3,19 +3,37 @@
 @tailwind utilities;
 
 @layer base {
-body {
-  @apply antialiased transition-colors duration-300;
+  body {
+    @apply antialiased transition-colors duration-300;
+  }
+
+  /* Thèmes */
+  html.light body {
+    @apply bg-white text-black;
+  }
+  html.dark body {
+    @apply bg-[#0b0c12] text-white;
+  }
 }
 
-/* ...existing code... */
-html.light body {
-  @apply bg-white text-black;
-}
-html.dark body {
-  @apply bg-[#0b0c12] text-white;
-}
-/* ...existing code... */
+/* Images dans la prose (optionnel) */
+.prose img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
 }
 
-/* pour les images dans la description HTML (optionnel) */
-.prose img { max-width: 100%; height: auto; border-radius: 12px; display: block; }
+/* Masquer la scrollbar (pour les conteneurs avec .no-scrollbar) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Curseur pendant le drag */
+.dragging {
+  cursor: grabbing !important;
+}
