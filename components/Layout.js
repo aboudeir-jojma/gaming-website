@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 import Footer from "./Footer";
+import BackToTopButton from "./BackToTopButton";
 
 export default function Layout({ children, onSearch }) {
   const [collapsed, setCollapsed] = useState(true);
