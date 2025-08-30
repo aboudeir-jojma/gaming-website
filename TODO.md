@@ -1,10 +1,11 @@
-# TODO: Fixer la sidebar comme le header
+# TODO - Fix Sidebar Scrolling Issue
 
-## Étapes à compléter:
-1. [ ] Modifier components/Sidebar.js - Ajouter le style sticky comme le header
-2. [ ] Modifier components/Layout.js - Ajuster la structure de layout
-3. [ ] Tester le comportement
-
-## Détails des modifications:
-- Sidebar: Ajouter `sticky top-[56px] z-20` pour la position fixe
-- Layout: Ajuster les hauteurs pour le scrolling correct
+## Steps to Complete:
+- [x] Analyze the sidebar structure and identify the issue
+- [x] Read components/Sidebar.js - sidebar already has sticky classes
+- [x] Read styles/globals.css - no conflicting styles found
+- [x] Read components/Layout.js - found the issue: parent container has overflow-hidden
+- [x] Read pages/index.js - confirmed layout usage
+- [x] Create plan and get user confirmation
+- [x] Fix Layout.js by removing overflow-hidden and adding proper height management
+- [x] Test the changes to ensure sidebar stays fixed while scrolling

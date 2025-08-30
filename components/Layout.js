@@ -24,9 +24,9 @@ export default function Layout({ children, onSearch }) {
       <Header onToggleSidebar={() => setCollapsed(c => !c)} onSearch={onSearch} />
 
       {/* Zone en dessous = Sidebar + contenu */}
-      <div className="flex flex-1 overflow-hidden">
+      <div className="flex flex-1">
         <Sidebar collapsed={collapsed} />
-        <main className="flex-1 overflow-y-auto pt-[56px]">{children}</main>
+        <main className="flex-1 overflow-y-auto pt-[56px] ml-40">{children}</main>
       </div>
 
       {/* Footer fixé en bas */}
