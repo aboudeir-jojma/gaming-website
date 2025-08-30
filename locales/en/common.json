@@ -60,5 +60,11 @@
   "bike": "Bike",
   "card": "Card",
   "clicker": "Clicker",
-  "dressUp": "Dress Up"
+  "dressUp": "Dress Up",
+  
+  "back": "Back",
+  "categorystug": "Category",
+  "aboutGame": "About this game",
+  "gameNotFound": "Game not found.",
+  "misc": "Misc"
 }

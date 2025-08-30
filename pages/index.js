@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 import Layout from "../components/Layout";
 import GameRow from "../components/GameRow";
 import TopGamesCarousel from "../components/TopGamesCarousel";
@@ -19,6 +20,16 @@ export async function getStaticProps({ locale }) {
 export default function HomePage() {
   const { t } = useTranslation('common');
   const [search, setSearch] = useState("");
+  const router = useRouter();
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const browserLang = navigator.language.split('-')[0];
+      if (browserLang && browserLang !== router.locale) {
+        router.replace(`/${browserLang}`);
+      }
+    }
+  }, [router]);
 
   // Si recherche, filtrer les jeux
   const filteredGames = search

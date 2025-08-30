@@ -59,5 +59,10 @@
   "bike": "Bicicleta",
   "card": "Cartas",
   "clicker": "Clicker",
-  "dressUp": "Vestir"
+  "dressUp": "Vestir",
+  "back": "Volver",
+  "categorystug": "Categoría",
+  "aboutGame": "Acerca del juego",
+  "gameNotFound": "Juego no encontrado.",
+  "misc": "Varios"
 }

@@ -23,12 +23,12 @@ export default function LastSection() {
   const { t } = useTranslation("common");
 
   return (
-    <section className="mx-auto mt-10 max-w-7xl rounded-2xl bg-[#1e1e2f] p-6 text-white shadow-lg">
+    <section className="mx-auto mt-10 max-w-7xl rounded-2xl bg-white dark:bg-[#1e1e2f] p-6 text-black dark:text-white shadow-lg">
       <div className="flex flex-col items-center gap-6 md:flex-row">
         {/* Colonne gauche */}
         <div className="flex flex-col items-center md:items-start md:w-1/3">
           <h2 className="text-3xl font-extrabold">{t("onlineGames")}</h2>
-          <p className="mt-4 max-w-xs text-sm text-gray-300">
+          <p className="mt-4 max-w-xs text-sm text-gray-700 dark:text-gray-300">
             {t("onlineGamesDescription")}
           </p>
           <a
@@ -44,10 +44,10 @@ export default function LastSection() {
           {CATEGORIES.map(({ icon, labelKey }) => (
             <div
               key={labelKey}
-              className="flex flex-col items-center rounded-xl bg-[#2a2a40] p-4 text-center"
+              className="flex flex-col items-center rounded-xl bg-gray-200 dark:bg-[#2a2a40] p-4 text-center"
             >
               <span className="mb-2 text-2xl">{icon}</span>
-              <span className="font-semibold">{t(labelKey)}</span>
+              <span className="font-semibold text-black dark:text-white">{t(labelKey)}</span>
             </div>
           ))}
         </div>
