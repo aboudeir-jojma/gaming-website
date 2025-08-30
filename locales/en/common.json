@@ -39,5 +39,26 @@
     "multiplayer": "Multiplayer"
   },
   "backToTop":"back To Top",
-  "topGames": "Top Games"
+  "topGames": "Top Games",
+  "localMultiplayer": "Local multiplayer",
+  "localMultiplayerDesc": "Play on the same device",
+  "onlineMultiplayer": "Online multiplayer",
+  "onlineMultiplayerDesc": "Play on separate devices",
+  "exploreGames": "Explore games",
+   "onlineGames": "Online Games",
+  "onlineGamesDescription": "Enjoy the latest and best free online games without downloads or pop-ups. Play instantly in your browser on any device.",
+  "learnMore": "Learn more",
+
+  "twoPlayer": "2 Player",
+  "adventure": "Adventure",
+  "beauty": "Beauty",
+  "car": "Car",
+  "casual": "Casual",
+  "controller": "Controller",
+  "action": "Action",
+  "basketball": "Basketball",
+  "bike": "Bike",
+  "card": "Card",
+  "clicker": "Clicker",
+  "dressUp": "Dress Up"
 }

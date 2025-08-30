@@ -39,7 +39,7 @@ export default function Footer() {
             <li><a href="/about" className="hover:text-black dark:hover:text-white">{t("about")}</a></li>
             <li><a href="/contact" className="hover:text-black dark:hover:text-white">{t("contact")}</a></li>
             <li><a href="/privacy" className="hover:text-black dark:hover:text-white">{t("privacy")}</a></li>
-            <li><a href="/terms" className="hover:text-black dark:hover:text-white">{t("terms")}</a></li>
+         
           </ul>
         </div>
 

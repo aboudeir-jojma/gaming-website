@@ -39,5 +39,25 @@
     "multiplayer": "Multijugador"
   },
   "backToTop": "Volver arriba"  ,
-  "topGames": "Mejores juegos"
+  "topGames": "Mejores juegos",
+  "localMultiplayer": "Multijugador local",
+  "localMultiplayerDesc": "Juega en el mismo dispositivo",
+  "onlineMultiplayer": "Multijugador en línea",
+  "onlineMultiplayerDesc": "Juega en dispositivos separados",
+  "exploreGames": "Explorar juegos",
+   "onlineGames": "Juegos en línea",
+  "onlineGamesDescription": "Disfruta de los mejores juegos gratis sin descargas ni ventanas emergentes. Juega al instante en tu navegador desde cualquier dispositivo.",
+  "learnMore": "Saber más",
+  "twoPlayer": "2 jugadores",
+  "adventure": "Aventura",
+  "beauty": "Belleza",
+  "car": "Coche",
+  "casual": "Casual",
+  "controller": "Mando",
+  "action": "Acción",
+  "basketball": "Baloncesto",
+  "bike": "Bicicleta",
+  "card": "Cartas",
+  "clicker": "Clicker",
+  "dressUp": "Vestir"
 }
