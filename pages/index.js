@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Layout from "../components/Layout";
 import GameRow from "../components/GameRow";
+import TopGamesCarousel from "../components/TopGamesCarousel";
 import { games } from "../data/games";
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -49,6 +50,7 @@ export default function HomePage() {
         <GameRow title="Search results" items={filteredGames} />
       ) : (
         <>
+          <TopGamesCarousel />
           <GameRow title={t('featuredGames')} items={featured} />
           <GameRow title={t('newGames')} items={news} />
           <GameRow title={t('pcgameonOriginals')} items={originals} />
