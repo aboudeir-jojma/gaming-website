@@ -26,7 +26,7 @@ export default function Footer() {
         <div></div> {/* Empty left column */}
         {/* Logo + slogan */}
         <div>
-          <h2 className="text-xl font-bold text-gray-900 dark:text-white">PcGameOn</h2>
+          <h2 className="text-xl font-bold text-gray-900 dark:text-white">Tmdisplay</h2>
           <p className="mt-2 text-sm">{t("footerSlogan")}</p>
         </div>
 
@@ -64,7 +64,7 @@ export default function Footer() {
 
       {/* Bas du footer */}
       <div className="border-t border-zinc-200 dark:border-white/10 py-4 text-center text-xs text-gray-600 dark:text-gray-400">
-        © {new Date().getFullYear()} PcGameOn. {t("rights")}
+        © {new Date().getFullYear()} Tmdisplay. {t("rights")}
       </div>
     </footer>
   );

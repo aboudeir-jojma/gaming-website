@@ -55,7 +55,7 @@ export default function Header({ onToggleSidebar, onSearch }) {
           href="/"
           className="shrink-0 text-base sm:text-lg font-extrabold tracking-tight text-black dark:text-white"
         >
-          PcGameOn
+          Tmdisplay
         </Link>
 
         <form
