@@ -6,6 +6,7 @@ import { games } from "../../data/games";
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
+import SidebarCarousel from "../../components/SidebarCarousel";
 
 import nextI18NextConfig from '../../next-i18next.config';
 
@@ -45,9 +46,6 @@ export default function GamePage({ game }) {
   const { t } = useTranslation("common");
   const router = useRouter();
   const { locale } = router;
-
-  // Filter games with tag "new" and limit to 8
-  const newGames = games.filter(g => g.tag === "new" && g.slug !== game.slug).slice(0, 8);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -108,18 +106,8 @@ export default function GamePage({ game }) {
           )}
         </div>
 
-        {/* New games thumbnails section */}
-        <aside className="w-full lg:w-80 flex-shrink-0">
-          <h2 className="text-white text-xl font-bold mb-4">{t("newGames") || "New Games"}</h2>
-          <div className="grid grid-cols-2 gap-4">
-            {newGames.map((g) => (
-              <Link key={g.slug} href={`/game/${g.slug}`} locale={locale} className="block rounded-lg overflow-hidden ring-1 ring-white/10 hover:ring-white/30 transition">
-                <Image src={g.thumb} alt={g.title} width={160} height={90} className="object-cover w-full h-20" />
-                <div className="text-white text-sm mt-1 text-center">{g.title}</div>
-              </Link>
-            ))}
-          </div>
-        </aside>
+        {/* Sidebar carousel with random games */}
+        <SidebarCarousel games={games} currentGameSlug={game.slug} />
       </div>
     </Layout>
   );

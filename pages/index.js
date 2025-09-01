@@ -9,6 +9,8 @@ import { games } from "../data/games";
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
+const supportedLocales = ['en', 'fr', 'es', 'pt', 'de', 'it'];
+
 export async function getStaticProps({ locale }) {
   return {
     props: {
@@ -21,15 +23,18 @@ export default function HomePage() {
   const { t } = useTranslation('common');
   const [search, setSearch] = useState("");
   const router = useRouter();
+useEffect(() => {
+  if (typeof window === "undefined") return;
+  const path = router.asPath || "/";
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const browserLang = navigator.language.split('-')[0];
-      if (browserLang && browserLang !== router.locale) {
-        router.replace(`/${browserLang}`);
-      }
-    }
-  }, [router]);
+  const supportedLocales = ["en","fr","es","pt","de","it"];
+  const hasLocalePrefix = supportedLocales.some(
+    (lng) => path === `/${lng}` || path.startsWith(`/${lng}/`)
+  );
+  if (hasLocalePrefix) return;
+
+
+}, [router.asPath, router.locale]);
 
   // Si recherche, filtrer les jeux
   const filteredGames = search
@@ -67,7 +72,7 @@ export default function HomePage() {
           <GameRow title={t('featuredGames')} items={featured} />
           <GameRow title={t('newGames')} items={news} />
           <PlayWithFriendsSection />
-          <GameRow title={t('pcgameonOriginals')} items={originals} />
+          <GameRow title={t('TmdisplayOriginals')} items={originals} />
           <LastSection />
         </>
       )}

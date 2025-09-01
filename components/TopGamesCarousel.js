@@ -35,11 +35,9 @@ export default function TopGamesCarousel() {
   const titleOf = (g) => g?.name || g?.title || g?.slug;
 
   return (
-    <section className="relative mx-auto max-w-7xl px-6 py-6">
+    <section className="relative mx-auto max-w-7xl px-8 py-6">
       <div className="mb-3 flex items-center justify-between">
-        <h2 className="text-xl font-bold text-white">
-          {t("topGames")}
-        </h2>
+        <h2 className="text-xl font-bold text-white">{t("topGames")}</h2>
         <div className="hidden md:flex gap-2">
           <button
             onClick={() => scrollByAmount(-1)}
@@ -58,66 +56,76 @@ export default function TopGamesCarousel() {
         </div>
       </div>
 
-     <div ref={trackRef} className="flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-smooth hide-scrollbar">
+      {/* scrollPadding pour éviter que le premier groupe colle au bord */}
+      <div
+        ref={trackRef}
+        className="flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-smooth hide-scrollbar"
+        style={{ scrollPaddingLeft: "2rem" }}
+      >
         {groups.map((g, gi) => (
           <Fragment key={gi}>
-            {/* Carte XL (plus large) */}
-            {g.hero && (
-              <a
-                href={`/game/${g.hero.slug}`}
-                title={titleOf(g.hero)}
-                className="relative flex-shrink-0 w-[500px] md:w-[700px] h-[220px] md:h-[280px] snap-start overflow-hidden rounded-2xl bg-zinc-900 ring-1 ring-white/10 hover:ring-white/20 transition"
-              >
-                <img
-                  src={imgSrc(g.hero)}
-                  alt={titleOf(g.hero)}
-                  className="absolute inset-0 h-full w-full object-cover"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-3">
-                  <div className="text-white font-bold leading-tight truncate text-xl md:text-2xl">
-                    {titleOf(g.hero)}
-                  </div>
-                </div>
-                {g.hero.updated && (
-                  <span className="absolute left-3 top-3 rounded-md bg-emerald-500/90 px-2 py-0.5 text-xs font-semibold text-white">
-                    {t("updated") || "Updated"}
-                  </span>
-                )}
-              </a>
-            )}
-
-            {/* Grille 2×2 (un peu plus étroite) */}
-            <div className="flex-shrink-0 w-[420px] md:w-[520px] snap-start">
-              <div className="grid grid-cols-2 grid-rows-2 gap-3 h-[220px] md:h-[280px]">
-                {g.grid.map((game, i) => (
-                  <a
-                    key={game.slug || i}
-                    href={`/game/${game.slug}`}
-                    title={titleOf(game)}
-                    className="relative overflow-hidden rounded-2xl bg-zinc-900 ring-1 ring-white/10 hover:ring-white/20 transition"
-                  >
-                    <img
-                      src={imgSrc(game)}
-                      alt={titleOf(game)}
-                      className="absolute inset-0 h-full w-full object-cover"
-                      loading="lazy"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                    <div className="absolute bottom-0 left-0 right-0 p-2">
-                      <div className="text-white font-bold leading-tight truncate text-sm md:text-base">
-                        {titleOf(game)}
-                      </div>
+            {/* WRAPPER DU GROUPE = 1 hero + 1 grille */}
+            {/* min-w = largeur hero + gap(12px) + largeur grille */}
+            <div className="flex gap-3 flex-shrink-0 snap-start min-w-[692px] md:min-w-[1182px]">
+              {/* Hero card */}
+              {g.hero && (
+                <a
+                  href={`/game/${g.hero.slug}`}
+                  title={titleOf(g.hero)}
+                  className="relative flex-shrink-0 w-[350px] md:w-[700px] h-[175px] md:h-[350px] overflow-hidden rounded-2xl bg-zinc-900 ring-1 ring-white/10 hover:ring-white/20 transition"
+                >
+                  <img
+                    src={imgSrc(g.hero)}
+                    alt={titleOf(g.hero)}
+                    className="absolute inset-0 h-full w-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-3">
+                    <div className="text-white font-bold leading-tight truncate text-xl md:text-2xl">
+                      {titleOf(g.hero)}
                     </div>
-                  </a>
-                ))}
-                {/* si moins de 4, on remplit pour garder la grille propre */}
-                {Array.from({ length: Math.max(0, 4 - g.grid.length) }).map(
-                  (_, k) => (
-                    <div key={`empty-${k}`} className="rounded-2xl bg-transparent" />
-                  )
-                )}
+                  </div>
+                  {g.hero.updated && (
+                    <span className="absolute left-3 top-3 rounded-md bg-emerald-500/90 px-2 py-0.5 text-xs font-semibold text-white">
+                      {t("updated") || "Updated"}
+                    </span>
+                  )}
+                </a>
+              )}
+
+              {/* Grille 2×2 */}
+              <div className="flex-shrink-0 w-[330px] md:w-[470px]">
+                {/* Hauteur identique à la hero pour éviter les "demi jeux" */}
+                <div className="grid grid-cols-2 grid-rows-2 gap-3 h-[175px] md:h-[350px]">
+                  {g.grid.map((game, i) => (
+                    <a
+                      key={game.slug || i}
+                      href={`/game/${game.slug}`}
+                      title={titleOf(game)}
+                      className="relative overflow-hidden rounded-2xl bg-zinc-900 ring-1 ring-white/10 hover:ring-white/20 transition"
+                    >
+                      <img
+                        src={imgSrc(game)}
+                        alt={titleOf(game)}
+                        className="absolute inset-0 h-full w-full object-cover"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                      <div className="absolute bottom-0 left-0 right-0 p-2">
+                        <div className="text-white font-bold leading-tight truncate text-sm md:text-base">
+                          {titleOf(game)}
+                        </div>
+                      </div>
+                    </a>
+                  ))}
+                  {/* si < 4 jeux, on remplit pour garder la grille propre */}
+                  {Array.from({ length: Math.max(0, 4 - g.grid.length) }).map(
+                    (_, k) => (
+                      <div key={`empty-${k}`} className="rounded-2xl bg-transparent" />
+                    )
+                  )}
+                </div>
               </div>
             </div>
           </Fragment>
