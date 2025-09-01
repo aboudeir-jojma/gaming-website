@@ -10,7 +10,7 @@ export default function PlayWithFriendsSection() {
         <div className="flex flex-col items-center md:items-start md:w-1/3">
           <h2 className="text-3xl font-extrabold">{t("playWithFriends")}</h2>
           <img
-            src="/imggames/play-with-friends.png"
+            src="/imggames/multiplayerBanner1.svg"
             alt="Play with friends"
             className="mt-4 w-48 md:w-full"
             loading="lazy"
@@ -22,7 +22,7 @@ export default function PlayWithFriendsSection() {
           {/* Local multiplayer */}
           <div className="flex flex-col items-center bg-gray-200 dark:bg-[#2a2a40] rounded-xl p-6 w-full md:w-1/2">
             <img
-              src="/imggames/local-multiplayer.png"
+              src="/imggames/multiplayerBanner2.svg"
               alt="Local multiplayer"
               className="mb-4 w-20"
               loading="lazy"
@@ -37,7 +37,7 @@ export default function PlayWithFriendsSection() {
           {/* Online multiplayer */}
           <div className="flex flex-col items-center bg-gray-200 dark:bg-[#2a2a40] rounded-xl p-6 w-full md:w-1/2">
             <img
-              src="/imggames/online-multiplayer.png"
+              src="/imggames/multiplayerBanner3.svg"
               alt="Online multiplayer"
               className="mb-4 w-20"
               loading="lazy"

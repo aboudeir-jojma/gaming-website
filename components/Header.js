@@ -12,6 +12,7 @@ export default function Header({ onToggleSidebar, onSearch }) {
   const [rating, setRating] = useState(0);
   const [hover, setHover] = useState(0);
   const [theme, setTheme] = useState("dark");
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const saved = localStorage.getItem("pcgameon_rating");
@@ -29,6 +30,14 @@ export default function Header({ onToggleSidebar, onSearch }) {
     localStorage.setItem("pcgameon_rating", String(rating));
   }, [rating]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   function toggleTheme() {
     const next = theme === "dark" ? "light" : "dark";
     setTheme(next);
@@ -39,13 +48,13 @@ export default function Header({ onToggleSidebar, onSearch }) {
   }
 
   return (
-<header className="fixed top-0 z-40 w-full border-b border-white/5 bg-white text-black dark:bg-[#12131a]/80 dark:text-white sm:backdrop-blur transition-colors duration-300">
+<header className={`fixed top-0 z-40 w-full border-b ${scrolled ? 'border-transparent' : 'border-gray-300 dark:border-gray-600'} ${scrolled ? 'bg-transparent dark:bg-transparent backdrop-blur-md' : 'bg-gray-100 dark:bg-gray-900'} text-black dark:text-white shadow-lg transition-all duration-300`}>
 
   <div className="mx-auto flex max-w-7xl items-center gap-2 sm:gap-3 px-3 sm:px-4 py-2.5 sm:py-3">
         {/* Burger */}
         <button
           onClick={onToggleSidebar}
-          className="shrink-0 rounded-xl px-3 py-2 text-sm bg-transparent text-black dark:text-white hover:bg-black/5 dark:hover:bg-white/10 transition-colors duration-200"
+          className="shrink-0 rounded-xl px-3 py-2 text-sm bg-transparent text-black dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
           aria-label="Toggle sidebar"
         >
           ☰
@@ -87,7 +96,7 @@ export default function Header({ onToggleSidebar, onSearch }) {
         {/* Theme toggle */}
         <button
           onClick={toggleTheme}
-          className="ml-2 shrink-0 rounded-xl px-3 py-2 text-sm bg-transparent text-black dark:text-white hover:bg-black/5 dark:hover:bg-white/10 transition-colors duration-200"
+          className="ml-2 shrink-0 rounded-xl px-3 py-2 text-sm bg-transparent text-black dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
         >
           {theme === "dark" ? "🌙" : "☀️"}
         </button>

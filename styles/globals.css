@@ -9,10 +9,10 @@
 
   /* Thèmes */
   html.light body {
-    @apply bg-white text-black;
+    @apply bg-gray-100 text-black;
   }
   html.dark body {
-    @apply bg-[#0b0c12] text-white;
+    @apply bg-gray-900 text-white;
   }
 }
 
