@@ -66,13 +66,13 @@ export default function TopGamesCarousel() {
           <Fragment key={gi}>
             {/* WRAPPER DU GROUPE = 1 hero + 1 grille */}
             {/* min-w = largeur hero + gap(12px) + largeur grille */}
-            <div className="flex gap-3 flex-shrink-0 snap-start min-w-[692px] md:min-w-[1182px]">
+            <div className="flex gap-3 flex-shrink-0 snap-start min-w-[350px] md:min-w-[1182px]">
               {/* Hero card */}
               {g.hero && (
                 <a
                   href={`/game/${g.hero.slug}`}
                   title={titleOf(g.hero)}
-                  className="relative flex-shrink-0 w-[350px] md:w-[700px] h-[175px] md:h-[350px] overflow-hidden rounded-2xl bg-zinc-900 ring-1 ring-white/10 hover:ring-white/20 transition"
+                  className="relative flex-shrink-0 w-[175px] md:w-[700px] h-[175px] md:h-[350px] overflow-hidden rounded-2xl bg-zinc-900 ring-1 ring-white/10 hover:ring-white/20 transition"
                 >
                   <img
                     src={imgSrc(g.hero)}
@@ -95,7 +95,7 @@ export default function TopGamesCarousel() {
               )}
 
               {/* Grille 2×2 */}
-              <div className="flex-shrink-0 w-[330px] md:w-[470px]">
+              <div className="flex-shrink-0 w-[165px] md:w-[470px]">
                 {/* Hauteur identique à la hero pour éviter les "demi jeux" */}
                 <div className="grid grid-cols-2 grid-rows-2 gap-3 h-[175px] md:h-[350px]">
                   {g.grid.map((game, i) => (

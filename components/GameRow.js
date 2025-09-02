@@ -11,16 +11,20 @@ export default function GameRow({ title, items }) {
 
   // Réglages
   const GAP = 12;     // px (gap-3)
-  const VISIBLE = 5;  // 5 jeux visibles
   const BTN_W = 32;   // largeur zone des flèches (px)
 
-  // Calcule une largeur de carte pour avoir EXACTEMENT 5 visibles
+  // Number of visible cards, dynamic based on window width
+  const [VISIBLE, setVISIBLE] = useState(5);
+
+  // Calcule une largeur de carte pour avoir EXACTEMENT VISIBLE visibles
   useEffect(() => {
     const calc = () => {
       const el = trackRef.current;
       if (!el) return;
       const viewport = el.clientWidth;
-      const w = Math.floor((viewport - GAP * (VISIBLE - 1)) / VISIBLE);
+      const visibleCount = window.innerWidth < 640 ? 2 : 5;
+      setVISIBLE(visibleCount);
+      const w = Math.floor((viewport - GAP * (visibleCount - 1)) / visibleCount);
       setCardW(w);
     };
     calc();
@@ -28,7 +32,7 @@ export default function GameRow({ title, items }) {
     return () => window.removeEventListener("resize", calc);
   }, []);
 
-  // Défile exactement 5 cartes
+  // Défile exactement VISIBLE cartes
   const scrollByPages = (dir) => {
     const el = trackRef.current;
     if (!el) return;
