@@ -1,39 +1,38 @@
+// pages/category/[category].js
 import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
 import Layout from "../../components/Layout";
 import { games } from "../../data/games";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
+import nextI18NextConfig from "../../next-i18next.config";
 
 const toTitle = (s = "") => s.charAt(0).toUpperCase() + s.slice(1);
-
-// normalise une catégorie pouvant être "action" ou ["action","kids"]
 const normCats = (v) =>
-  Array.isArray(v)
-    ? v.map((x) => String(x).toLowerCase().trim())
-    : [String(v ?? "").toLowerCase().trim()];
+  Array.isArray(v) ? v.map((x) => String(x).toLowerCase().trim())
+                   : [String(v ?? "").toLowerCase().trim()];
 
 export default function CategoryPage() {
   const { category } = useRouter().query;
+  const { t } = useTranslation("common");
 
-  // "category" peut être string ou string[]
   const raw = Array.isArray(category) ? category[0] : category || "";
   const catKey = String(raw).toLowerCase().trim();
-
-  // ✅ on évite "items" -> on utilise "gamesInCategory"
   const gamesInCategory = games.filter((g) => normCats(g.category).includes(catKey));
 
   return (
     <Layout>
       <div className="mx-auto max-w-7xl px-1 py-6">
-        <Link href="/" className="text-sm text-white/70 hover:text-white">← Back</Link>
+        <Link href="/" className="text-sm text-white/70 hover:text-white">← {t("back")}</Link>
         <h1 className="mt-2 text-2xl font-extrabold">
-          Category: {catKey ? toTitle(catKey) : "All"}
+          {t("categorystug")}: {catKey ? toTitle(catKey) : (t("all") || "All")}
         </h1>
 
         {!catKey ? (
-          <p className="mt-6 text-white/70">Choisis une catégorie dans la barre latérale.</p>
+          <p className="mt-6 text-white/70">{t("chooseCategory") || "Choose a category in the sidebar."}</p>
         ) : gamesInCategory.length === 0 ? (
-          <p className="mt-6 text-white/70">Aucun jeu trouvé dans cette catégorie.</p>
+          <p className="mt-6 text-white/70">{t("noGamesFound") || "No games found in this category."}</p>
         ) : (
           <div className="mt-4 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {gamesInCategory.map((game) => (
@@ -64,4 +63,33 @@ export default function CategoryPage() {
       </div>
     </Layout>
   );
+}
+
+// ✅ charge les traductions
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+    },
+  };
+}
+
+// ✅ exige par Next pour les pages dynamiques SSG
+export async function getStaticPaths() {
+  const locales = nextI18NextConfig.i18n.locales;
+
+  const categories = Array.from(
+    new Set(
+      games.flatMap((g) => normCats(g.category))
+    )
+  );
+
+  const paths = [];
+  for (const locale of locales) {
+    for (const cat of categories) {
+      paths.push({ params: { category: cat }, locale });
+    }
+  }
+
+  return { paths, fallback: "blocking" };
 }

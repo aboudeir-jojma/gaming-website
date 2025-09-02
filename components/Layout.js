@@ -18,19 +18,27 @@ export default function Layout({ children, onSearch }) {
     return () => mq.removeEventListener("change", apply);
   }, []);
 
+  // largeur du sidebar (pour compenser dans le main)
+  const sidebarWidth = collapsed ? "w-16" : "w-48";
+  const marginLeft = collapsed ? "ml-16" : "ml-48";
+
   return (
     <div className="bg-white text-black dark:bg-[#0b0c12] dark:text-white min-h-screen flex flex-col">
       {/* Header occupe 100% en haut */}
       <Header onToggleSidebar={() => setCollapsed(c => !c)} onSearch={onSearch} />
 
-      {/* Zone en dessous = Sidebar + contenu */}
+      {/* Zone principale : sidebar fixé + contenu décalé */}
       <div className="flex flex-1">
         <Sidebar collapsed={collapsed} />
-        <main className="flex-1 overflow-y-auto pt-[56px] ml-40">{children}</main>
+
+        <main className={`flex-1 overflow-y-auto pt-[56px] transition-all duration-300 ${marginLeft}`}>
+          {children}
+        </main>
       </div>
 
-      {/* Footer fixé en bas */}
+      {/* Footer */}
       <Footer />
+      <BackToTopButton />
     </div>
   );
 }
