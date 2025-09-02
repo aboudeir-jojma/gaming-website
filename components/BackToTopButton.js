@@ -1,13 +1,17 @@
 "use client";
 import { useState, useEffect } from "react";
+import { useTranslation } from "next-i18next";
+import { ArrowUpCircle } from "lucide-react"; // 👈 nouvel icône
 
 export default function BackToTopButton({
+
+
   inline = false,           // 👈 nouveau : mode inline
   label = "Back to top",    // 👈 texte personnalisable
   className = ""            // 👈 classes additionnelles
 }) {
   const [visible, setVisible] = useState(false);
-
+  const { t } = useTranslation("common");
   useEffect(() => {
     if (inline) {
       // En mode inline, toujours visible dans le footer
@@ -49,7 +53,8 @@ export default function BackToTopButton({
       aria-label={label}
       className={`fixed bottom-8 right-8 z-50 ${base}`}
     >
-      <span className="text-xl">↑</span> {label}
+      <ArrowUpCircle className="w-5 h-5" />
+         {t("backToTop")}
     </button>
   );
 }

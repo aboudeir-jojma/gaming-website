@@ -20,11 +20,12 @@ export default function Layout({ children, onSearch }) {
 
   // largeur du sidebar (pour compenser dans le main)
   const sidebarWidth = collapsed ? "w-16" : "w-48";
-  const marginLeft = collapsed ? "ml-16" : "ml-48";
+  // Apply left margin on mobile and desktop when sidebar expanded to avoid overlap
+  const marginLeft = collapsed ? "ml-16 md:ml-16" : "ml-48 md:ml-48";
 
   return (
     <div className="bg-white text-black dark:bg-[#0b0c12] dark:text-white min-h-screen flex flex-col">
-      {/* Header occupe 100% en haut */}
+      {/* Header occupe 100% en haut */}  
       <Header onToggleSidebar={() => setCollapsed(c => !c)} onSearch={onSearch} />
 
       {/* Zone principale : sidebar fixé + contenu décalé */}
@@ -37,7 +38,7 @@ export default function Layout({ children, onSearch }) {
       </div>
 
       {/* Footer */}
-      <Footer />
+      <Footer collapsed={collapsed} />
       <BackToTopButton />
     </div>
   );
