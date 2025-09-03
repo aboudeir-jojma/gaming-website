@@ -1,13 +1,14 @@
 "use client";
-
+import { useRouter } from "next/router";
 import { useRef, useEffect, useState } from "react";
 import GameCard from "./GameCard";
 import { useTranslation } from "next-i18next";
-
+import Link from "next/link";
 export default function GameRow({ title, items }) {
   const { t } = useTranslation("common");
   const trackRef = useRef(null);
   const [cardW, setCardW] = useState(220);
+const { locale, defaultLocale } = useRouter();
 
   // Réglages
   const GAP = 12;     // px (gap-3)
@@ -89,12 +90,13 @@ export default function GameRow({ title, items }) {
         {/* Titre + Voir plus */}
         <div className="mb-3 mt-8 flex items-center justify-between px-1">
           <h2 className="text-xl font-extrabold">{title}</h2>
-          <a
-            className="text-sm text-black/70 dark:text-white/70 hover:text-black dark:hover:text-white"
-            href={`/category/${encodeURIComponent(title)}`}
-          >
-            {t("viewMore")}
-          </a>
+          <Link
+  className="text-sm text-black/70 dark:text-white/70 hover:text-black dark:hover:text-white"
+ href="/all"   
+>
+  {t("viewMore")}
+</Link>
+
         </div>
 
         {/* Carrousel */}

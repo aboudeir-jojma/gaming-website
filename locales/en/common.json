@@ -9,6 +9,7 @@
   "TmdisplayOriginals": "Tmdisplay Originals",
   "searchResults": "Search results",
   "viewMore": "View more",
+  "allGames": "All Games",
   "searchPlaceholder": "Search games...",
   "playNow": "Play Now",
   "footerSlogan": "Play the best free browser games online.",
@@ -66,5 +67,8 @@
   "categorystug": "Category",
   "aboutGame": "About this game",
   "gameNotFound": "Game not found.",
+
   "misc": "Misc"
+
+
 }

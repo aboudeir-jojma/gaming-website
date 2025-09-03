@@ -64,10 +64,10 @@ const locales = [
 
   const toggleLang = () => setLangOpen(!langOpen);
 
-const changeLocale = (locale) => {
+const changeLocale = (nextLocale) => {
   setLangOpen(false);
-  // envoie toujours vers la racine locale: /en, /fr, /es, ...
-  router.push("/", undefined, { locale });
+  const { asPath } = router;         // URL actuelle (inclut /fr/all, query, hash…)
+  router.push(asPath, asPath, { locale: nextLocale });
 };
 
 

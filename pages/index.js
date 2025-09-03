@@ -27,13 +27,21 @@ useEffect(() => {
   if (typeof window === "undefined") return;
   const path = router.asPath || "/";
 
-  const supportedLocales = ["en","fr","es","pt","de","it"];
   const hasLocalePrefix = supportedLocales.some(
     (lng) => path === `/${lng}` || path.startsWith(`/${lng}/`)
   );
   if (hasLocalePrefix) return;
 
+  // Detect browser language
+  const navLang = navigator.language || navigator.userLanguage;
+  const langPrefix = navLang ? navLang.split('-')[0] : 'en';
 
+  // Redirect if detected language is supported
+  if (supportedLocales.includes(langPrefix)) {
+    router.replace(`/${langPrefix}`);
+  } else {
+    router.replace('/en');
+  }
 }, [router.asPath, router.locale]);
 
   // Si recherche, filtrer les jeux
