@@ -91,7 +91,7 @@ export default function GameRow({ title, items }) {
           <h2 className="text-xl font-extrabold">{title}</h2>
           <a
             className="text-sm text-black/70 dark:text-white/70 hover:text-black dark:hover:text-white"
-            href="#"
+            href={`/category/${encodeURIComponent(title)}`}
           >
             {t("viewMore")}
           </a>

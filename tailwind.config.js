@@ -9,4 +9,8 @@ module.exports = {
     },
   },
   plugins: [require("@tailwindcss/typography")],
+
+  safelist: [
+    "fi", "fi-us", "fi-fr", "fi-es", "fi-pt", "fi-de", "fi-it"
+  ],
 };

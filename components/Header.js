@@ -1,8 +1,11 @@
 "use client";
+
+
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Search, Star } from "lucide-react";
+import { Search, Star, Globe } from "lucide-react";
 import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 import BackToTopButton from "./BackToTopButton";
 
 export default function Header({ onToggleSidebar, onSearch }) {
@@ -46,6 +49,28 @@ export default function Header({ onToggleSidebar, onSearch }) {
     document.documentElement.classList.remove("light", "dark");
     document.documentElement.classList.add(next);
   }
+
+  const [langOpen, setLangOpen] = useState(false);
+  const router = useRouter();
+const locales = [
+  { code: 'en', flag: 'fi fi-us' },
+  { code: 'fr', flag: 'fi fi-fr' },
+  { code: 'es', flag: 'fi fi-es' },
+  { code: 'pt', flag: 'fi fi-pt' },
+  { code: 'de', flag: 'fi fi-de' },
+  { code: 'it', flag: 'fi fi-it' }
+];
+
+
+  const toggleLang = () => setLangOpen(!langOpen);
+
+  const changeLocale = (locale) => {
+    setLangOpen(false);
+    const pathWithoutLocale = router.asPath.replace(/^\/[a-z]{2}/, '') || '/';
+    router.push(`/${locale}${pathWithoutLocale}`);
+  };
+
+  const currentLocale = locales.find(l => l.code === router.locale) || locales[0];
 
   return (
 <header className={`fixed top-0 z-40 w-full border-b ${scrolled ? 'border-transparent' : 'border-gray-300 dark:border-gray-600'} ${scrolled ? 'bg-transparent dark:bg-transparent backdrop-blur-md' : 'bg-gray-100 dark:bg-gray-900'} text-black dark:text-white shadow-lg transition-all duration-300`}>
@@ -92,6 +117,37 @@ export default function Header({ onToggleSidebar, onSearch }) {
             aria-label="Search games"
           />
         </form>
+
+        {/* Language selector */}
+        <div className="relative ml-2">
+          <button
+            onClick={toggleLang}
+            aria-label="Select language"
+            className="flex items-center gap-1 rounded-xl px-3 py-2 text-sm bg-transparent text-black dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
+          >
+            <span className={`${currentLocale.flag} text-lg`}></span>
+            {/* Removed locale code text as per user request */}
+            {/* <span className="hidden sm:inline">{router.locale?.toUpperCase()}</span> */}
+          </button>
+          {langOpen && (
+            <ul className="absolute right-0 mt-1 w-32 rounded-md bg-white dark:bg-card shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-50">
+              {locales.map((loc) => (
+                <li key={loc.code}>
+                 <button
+                    onClick={() => changeLocale(loc.code)}
+                    className={`flex items-center gap-2 w-full px-4 py-2 text-left text-sm ${
+                      router.locale === loc.code ? "font-bold bg-gray-200 dark:bg-gray-700" : ""
+                    } text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600`}
+                  >
+                    <span className={`${loc.flag} text-lg`}></span>
+                    <span className="uppercase">{loc.code}</span>
+                  </button>
+
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
 
         {/* Theme toggle */}
         <button

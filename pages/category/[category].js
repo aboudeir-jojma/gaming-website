@@ -18,18 +18,30 @@ export default function CategoryPage() {
   const { t } = useTranslation("common");
 
   const raw = Array.isArray(category) ? category[0] : category || "";
-  const catKey = String(raw).toLowerCase().trim();
-  const gamesInCategory = games.filter((g) => normCats(g.category).includes(catKey));
+ const decodedCategory = decodeURIComponent(raw).trim().toLowerCase();
+
+
+  // Si pas de catégorie ou catégorie "all" => afficher tous les jeux
+  const gamesInCategory =
+    !decodedCategory || decodedCategory === "all"
+      ? games
+      : games.filter((g) => {
+          const cat = g.category;
+          if (Array.isArray(cat)) {
+            return cat.some((c) => c.toLowerCase() === decodedCategory);
+          }
+          return cat.toLowerCase() === decodedCategory;
+        });
 
   return (
     <Layout>
       <div className="mx-auto max-w-7xl px-1 py-6">
         <Link href="/" className="text-sm text-white/70 hover:text-white">← {t("back")}</Link>
         <h1 className="mt-2 text-2xl font-extrabold">
-          {t("categorystug")}: {catKey ? toTitle(catKey) : (t("all") || "All")}
+          {t("categorystug")}: {decodedCategory ? toTitle(decodedCategory) : (t("all") || "All")}
         </h1>
 
-        {!catKey ? (
+        {!decodedCategory ? (
           <p className="mt-6 text-white/70">{t("chooseCategory") || "Choose a category in the sidebar."}</p>
         ) : gamesInCategory.length === 0 ? (
           <p className="mt-6 text-white/70">{t("noGamesFound") || "No games found in this category."}</p>
@@ -65,7 +77,7 @@ export default function CategoryPage() {
   );
 }
 
-// ✅ charge les traductions
+// ✅ Chargement des traductions
 export async function getStaticProps({ locale }) {
   return {
     props: {
@@ -74,7 +86,7 @@ export async function getStaticProps({ locale }) {
   };
 }
 
-// ✅ exige par Next pour les pages dynamiques SSG
+// ✅ Génération des chemins pour toutes les catégories et langues
 export async function getStaticPaths() {
   const locales = nextI18NextConfig.i18n.locales;
 

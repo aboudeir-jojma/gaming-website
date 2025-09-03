@@ -5,5 +5,5 @@ module.exports = {
     locales: ['en', 'fr', 'es', 'pt', 'de', 'it'],
   },
   localePath: './locales',
-  localeDetection: false,                  // IMPORTANT: pas de redirection auto
+  localeDetection: true,                  // Enable locale detection for URL prefixes
 };
