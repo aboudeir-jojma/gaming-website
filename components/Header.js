@@ -64,11 +64,12 @@ const locales = [
 
   const toggleLang = () => setLangOpen(!langOpen);
 
-  const changeLocale = (locale) => {
-    setLangOpen(false);
-    const pathWithoutLocale = router.asPath.replace(/^\/[a-z]{2}/, '') || '/';
-    router.push(`/${locale}${pathWithoutLocale}`);
-  };
+const changeLocale = (locale) => {
+  setLangOpen(false);
+  // envoie toujours vers la racine locale: /en, /fr, /es, ...
+  router.push("/", undefined, { locale });
+};
+
 
   const currentLocale = locales.find(l => l.code === router.locale) || locales[0];
 

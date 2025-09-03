@@ -1,9 +1,8 @@
-// next-i18next.config.js
 module.exports = {
   i18n: {
-    defaultLocale: 'en',                   // ou 'fr' si tu veux, peu importe
+    defaultLocale: 'en',
     locales: ['en', 'fr', 'es', 'pt', 'de', 'it'],
   },
   localePath: './locales',
-  localeDetection: true,                  // Enable locale detection for URL prefixes
+  localeDetection: false, // 🔴 désactivé
 };
