@@ -92,7 +92,8 @@ const { locale, defaultLocale } = useRouter();
           <h2 className="text-xl font-extrabold">{title}</h2>
           <Link
   className="text-sm text-black/70 dark:text-white/70 hover:text-black dark:hover:text-white"
- href="/all"   
+ href="/all"
+ locale={locale}
 >
   {t("viewMore")}
 </Link>

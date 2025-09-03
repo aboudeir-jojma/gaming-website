@@ -3,9 +3,12 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { PlayCircle } from "lucide-react";
 import { useTranslation } from 'next-i18next';
+import { useRouter } from "next/router";
 
 export default function GameCard({ game }) {
   const { t } = useTranslation('common');
+  const router = useRouter();
+  const { locale } = router;
   const [isTouch, setIsTouch] = useState(false);
 
   useEffect(() => {
@@ -53,6 +56,7 @@ export default function GameCard({ game }) {
 >
   <Link
     href={`/game/${game.slug}`}
+    locale={locale}
     className="flex items-center gap-2 rounded-xl bg-black px-4 py-2 
                font-bold text-white shadow-lg 
                hover:bg-white hover:text-black transition"

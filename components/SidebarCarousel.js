@@ -1,10 +1,14 @@
 "use client";
 
 import React, { useState, useEffect, useRef, Fragment } from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 
 export default function SidebarCarousel({ games, currentGameSlug }) {
+  const router = useRouter();
+  const { locale } = router;
   const trackRef = useRef(null);
   const [selectedGameSlug, setSelectedGameSlug] = useState(currentGameSlug);
   const [randomGames, setRandomGames] = useState([]);
@@ -90,9 +94,10 @@ export default function SidebarCarousel({ games, currentGameSlug }) {
         <h2 className="text-white text-xl font-bold mb-4">Random Games</h2>
         <div className="grid grid-cols-1 gap-4">
           {randomGames.map((game) => (
-            <a
+            <Link
               key={game.slug}
               href={`/game/${game.slug}`}
+              locale={locale}
               title={titleOf(game)}
               className="group block rounded-lg bg-gradient-to-tr from-indigo-900 via-indigo-800 to-indigo-700 shadow-lg ring-1 ring-white/10 hover:from-indigo-700 hover:via-indigo-600 hover:to-indigo-500 transition-transform transform hover:scale-105"
             >
@@ -108,7 +113,7 @@ export default function SidebarCarousel({ games, currentGameSlug }) {
               <div className="p-2">
                 <h3 className="text-white text-base font-semibold truncate">{game.title}</h3>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </section>

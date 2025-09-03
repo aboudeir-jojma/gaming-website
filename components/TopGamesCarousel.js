@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useRef, Fragment } from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import { games } from "../data/games";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslation } from "next-i18next";
@@ -8,6 +10,8 @@ import { useTranslation } from "next-i18next";
 export default function TopGamesCarousel() {
   const { t } = useTranslation("common");
   const trackRef = useRef(null);
+  const router = useRouter();
+  const { locale } = router;
 
   const list = games.slice(0, 20);
 
@@ -69,8 +73,9 @@ export default function TopGamesCarousel() {
             <div className="flex gap-3 flex-shrink-0 snap-start min-w-[350px] md:min-w-[1182px]">
               {/* Hero card */}
               {g.hero && (
-                <a
+                <Link
                   href={`/game/${g.hero.slug}`}
+                  locale={locale}
                   title={titleOf(g.hero)}
                   className="relative flex-shrink-0 w-[175px] md:w-[700px] h-[175px] md:h-[350px] overflow-hidden rounded-2xl bg-zinc-900 ring-1 ring-white/10 hover:ring-white/20 transition"
                 >
@@ -91,7 +96,7 @@ export default function TopGamesCarousel() {
                       {t("updated") || "Updated"}
                     </span>
                   )}
-                </a>
+                </Link>
               )}
 
               {/* Grille 2×2 */}
@@ -99,9 +104,10 @@ export default function TopGamesCarousel() {
                 {/* Hauteur identique à la hero pour éviter les "demi jeux" */}
                 <div className="grid grid-cols-2 grid-rows-2 gap-3 h-[175px] md:h-[350px]">
                   {g.grid.map((game, i) => (
-                    <a
+                    <Link
                       key={game.slug || i}
                       href={`/game/${game.slug}`}
+                      locale={locale}
                       title={titleOf(game)}
                       className="relative overflow-hidden rounded-2xl bg-zinc-900 ring-1 ring-white/10 hover:ring-white/20 transition"
                     >
@@ -117,7 +123,7 @@ export default function TopGamesCarousel() {
                           {titleOf(game)}
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   ))}
                   {/* si < 4 jeux, on remplit pour garder la grille propre */}
                   {Array.from({ length: Math.max(0, 4 - g.grid.length) }).map(
