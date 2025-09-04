@@ -6,4 +6,6 @@ module.exports = {
   },
   localePath: path.resolve('./locales'),
   localeDetection: false,
+  // 👇 Ajoute ceci
+  trailingSlash: false,
 };

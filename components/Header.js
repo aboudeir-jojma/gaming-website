@@ -68,11 +68,14 @@ const changeLocale = (nextLocale) => {
   setLangOpen(false);
   const { pathname, query, asPath } = router;
 
-  // Supprime le préfixe de locale actuel (ex: /fr, /pt, /es...)
-  const cleanPath = asPath.replace(/^\/[a-z]{2}(?=\/|$)/, '') || '/';
+  // Nettoyer l'URL courante (retire ancien préfixe si présent)
+  const cleanPath = asPath.replace(/^\/[a-z]{2}(?=\/|$)/, "") || "/";
 
-  // Demande à Next.js de naviguer avec le nouveau locale
-  router.push({ pathname, query }, cleanPath, { locale: nextLocale });
+  // Si l’utilisateur choisit explicitement "en", on force /en/ comme préfixe
+  const newPath =
+    nextLocale === "en" ? `/en${cleanPath}` : `/${nextLocale}${cleanPath}`;
+
+  router.push(newPath, newPath, { locale: nextLocale });
 };
 
 
