@@ -1,13 +1,15 @@
-# TODO: Fix URL to show /en when clicking US flag
+# Language Switching Fix
 
-## Steps:
-1. Update next-i18next.config.js to enable localeDetection for proper locale handling in URLs.
-2. Modify changeLocale function in components/Header.js to push URL with locale prefix.
-3. Test the language switcher to ensure URL updates to /en when clicking US flag.
-4. Verify that all languages work correctly and URL reflects the selected locale.
+## Completed Tasks
+- [x] Identified issue in changeLocale function in components/Header.js
+- [x] Updated changeLocale function to properly replace locale prefix in URL path
+- [x] Fixed router.push call to use updated path with new locale
 
-## Progress:
-- [ ] Step 1: Update next-i18next.config.js
-- [ ] Step 2: Modify Header.js changeLocale
-- [ ] Step 3: Test language switcher
-- [ ] Step 4: Verify all locales
+## Follow-up Steps
+- [ ] Test language switching functionality
+- [ ] Verify URL updates correctly when changing languages
+- [ ] Check that translations load properly after language switch
+- [ ] Test on different pages (index, all games, game details, etc.)
+
+## Technical Details
+The issue was that the original changeLocale function used router.asPath directly without replacing the current locale prefix. This caused the URL to not update properly when switching languages. The fix replaces the current locale prefix (e.g., /fr) with the new locale prefix (e.g., /es) in the path before calling router.push.

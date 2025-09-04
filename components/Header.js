@@ -66,8 +66,13 @@ const locales = [
 
 const changeLocale = (nextLocale) => {
   setLangOpen(false);
-  const { asPath } = router;         // URL actuelle (inclut /fr/all, query, hash…)
-  router.push(asPath, asPath, { locale: nextLocale });
+  const { pathname, query, asPath } = router;
+
+  // Supprime le préfixe de locale actuel (ex: /fr, /pt, /es...)
+  const cleanPath = asPath.replace(/^\/[a-z]{2}(?=\/|$)/, '') || '/';
+
+  // Demande à Next.js de naviguer avec le nouveau locale
+  router.push({ pathname, query }, cleanPath, { locale: nextLocale });
 };
 
 
