@@ -76,7 +76,7 @@ const changeLocale = (nextLocale) => {
   return (
 <header className={`fixed top-0 z-40 w-full border-b ${scrolled ? 'border-transparent' : 'border-gray-300 dark:border-gray-600'} ${scrolled ? 'bg-transparent dark:bg-transparent backdrop-blur-md' : 'bg-gray-100 dark:bg-gray-900'} text-black dark:text-white shadow-lg transition-all duration-300`}>
 
-  <div className="mx-auto flex max-w-7xl items-center gap-2 sm:gap-3 px-3 sm:px-4 py-2.5 sm:py-3">
+  <div className="mx-auto flex max-w-7xl items-center gap-2 sm:gap-3 px-3 sm:px-4 py-2.5 sm:py-3 min-w-0">
         {/* Burger */}
         <button
           onClick={onToggleSidebar}
@@ -95,7 +95,7 @@ const changeLocale = (nextLocale) => {
 
         <form
           role="search"
-          className="ml-auto flex-1 max-w-xl relative"
+          className="ml-auto flex-1 max-w-full sm:max-w-xl relative min-w-0"
           onSubmit={(e) => {
             e.preventDefault();
             onSearch?.(q);
@@ -158,42 +158,33 @@ const changeLocale = (nextLocale) => {
           {theme === "dark" ? "🌙" : "☀️"}
         </button>
 
-        <div className="flex items-center rounded-xl bg-white dark:bg-card px-2 py-1 text-black dark:text-white">
-          <div className="flex items-center sm:hidden">
-            <Star
-              className={`w-5 h-5 ${
-                rating > 0 ? "fill-yellow-400 text-yellow-400" : "text-zinc-400"
-              }`}
-            />
+          <div className="flex items-center rounded-xl bg-white dark:bg-card px-2 py-1 text-black dark:text-white">
+            {/* Removed stars on mobile to improve search bar display */}
+            <div className="hidden sm:flex items-center gap-1" aria-label="Rate this site from 1 to 5 stars">
+              {[1, 2, 3, 4, 5].map((i) => {
+                const active = (hover || rating) >= i;
+                return (
+                  <button
+                    key={i}
+                    type="button"
+                    onMouseEnter={() => setHover(i)}
+                    onMouseLeave={() => setHover(0)}
+                    onClick={() => setRating(i)}
+                    className="p-1 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-md"
+                    aria-label={`Set rating ${i}`}
+                  >
+                    <Star
+                      className={`w-5 h-5 transition-transform ${
+                        active
+                          ? "fill-yellow-400 text-yellow-400"
+                          : "text-zinc-400"
+                      }`}
+                    />
+                  </button>
+                );
+              })}
+            </div>
           </div>
-          <div
-            className="hidden sm:flex items-center gap-1"
-            aria-label="Rate this site from 1 to 5 stars"
-          >
-            {[1, 2, 3, 4, 5].map((i) => {
-              const active = (hover || rating) >= i;
-              return (
-                <button
-                  key={i}
-                  type="button"
-                  onMouseEnter={() => setHover(i)}
-                  onMouseLeave={() => setHover(0)}
-                  onClick={() => setRating(i)}
-                  className="p-1 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-md"
-                  aria-label={`Set rating ${i}`}
-                >
-                  <Star
-                    className={`w-5 h-5 transition-transform ${
-                      active
-                        ? "fill-yellow-400 text-yellow-400"
-                        : "text-zinc-400"
-                    }`}
-                  />
-                </button>
-              );
-            })}
-          </div>
-        </div>
       </div>
     </header>
   );
