@@ -101,31 +101,45 @@ const changeLocale = (nextLocale) => {
           Tmdisplay
         </Link>
 
-        <form
-          role="search"
-          className="ml-auto flex-1 max-w-full sm:max-w-xl relative min-w-0"
-          onSubmit={(e) => {
-            e.preventDefault();
-            onSearch?.(q);
-          }}
-        >
-          <Search className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-blue-500 w-5 h-5" />
-          <input
-            type="search"
-            value={q}
-            onChange={(e) => {
-              const v = e.target.value;
-              setQ(v);
-              onSearch?.(v);
-            }}
-            className="w-full rounded-2xl bg-white dark:bg-card pl-10 pr-3 py-2 outline-none text-black dark:text-white placeholder:text-zinc-400"
-            placeholder={t("searchPlaceholder")}
-            autoComplete="off"
-            enterKeyHint="search"
-            spellCheck={false}
-            aria-label="Search games"
-          />
-        </form>
+  <form
+  role="search"
+  className="ml-auto relative min-w-0 flex-[0_0_120px] sm:flex-1 sm:max-w-xl"
+  onSubmit={(e) => {
+    e.preventDefault();
+    onSearch?.(q);
+  }}
+>
+  <Search className="pointer-events-none absolute left-2 top-1/2 -translate-y-1/2 text-blue-500 w-4 h-4 sm:w-5 sm:h-5" />
+  <input
+    type="search"
+    value={q}
+    onChange={(e) => {
+      const v = e.target.value;
+      setQ(v);
+      onSearch?.(v);
+    }}
+    className="
+      w-full
+      rounded-lg sm:rounded-2xl
+      bg-white dark:bg-card
+      pl-7 sm:pl-10 pr-2 sm:pr-3
+      py-1.5 sm:py-2
+      text-sm sm:text-base
+      outline-none
+      text-black dark:text-white
+      placeholder:text-zinc-400
+    "
+    placeholder={t('searchPlaceholder')}
+    autoComplete="off"
+    enterKeyHint="search"
+    spellCheck={false}
+    aria-label="Search games"
+  />
+</form>
+
+
+
+
 
         {/* Language selector */}
         <div className="relative ml-2">
