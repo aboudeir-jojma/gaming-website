@@ -79,6 +79,7 @@ export default function Sidebar({ collapsed }) {
               locale={router.locale}
               prefetch={true}
               scroll={false}
+              shallow={i.href.startsWith("/category/")}
               className={`${baseClasses} hover:bg-gray-300 dark:hover:bg-gray-600 hover:shadow-md hover:scale-105`}
               title={collapsed ? i.label : undefined}
             >
