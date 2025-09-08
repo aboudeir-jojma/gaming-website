@@ -94,10 +94,11 @@ const changeLocale = (nextLocale) => {
 >
   <div className="mx-auto flex max-w-7xl items-center gap-2 sm:gap-3 px-3 sm:px-4 py-1.5 sm:py-2 min-w-0">
     {/* Burger */}
+{/* Burger collé à gauche */}
 <button
   onClick={onToggleSidebar}
-  className="flex flex-col items-center justify-center w-10 h-10 
-             rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 
+  className="absolute left-3 top-1/2 -translate-y-1/2 flex flex-col items-center justify-center 
+             w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 
              text-white shadow-md"
   aria-label="Toggle sidebar"
 >
@@ -105,7 +106,6 @@ const changeLocale = (nextLocale) => {
   <span className="block w-6 h-0.5 bg-white rounded-sm mb-1"></span>
   <span className="block w-6 h-0.5 bg-white rounded-sm"></span>
 </button>
-
 
 
 
