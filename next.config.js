@@ -7,4 +7,5 @@ module.exports = {
     forceSwcTransforms: true,
   },
   skipTrailingSlashRedirect: true,
+
 };

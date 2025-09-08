@@ -1,20 +1,23 @@
-import HomePage from '../index';
+import HomePage from "../index"; 
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-export async function getStaticProps(context) {
-  const locale = context.params?.locale || 'en';
-  const homeProps = await import('../index').then(mod => mod.getStaticProps({ locale }));
-  return homeProps;
+export async function getStaticProps({ params }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(params.locale, ["common"])),
+    },
+  };
 }
 
 export async function getStaticPaths() {
   return {
     paths: [
-      { params: { locale: 'en' } },
-      { params: { locale: 'fr' } },
-      { params: { locale: 'es' } },
-      { params: { locale: 'pt' } },
-      { params: { locale: 'de' } },
-      { params: { locale: 'it' } },
+      { params: { locale: "en" } },
+      { params: { locale: "fr" } },
+      { params: { locale: "es" } },
+      { params: { locale: "pt" } },
+      { params: { locale: "de" } },
+      { params: { locale: "it" } },
     ],
     fallback: false,
   };

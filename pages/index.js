@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useRouter } from "next/router";
 import Layout from "../components/Layout";
 import GameRow from "../components/GameRow";
 import TopGamesCarousel from "../components/TopGamesCarousel";
@@ -9,6 +8,7 @@ import { games } from "../data/games";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
+// ✅ Récupération des traductions selon la locale
 export async function getStaticProps({ locale }) {
   return {
     props: {
@@ -20,15 +20,15 @@ export async function getStaticProps({ locale }) {
 export default function HomePage() {
   const { t } = useTranslation("common");
   const [search, setSearch] = useState("");
-  const router = useRouter();
 
-  // Si recherche, filtrer les jeux
+  // ✅ Filtrer les jeux si recherche
   const filteredGames = search
     ? games.filter(
         (g) => g.name && g.name.toLowerCase().includes(search.toLowerCase())
       )
     : [];
 
+  // ✅ Sélections de jeux
   const featured = games.slice(0, 50);
   const news = games.filter((g) => g.tag === "New").slice(0, 6);
   const originals = games.slice(0, 6);
@@ -51,7 +51,7 @@ export default function HomePage() {
       </section>
 
       {search ? (
-        <GameRow title="Search results" items={filteredGames} />
+        <GameRow title={t("searchResults")} items={filteredGames} />
       ) : (
         <>
           <TopGamesCarousel />
