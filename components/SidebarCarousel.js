@@ -52,10 +52,12 @@ export default function SidebarCarousel({ games, currentGameSlug }) {
             className="flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-smooth hide-scrollbar"
           >
             {carouselGames.map((game) => (
-              <button
+              <Link
                 key={game.slug}
+                href={`/game/${game.slug}`}
+                locale={locale}
                 onClick={() => setSelectedGameSlug(game.slug)}
-                className={`relative flex-shrink-0 w-[120px] h-[80px] rounded-lg overflow-hidden ring-2 transition ${
+                className={`relative flex-shrink-0 w-[120px] h-[80px] rounded-lg overflow-hidden ring-2 transition block ${
                   selectedGameSlug === game.slug
                     ? "ring-indigo-500"
                     : "ring-transparent hover:ring-indigo-400"
@@ -70,7 +72,7 @@ export default function SidebarCarousel({ games, currentGameSlug }) {
                   sizes="120px"
                   className="object-cover"
                 />
-              </button>
+              </Link>
             ))}
           </div>
           <button
