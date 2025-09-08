@@ -1,8 +1,8 @@
-import TermsPage from '../../terms';
+import TermsPage from '../terms';
 
 export async function getStaticProps(context) {
   const locale = context.params?.locale || 'en';
-  const termsProps = await import('../../terms').then(mod => mod.getStaticProps({ locale }));
+  const termsProps = await import('../terms').then(mod => mod.getStaticProps({ locale }));
   return termsProps;
 }
 

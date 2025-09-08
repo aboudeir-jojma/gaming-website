@@ -1,8 +1,8 @@
-import AboutPage from '../../about';
+import AboutPage from '../about';
 
 export async function getStaticProps(context) {
   const locale = context.params?.locale || 'en';
-  const aboutProps = await import('../../about').then(mod => mod.getStaticProps({ locale }));
+  const aboutProps = await import('../about').then(mod => mod.getStaticProps({ locale }));
   return aboutProps;
 }
 

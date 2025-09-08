@@ -1,8 +1,8 @@
-import PrivacyPage from '../../privacy';
+import PrivacyPage from '../privacy';
 
 export async function getStaticProps(context) {
   const locale = context.params?.locale || 'en';
-  const privacyProps = await import('../../privacy').then(mod => mod.getStaticProps({ locale }));
+  const privacyProps = await import('../privacy').then(mod => mod.getStaticProps({ locale }));
   return privacyProps;
 }
 
