@@ -32,7 +32,7 @@ export default function Layout({ children, onSearch }) {
       <div className="flex flex-1">
         <Sidebar collapsed={collapsed} />
 
-        <main className={`flex-1 overflow-y-auto pt-[56px] transition-all duration-300 ${marginLeft}`}>
+        <main className={`flex-1 overflow-y-auto pt-[80px] transition-all duration-300 ${marginLeft}`}>
           {children}
         </main>
       </div>

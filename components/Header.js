@@ -3,6 +3,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Search, Star, Globe } from "lucide-react";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
@@ -82,24 +83,48 @@ const changeLocale = (nextLocale) => {
   const currentLocale = locales.find(l => l.code === router.locale) || locales[0];
 
   return (
-<header className={`fixed top-0 z-40 w-full border-b ${scrolled ? 'border-transparent' : 'border-gray-300 dark:border-gray-600'} ${scrolled ? 'bg-transparent dark:bg-transparent backdrop-blur-md' : 'bg-gray-100 dark:bg-gray-900'} text-black dark:text-white shadow-lg transition-all duration-300`}>
+<header
+  className={`fixed top-0 z-40 w-full border-b ${
+    scrolled ? "border-transparent" : "border-gray-300 dark:border-gray-600"
+  } ${
+    scrolled
+      ? "bg-transparent dark:bg-transparent backdrop-blur-md"
+      : "bg-gray-100 dark:bg-gray-900"
+  } text-black dark:text-white shadow-lg transition-all duration-300`}
+>
+  <div className="mx-auto flex max-w-7xl items-center gap-2 sm:gap-3 px-3 sm:px-4 py-1.5 sm:py-2 min-w-0">
+    {/* Burger */}
+<button
+  onClick={onToggleSidebar}
+  className="flex flex-col items-center justify-center w-10 h-10 
+             rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 
+             text-white shadow-md"
+  aria-label="Toggle sidebar"
+>
+  <span className="block w-6 h-0.5 bg-white rounded-sm mb-1"></span>
+  <span className="block w-6 h-0.5 bg-white rounded-sm mb-1"></span>
+  <span className="block w-6 h-0.5 bg-white rounded-sm"></span>
+</button>
 
-  <div className="mx-auto flex max-w-7xl items-center gap-2 sm:gap-3 px-3 sm:px-4 py-2.5 sm:py-3 min-w-0">
-        {/* Burger */}
-        <button
-          onClick={onToggleSidebar}
-          className="shrink-0 rounded-xl px-3 py-2 text-sm bg-transparent text-black dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
-          aria-label="Toggle sidebar"
-        >
-          ☰
-        </button>
 
-        <Link
-          href="/"
-          className="shrink-0 text-base sm:text-lg font-extrabold tracking-tight text-black dark:text-white"
-        >
-          Tmdisplay
-        </Link>
+
+
+<Link
+  href="/"
+  className="shrink-0 flex items-center"
+>
+  <Image
+    src="/imggames/logo.png"
+    alt="Logo"
+    width={120}   // taille desktop
+    height={120}
+    className="h-10 w-auto sm:h-12 md:h-14 lg:h-16" 
+  />
+</Link>
+
+
+
+
 
   <form
   role="search"
@@ -180,33 +205,30 @@ const changeLocale = (nextLocale) => {
           {theme === "dark" ? "🌙" : "☀️"}
         </button>
 
-          <div className="flex items-center rounded-xl bg-white dark:bg-card px-2 py-1 text-black dark:text-white">
-            {/* Removed stars on mobile to improve search bar display */}
-            <div className="hidden sm:flex items-center gap-1" aria-label="Rate this site from 1 to 5 stars">
-              {[1, 2, 3, 4, 5].map((i) => {
-                const active = (hover || rating) >= i;
-                return (
-                  <button
-                    key={i}
-                    type="button"
-                    onMouseEnter={() => setHover(i)}
-                    onMouseLeave={() => setHover(0)}
-                    onClick={() => setRating(i)}
-                    className="p-1 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-md"
-                    aria-label={`Set rating ${i}`}
-                  >
-                    <Star
-                      className={`w-5 h-5 transition-transform ${
-                        active
-                          ? "fill-yellow-400 text-yellow-400"
-                          : "text-zinc-400"
-                      }`}
-                    />
-                  </button>
-                );
-              })}
-            </div>
-          </div>
+          {/* Rating stars - hidden on mobile */}
+<div className="hidden sm:flex items-center rounded-xl bg-white dark:bg-card px-2 py-1 text-black dark:text-white">
+  {[1, 2, 3, 4, 5].map((i) => {
+    const active = (hover || rating) >= i;
+    return (
+      <button
+        key={i}
+        type="button"
+        onMouseEnter={() => setHover(i)}
+        onMouseLeave={() => setHover(0)}
+        onClick={() => setRating(i)}
+        className="p-1 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-md"
+        aria-label={`Set rating ${i}`}
+      >
+        <Star
+          className={`w-5 h-5 transition-transform ${
+            active ? "fill-yellow-400 text-yellow-400" : "text-zinc-400"
+          }`}
+        />
+      </button>
+    );
+  })}
+</div>
+
       </div>
     </header>
   );

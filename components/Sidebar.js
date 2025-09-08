@@ -40,9 +40,9 @@ export default function Sidebar({ collapsed }) {
 
   return (
     <aside
-      className={`flex flex-col shrink-0 border-r-2 border-gray-300 dark:border-gray-600 
-        bg-gray-100 text-black dark:bg-gray-900 dark:text-white shadow-lg dark:shadow-xl 
-        transition-all duration-300 fixed top-[56px] left-0 h-[calc(100vh-56px)] 
+      className={`flex flex-col shrink-0 border-r-2 border-gray-300 dark:border-gray-600
+        bg-gray-100 text-black dark:bg-gray-900 dark:text-white shadow-lg dark:shadow-xl
+        transition-all duration-300 fixed top-[80px] left-0 h-[calc(100vh-40px)]
         z-30 overflow-y-auto no-scrollbar
         ${collapsed ? "w-16" : "w-48"}`}
     >
