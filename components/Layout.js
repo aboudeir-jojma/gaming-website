@@ -24,17 +24,19 @@ export default function Layout({ children, onSearch }) {
   const marginLeft = collapsed ? "ml-16 md:ml-16" : "ml-48 md:ml-48";
 
   return (
-    <div className="bg-white text-black dark:bg-[#0b0c12] dark:text-white min-h-screen flex flex-col">
+   <div className="bg-white text-black dark:bg-[#0b0c12] dark:text-white min-h-screen flex flex-col overflow-x-hidden w-full">
+
       {/* Header occupe 100% en haut */}  
       <Header onToggleSidebar={() => setCollapsed(c => !c)} onSearch={onSearch} />
 
-      {/* Zone principale : sidebar fixé + contenu décalé */}
+      {/* Zone principale : sidebar fixé + contenu décalé */}  
       <div className="flex flex-1">
         <Sidebar collapsed={collapsed} />
 
-        <main className={`flex-1 overflow-y-auto pt-[80px] transition-all duration-300 ${marginLeft}`}>
-          {children}
-        </main>
+        <main className={`flex-1 overflow-y-auto pt-[80px] transition-all duration-300 ${marginLeft} w-full`}>
+  {children}
+</main>
+
       </div>
 
       {/* Footer */}

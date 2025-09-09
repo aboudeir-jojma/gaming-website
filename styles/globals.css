@@ -4,8 +4,11 @@
 @import "flag-icons/css/flag-icons.min.css";
 
 @layer base {
-  body {
+  html,body {
     @apply antialiased transition-colors duration-300;
+   overflow-x: hidden;
+    width: 100%;
+  
   }
 
   /* Thèmes */
