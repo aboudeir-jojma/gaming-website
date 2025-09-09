@@ -106,7 +106,6 @@ export default function GamePage({ game }) {
     const gameContainer = document.querySelector(".game-container");
 
     if (isIOS) {
-      // Simulation fullscreen iOS
       if (!isFullscreen) {
         gameContainer.classList.add("ios-fullscreen");
         setIsFullscreen(true);
@@ -146,66 +145,69 @@ export default function GamePage({ game }) {
   return (
     <Layout>
       <div className="mx-auto max-w-7xl px-1 py-6 flex flex-col lg:flex-row gap-6">
+        {/* Colonne principale */}
         <div className="flex-1">
-               <Link
-      href="/"
-      locale={locale}
-      className="inline-flex items-center gap-2 px-4 py-2 rounded-xl 
-                 bg-gradient-to-br from-indigo-500 to-purple-600 text-white 
-                 shadow-md transition duration-200 hover:brightness-110"
-      aria-label={t("back")}
-    >
-      <ArrowLeft className="w-5 h-5" />
-      <span className="text-sm font-medium">{t("back")}</span>
-    </Link>
+          {/* Bouton Back (inchangé) */}
+        <Link
+  href="/"
+  locale={locale}
+  className="inline-flex items-center gap-2 px-3 py-2 rounded-lg
+             bg-gradient-to-br from-indigo-500 to-purple-600 text-white
+             shadow-md transition duration-200 hover:brightness-110"
+  aria-label={t("back")}
+>
+  <ArrowLeft className="w-5 h-5" />
+  <span className="text-sm font-medium">{t("back")}</span>
+</Link>
 
+
+          {/* Titre + bouton fullscreen */}
           <div className="flex items-center justify-between mt-2">
             <h1 className="text-2xl font-extrabold">{game.title}</h1>
-           <button
-  onClick={toggleFullscreen}
-  className="relative flex items-center justify-center w-14 h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-[0_0_15px_rgba(139,92,246,0.6)] hover:shadow-[0_0_25px_rgba(139,92,246,0.9)] transition-all duration-500 ease-in-out group overflow-hidden"
-  title={isFullscreen ? "Exit Full Screen" : "Enter Full Screen"}
-  aria-label={isFullscreen ? "Exit Full Screen" : "Enter Full Screen"}
->
-  {/* Glow animé */}
-  <span className="absolute inset-0 bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-600 opacity-30 group-hover:opacity-50 blur-xl animate-pulse"></span>
-
-  {/* Icône */}
-  {isFullscreen ? (
-    <svg
-      className="w-7 h-7 text-white relative z-10 transition-transform duration-500 group-hover:scale-110"
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2.5}
-        d="M9 9V4.5M9 9H4.5M9 9L3.5 3.5M15 9h4.5M15 9V4.5M15 9l5.5-5.5M9 15v4.5M9 15H4.5M9 15l-5.5 5.5M15 15h4.5M15 15v4.5m0-4.5l5.5 5.5"
-      />
-    </svg>
-  ) : (
-    <svg
-      className="w-7 h-7 text-white relative z-10 transition-transform duration-500 group-hover:scale-110"
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2.5}
-        d="M3 3h6M3 3v6m0-6l5 5M21 3h-6m6 0v6m0-6l-5 5M3 21h6M3 21v-6m0 6l5-5M21 21h-6m6 0v-6m0 6l-5-5"
-      />
-    </svg>
-  )}
-</button>
-
+            <button
+              onClick={toggleFullscreen}
+              className="relative flex items-center justify-center w-14 h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-[0_0_15px_rgba(139,92,246,0.6)] hover:shadow-[0_0_25px_rgba(139,92,246,0.9)] transition-all duration-500 ease-in-out group overflow-hidden"
+              title={isFullscreen ? "Exit Full Screen" : "Enter Full Screen"}
+              aria-label={isFullscreen ? "Exit Full Screen" : "Enter Full Screen"}
+            >
+              <span className="absolute inset-0 bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-600 opacity-30 group-hover:opacity-50 blur-xl animate-pulse"></span>
+              {/* Icône */}
+              {isFullscreen ? (
+                <svg
+                  className="w-7 h-7 text-white relative z-10 transition-transform duration-500 group-hover:scale-110"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2.5}
+                    d="M9 9V4.5M9 9H4.5M9 9L3.5 3.5M15 9h4.5M15 9V4.5M15 9l5.5-5.5M9 15v4.5M9 15H4.5M9 15l-5.5 5.5M15 15h4.5M15 15v4.5m0-4.5l5.5 5.5"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  className="w-7 h-7 text-white relative z-10 transition-transform duration-500 group-hover:scale-110"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2.5}
+                    d="M3 3h6M3 3v6m0-6l5 5M21 3h-6m6 0v6m0-6l-5 5M3 21h6M3 21v-6m0 6l5-5M21 21h-6m6 0v-6m0 6l-5-5"
+                  />
+                </svg>
+              )}
+            </button>
           </div>
 
-          {/* Iframe du jeu */}
-          <div className="game-container relative mt-4 overflow-hidden rounded-2xl bg-black shadow-soft ring-1 ring-white/5 transition-all">
+          {/* ORDRE MOBILE : 1- Jeu | 2- Catégorie | 3- Carrousel | 4- Description */}
+
+          {/* 1) Jeu */}
+          <div className="game-container relative mt-4 overflow-hidden rounded-2xl bg-black shadow-soft ring-1 ring-white/5 transition-all order-1 lg:order-1">
             <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
               <iframe
                 src={game.iframe}
@@ -217,8 +219,8 @@ export default function GamePage({ game }) {
             </div>
           </div>
 
-          {/* Meta */}
-          <div className="mt-4 flex items-center gap-3 text-white/70">
+          {/* 2) Catégorie */}
+          <div className="mt-4 flex items-center gap-3 text-white/70 order-2 lg:order-2">
             {game.thumb && (
               <Image
                 src={game.thumb}
@@ -233,13 +235,23 @@ export default function GamePage({ game }) {
             </div>
           </div>
 
+          {/* 3) Carrousel mobile */}
+          <div className="lg:hidden order-3 mt-4">
+            <SidebarCarousel games={games} currentGameSlug={game.slug} />
+          </div>
+
+          {/* 4) Description */}
           {game.descriptionHtml && (
-            <section className="prose max-w-none mt-6 rounded-2xl p-5 ring-1 ring-black/10 dark:prose-invert dark:ring-white/5 bg-white text-black dark:bg-card dark:text-white">
+            <section className="prose max-w-none mt-6 rounded-2xl p-5 ring-1 ring-black/10 dark:prose-invert dark:ring-white/5 bg-white text-black dark:bg-card dark:text-white order-4 lg:order-3">
               <div dangerouslySetInnerHTML={{ __html: game.descriptionHtml }} />
             </section>
           )}
         </div>
-        <SidebarCarousel games={games} currentGameSlug={game.slug} />
+
+        {/* Carrousel desktop */}
+        <div className="hidden lg:block">
+          <SidebarCarousel games={games} currentGameSlug={game.slug} />
+        </div>
       </div>
 
       {/* Styles spéciaux pour iOS fullscreen simulé */}
