@@ -43,6 +43,15 @@
   scrollbar-width: none;     /* Firefox */
 }
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE et Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
 /* Curseur pendant le drag */
 .dragging {
   cursor: grabbing !important;

@@ -1,14 +1,18 @@
-# Task: Adjust Sidebar and Homepage Position
+# Task: Display All Games List After TmdisplayOriginals GameRow on Homepage
 
 ## Completed Tasks
-- [x] Analyze current layout structure (Layout.js, Sidebar.js, Header.js)
-- [x] Update Layout.js: Reduce main content padding-top from 56px to 40px
-- [x] Update Sidebar.js: Reduce sidebar top position from 56px to 40px and adjust height calculation
-- [x] Ensure header remains unchanged
+- [x] Analyze current homepage structure (pages/index.js)
+- [x] Analyze AllGamesPage component (components/AllGamesPage.js)
+- [x] Plan to import and render AllGamesPage after originals GameRow
+- [x] Import AllGamesPage component in pages/index.js
+- [x] Render AllGamesPage after <GameRow title={t("TmdisplayOriginals")} items={originals} />
+- [x] Ensure it only renders when not searching (like other GameRow components)
+
+## Pending Tasks
+- [ ] Test the homepage to verify all games list appears after originals row
 
 ## Summary
-Successfully repositioned the sidebar and homepage content to appear higher on the page by reducing the top offset from 56px to 40px. This prevents content from being covered by the header while keeping the header completely unchanged.
+Successfully updated the homepage to show the full list of all games (using AllGamesPage component) after the TmdisplayOriginals GameRow. The AllGamesPage component is rendered only when not searching, maintaining the existing search functionality.
 
 ## Files Modified
-- components/Layout.js: Updated pt-[56px] to pt-[40px]
-- components/Sidebar.js: Updated top-[56px] to top-[40px] and h-[calc(100vh-56px)] to h-[calc(100vh-40px)]
+- pages/index.js: Added import for AllGamesPage and rendered it after originals GameRow

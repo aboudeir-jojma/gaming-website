@@ -24,7 +24,7 @@ export default function Layout({ children, onSearch }) {
   const marginLeft = collapsed ? "ml-16 md:ml-16" : "ml-48 md:ml-48";
 
   return (
-   <div className="bg-white text-black dark:bg-[#0b0c12] dark:text-white min-h-screen flex flex-col overflow-x-hidden w-full">
+   <div className="bg-white text-black dark:bg-[#0b0c12] dark:text-white min-h-screen flex flex-col overflow-x-hidden w-full ">
 
       {/* Header occupe 100% en haut */}  
       <Header onToggleSidebar={() => setCollapsed(c => !c)} onSearch={onSearch} />
