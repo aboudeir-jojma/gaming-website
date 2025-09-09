@@ -59,8 +59,9 @@ export default function HomePage() {
           {/* <GameRow title={t("featuredGames")} items={featured} /> */}
           <GameRow title={t("newGames")} items={news} />
           <PlayWithFriendsSection />
-          <GameRow title={t("TmdisplayOriginals")} items={originals} />
+          
           <AllGamesPage />
+          <GameRow title={t("TmdisplayOriginals")} items={originals} />
           <LastSection />
         </>
       )}
