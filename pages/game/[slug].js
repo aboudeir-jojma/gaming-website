@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Layout from "../../components/Layout";
 import SidebarCarousel from "../../components/SidebarCarousel";
+import { ArrowLeft } from "lucide-react";
 
 import { games } from "../../data/games";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -146,13 +147,17 @@ export default function GamePage({ game }) {
     <Layout>
       <div className="mx-auto max-w-7xl px-1 py-6 flex flex-col lg:flex-row gap-6">
         <div className="flex-1">
-          <Link
-            href="/"
-            locale={locale}
-            className="text-sm text-white/70 hover:text-white"
-          >
-            ← {t("back")}
-          </Link>
+               <Link
+      href="/"
+      locale={locale}
+      className="inline-flex items-center gap-2 px-4 py-2 rounded-xl 
+                 bg-gradient-to-br from-indigo-500 to-purple-600 text-white 
+                 shadow-md transition duration-200 hover:brightness-110"
+      aria-label={t("back")}
+    >
+      <ArrowLeft className="w-5 h-5" />
+      <span className="text-sm font-medium">{t("back")}</span>
+    </Link>
 
           <div className="flex items-center justify-between mt-2">
             <h1 className="text-2xl font-extrabold">{game.title}</h1>
