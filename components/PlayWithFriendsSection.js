@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "next-i18next";
+import Link from "next/link";
 export default function PlayWithFriendsSection() {
   const { t } = useTranslation("common");
 
@@ -29,9 +30,11 @@ export default function PlayWithFriendsSection() {
             />
             <h3 className="mb-1 text-lg font-semibold text-black dark:text-white">{t("localMultiplayer")}</h3>
             <p className="mb-4 text-center text-sm text-gray-700 dark:text-gray-300">{t("localMultiplayerDesc")}</p>
-            <button className="rounded-full bg-purple-600 px-4 py-2 text-sm font-semibold hover:bg-purple-700">
-              {t("exploreGames")}
-            </button>
+            <Link href="/all" legacyBehavior>
+              <a className="rounded-full bg-purple-600 px-4 py-2 text-sm font-semibold hover:bg-purple-700">
+                {t("exploreGames")}
+              </a>
+            </Link>
           </div>
 
           {/* Online multiplayer */}
@@ -44,9 +47,11 @@ export default function PlayWithFriendsSection() {
             />
             <h3 className="mb-1 text-lg font-semibold text-black dark:text-white">{t("onlineMultiplayer")}</h3>
             <p className="mb-4 text-center text-sm text-gray-700 dark:text-gray-300">{t("onlineMultiplayerDesc")}</p>
-            <button className="rounded-full bg-purple-600 px-4 py-2 text-sm font-semibold hover:bg-purple-700">
-              {t("exploreGames")}
-            </button>
+            <Link href="/all" legacyBehavior>
+              <a className="rounded-full bg-purple-600 px-4 py-2 text-sm font-semibold hover:bg-purple-700">
+                {t("exploreGames")}
+              </a>
+            </Link>
           </div>
         </div>
       </div>

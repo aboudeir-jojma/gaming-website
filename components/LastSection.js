@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useTranslation } from "next-i18next";
-
+import { useRouter } from "next/router";
 // ❗ On stocke seulement les clés de traduction ici
 const CATEGORIES = [
   { icon: "👥", labelKey: "twoPlayer" },
@@ -21,6 +21,7 @@ const CATEGORIES = [
 
 export default function LastSection() {
   const { t } = useTranslation("common");
+  const { locale } = useRouter();
 
   return (
     <section className="mx-auto mt-10 w-full rounded-2xl bg-white dark:bg-[#1e1e2f] p-6 text-black dark:text-white shadow-lg">
@@ -32,7 +33,7 @@ export default function LastSection() {
             {t("onlineGamesDescription")}
           </p>
           <a
-            href="#"
+            href={`/${locale}/about`}
             className="mt-4 font-semibold text-purple-400 hover:underline"
           >
             {t("learnMore")}
