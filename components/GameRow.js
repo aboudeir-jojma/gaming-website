@@ -85,7 +85,7 @@ const { locale, defaultLocale } = useRouter();
   }, [cardW]);
 
   return (
-    <section className="mx-auto max-w-7xl px-0">
+    <section className="mx-auto w-full px-0">
       <div className="bg-white text-black dark:bg-[#0b0c12] dark:text-white">
         {/* Titre + Voir plus */}
         <div className="mb-3 mt-8 flex items-center justify-between px-1">

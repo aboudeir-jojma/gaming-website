@@ -39,7 +39,7 @@ export default function TopGamesCarousel() {
   const titleOf = (g) => g?.name || g?.title || g?.slug;
 
   return (
-    <section className="relative mx-auto max-w-7xl px-8 py-6">
+    <section className="relative mx-auto w-full px-8 py-6">
       <div className="mb-3 flex items-center justify-between">
         <h2 className="text-xl font-bold text-white">{t("topGames")}</h2>
         <div className="hidden md:flex gap-2">

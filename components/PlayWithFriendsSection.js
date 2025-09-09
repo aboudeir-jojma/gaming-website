@@ -4,7 +4,7 @@ export default function PlayWithFriendsSection() {
   const { t } = useTranslation("common");
 
   return (
-    <section className="mx-auto mt-10 max-w-7xl rounded-2xl bg-white dark:bg-[#1e1e2f] p-6 text-black dark:text-white shadow-lg">
+    <section className="mx-auto mt-10 w-full rounded-2xl bg-white dark:bg-[#1e1e2f] p-6 text-black dark:text-white shadow-lg">
       <div className="flex flex-col md:flex-row items-center gap-6">
         {/* Left side */}
         <div className="flex flex-col items-center md:items-start md:w-1/3">

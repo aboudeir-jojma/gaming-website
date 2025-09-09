@@ -36,7 +36,7 @@ export default function HomePage() {
   return (
     <Layout onSearch={setSearch}>
       <section
-        className="mx-auto mt-6 max-w-7xl rounded-2xl 
+        className="mx-auto mt-6 w-full rounded-2xl 
              bg-white text-black 
              dark:bg-gradient-to-br dark:from-[#121425] dark:to-[#0b0c12] dark:text-white 
              p-6 ring-1 ring-black/5 dark:ring-white/5 transition-colors duration-300"
