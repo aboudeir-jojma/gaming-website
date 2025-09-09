@@ -40,11 +40,14 @@ export default function Sidebar({ collapsed }) {
 
   return (
     <aside
-      className={`flex flex-col shrink-0 border-r-2 border-gray-300 dark:border-gray-600
-        bg-gray-100 text-black dark:bg-gray-900 dark:text-white shadow-lg dark:shadow-xl
-        transition-all duration-300 fixed top-[80px] left-0 h-[calc(100vh-40px)]
-        z-30 overflow-y-auto no-scrollbar
-        ${collapsed ? "w-16" : "w-48"}`}
+       className={`flex flex-col shrink-0 border-r-2 border-gray-300 dark:border-gray-600
+    bg-gray-100 text-black dark:bg-gray-900 dark:text-white shadow-lg dark:shadow-xl
+    transition-all duration-300 fixed 
+    top-[55px] sm:top-[75px]  /* mobile: 55px | desktop: 75px */
+    left-0 
+    h-[calc(100vh-55px)] sm:h-[calc(100vh-75px)] /* ajuste la hauteur aussi */
+    z-30 overflow-y-auto no-scrollbar
+    ${collapsed ? "w-16" : "w-48"}`}
     >
       <nav className="flex flex-col flex-1 gap-2 p-3">
         {items.map((i) => {
