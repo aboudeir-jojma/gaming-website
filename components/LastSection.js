@@ -3,6 +3,7 @@
 import React from "react";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
+import Link from "next/link";
 // ❗ On stocke seulement les clés de traduction ici
 const CATEGORIES = [
   { icon: "👥", labelKey: "twoPlayer" },
@@ -18,6 +19,22 @@ const CATEGORIES = [
   { icon: "🚀", labelKey: "clicker" },
   { icon: "👗", labelKey: "dressUp" },
 ];
+
+// Mapping des labelKey aux catégories existantes dans les jeux
+const categoryMapping = {
+  twoPlayer: "arcade",
+  adventure: "adventure",
+  beauty: "creative",
+  car: "racing",
+  casual: "arcade",
+  controller: "arcade",
+  action: "action",
+  basketball: "sports",
+  bike: "racing",
+  card: "brain",
+  clicker: "arcade",
+  dressUp: "creative"
+};
 
 export default function LastSection() {
   const { t } = useTranslation("common");
@@ -43,13 +60,14 @@ export default function LastSection() {
         {/* Grille catégories */}
         <div className="grid w-full grid-cols-3 gap-4 md:w-2/3 md:grid-cols-4">
           {CATEGORIES.map(({ icon, labelKey }) => (
-            <div
+            <Link
               key={labelKey}
-              className="flex flex-col items-center rounded-xl bg-gray-200 dark:bg-[#2a2a40] p-4 text-center"
+              href={`/${locale}/category/${categoryMapping[labelKey]}`}
+              className="flex flex-col items-center rounded-xl bg-gray-200 dark:bg-[#2a2a40] p-4 text-center hover:bg-gray-300 dark:hover:bg-[#3a3a50] transition-colors cursor-pointer"
             >
               <span className="mb-2 text-2xl">{icon}</span>
               <span className="font-semibold text-black dark:text-white">{t(labelKey)}</span>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
