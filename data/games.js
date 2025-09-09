@@ -32,16 +32,7 @@ export const games = [
     category: "Sports",
     iframe: "https://games-gules-nu.vercel.app/street-skater/index.html",
                       },
-                      {
-    slug: "feed-pac",
-    title: "Feed Pac",
-    name: "Feed Pac",
-    thumb: "/imggames/feed-pac/feed-pac.jpg",
-    tag: "New",
-    category: ["Action", "Arcade"],
-    iframe: "https://games-gules-nu.vercel.app/feed-pac/index.html"  ,
-  
-  },
+                      
 
 
   {
