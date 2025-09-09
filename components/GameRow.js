@@ -141,7 +141,7 @@ const { locale, defaultLocale } = useRouter();
           {/* Piste défilante */}
           <div
             ref={trackRef}
-            className="no-scrollbar scroll-smooth overflow-x-auto px-1 select-none"
+            className="no-scrollbar scroll-smooth overflow-x-auto px-1"
             style={{ scrollPaddingLeft: 0, scrollPaddingRight: 0 }}
             tabIndex={0}
           >
