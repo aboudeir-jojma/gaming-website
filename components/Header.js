@@ -67,13 +67,14 @@ export default function Header({ onToggleSidebar, onSearch }) {
 
   return (
     <header
-      className={`fixed top-0 z-40 w-full border-b ${
-        scrolled ? "border-transparent" : "border-gray-300 dark:border-gray-600"
-      } ${
-        scrolled
-          ? "bg-transparent dark:bg-transparent backdrop-blur-md"
-          : "bg-gray-100 dark:bg-gray-900"
-      } text-black dark:text-white shadow-lg transition-all duration-300 relative`}
+    className={`fixed top-0 left-0 z-50 w-full border-b transition-all duration-500
+    ${scrolled
+      ? // ➜ APRÈS SCROLL : plus transparent + blur léger
+        "bg-white/40 dark:bg-gray-900/30 backdrop-blur-md border-transparent shadow-md"
+      : // ➜ AU DÉPART : plein (opaque)
+        "bg-gray-100 dark:bg-gray-900 border-gray-300 dark:border-gray-700 shadow-lg"
+    }
+    text-black dark:text-white`}
     >
       {/* 🟣 Burger ABSOLU sur le header → flush-left viewport */}
 <div className="absolute left-0 top-1/2 -translate-y-1/2 ml-2 sm:ml-3">
