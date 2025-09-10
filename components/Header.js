@@ -34,6 +34,22 @@ useEffect(() => {
 }, []);
 
 
+useEffect(() => {
+  const savedRating = localStorage.getItem("pcgameon_rating");
+  if (savedRating) setRating(Number(savedRating));
+
+  // Détection du thème navigateur si aucun thème sauvegardé
+  const savedTheme = localStorage.getItem("pcgameon_theme");
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  const initialTheme = savedTheme || (prefersDark ? "dark" : "light");
+
+  setTheme(initialTheme);
+  document.documentElement.classList.remove("light", "dark");
+  document.documentElement.classList.add(initialTheme);
+}, []);
+
+
   useEffect(() => {
     localStorage.setItem("pcgameon_rating", String(rating));
   }, [rating]);

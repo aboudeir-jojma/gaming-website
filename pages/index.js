@@ -62,10 +62,10 @@ export default function HomePage() {
         <>
           <TopGamesCarousel />
           {/* <GameRow title={t("featuredGames")} items={featured} /> */}
-          <GameRow title={t("newGames")} items={news} />
+          <GameRow className="mb-8" title={t("newGames")} items={news} />
           <PlayWithFriendsSection />
           
-          <AllGamesPage />
+          <AllGamesPage  className="mb-8" />
           <GameRow title={t("TmdisplayOriginals")} items={originals} />
           <LastSection />
         </>
