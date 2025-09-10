@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://tmdisplay.com
+
+# Sitemaps
+Sitemap: https://tmdisplay.com/sitemap.xml
+
+

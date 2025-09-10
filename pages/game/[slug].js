@@ -14,7 +14,6 @@ import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import nextI18NextConfig from "../../next-i18next.config";
 
-// Liste des locales supportées
 const supportedLocales = ["en", "fr", "es", "pt", "de", "it"];
 
 function readDescriptionHtml(slug, locale) {
@@ -69,6 +68,7 @@ export default function GamePage({ game }) {
   const { locale } = router;
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [isIOS, setIsIOS] = useState(false);
+  const [shouldRenderGame, setShouldRenderGame] = useState(false); // 👈 état ajouté
 
   useEffect(() => {
     if (typeof navigator !== "undefined") {
@@ -79,7 +79,6 @@ export default function GamePage({ game }) {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-
     const path = router.asPath || "/";
     const hasLocalePrefix = supportedLocales.some(
       (lng) => path === `/${lng}` || path.startsWith(`/${lng}/`)
@@ -101,7 +100,6 @@ export default function GamePage({ game }) {
     ? game.category.join(", ")
     : game.category ?? "misc";
 
-  // Toggle fullscreen avec fallback iOS
   const toggleFullscreen = async () => {
     const gameContainer = document.querySelector(".game-container");
 
@@ -109,9 +107,11 @@ export default function GamePage({ game }) {
       if (!isFullscreen) {
         gameContainer.classList.add("ios-fullscreen");
         setIsFullscreen(true);
+        setShouldRenderGame(true); // iOS : on montre l’iframe après full
       } else {
         gameContainer.classList.remove("ios-fullscreen");
         setIsFullscreen(false);
+        setShouldRenderGame(false);
       }
       return;
     }
@@ -120,6 +120,7 @@ export default function GamePage({ game }) {
       try {
         await gameContainer.requestFullscreen();
         setIsFullscreen(true);
+        setShouldRenderGame(true); // ✅ Affiche le jeu après plein écran
       } catch (err) {
         console.error("Error attempting fullscreen:", err);
       }
@@ -127,6 +128,7 @@ export default function GamePage({ game }) {
       try {
         await document.exitFullscreen();
         setIsFullscreen(false);
+        setShouldRenderGame(false);
       } catch (err) {
         console.error("Error exiting fullscreen:", err);
       }
@@ -145,23 +147,19 @@ export default function GamePage({ game }) {
   return (
     <Layout>
       <div className="mx-auto max-w-7xl px-1 py-6 flex flex-col lg:flex-row gap-6">
-        {/* Colonne principale */}
         <div className="flex-1">
-          {/* Bouton Back (inchangé) */}
-        <Link
-  href="/"
-  locale={locale}
-  className="inline-flex items-center gap-2 px-3 py-2 rounded-lg
+          <Link
+            href="/"
+            locale={locale}
+            className="inline-flex items-center gap-2 px-3 py-2 rounded-lg
              bg-gradient-to-br from-indigo-500 to-purple-600 text-white
              shadow-md transition duration-200 hover:brightness-110"
-  aria-label={t("back")}
->
-  <ArrowLeft className="w-5 h-5" />
-  <span className="text-sm font-medium">{t("back")}</span>
-</Link>
+            aria-label={t("back")}
+          >
+            <ArrowLeft className="w-5 h-5" />
+            <span className="text-sm font-medium">{t("back")}</span>
+          </Link>
 
-
-          {/* Titre + bouton fullscreen */}
           <div className="flex items-center justify-between mt-2">
             <h1 className="text-2xl font-extrabold">{game.title}</h1>
             <button
@@ -171,7 +169,6 @@ export default function GamePage({ game }) {
               aria-label={isFullscreen ? "Exit Full Screen" : "Enter Full Screen"}
             >
               <span className="absolute inset-0 bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-600 opacity-30 group-hover:opacity-50 blur-xl animate-pulse"></span>
-              {/* Icône */}
               {isFullscreen ? (
                 <svg
                   className="w-7 h-7 text-white relative z-10 transition-transform duration-500 group-hover:scale-110"
@@ -204,22 +201,20 @@ export default function GamePage({ game }) {
             </button>
           </div>
 
-          {/* ORDRE MOBILE : 1- Jeu | 2- Catégorie | 3- Carrousel | 4- Description */}
-
-          {/* 1) Jeu */}
           <div className="game-container relative mt-4 overflow-hidden rounded-2xl bg-black shadow-soft ring-1 ring-white/5 transition-all order-1 lg:order-1">
             <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
-              <iframe
-                src={game.iframe}
-                title={game.title}
-                className="absolute left-0 top-0 h-full w-full"
-                allow="fullscreen; autoplay; gamepad; accelerometer; clipboard-read; clipboard-write"
-                sandbox="allow-scripts allow-same-origin allow-forms allow-pointer-lock allow-popups"
-              />
+              {shouldRenderGame && (
+                <iframe
+                  src={game.iframe}
+                  title={game.title}
+                  className="absolute left-0 top-0 h-full w-full"
+                  allow="fullscreen; autoplay; gamepad; accelerometer; clipboard-read; clipboard-write"
+                  sandbox="allow-scripts allow-same-origin allow-forms allow-pointer-lock allow-popups"
+                />
+              )}
             </div>
           </div>
 
-          {/* 2) Catégorie */}
           <div className="mt-4 flex items-center gap-3 text-white/70 order-2 lg:order-2">
             {game.thumb && (
               <Image
@@ -235,12 +230,10 @@ export default function GamePage({ game }) {
             </div>
           </div>
 
-          {/* 3) Carrousel mobile */}
           <div className="lg:hidden order-3 mt-4">
             <SidebarCarousel games={games} currentGameSlug={game.slug} />
           </div>
 
-          {/* 4) Description */}
           {game.descriptionHtml && (
             <section className="prose max-w-none mt-6 rounded-2xl p-5 ring-1 ring-black/10 dark:prose-invert dark:ring-white/5 bg-white text-black dark:bg-card dark:text-white order-4 lg:order-3">
               <div dangerouslySetInnerHTML={{ __html: game.descriptionHtml }} />
@@ -248,13 +241,11 @@ export default function GamePage({ game }) {
           )}
         </div>
 
-        {/* Carrousel desktop */}
         <div className="hidden lg:block">
           <SidebarCarousel games={games} currentGameSlug={game.slug} />
         </div>
       </div>
 
-      {/* Styles spéciaux pour iOS fullscreen simulé */}
       <style jsx global>{`
         .ios-fullscreen {
           position: fixed !important;

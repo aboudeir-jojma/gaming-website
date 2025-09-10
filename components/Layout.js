@@ -1,5 +1,7 @@
 "use client";
+
 import { useEffect, useState } from "react";
+import Script from "next/script";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 import Footer from "./Footer";
@@ -8,7 +10,7 @@ import BackToTopButton from "./BackToTopButton";
 export default function Layout({ children, onSearch }) {
   const [collapsed, setCollapsed] = useState(true);
 
-  // par défaut : mobile fermé / desktop ouvert
+  // Par défaut : mobile (sidebar fermée) / desktop (ouverte)
   useEffect(() => {
     if (typeof window === "undefined") return;
     const mq = window.matchMedia("(min-width: 768px)");
@@ -18,25 +20,36 @@ export default function Layout({ children, onSearch }) {
     return () => mq.removeEventListener("change", apply);
   }, []);
 
-  // largeur du sidebar (pour compenser dans le main)
-  const sidebarWidth = collapsed ? "w-16" : "w-48";
-  // Apply left margin on mobile and desktop when sidebar expanded to avoid overlap
+  // Décalage du contenu quand le sidebar est fixe
   const marginLeft = collapsed ? "ml-16 md:ml-16" : "ml-48 md:ml-48";
 
   return (
-   <div className="bg-white text-black dark:bg-[#0b0c12] dark:text-white min-h-screen flex flex-col overflow-x-hidden w-full ">
+    <div className="bg-white text-black dark:bg-[#0b0c12] dark:text-white min-h-screen flex flex-col overflow-x-hidden w-full">
+      {/* --- Google Analytics --- */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-PRC5SDWDSS"
+        strategy="afterInteractive"
+      />
+      <Script id="ga-init" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-PRC5SDWDSS');
+        `}
+      </Script>
+      {/* --- /Google Analytics --- */}
 
-      {/* Header occupe 100% en haut */}  
-      <Header onToggleSidebar={() => setCollapsed(c => !c)} onSearch={onSearch} />
+      {/* Header plein écran */}
+      <Header onToggleSidebar={() => setCollapsed((c) => !c)} onSearch={onSearch} />
 
-      {/* Zone principale : sidebar fixé + contenu décalé */}  
+      {/* Zone principale : sidebar fixe + contenu décalé */}
       <div className="flex flex-1">
         <Sidebar collapsed={collapsed} />
 
         <main className={`flex-1 overflow-y-auto pt-[80px] transition-all duration-300 ${marginLeft} w-full`}>
-  {children}
-</main>
-
+          {children}
+        </main>
       </div>
 
       {/* Footer */}
