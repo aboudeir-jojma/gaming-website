@@ -2,48 +2,10 @@
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
-import { Sun, Moon } from "lucide-react";
 
 export default function Sidebar({ collapsed }) {
   const { t } = useTranslation("common");
   const router = useRouter();
-  const [theme, setTheme] = useState("light");
-
-  // 1. Détecte le thème système au premier chargement (et vérifie localStorage)
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const stored = localStorage.getItem("theme");
-      if (stored === "dark") {
-        document.documentElement.classList.add("dark");
-        setTheme("dark");
-      } else if (stored === "light") {
-        document.documentElement.classList.remove("dark");
-        setTheme("light");
-      } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        document.documentElement.classList.add("dark");
-        localStorage.setItem("theme", "dark");
-        setTheme("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-        localStorage.setItem("theme", "light");
-        setTheme("light");
-      }
-    }
-  }, []);
-
-  // 2. Bouton de bascule clair / sombre
-  const toggleTheme = () => {
-    if (theme === "dark") {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-      setTheme("light");
-    } else {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-      setTheme("dark");
-    }
-  };
 
   const items = [
     { href: "/", label: t("sidebar.home"), icon: "🏠" },
@@ -65,6 +27,7 @@ export default function Sidebar({ collapsed }) {
     { href: "/category/multiplayer", label: t("sidebar.multiplayer"), icon: "🌐" },
   ];
 
+  // Better active link detection
   const isActiveLink = (href) => {
     if (href === "/") {
       return router.pathname === "/";
@@ -77,24 +40,28 @@ export default function Sidebar({ collapsed }) {
 
   return (
     <aside
-      className={`flex flex-col shrink-0 border-r-2 border-gray-300 dark:border-gray-600
-      bg-gray-100 text-black dark:bg-gray-900 dark:text-white shadow-lg dark:shadow-xl
-      transition-all duration-300 fixed 
-      top-[55px] sm:top-[75px]
-      left-0 
-      h-[calc(100vh-55px)] sm:h-[calc(100vh-75px)] 
-      z-30 overflow-y-auto no-scrollbar
-      ${collapsed ? "w-16" : "w-48"}`}
+       className={`flex flex-col shrink-0 border-r-2 border-gray-300 dark:border-gray-600
+    bg-gray-100 text-black dark:bg-gray-900 dark:text-white shadow-lg dark:shadow-xl
+    transition-all duration-300 fixed 
+    top-[55px] sm:top-[75px]  /* mobile: 55px | desktop: 75px */
+    left-0 
+    h-[calc(100vh-55px)] sm:h-[calc(100vh-75px)] /* ajuste la hauteur aussi */
+    z-30 overflow-y-auto no-scrollbar
+    ${collapsed ? "w-16" : "w-48"}`}
     >
       <nav className="flex flex-col flex-1 gap-2 p-3">
         {items.map((i) => {
           const isActive = isActiveLink(i.href);
+
           const baseClasses =
             "flex items-center gap-3 rounded-lg px-3 py-3 transition-all duration-200 " +
             (collapsed ? "justify-center " : "");
-          const activeClasses =
-            "bg-gradient-to-br from-indigo-500 to-purple-600 text-white shadow-md";
+        const activeClasses =
+  "bg-gradient-to-br from-indigo-500 to-purple-600 text-white shadow-md";
 
+
+
+          // ✅ Item actif : pas de <Link>, juste un <div>
           if (isActive) {
             return (
               <div
@@ -109,6 +76,7 @@ export default function Sidebar({ collapsed }) {
             );
           }
 
+          // ✅ Item inactif : vrai lien localisé avec prefetch
           return (
             <Link
               key={i.href}
@@ -126,18 +94,6 @@ export default function Sidebar({ collapsed }) {
           );
         })}
       </nav>
-
-      {/* Bouton switch clair/sombre */}
-      <div className="p-3 border-t border-gray-300 dark:border-gray-600">
-        <button
-          onClick={toggleTheme}
-          className="flex items-center gap-2 w-full rounded-lg px-3 py-2 text-sm font-medium shadow-md 
-                     bg-gray-200 dark:bg-zinc-800 hover:bg-gray-300 dark:hover:bg-zinc-700"
-        >
-          {theme === "dark" ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
-          {!collapsed && (theme === "dark" ? "Mode clair" : "Mode sombre")}
-        </button>
-      </div>
     </aside>
   );
 }

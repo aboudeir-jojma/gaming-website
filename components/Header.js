@@ -18,14 +18,21 @@ export default function Header({ onToggleSidebar, onSearch }) {
   const [scrolled, setScrolled] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
 
-  useEffect(() => {
-    const saved = localStorage.getItem("pcgameon_rating");
-    if (saved) setRating(Number(saved));
-    const savedTheme = localStorage.getItem("pcgameon_theme") || "dark";
-    setTheme(savedTheme);
-    document.documentElement.classList.toggle("dark", savedTheme === "dark");
-    document.documentElement.classList.toggle("light", savedTheme === "light");
-  }, []);
+useEffect(() => {
+  const savedRating = localStorage.getItem("pcgameon_rating");
+  if (savedRating) setRating(Number(savedRating));
+
+  // Détection du thème navigateur si aucun thème sauvegardé
+  const savedTheme = localStorage.getItem("pcgameon_theme");
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  const initialTheme = savedTheme || (prefersDark ? "dark" : "light");
+
+  setTheme(initialTheme);
+  document.documentElement.classList.remove("light", "dark");
+  document.documentElement.classList.add(initialTheme);
+}, []);
+
 
   useEffect(() => {
     localStorage.setItem("pcgameon_rating", String(rating));
