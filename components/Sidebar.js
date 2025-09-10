@@ -56,8 +56,10 @@ export default function Sidebar({ collapsed }) {
           const baseClasses =
             "flex items-center gap-3 rounded-lg px-3 py-3 transition-all duration-200 " +
             (collapsed ? "justify-center " : "");
-          const activeClasses =
-            "bg-blue-200 dark:bg-blue-800 text-blue-800 dark:text-blue-200 shadow-md";
+        const activeClasses =
+  "bg-gradient-to-br from-indigo-500 to-purple-600 text-white shadow-md";
+
+
 
           // ✅ Item actif : pas de <Link>, juste un <div>
           if (isActive) {
