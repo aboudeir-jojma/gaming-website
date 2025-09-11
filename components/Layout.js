@@ -49,6 +49,7 @@ export default function Layout({ children, onSearch }) {
 
         <main className={`flex-1 overflow-y-auto pt-[80px] transition-all duration-300 ${marginLeft} w-full`}>
           {children}
+           <SpeedInsights />
         </main>
       </div>
 
