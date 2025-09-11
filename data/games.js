@@ -357,7 +357,7 @@ export const games = [
   iframe: "https://games-gules-nu.vercel.app/archery/index.html",
 },
 {
-  slug: "bomberman",
+  slug: "bomber-man",
   title: "BomberMan",
   name: "BomberMan",
   thumb: "/imggames/bomber-man/bomberman.jpg",
