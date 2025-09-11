@@ -22,7 +22,6 @@ export default function Sidebar({ collapsed }) {
     { href: "/category/brain", label: t("sidebar.brain"), icon: "🧠" },
     { href: "/category/strategy", label: t("sidebar.strategy"), icon: "🏰" },
     { href: "/category/creative", label: t("sidebar.creative"), icon: "🎨" },
-    { href: "/category/horror", label: t("sidebar.horror"), icon: "🧟" },
     { href: "/category/shooter", label: t("sidebar.shooter"), icon: "💣" },
     { href: "/category/multiplayer", label: t("sidebar.multiplayer"), icon: "🌐" },
   ];

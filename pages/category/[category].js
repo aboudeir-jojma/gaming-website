@@ -51,7 +51,7 @@ export default function CategoryPage() {
               <Link
                 key={game.slug}
                 href={`/game/${game.slug}`}
-                className="group overflow-hidden rounded-2xl bg-card ring-1 ring-white/5 transition hover:ring-accent/50"
+                className="group overflow-hidden rounded-2xl bg-white dark:bg-card ring-1 ring-white/5 transition hover:ring-accent/50 text-black dark:text-white"
               >
                 <div className="relative aspect-[16/9] w-full">
                   <Image
