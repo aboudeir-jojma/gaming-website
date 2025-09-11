@@ -357,7 +357,7 @@ export const games = [
   iframe: "https://games-gules-nu.vercel.app/archery/index.html",
 },
 {
-  slug: "bomber-man",
+  slug: "bomberman",
   title: "BomberMan",
   name: "BomberMan",
   thumb: "/imggames/bomber-man/bomberman.jpg",
@@ -375,7 +375,7 @@ export const games = [
   iframe: "https://games-gules-nu.vercel.app/brain-game/index.html",
 },
 {
-  slug: "braindom",
+  slug: "Braindom",
   title: "Braindom",
   name: "Braindom",
   thumb: "/imggames/braindom/Braindom.png",
@@ -384,10 +384,10 @@ export const games = [
   iframe: "https://games-gules-nu.vercel.app/braindom/index.html",
 },
 {
-  slug: "braindom-2",
+  slug: "Braindom2",
   title: "Braindom 2",
   name: "Braindom 2",
-  thumb: "/imggames/braindom2/braindom2.png",
+  thumb: "/imggames/braindom2/Braindom2.png",
   tag: "Updated",
   category: ["Puzzle", "Brain"],
   iframe: "https://games-gules-nu.vercel.app/braindom2/index.html",
@@ -645,13 +645,13 @@ export const games = [
   iframe: "https://games-gules-nu.vercel.app/spider-solitaire/index.html",
 },
 {
-  slug: "sticky",
+  slug: "Sticky",
   title: "Sticky",
   name: "Sticky",
-  thumb: "/imggames/sticky/sticky.png",
+  thumb: "/imggames/Sticky/sticky.png",
   tag: "Original",
   category: ["Arcade", "Puzzle"],
-  iframe: "https://games-gules-nu.vercel.app/sticky/index.html",
+  iframe: "https://games-gules-nu.vercel.app/Sticky/index.html",
 },
 {
   slug: "super-agent",
