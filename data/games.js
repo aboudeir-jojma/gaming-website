@@ -11,6 +11,47 @@ export const games = [
     iframe: "https://games-gules-nu.vercel.app/fruit-ninja/index.html"  ,
   
   },
+  
+  {
+  slug: "Uno",
+  title: "UNO",
+  name: "UNO",
+  thumb: "/imggames/Uno/uno.jpg",
+  tag: "Classic",
+  category: ["Card", "Multiplayer"],
+  iframe: "https://games-gules-nu.vercel.app/Uno/index.html",
+},
+
+ {
+    slug: "fruit-bucket",
+    title: "Fruit Bucket",
+      name: "Fruit Bucket",
+    thumb: "/imggames/fruit-bucket/fruit-bucket.png",
+    tag: "Top",
+    category: ["Animals", "Nature"],
+    iframe: "https://games-gules-nu.vercel.app/fruit-bucket/index.html"  ,
+   
+  },
+   {
+    slug: "pet-party-columns",
+    title: "Pet Party Columns",
+      name: "Pet Party Columns",
+    thumb: "/imggames/pet-party-columns/pet-party-columns.jpg",
+    tag: "New",
+     category: ["Puzzle", "Brain"], // ← tableau au lieu d’un seul string
+    iframe: "https://games-gules-nu.vercel.app/pet-party-columns/index.html"  ,
+  
+  },
+     {
+    slug: "philosophers-merge",
+    title: "Philosophers Merge",
+      name: "Philosophers Merge",
+    thumb: "/imggames/philosophers-merge/phil.jpg",
+    tag: "Hot",
+    category: ["Action", "Arcade"],
+    iframe: "https://games-gules-nu.vercel.app/philosophers-merge/index.html",
+                  
+  },
   {
     slug: "liquid-sort",
     title: "Liquid Sort",
@@ -89,16 +130,7 @@ export const games = [
                     
   },
 
-     {
-    slug: "philosophers-merge",
-    title: "Philosophers Merge",
-      name: "Philosophers Merge",
-    thumb: "/imggames/philosophers-merge/phil.jpg",
-    tag: "Hot",
-    category: ["Action", "Arcade"],
-    iframe: "https://games-gules-nu.vercel.app/philosophers-merge/index.html",
-                  
-  },   {
+      {
     slug: "food-match-game",
     title: "Food Match Game",
       name: "Food Match Game",
@@ -128,16 +160,16 @@ export const games = [
     iframe: "https://games-gules-nu.vercel.app/subway-runner/index.html",
                   
   },
-    {
-    slug: "city-blocks",
-    title: "City Blocks",
-      name: "City Blocks",
-    thumb: "/imggames/city-blocks/city-bloks.jpg",
-    tag: "New",
-        category : ["Puzzle", "Brain"], // ← tableau au lieu d’un seul string
-    iframe: "https://games-gules-nu.vercel.app/city-blocks/index.html"  ,
-                        
-  },
+      {
+    slug: "traffic-command",
+    title: "Traffic Command",
+      name: "Traffic Command",
+    thumb: "/imggames/traffic-command/traffic-command.jpg",
+    tag: "Hot",
+    category: "Racing",
+    iframe: "https://games-gules-nu.vercel.app/traffic-command/index.html"  ,
+               
+  }, 
     {
     slug: "inside-light",
     title: "Inside Light",
@@ -148,25 +180,16 @@ export const games = [
     iframe: "https://games-gules-nu.vercel.app/inside-light/index.html"  ,
                        
   }, 
+
     {
-    slug: "traffic-command",
-    title: "Traffic Command",
-      name: "Traffic Command",
-    thumb: "/imggames/traffic-command/traffic-command.jpg",
-    tag: "Hot",
-    category: "Racing",
-    iframe: "https://games-gules-nu.vercel.app/traffic-command/index.html"  ,
-               
-  }, 
-   {
-    slug: "pet-party-columns",
-    title: "Pet Party Columns",
-      name: "Pet Party Columns",
-    thumb: "/imggames/pet-party-columns/pet-party-columns.jpg",
+    slug: "city-blocks",
+    title: "City Blocks",
+      name: "City Blocks",
+    thumb: "/imggames/city-blocks/city-bloks.jpg",
     tag: "New",
-     category: ["Puzzle", "Brain"], // ← tableau au lieu d’un seul string
-    iframe: "https://games-gules-nu.vercel.app/pet-party-columns/index.html"  ,
-  
+        category : ["Puzzle", "Brain"], // ← tableau au lieu d’un seul string
+    iframe: "https://games-gules-nu.vercel.app/city-blocks/index.html"  ,
+                        
   },
   
   
@@ -251,16 +274,7 @@ export const games = [
   },
 
     
- {
-    slug: "fruit-bucket",
-    title: "Fruit Bucket",
-      name: "Fruit Bucket",
-    thumb: "/imggames/fruit-bucket/fruit-bucket.png",
-    tag: "Top",
-    category: ["Animals", "Nature"],
-    iframe: "https://games-gules-nu.vercel.app/fruit-bucket/index.html"  ,
-   
-  },
+
  {
     slug: "throw-daggers",
     title: "Throw Daggers",
@@ -680,15 +694,6 @@ export const games = [
   tag: "Adventure",
   category: ["Adventure", "Action"],
   iframe: "https://games-gules-nu.vercel.app/treasure-hunters/index.html",
-},
-{
-  slug: "Uno",
-  title: "UNO",
-  name: "UNO",
-  thumb: "/imggames/Uno/uno.jpg",
-  tag: "Classic",
-  category: ["Card", "Multiplayer"],
-  iframe: "https://games-gules-nu.vercel.app/Uno/index.html",
 },
 {
   slug: "uno-monument-edition",
