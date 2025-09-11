@@ -8,13 +8,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-     "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",
+    "@vercel/speed-insights": "^1.2.0",
     "crawlee": "^3.14.1",
     "flag-icons": "^7.5.0",
     "isomorphic-dompurify": "^2.26.0",

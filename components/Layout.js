@@ -1,5 +1,5 @@
 "use client";
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { useEffect, useState } from "react";
 import Script from "next/script";
 import Header from "./Header";
