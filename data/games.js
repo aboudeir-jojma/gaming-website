@@ -360,7 +360,7 @@ export const games = [
   slug: "bomber-man",
   title: "BomberMan",
   name: "BomberMan",
-  thumb: "/imggames/bomber-man/Bomberman.jpg",
+  thumb: "/imggames/bomber-man/bom.jpg",
   tag: "Classic",
   category: ["Action", "Arcade"],
   iframe: "https://games-gules-nu.vercel.app/bomber-man/index.html",
@@ -419,15 +419,7 @@ export const games = [
   category: ["Puzzle", "Brain"],
   iframe: "https://games-gules-nu.vercel.app/cups-tower-builder/index.html",
 },
-{
-  slug: "drag-slam",
-  title: "Drag Slam",
-  name: "Drag Slam",
-  thumb: "/imggames/drag-slam/drag-slam.png",
-  tag: "Hot",
-  category: ["Sports", "Action"],
-  iframe: "https://games-gules-nu.vercel.app/drag-slam/index.html",
-},
+
 {
   slug: "dungeon-quest",
   title: "Dungeon Quest",
