@@ -690,13 +690,13 @@ export const games = [
   iframe: "https://games-gules-nu.vercel.app/treasure-hunters/index.html",
 },
 {
-  slug: "uno",
+  slug: "Uno",
   title: "UNO",
   name: "UNO",
-  thumb: "/imggames/uno/uno.jpg",
+  thumb: "/imggames/Uno/uno.jpg",
   tag: "Classic",
   category: ["Card", "Multiplayer"],
-  iframe: "https://games-gules-nu.vercel.app/uno/index.html",
+  iframe: "https://games-gules-nu.vercel.app/Uno/index.html",
 },
 {
   slug: "uno-monument-edition",
