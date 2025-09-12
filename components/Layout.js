@@ -47,11 +47,15 @@ export default function Layout({ children, onSearch }) {
       <div className="flex flex-1">
         <Sidebar collapsed={collapsed} />
 
-<main className={`flex-1 overflow-y-auto pt-[80px] w-full`}
-      style={{ transform: collapsed ? 'translateX(64px)' : 'translateX(192px)', transition: 'transform 0.3s ease' }}>
-          {children}
-        
-        </main>
+<main
+  className={`flex-1 overflow-y-auto pt-[80px] w-full transition-all duration-300`}
+  style={{
+    marginLeft: collapsed ? "64px" : "192px",
+  }}
+>
+  {children}
+</main>
+
       </div>
 
       {/* Footer */}
