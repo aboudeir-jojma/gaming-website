@@ -47,7 +47,8 @@ export default function Layout({ children, onSearch }) {
       <div className="flex flex-1">
         <Sidebar collapsed={collapsed} />
 
-        <main className={`flex-1 overflow-y-auto pt-[80px] transition-all duration-300 ${marginLeft} w-full`}>
+<main className={`flex-1 overflow-y-auto pt-[80px] w-full`}
+      style={{ transform: collapsed ? 'translateX(64px)' : 'translateX(192px)', transition: 'transform 0.3s ease' }}>
           {children}
         
         </main>
