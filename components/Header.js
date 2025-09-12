@@ -75,6 +75,7 @@ useEffect(() => {
     { code: "pt", flag: "fi fi-pt" },
     { code: "de", flag: "fi fi-de" },
     { code: "it", flag: "fi fi-it" },
+    { code: "ja", flag: "fi fi-jp" },
   ];
   const currentLocale =
     locales.find((l) => l.code === router.locale) || locales[0];

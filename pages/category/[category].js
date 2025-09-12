@@ -38,7 +38,7 @@ export default function CategoryPage() {
       <div className="mx-auto max-w-7xl px-1 py-6">
         <Link href="/" className="text-sm text-white/70 hover:text-white">← {t("back")}</Link>
         <h1 className="mt-2 text-2xl font-extrabold">
-          {t("categorystug")}: {decodedCategory ? toTitle(decodedCategory) : (t("all") || "All")}
+          {t("categorystug")}: {decodedCategory ? t('sidebar.' + decodedCategory) : (t("all") || "All")}
         </h1>
 
         {!decodedCategory ? (
@@ -64,7 +64,7 @@ export default function CategoryPage() {
                 </div>
                 <div className="p-3">
                   <div className="text-xs text-white/60">
-                    {Array.isArray(game.category) ? game.category.join(", ") : game.category}
+                    {Array.isArray(game.category) ? game.category.map((c) => t('sidebar.' + c)).join(", ") : t('sidebar.' + game.category)}
                   </div>
                   <div className="mt-0.5 font-semibold">{game.title}</div>
                 </div>

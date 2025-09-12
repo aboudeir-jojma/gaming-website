@@ -73,7 +73,7 @@ const marginLeft = collapsed ? "ml-12 md:ml-12" : "ml-32 md:ml-32";
         <div className="border-t border-zinc-200 dark:border-white/10 py-6 px-6">
           <div className="mx-auto max-w-7xl flex justify-center items-center">
             <p className="text-sm text-gray-600 dark:text-gray-400 text-center">
-              &copy; {new Date().getFullYear()} Tmdisplay. {t("allRightsReserved")}
+              &copy; {new Date().getFullYear()} Tmdisplay. {t("rights")}
             </p>
           </div>
         </div>
