@@ -1,24 +1,22 @@
 "use client";
 import { useRouter } from "next/router";
-import { useRef, useEffect, useState } from "react";
+import { useRef, useLayoutEffect, useState } from "react"; // ✅ useLayoutEffect
 import GameCard from "./GameCard";
 import { useTranslation } from "next-i18next";
 import Link from "next/link";
+
 export default function GameRow({ title, items }) {
   const { t } = useTranslation("common");
   const trackRef = useRef(null);
   const [cardW, setCardW] = useState(220);
-const { locale, defaultLocale } = useRouter();
+  const { locale } = useRouter();
 
-  // Réglages
-  const GAP = 12;     // px (gap-3)
-  const BTN_W = 32;   // largeur zone des flèches (px)
-
-  // Number of visible cards, dynamic based on window width
+  const GAP = 12;
+  const BTN_W = 32;
   const [VISIBLE, setVISIBLE] = useState(5);
 
-  // Calcule une largeur de carte pour avoir EXACTEMENT VISIBLE visibles
-  useEffect(() => {
+  // ✅ Corrigé avec useLayoutEffect pour éviter le CLS
+  useLayoutEffect(() => {
     const calc = () => {
       const el = trackRef.current;
       if (!el) return;
@@ -33,56 +31,12 @@ const { locale, defaultLocale } = useRouter();
     return () => window.removeEventListener("resize", calc);
   }, []);
 
-  // Défile exactement VISIBLE cartes
   const scrollByPages = (dir) => {
     const el = trackRef.current;
     if (!el) return;
     const delta = (cardW + GAP) * VISIBLE * (dir === "right" ? 1 : -1);
     el.scrollBy({ left: delta, behavior: "smooth" });
   };
-
-  // Drag / swipe horizontal + molette
-  useEffect(() => {
-    const el = trackRef.current;
-    if (!el) return;
-    let isDown = false, startX = 0, startLeft = 0;
-
-    const onDown = (e) => {
-      isDown = true;
-      startX = (e.touches ? e.touches[0].pageX : e.pageX);
-      startLeft = el.scrollLeft;
-      el.classList.add("dragging");
-    };
-    const onMove = (e) => {
-      if (!isDown) return;
-      const x = (e.touches ? e.touches[0].pageX : e.pageX);
-      el.scrollLeft = startLeft - (x - startX);
-    };
-    const onUp = () => { isDown = false; el.classList.remove("dragging"); };
-
-    el.addEventListener("mousedown", onDown);
-    el.addEventListener("mousemove", onMove);
-    window.addEventListener("mouseup", onUp);
-    el.addEventListener("touchstart", onDown, { passive: true });
-    el.addEventListener("touchmove", onMove, { passive: true });
-    el.addEventListener("touchend", onUp);
-
-    const onWheel = (e) => {
-      if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) e.preventDefault();
-      el.scrollLeft += e.deltaX || e.deltaY;
-    };
-    el.addEventListener("wheel", onWheel, { passive: false });
-
-    return () => {
-      el.removeEventListener("mousedown", onDown);
-      el.removeEventListener("mousemove", onMove);
-      window.removeEventListener("mouseup", onUp);
-      el.removeEventListener("touchstart", onDown);
-      el.removeEventListener("touchmove", onMove);
-      el.removeEventListener("touchend", onUp);
-      el.removeEventListener("wheel", onWheel);
-    };
-  }, [cardW]);
 
   return (
     <section className="mx-auto w-full px-0">
@@ -91,18 +45,17 @@ const { locale, defaultLocale } = useRouter();
         <div className="mb-3 mt-8 flex items-center justify-between px-1">
           <h2 className="text-xl font-extrabold">{title}</h2>
           <Link
-  className="text-sm text-black/70 dark:text-white/70 hover:text-black dark:hover:text-white"
- href="/all"
- locale={locale}
->
-  {t("viewMore")}
-</Link>
-
+            className="text-sm text-black/70 dark:text-white/70 hover:text-black dark:hover:text-white"
+            href="/all"
+            locale={locale}
+          >
+            {t("viewMore")}
+          </Link>
         </div>
 
         {/* Carrousel */}
         <div className="relative overflow-hidden">
-          {/* Flèche gauche (clair: fond blanc + icône noire / sombre: fond noir + icône blanche) */}
+          {/* Flèche gauche */}
           <button
             onClick={() => scrollByPages("left")}
             aria-label="Scroll left"
@@ -161,7 +114,7 @@ const { locale, defaultLocale } = useRouter();
             </div>
           </div>
 
-          {/* Fades (optionnels) */}
+          {/* Fades */}
           <div className="pointer-events-none absolute left-0 top-0 h-full w-8 bg-gradient-to-r from-white to-transparent dark:from-[#0b0c12]" />
           <div className="pointer-events-none absolute right-0 top-0 h-full w-8 bg-gradient-to-l from-white to-transparent dark:from-[#0b0c12]" />
         </div>

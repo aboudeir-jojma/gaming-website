@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Search, Star } from "lucide-react";
@@ -17,48 +17,43 @@ export default function Header({ onToggleSidebar, onSearch }) {
   const [theme, setTheme] = useState("dark");
   const [scrolled, setScrolled] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
+  const debounceRef = useRef(null);
 
-useEffect(() => {
-  const savedRating = localStorage.getItem("pcgameon_rating");
-  if (savedRating) setRating(Number(savedRating));
+  // ✅ Init theme & rating une seule fois
+  useEffect(() => {
+    const savedRating = localStorage.getItem("pcgameon_rating");
+    if (savedRating) setRating(Number(savedRating));
 
-  // Détection du thème navigateur si aucun thème sauvegardé
-  const savedTheme = localStorage.getItem("pcgameon_theme");
-  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const savedTheme = localStorage.getItem("pcgameon_theme");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const initialTheme = savedTheme || (prefersDark ? "dark" : "light");
 
-  const initialTheme = savedTheme || (prefersDark ? "dark" : "light");
+    setTheme(initialTheme);
+    document.documentElement.classList.remove("light", "dark");
+    document.documentElement.classList.add(initialTheme);
+  }, []);
 
-  setTheme(initialTheme);
-  document.documentElement.classList.remove("light", "dark");
-  document.documentElement.classList.add(initialTheme);
-}, []);
-
-
-useEffect(() => {
-  const savedRating = localStorage.getItem("pcgameon_rating");
-  if (savedRating) setRating(Number(savedRating));
-
-  // Détection du thème navigateur si aucun thème sauvegardé
-  const savedTheme = localStorage.getItem("pcgameon_theme");
-  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-  const initialTheme = savedTheme || (prefersDark ? "dark" : "light");
-
-  setTheme(initialTheme);
-  document.documentElement.classList.remove("light", "dark");
-  document.documentElement.classList.add(initialTheme);
-}, []);
-
-
+  // ✅ Sauvegarde du rating
   useEffect(() => {
     localStorage.setItem("pcgameon_rating", String(rating));
   }, [rating]);
 
+  // ✅ Scroll detection
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 0);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // ✅ Debounced search
+  useEffect(() => {
+    if (!onSearch) return;
+    clearTimeout(debounceRef.current);
+    debounceRef.current = setTimeout(() => {
+      if (q.trim()) onSearch(q.trim());
+    }, 400); // délai 400ms
+    return () => clearTimeout(debounceRef.current);
+  }, [q, onSearch]);
 
   function toggleTheme() {
     const next = theme === "dark" ? "light" : "dark";
@@ -91,65 +86,56 @@ useEffect(() => {
 
   return (
     <header
-    className={`fixed top-0 left-0 z-50 w-full border-b transition-all duration-500
-    ${scrolled
-      ? // ➜ APRÈS SCROLL : plus transparent + blur léger
-        "bg-white/40 dark:bg-gray-900/30 backdrop-blur-md border-transparent shadow-md"
-      : // ➜ AU DÉPART : plein (opaque)
-        "bg-gray-100 dark:bg-gray-900 border-gray-300 dark:border-gray-700 shadow-lg"
-    }
-    text-black dark:text-white`}
+      className={`fixed top-0 left-0 z-50 w-full border-b transition-all duration-500
+        ${scrolled
+          ? "bg-white/40 dark:bg-gray-900/30 backdrop-blur-md border-transparent shadow-md"
+          : "bg-gray-100 dark:bg-gray-900 border-gray-300 dark:border-gray-700 shadow-lg"
+        }
+        text-black dark:text-white`}
     >
-      {/* 🟣 Burger ABSOLU sur le header → flush-left viewport */}
-<div className="absolute left-0 top-1/2 -translate-y-1/2 ml-2 sm:ml-3">
-  <button
-    onClick={onToggleSidebar}
-    className="flex flex-col items-center justify-center 
-               w-8 h-8 sm:w-10 sm:h-10   // plus petit en mobile
-               rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 
-               text-white shadow-md"
-    aria-label="Toggle sidebar"
-  >
-    <span className="block w-5 h-0.5 bg-white rounded-sm mb-1" />
-    <span className="block w-5 h-0.5 bg-white rounded-sm mb-1" />
-    <span className="block w-5 h-0.5 bg-white rounded-sm" />
-  </button>
-</div>
+      {/* 🟣 Burger menu */}
+      <div className="absolute left-0 top-1/2 -translate-y-1/2 ml-2 sm:ml-3">
+        <button
+          onClick={onToggleSidebar}
+          className="flex flex-col items-center justify-center 
+                   w-8 h-8 sm:w-10 sm:h-10
+                   rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 
+                   text-white shadow-md"
+          aria-label="Toggle sidebar"
+        >
+          <span className="block w-5 h-0.5 bg-white rounded-sm mb-1" />
+          <span className="block w-5 h-0.5 bg-white rounded-sm mb-1" />
+          <span className="block w-5 h-0.5 bg-white rounded-sm" />
+        </button>
+      </div>
 
-      {/* Contenu centré, avec padding à gauche pour réserver l’espace du burger */}
+      {/* Contenu centré */}
       <div className="mx-auto max-w-7xl py-1.5 sm:py-2">
         <div className="flex items-center gap-2 sm:gap-3 min-w-0 pl-12 sm:pl-14 pr-3 sm:pr-4">
           {/* Logo */}
           <Link href="/" className="shrink-0 flex items-center">
-                      <Image
-          src="/imggames/logo.png"
-          alt="Logo"
-          width={140}
-          height={140}
-          className="h-10 w-auto sm:h-14 lg:h-14" 
-          priority
-        />
-              
+            <Image
+              src="/imggames/logo.png"
+              alt="Logo"
+              width={140}
+              height={40} // ✅ hauteur fixe pour éviter CLS
+              className="h-10 w-auto sm:h-14 lg:h-14"
+              priority
+              sizes="(max-width: 768px) 120px, 140px"
+            />
           </Link>
 
-          {/* Search — même ligne en mobile, prend l'espace restant */}
+          {/* Search */}
           <form
             role="search"
             className="relative flex-1 min-w-0"
-            onSubmit={(e) => {
-              e.preventDefault();
-              onSearch?.(q);
-            }}
+            onSubmit={(e) => e.preventDefault()}
           >
             <Search className="pointer-events-none absolute left-2 top-1/2 -translate-y-1/2 text-blue-500 w-4 h-4 sm:w-5 sm:h-5" />
             <input
               type="search"
               value={q}
-              onChange={(e) => {
-                const v = e.target.value;
-                setQ(v);
-                onSearch?.(v);
-              }}
+              onChange={(e) => setQ(e.target.value)}
               className="w-full rounded-lg sm:rounded-2xl bg-white dark:bg-card pl-7 sm:pl-10 pr-2 sm:pr-3 py-2 sm:py-2.5 text-sm sm:text-base outline-none text-black dark:text-white placeholder:text-zinc-400"
               placeholder={t("searchPlaceholder")}
               autoComplete="off"
@@ -176,11 +162,10 @@ useEffect(() => {
                     <li key={loc.code}>
                       <button
                         onClick={() => changeLocale(loc.code)}
-                        className={`flex items-center gap-2 w-full px-4 py-2 text-left text-sm ${
-                          router.locale === loc.code
-                            ? "font-bold bg-gray-2 00 dark:bg-gray-700"
-                            : ""
-                        } text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600`}
+                        className={`flex items-center gap-2 w-full px-4 py-2 text-left text-sm ${router.locale === loc.code
+                          ? "font-bold bg-gray-200 dark:bg-gray-700"
+                          : ""
+                          } text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600`}
                       >
                         <span className={`${loc.flag} text-lg`} />
                         <span className="uppercase">{loc.code}</span>
@@ -200,7 +185,7 @@ useEffect(() => {
               {theme === "dark" ? "🌙" : "☀️"}
             </button>
 
-            {/* Rating (desktop only) */}
+            {/* Rating */}
             <div className="hidden sm:flex items-center rounded-xl bg-white dark:bg-card px-2 py-1 text-black dark:text-white">
               {[1, 2, 3, 4, 5].map((i) => {
                 const active = (hover || rating) >= i;
@@ -215,11 +200,10 @@ useEffect(() => {
                     aria-label={`Set rating ${i}`}
                   >
                     <Star
-                      className={`w-5 h-5 transition-transform ${
-                        active
-                          ? "fill-yellow-400 text-yellow-400"
-                          : "text-zinc-400"
-                      }`}
+                      className={`w-5 h-5 transition-transform ${active
+                        ? "fill-yellow-400 text-yellow-400"
+                        : "text-zinc-400"
+                        }`}
                     />
                   </button>
                 );

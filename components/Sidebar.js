@@ -26,7 +26,7 @@ export default function Sidebar({ collapsed }) {
     { href: "/category/multiplayer", label: t("sidebar.multiplayer"), icon: "🌐" },
   ];
 
-  // Better active link detection
+  // Active link detection
   const isActiveLink = (href) => {
     if (href === "/") {
       return router.pathname === "/";
@@ -39,19 +39,17 @@ export default function Sidebar({ collapsed }) {
 
   return (
     <aside
-    className={`flex flex-col shrink-0 border-r-2 border-gray-300 dark:border-gray-600
-    bg-gray-100 text-black dark:bg-gray-900 dark:text-white shadow-lg dark:shadow-xl
-    fixed 
-    top-[55px] sm:top-[75px]  /* mobile: 55px | desktop: 75px */
-    left-0 
-    h-[calc(100vh-55px)] sm:h-[calc(100vh-75px)] /* ajuste la hauteur aussi */
-    z-30 overflow-y-auto no-scrollbar`}
-    style={{
-      width: collapsed ? '64px' : '192px',
-      transform: collapsed ? 'scaleX(0.8)' : 'scaleX(1)',
-      transformOrigin: 'left',
-      transition: 'transform 0.3s ease, width 0.3s ease'
-    }}
+      className={`flex flex-col shrink-0 border-r-2 border-gray-300 dark:border-gray-600
+      bg-gray-100 text-black dark:bg-gray-900 dark:text-white shadow-lg dark:shadow-xl
+      fixed 
+      top-[55px] sm:top-[75px]
+      left-0 
+      h-[calc(100vh-55px)] sm:h-[calc(100vh-75px)]
+      z-30 overflow-y-auto no-scrollbar`}
+      style={{
+        width: collapsed ? "64px" : "192px",
+        transition: "width 0.3s ease",
+      }}
     >
       <nav className="flex flex-col flex-1 gap-2 p-3">
         {items.map((i) => {
@@ -60,12 +58,10 @@ export default function Sidebar({ collapsed }) {
           const baseClasses =
             "flex items-center gap-3 rounded-lg px-3 py-3 transition-all duration-200 " +
             (collapsed ? "justify-center " : "");
-        const activeClasses =
-  "bg-gradient-to-br from-indigo-500 to-purple-600 text-white shadow-md";
+          const activeClasses =
+            "bg-gradient-to-br from-indigo-500 to-purple-600 text-white shadow-md";
 
-
-
-          // ✅ Item actif : pas de <Link>, juste un <div>
+          // ✅ Active item
           if (isActive) {
             return (
               <div
@@ -80,13 +76,13 @@ export default function Sidebar({ collapsed }) {
             );
           }
 
-          // ✅ Item inactif : vrai lien localisé avec prefetch
+          // ✅ Inactive item
           return (
             <Link
               key={i.href}
               href={i.href}
               locale={router.locale}
-              prefetch={true}
+              prefetch={i.href === "/"} // 🔹 préfetch uniquement la home
               scroll={false}
               shallow={i.href.startsWith("/category/")}
               className={`${baseClasses} hover:bg-gray-300 dark:hover:bg-gray-600 hover:shadow-md hover:scale-105`}
