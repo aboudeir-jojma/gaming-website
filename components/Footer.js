@@ -5,13 +5,14 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 export default function Footer({ collapsed }) {
+  console.log("Footer rendered");  // Added console log to check render count
+
   const { t } = useTranslation("common");
   const router = useRouter();
   const locale = router.locale || 'en';
 
   // Determine left margin based on sidebar collapsed state
-const marginLeft = collapsed ? "ml-12 md:ml-12" : "ml-32 md:ml-32";
-
+  const marginLeft = collapsed ? "ml-12 md:ml-12" : "ml-32 md:ml-32";
 
   return (
     <>

@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Script from "next/script";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
-import Footer from "./Footer";
 import BackToTopButton from "./BackToTopButton";
 
 export default function Layout({ children, onSearch }) {
@@ -57,8 +56,6 @@ export default function Layout({ children, onSearch }) {
 
       </div>
 
-      {/* Footer */}
-      <Footer collapsed={collapsed}  />
       <BackToTopButton />
 
 
