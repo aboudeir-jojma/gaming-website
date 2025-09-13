@@ -16,7 +16,7 @@ export default function Footer({ collapsed }) {
 
   return (
     <>
-      <footer className={`mt-10 border-t border-zinc-200 dark:border-white/10 bg-gray-100 dark:bg-[#0b0c12] text-gray-700 dark:text-gray-300 transition-colors duration-300 ${marginLeft}`}>
+      <footer className={`border-t border-zinc-200 dark:border-white/10 bg-gray-100 dark:bg-[#0b0c12] text-gray-700 dark:text-gray-300 transition-colors duration-300 ${marginLeft}`}>
         {/* Contenu du footer */}
         <div className="mx-auto max-w-7xl px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
           <div></div> {/* Empty left column */}
