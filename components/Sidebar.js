@@ -39,7 +39,7 @@ export default function Sidebar({ collapsed }) {
 
   return (
     <aside
-      className={`flex flex-col shrink-0 border-r-2 border-gray-300 dark:border-gray-600
+      className={`flex flex-col shrink-0 
       bg-gray-100 text-black dark:bg-gray-900 dark:text-white shadow-lg dark:shadow-xl
       fixed 
       top-[55px] sm:top-[75px]

@@ -14,11 +14,16 @@ import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import nextI18NextConfig from "../../next-i18next.config";
 
-const supportedLocales = ["en", "fr", "es", "pt", "de", "it"];
+const supportedLocales = ["en", "fr", "es", "pt", "de", "it", "ja"];
 
 function readDescriptionHtml(slug, locale) {
   const baseDir = path.join(process.cwd(), "public", "imggames", slug);
-  const order = [locale, "en"];
+  // Map locale "ja" to "jp" for description file extension
+  const localeMap = {
+    ja: "jp",
+  };
+  const mappedLocale = localeMap[locale] || locale;
+  const order = [mappedLocale, "en"];
   for (const loc of order) {
     const file = path.join(baseDir, `description.${loc}.html`);
     if (fs.existsSync(file)) {

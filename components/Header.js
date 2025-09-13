@@ -79,8 +79,9 @@ export default function Header({ onToggleSidebar, onSearch }) {
     setLangOpen(false);
     const { asPath } = router;
     const cleanPath = asPath.replace(/^\/[a-z]{2}(?=\/|$)/, "") || "/";
+    const defaultLocale = "en";
     const newPath =
-      nextLocale === "en" ? `/en${cleanPath}` : `/${nextLocale}${cleanPath}`;
+      nextLocale === defaultLocale ? `${cleanPath}` : `/${nextLocale}${cleanPath}`;
     router.push(newPath, newPath, { locale: nextLocale });
   };
 

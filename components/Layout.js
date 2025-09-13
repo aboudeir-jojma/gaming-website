@@ -48,10 +48,9 @@ export default function Layout({ children, onSearch }) {
         <Sidebar collapsed={collapsed} />
 
 <main
-  className={`flex-1 overflow-y-auto pt-[80px] w-full transition-all duration-300`}
+  className={`flex-1 overflow-y-auto pt-[35px]  w-full transition-all duration-300`}
   style={{
-    marginLeft: collapsed ? "64px" : "192px",
-  }}
+   marginLeft:  collapsed ? "40px" : "90px" }}
 >
   {children}
 </main>
@@ -59,7 +58,7 @@ export default function Layout({ children, onSearch }) {
       </div>
 
       {/* Footer */}
-      <Footer collapsed={collapsed} />
+      <Footer collapsed={collapsed}  />
       <BackToTopButton />
 
 
