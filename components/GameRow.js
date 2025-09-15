@@ -5,7 +5,7 @@ import GameCard from "./GameCard";
 import { useTranslation } from "next-i18next";
 import Link from "next/link";
 
-export default function GameRow({ title, items }) {
+export default function GameRow({ title, items, className = "" }) {
   const { t } = useTranslation("common");
   const trackRef = useRef(null);
   const [cardW, setCardW] = useState(220);
@@ -39,7 +39,7 @@ export default function GameRow({ title, items }) {
   };
 
   return (
-    <section className="mx-auto w-full px-0">
+    <section className={`mx-auto w-full px-0 ${className}`}>
       <div className="bg-white text-black dark:bg-[#0b0c12] dark:text-white">
         {/* Titre + Voir plus */}
         <div className="mb-3 mt-8 flex items-center justify-between px-1">

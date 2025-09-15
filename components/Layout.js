@@ -47,7 +47,7 @@ export default function Layout({ children, onSearch }) {
         <Sidebar collapsed={collapsed} />
 
 <main
-  className={`flex-1 overflow-y-auto pt-[35px]  w-full transition-all duration-300`}
+  className={`flex-1 overflow-y-auto overflow-x-hidden pt-[35px]  w-full transition-all duration-300`}
   style={{
    marginLeft:  collapsed ? "40px" : "90px" }}
 >
