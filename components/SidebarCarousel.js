@@ -97,6 +97,7 @@ export default function SidebarCarousel({ games, currentGameSlug }) {
         <div className="grid grid-cols-1 gap-4">
           {randomGames.map((game) => (
             <Link
+              onClick={() => setSelectedGameSlug(game.slug)}
               key={game.slug}
               href={`/game/${game.slug}`}
               locale={locale}
