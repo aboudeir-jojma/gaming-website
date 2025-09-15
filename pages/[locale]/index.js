@@ -5,6 +5,7 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       ...(await serverSideTranslations(params.locale, ["common"])),
+      locale: params.locale,
     },
   };
 }
@@ -18,6 +19,7 @@ export async function getStaticPaths() {
       { params: { locale: "pt" } },
       { params: { locale: "de" } },
       { params: { locale: "it" } },
+         { params: { locale: "ja" } },
     ],
     fallback: false,
   };
