@@ -145,12 +145,12 @@ export default function GamePage({ game }) {
             <h1 className="text-2xl font-extrabold">{game.title}</h1>
             <button
               onClick={toggleFullscreen}
-              className="relative flex items-center justify-center w-14 h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-md hover:shadow-lg transition"
+              className="relative flex items-center justify-center w-14 h-14 rounded-full bg-gray-200 border border-gray-300 shadow-md hover:shadow-lg transition dark:bg-white/10 dark:border-white/20"
               title={isFullscreen ? "Exit Full Screen" : "Enter Full Screen"}
               aria-label={isFullscreen ? "Exit Full Screen" : "Enter Full Screen"}
             >
               <svg
-                className="w-7 h-7 text-white relative z-10"
+                className="w-7 h-7 text-gray-800 dark:text-white relative z-10"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
