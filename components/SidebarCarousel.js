@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef, Fragment } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -13,10 +13,9 @@ export default function SidebarCarousel({ games, currentGameSlug }) {
   const [selectedGameSlug, setSelectedGameSlug] = useState(currentGameSlug);
   const [randomGames, setRandomGames] = useState([]);
 
-  // Show 6 games in carousel (can be first 6 or filtered)
+  // Jeux du carrousel
   const carouselGames = games.slice(0, 6);
 
-  // Scroll carousel by width
   const scrollByAmount = (dir = 1) => {
     const el = trackRef.current;
     if (!el) return;
@@ -26,21 +25,27 @@ export default function SidebarCarousel({ games, currentGameSlug }) {
     });
   };
 
-  // Helpers for image src and title
   const imgSrc = (g) => {
     const p = g?.image || g?.thumb || g?.cover || g?.img;
     if (p) return p.startsWith("/") ? p : `/${p}`;
-    return `/imggames/${g.slug}/${g.slug}.jpg`; // fallback
+    return `/imggames/${g.slug}/${g.slug}.jpg`;
   };
+
   const titleOf = (g) => g?.name || g?.title || g?.slug;
 
-  // On selectedGameSlug change, pick 6 random games excluding selected
+  // Jeux aléatoires
   useEffect(() => {
     if (!games || games.length === 0) return;
-    const filtered = games.filter(g => g.slug !== selectedGameSlug);
+    const filtered = games.filter((g) => g.slug !== selectedGameSlug);
     const shuffled = filtered.sort(() => 0.5 - Math.random());
     setRandomGames(shuffled.slice(0, 6));
   }, [selectedGameSlug, games]);
+
+  // 🚀 Lorsqu’on clique → navigation + overlay de blocage
+  const handleClick = (slug) => {
+    setSelectedGameSlug(slug);
+    router.push(`/game/${slug}`, undefined, { locale });
+  };
 
   return (
     <aside className="w-full lg:w-80 flex-shrink-0 space-y-6">
@@ -52,11 +57,9 @@ export default function SidebarCarousel({ games, currentGameSlug }) {
             className="flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-smooth hide-scrollbar"
           >
             {carouselGames.map((game) => (
-              <Link
+              <button
                 key={game.slug}
-                href={`/game/${game.slug}`}
-                locale={locale}
-                onClick={() => setSelectedGameSlug(game.slug)}
+                onClick={() => handleClick(game.slug)}
                 className={`relative flex-shrink-0 w-[120px] h-[80px] rounded-lg overflow-hidden ring-2 transition block ${
                   selectedGameSlug === game.slug
                     ? "ring-indigo-500"
@@ -72,7 +75,7 @@ export default function SidebarCarousel({ games, currentGameSlug }) {
                   sizes="120px"
                   className="object-cover"
                 />
-              </Link>
+              </button>
             ))}
           </div>
           <button
@@ -96,11 +99,9 @@ export default function SidebarCarousel({ games, currentGameSlug }) {
         <h2 className="text-white text-xl font-bold mb-4">Random Games</h2>
         <div className="grid grid-cols-1 gap-4">
           {randomGames.map((game) => (
-            <Link
-              onClick={() => setSelectedGameSlug(game.slug)}
+            <button
               key={game.slug}
-              href={`/game/${game.slug}`}
-              locale={locale}
+              onClick={() => handleClick(game.slug)}
               title={titleOf(game)}
               className="group block rounded-lg bg-gradient-to-tr from-indigo-900 via-indigo-800 to-indigo-700 shadow-lg ring-1 ring-white/10 hover:from-indigo-700 hover:via-indigo-600 hover:to-indigo-500 transition-transform transform hover:scale-105"
             >
@@ -114,9 +115,11 @@ export default function SidebarCarousel({ games, currentGameSlug }) {
                 />
               </div>
               <div className="p-2">
-                <h3 className="text-white text-base font-semibold truncate">{game.title}</h3>
+                <h3 className="text-white text-base font-semibold truncate">
+                  {game.title}
+                </h3>
               </div>
-            </Link>
+            </button>
           ))}
         </div>
       </section>
