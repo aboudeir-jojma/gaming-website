@@ -22,7 +22,7 @@ export default function AboutPage() {
         />
       </Head>
 
-      <section className="mx-auto mt-6 max-w-7xl rounded-2xl bg-white text-black dark:bg-gradient-to-br dark:from-[#121425] dark:to-[#0b0c12] dark:text-white p-6 ring-1 ring-black/5 dark:ring-white/5 transition-colors duration-300">
+      <section className="mx-auto mt-6 ml-18 max-w-7xl rounded-2xl bg-white text-black dark:bg-gradient-to-br dark:from-[#121425] dark:to-[#0b0c12] dark:text-white p-6 ring-1 ring-black/5 dark:ring-white/5 transition-colors duration-300">
         <h1 className="text-3xl font-bold mb-4">{t("about")}</h1>
 
         <section className="about bg-gray-50 dark:bg-gray-900 py-12 px-6">
