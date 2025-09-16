@@ -34,12 +34,12 @@ export default function GameCard({ game }) {
           {game.tag && (
             <span
               className={`absolute left-2 top-2 rounded-full px-2 py-1 text-[10px] font-bold uppercase 
-              ${game.tag === "New" ? "bg-purple-500" : ""}
-              ${game.tag === "Hot" ? "bg-red-500" : ""}
-              ${game.tag === "Trending" ? "bg-orange-500" : ""}
-              ${game.tag === "Updated" ? "bg-blue-500" : ""}
-              ${game.tag === "Top" ? "bg-emerald-500" : ""}
-              ${game.tag === "Classic" ? "bg-zinc-500" : ""}
+              ${game.tag === "New" ? "bg-purple-800" : ""}
+              ${game.tag === "Hot" ? "bg-red-800" : ""}
+              ${game.tag === "Trending" ? "bg-orange-800" : ""}
+              ${game.tag === "Updated" ? "bg-blue-800" : ""}
+              ${game.tag === "Top" ? "bg-emerald-800" : ""}
+              ${game.tag === "Classic" ? "bg-zinc-800" : ""}
               text-white shadow-md`}
             >
               {game.tag}

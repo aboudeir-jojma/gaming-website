@@ -17,7 +17,7 @@ export const games = [
   title: "UNO",
   name: "UNO",
   thumb: "/imggames/Uno/uno.jpg",
-  tag: "Classic",
+  tag: "New",
   category: ["Card", "Multiplayer"],
   iframe: "https://games-gules-nu.vercel.app/Uno/index.html",
 },
@@ -90,7 +90,7 @@ export const games = [
     slug: "pool-puzzle",
     title: "Pool Puzzle",
     thumb: "/imggames/pool-puzzle/Pool.jpg",
-    tag: "NEW",
+    tag: "New",
     category: "Racing",
     iframe: "https://games-gules-nu.vercel.app/pool-puzzle/index.html",   // fonctionne immédiatement
 
@@ -574,7 +574,7 @@ export const games = [
   title: "Pac Chef",
   name: "Pac Chef",
   thumb: "/imggames/pac-chef/pac-chef.jpg",
-  tag: "Hot",
+  tag: "New",
   category: ["Food", "Arcade"],
   iframe: "https://games-gules-nu.vercel.app/pac-chef/index.html",
 },
