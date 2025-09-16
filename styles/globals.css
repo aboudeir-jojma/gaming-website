@@ -33,7 +33,10 @@
   border-radius: 12px;
   display: block;
 }
-
+.img-container {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
 /* Masquer la scrollbar (pour les conteneurs avec .no-scrollbar) */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
