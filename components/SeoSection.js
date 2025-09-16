@@ -91,6 +91,15 @@ Tower-Defense-Spiele kostenlos, Kartenspiele online, Puzzle Spiele gratis, Beste
             <li>無料オンラインゲーム</li>
             <li>เกมออนไลน์ฟรี</li>
           </ul>
+
+           {/* Ajout des termes japonais Toshiba */}
+          <div className="mt-4">
+            <p>
+              東芝松下ディスプレイテクノロジー ・
+              東芝モバイルディスプレイ株式会社 ・
+              東芝モバイルディスプレイ
+            </p>
+          </div>
         </section>
       </section>
     </>
