@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../styles/globals.css";
 import { appWithTranslation } from "next-i18next";
+import nextI18NextConfig from "../next-i18next.config";
 import Layout from "../components/Layout";
 import Footer from "../components/Footer";
 
@@ -17,4 +18,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default appWithTranslation(MyApp);
+export default appWithTranslation(MyApp, nextI18NextConfig);

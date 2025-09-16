@@ -73,6 +73,19 @@
 
   "misc": "Misc",
 
+   "about": "About",
+  "about_title": "About Tmdisplay",
+  "about_intro": "✨ Welcome to <strong>Tmdisplay</strong> – your ultimate destination for <span class='font-semibold'>free online games</span>. 🎮 Whether you love puzzles, action, racing, or retro classics, our platform brings together the best gaming experiences in one place. ⚡ No downloads, no sign-ups – just pure fun, anywhere, anytime!",
+  "about_endless_title": "✨ Endless Fun",
+  "about_endless_text": "⭐ Explore hundreds of games across every genre. 🎯 From quick adventures to relaxing puzzles, there’s always something new to play.",
+  "about_everyone_title": "👥 For Everyone",
+  "about_everyone_text": "🌍 Tmdisplay is designed for players of all ages. 👦👩 Kids, teens, and adults can enjoy safe and fun experiences every day.",
+  "about_anywhere_title": "🌐 Play Anywhere",
+  "about_anywhere_text": "💻 Our games run directly in your browser. 📱 Whether on computer, tablet, or mobile, the fun is always just one click away.",
+  "about_footer": "✨ At <strong>Tmdisplay</strong>, we believe gaming should be simple, accessible, and exciting. 🚀 Start exploring now and let the fun begin!"
+
+  ,
+
   "privacy_title": "Privacy Policy",
   "privacy_updated": "Last updated: September 08, 2025",
   "privacy_intro": "🔒 This Privacy Policy describes Our policies and procedures...",

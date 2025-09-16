@@ -5,7 +5,7 @@ module.exports = {
     locales: ['en', 'fr', 'es', 'pt', 'de', 'it', 'ja'],
   },
   localePath: path.resolve('./locales'),
-  localeDetection: false,
+  localeDetection: true,
   // 👇 Ajoute ceci
   trailingSlash: false,
 };
