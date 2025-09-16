@@ -5,7 +5,7 @@ import Script from "next/script";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 import BackToTopButton from "./BackToTopButton";
-
+import Seo from "./Seo";
 export default function Layout({ children, onSearch }) {
   const [collapsed, setCollapsed] = useState(true);
 
@@ -38,7 +38,7 @@ export default function Layout({ children, onSearch }) {
         `}
       </Script>
       {/* --- /Google Analytics --- */}
-
+ <Seo />
       {/* Header plein écran */}
       <Header onToggleSidebar={() => setCollapsed((c) => !c)} onSearch={onSearch} />
 

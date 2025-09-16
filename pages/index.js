@@ -7,7 +7,7 @@ import LastSection from "../components/LastSection";
 import AllGamesPage from "../components/AllGamesPage";
 import SeoSection from "../components/SeoSection";
 import { games } from "../data/games";
-
+import Seo from "../components/Seo";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
@@ -37,7 +37,16 @@ export default function HomePage() {
   const originals = games.slice(0, 6);
 
   return (
+
+
     <Layout onSearch={setSearch}>
+
+      <Seo
+        title="Play Free Online Games – Tmdisplay"
+        description="Discover the best free online games on Tmdisplay 🎮. Puzzles, racing, retro & more – play instantly without downloads!"
+        url="https://tmdisplay.com/"
+        image="https://tmdisplay.com/imggames/home-og.jpg"
+      />
       {/* Section bienvenue */}
       <section
         className="mx-auto mt-4 w-full rounded-xl 
