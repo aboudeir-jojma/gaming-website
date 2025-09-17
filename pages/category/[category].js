@@ -1,5 +1,6 @@
 // pages/category/[category].js
 import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Layout from "../../components/Layout";
@@ -14,27 +15,61 @@ const normCats = (v) =>
                    : [String(v ?? "").toLowerCase().trim()];
 
 export default function CategoryPage() {
-  const { category } = useRouter().query;
   const { t } = useTranslation("common");
+  const router = useRouter();
+  const { category } = router.query;
 
   const raw = Array.isArray(category) ? category[0] : category || "";
- const decodedCategory = decodeURIComponent(raw).trim().toLowerCase();
+  const decodedCategory = decodeURIComponent(raw).trim().toLowerCase();
 
+  const [search, setSearch] = useState("");
+  const [filteredGames, setFilteredGames] = useState([]);
 
-  // Si pas de catégorie ou catégorie "all" => afficher tous les jeux
-  const gamesInCategory =
-    !decodedCategory || decodedCategory === "all"
-      ? games
-      : games.filter((g) => {
-          const cat = g.category;
-          if (Array.isArray(cat)) {
-            return cat.some((c) => c.toLowerCase() === decodedCategory);
-          }
-          return cat.toLowerCase() === decodedCategory;
-        });
+  // Filter games by category and search query
+  useEffect(() => {
+    const gamesInCategory =
+      !decodedCategory || decodedCategory === "all"
+        ? games
+        : games.filter((g) => {
+            const cat = g.category;
+            if (Array.isArray(cat)) {
+              return cat.some((c) => c.toLowerCase() === decodedCategory);
+            }
+            return cat.toLowerCase() === decodedCategory;
+          });
+
+    if (search.trim()) {
+      const filtered = gamesInCategory.filter((g) =>
+        g.name.toLowerCase().includes(search.toLowerCase())
+      );
+      setFilteredGames(filtered);
+    } else {
+      setFilteredGames(gamesInCategory);
+    }
+  }, [decodedCategory, search]);
+
+  // Reset search when category changes
+  useEffect(() => {
+    setFilteredGames(
+      !decodedCategory || decodedCategory === "all"
+        ? games
+        : games.filter((g) => {
+            const cat = g.category;
+            if (Array.isArray(cat)) {
+              return cat.some((c) => c.toLowerCase() === decodedCategory);
+            }
+            return cat.toLowerCase() === decodedCategory;
+          })
+    );
+  }, [decodedCategory]);
+
+  // Handle search input from Header component
+  const handleSearch = (query) => {
+    setSearch(query);
+  };
 
   return (
-    <Layout>
+    <Layout onSearch={handleSearch}>
       <div className="mx-auto max-w-7xl px-1 py-6">
         <Link href="/" className="text-sm text-white/70 hover:text-white">← {t("back")}</Link>
         <h1 className="mt-2 text-2xl font-extrabold">
@@ -43,11 +78,11 @@ export default function CategoryPage() {
 
         {!decodedCategory ? (
           <p className="mt-6 text-white/70">{t("chooseCategory") || "Choose a category in the sidebar."}</p>
-        ) : gamesInCategory.length === 0 ? (
+        ) : filteredGames.length === 0 ? (
           <p className="mt-6 text-white/70">{t("noGamesFound") || "No games found in this category."}</p>
         ) : (
           <div className="mt-4 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {gamesInCategory.map((game) => (
+            {filteredGames.map((game) => (
               <Link
                 key={game.slug}
                 href={`/game/${game.slug}`}

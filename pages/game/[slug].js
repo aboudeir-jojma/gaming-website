@@ -61,13 +61,19 @@ export default function GamePage({ game }) {
   const router = useRouter();
   const { locale } = router;
 
+  const handleSearch = (query) => {
+    // Instead of navigating to home page, update search state locally or do nothing
+    // If you want to keep search on game page, you can implement local filtering or ignore search here
+    // For now, do nothing to prevent navigation
+  };
+
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [started, setStarted] = useState(false);
   const containerRef = useRef(null);
 
   if (!game) {
     return (
-      <Layout>
+      <Layout onSearch={handleSearch}>
         <div className="p-6 text-white/80">
           {t("gameNotFound") || "Game not found."}
         </div>
@@ -123,7 +129,7 @@ export default function GamePage({ game }) {
   };
 
   return (
-    <Layout>
+    <Layout onSearch={handleSearch}>
       <div className="mx-auto max-w-7xl px-1 py-6 flex flex-col lg:flex-row gap-6">
         {/* Colonne principale */}
         <div className="flex-1">

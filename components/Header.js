@@ -50,7 +50,7 @@ export default function Header({ onToggleSidebar, onSearch }) {
     if (!onSearch) return;
     clearTimeout(debounceRef.current);
     debounceRef.current = setTimeout(() => {
-      if (q.trim()) onSearch(q.trim());
+      onSearch(q.trim());
     }, 400); // délai 400ms
     return () => clearTimeout(debounceRef.current);
   }, [q, onSearch]);
