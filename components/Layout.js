@@ -1,11 +1,12 @@
 "use client";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { useEffect, useState } from "react";
 import Script from "next/script";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 import BackToTopButton from "./BackToTopButton";
 import Seo from "./Seo";
+
 export default function Layout({ children, onSearch }) {
   const [collapsed, setCollapsed] = useState(true);
 
@@ -19,17 +20,14 @@ export default function Layout({ children, onSearch }) {
     return () => mq.removeEventListener("change", apply);
   }, []);
 
-  // Décalage du contenu quand le sidebar est fixe
-  const marginLeft = collapsed ? "ml-16 md:ml-16" : "ml-48 md:ml-48";
-
   return (
     <div className="bg-white text-black dark:bg-[#0b0c12] dark:text-white min-h-screen flex flex-col overflow-x-hidden w-full">
       {/* --- Google Analytics --- */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-PRC5SDWDSS"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
       />
-      <Script id="ga-init" strategy="afterInteractive">
+      <Script id="gtag-init" strategy="lazyOnload">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -38,28 +36,25 @@ export default function Layout({ children, onSearch }) {
         `}
       </Script>
       {/* --- /Google Analytics --- */}
- <Seo />
+
+      <Seo />
+
       {/* Header plein écran */}
       <Header onToggleSidebar={() => setCollapsed((c) => !c)} onSearch={onSearch} />
 
       {/* Zone principale : sidebar fixe + contenu décalé */}
       <div className="flex flex-1">
         <Sidebar collapsed={collapsed} />
-
-<main
-  className={`flex-1 overflow-y-auto overflow-x-hidden pt-[35px]  w-full transition-all duration-300`}
-  style={{
-   marginLeft:  collapsed ? "40px" : "90px" }}
->
-  {children}
-</main>
-
+        <main
+          className="flex-1 overflow-y-auto overflow-x-hidden pt-[35px] w-full transition-all duration-300"
+          style={{ marginLeft: collapsed ? "40px" : "90px" }}
+        >
+          {children}
+        </main>
       </div>
 
       <BackToTopButton />
-
-
-         <SpeedInsights />
+      <SpeedInsights />
     </div>
   );
 }
