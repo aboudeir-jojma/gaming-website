@@ -243,7 +243,7 @@ export default function GamePage({ game }) {
             {game.thumb && (
               <Image src={game.thumb} alt="" width={48} height={48} className="rounded-lg" />
             )}
-            <div className="text-sm">
+            <div className="text-sm text-black dark:text-white">
               {t("categorystug")}: {categoryText}
             </div>
           </div>

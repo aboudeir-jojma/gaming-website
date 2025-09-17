@@ -20,6 +20,8 @@ export default function Layout({ children, onSearch }) {
     return () => mq.removeEventListener("change", apply);
   }, []);
 
+
+
   return (
     <div className="bg-white text-black dark:bg-[#0b0c12] dark:text-white min-h-screen flex flex-col overflow-x-hidden w-full">
       {/* --- Google Analytics --- */}

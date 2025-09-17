@@ -72,7 +72,7 @@ export default function CategoryPage() {
     <Layout onSearch={handleSearch}>
       <div className="mx-auto max-w-7xl px-1 py-6">
         <Link href="/" className="text-sm text-white/70 hover:text-white">← {t("back")}</Link>
-        <h1 className="mt-2 text-2xl font-extrabold">
+        <h1 className="mt-2 text-2xl font-extrabold text-black dark:text-white">
           {t("categorystug")}: {decodedCategory ? t('sidebar.' + decodedCategory) : (t("all") || "All")}
         </h1>
 
@@ -98,7 +98,7 @@ export default function CategoryPage() {
                   />
                 </div>
                 <div className="p-3">
-                  <div className="text-xs text-white/60">
+                  <div className="text-xs text-gray-700 dark:text-white/60">
                     {Array.isArray(game.category) ? game.category.map((c) => t('sidebar.' + c)).join(", ") : t('sidebar.' + game.category)}
                   </div>
                   <div className="mt-0.5 font-semibold">{game.title}</div>
