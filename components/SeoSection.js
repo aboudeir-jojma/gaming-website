@@ -100,7 +100,73 @@ Tower-Defense-Spiele kostenlos, Kartenspiele online, Puzzle Spiele gratis, Beste
               東芝モバイルディスプレイ
             </p>
           </div>
+
         </section>
+        {/* 🆕 Description SEO jeux en ligne enrichie */}
+<div className="mt-6">
+  <h2>À propos des jeux en ligne</h2>
+  <p>
+    Le monde des jeux en ligne attire chaque jour des millions de joueurs à travers le globe. Ces jeux, accessibles sans téléchargement, offrent une expérience immersive instantanée, adaptée à tous les âges. Grâce aux technologies comme le HTML5, il est désormais possible de jouer sur navigateur, mobile ou tablette, à tout moment et sans inscription.
+  </p>
+  <p className="mt-2">
+    Tmdisplay met à disposition une vaste collection de jeux gratuits allant des jeux d’action aux jeux éducatifs, en passant par les puzzles, la stratégie ou encore les jeux familiaux. Profitez des meilleurs jeux en ligne de 2025, en solo ou en multijoueur, pour des moments de divertissement garantis.
+  </p>
+
+  <h3 className="mt-4">Mots-clés associés aux jeux en ligne</h3>
+  <ul className="flex flex-wrap gap-3 text-sm text-gray-600 mt-2">
+    <li>jeux en ligne gratuits</li>
+    <li>free online games</li>
+    <li>jeux de navigateur</li>
+    <li>browser games</li>
+    <li>jeux HTML5</li>
+    <li>play games online</li>
+    <li>meilleurs jeux gratuits</li>
+    <li>jeux multijoueurs en ligne</li>
+    <li>free multiplayer games</li>
+    <li>jeux d’action en ligne</li>
+    <li>jeux d’arcade gratuits</li>
+    <li>jeux de stratégie en ligne</li>
+    <li>jeux de puzzle gratuits</li>
+    <li>jeux de réflexion online</li>
+    <li>jeux pour enfants</li>
+    <li>jeux familiaux gratuits</li>
+    <li>jeux de course en ligne</li>
+    <li>racing games online</li>
+    <li>jeux de moto gratuits</li>
+    <li>jeux de voiture online</li>
+    <li>jeux de tir gratuits</li>
+    <li>shooting games online</li>
+    <li>jeux d’aventure en ligne</li>
+    <li>adventure games free</li>
+    <li>jeux de plateforme online</li>
+    <li>jeux classiques gratuits</li>
+    <li>retro games online</li>
+    <li>jeux instantanés sans téléchargement</li>
+    <li>play free games instantly</li>
+    <li>jeux mobiles gratuits</li>
+    <li>mobile online games</li>
+    <li>jeux casual online</li>
+    <li>jeux de sport gratuits</li>
+    <li>football games online</li>
+    <li>basketball games free</li>
+    <li>jeux d’animaux gratuits</li>
+    <li>animal games online</li>
+    <li>jeux de simulation gratuits</li>
+    <li>simulation games online</li>
+    <li>jeux de survie gratuits</li>
+    <li>survival games online</li>
+    <li>jeux d’horreur en ligne</li>
+    <li>horror games free</li>
+    <li>jeux éducatifs gratuits</li>
+    <li>educational online games</li>
+    <li>jeux amusants pour tous</li>
+    <li>funny free games</li>
+    <li>meilleurs jeux online 2025</li>
+    <li>trending online games</li>
+    <li>top jeux gratuits</li>
+  </ul>
+</div>
+
       </section>
     </>
   );

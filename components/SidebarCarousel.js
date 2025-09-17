@@ -14,15 +14,27 @@ export default function SidebarCarousel({ games, currentGameSlug }) {
   const [randomGames, setRandomGames] = useState([]);
 
   // Jeux du carrousel
-  const carouselGames = games.slice(0, 10);
+  // Show total 20 games, chunked by 5 for scrolling
+  const totalGames = 20;
+  const gamesPerPage = 5;
+  const carouselGames = games.slice(0, totalGames);
 
   const scrollByAmount = (dir = 1) => {
     const el = trackRef.current;
     if (!el) return;
-    el.scrollBy({
-      left: dir * Math.round(el.clientWidth * 0.9),
-      behavior: "smooth",
-    });
+
+    // To avoid forced reflow, use transform translateX for smooth scrolling instead of scrollBy
+    // Maintain current translateX state
+    if (!el._translateX) el._translateX = 0;
+
+    const scrollAmount = dir * (5 * 120 + 4 * 12); // 5 items width + gaps
+
+    el._translateX = Math.min(
+      0,
+      Math.max(el._translateX - scrollAmount, -((carouselGames.length / 5 - 1) * scrollAmount))
+    );
+
+    el.style.transform = `translateX(${el._translateX}px)`;
   };
 
   const imgSrc = (g) => {
