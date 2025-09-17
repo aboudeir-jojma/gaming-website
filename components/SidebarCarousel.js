@@ -14,7 +14,7 @@ export default function SidebarCarousel({ games, currentGameSlug }) {
   const [randomGames, setRandomGames] = useState([]);
 
   // Jeux du carrousel
-  const carouselGames = games.slice(0, 6);
+  const carouselGames = games.slice(0, 10);
 
   const scrollByAmount = (dir = 1) => {
     const el = trackRef.current;
@@ -38,7 +38,7 @@ export default function SidebarCarousel({ games, currentGameSlug }) {
     if (!games || games.length === 0) return;
     const filtered = games.filter((g) => g.slug !== selectedGameSlug);
     const shuffled = filtered.sort(() => 0.5 - Math.random());
-    setRandomGames(shuffled.slice(0, 6));
+    setRandomGames(shuffled.slice(0, 10));
   }, [selectedGameSlug, games]);
 
   // 🚀 Lorsqu’on clique → navigation + overlay de blocage
