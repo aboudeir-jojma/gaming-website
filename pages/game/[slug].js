@@ -130,6 +130,7 @@ export default function GamePage({ game }) {
 
   return (
     <Layout onSearch={handleSearch}>
+      
       <div className="mx-auto max-w-7xl px-1 py-6 flex flex-col lg:flex-row gap-6">
         {/* Colonne principale */}
         <div className="flex-1">
