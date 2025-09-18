@@ -8,24 +8,28 @@ import Header from "./Header";
 import Sidebar from "./Sidebar";
 import BackToTopButton from "./BackToTopButton";
 import { useTranslation } from "next-i18next";
-import clsx from "clsx"; // ⚠️ Assure-toi d'avoir installé ceci avec `npm install clsx`
+import clsx from "clsx";
 
 export default function Layout({ children, onSearch, seo }) {
   const [collapsed, setCollapsed] = useState(true);
   const { i18n } = useTranslation("common");
   const locale = i18n.language || "en";
 
-  // Sidebar responsive
+  // ✅ Optimisation : évite layout shift via requestAnimationFrame
   useEffect(() => {
     if (typeof window === "undefined") return;
     const mq = window.matchMedia("(min-width: 768px)");
-    const apply = () => setCollapsed(!mq.matches);
+    const apply = () => {
+      requestAnimationFrame(() => {
+        setCollapsed(!mq.matches);
+      });
+    };
     apply();
     mq.addEventListener("change", apply);
     return () => mq.removeEventListener("change", apply);
   }, []);
 
-  // Traductions SEO
+  // 🌍 SEO multilingue
   const translations = {
     fr: {
       title: `Jouez en ligne gratuitement | ${seo?.title || "Tmdisplay"}`,
@@ -62,8 +66,10 @@ export default function Layout({ children, onSearch, seo }) {
   const meta = translations[locale] || translations.en;
 
   return (
-    <div className="bg-white text-black dark:bg-[#0b0c12] dark:text-white min-h-screen flex flex-col overflow-x-hidden w-full">
-
+    <div
+      className="bg-white text-black dark:bg-[#0b0c12] dark:text-white min-h-screen flex flex-col overflow-x-hidden w-full"
+      lang={locale}
+    >
       {/* SEO */}
       <Head>
         <title>{meta.title}</title>
@@ -106,7 +112,7 @@ export default function Layout({ children, onSearch, seo }) {
         <Sidebar collapsed={collapsed} />
         <main
           className={clsx(
-            "flex-1 overflow-y-auto overflow-x-hidden pt-[35px] w-full transition-all duration-300",
+            "flex-1 overflow-y-auto overflow-x-hidden pt-[35px] w-full transition-all duration-300 motion-reduce:transition-none",
             collapsed ? "ml-[40px]" : "ml-[90px]"
           )}
         >
