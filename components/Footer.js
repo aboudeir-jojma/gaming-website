@@ -12,7 +12,7 @@ export default function Footer({ collapsed }) {
   const locale = router.locale || 'en';
 
   // Determine left margin based on sidebar collapsed state
-  const marginLeft = collapsed ? "ml-12 md:ml-12" : "ml-32 md:ml-32";
+  const marginLeft = collapsed ? "ml-4 md:ml-8" : "ml-16 md:ml-24";
 
   return (
     <>
