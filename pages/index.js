@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import Layout from "../components/Layout";
 import GameRow from "../components/GameRow";
 import TopGamesCarousel from "../components/TopGamesCarousel";
 import PlayWithFriendsSection from "../components/PlayWithFriendsSection";
@@ -12,7 +11,7 @@ import Seo from "../components/Seo";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-// ✅ Récupération des traductions selon la locale
+// ✅ Récupération des traductions
 export async function getStaticProps({ locale }) {
   return {
     props: {
@@ -26,7 +25,7 @@ export default function HomePage() {
   const router = useRouter();
   const [search, setSearch] = useState("");
 
-  // ✅ Set search from query param
+  // ✅ Synchro avec query param
   useEffect(() => {
     if (router.query.search) {
       setSearch(router.query.search);
@@ -35,29 +34,27 @@ export default function HomePage() {
     }
   }, [router.query.search]);
 
-  // ✅ Filtrer les jeux si recherche
+  // ✅ Filtrer les jeux
   const filteredGames = search
     ? games.filter(
         (g) => g.name && g.name.toLowerCase().includes(search.toLowerCase())
       )
     : [];
 
-  // ✅ Sélections de jeux
+  // ✅ Sélections
   const featured = games.slice(0, 50);
   const news = games.filter((g) => g.tag === "New").slice(0, 6);
   const originals = games.slice(0, 6);
 
   return (
-
-
-    <Layout onSearch={setSearch}>
-
+    <>
       <Seo
         title="Play Free Online Games – Tmdisplay"
         description="Discover the best free online games on Tmdisplay 🎮. Puzzles, racing, retro & more – play instantly without downloads!"
         url="https://tmdisplay.com/"
         image="https://tmdisplay.com/imggames/home-og.jpg"
       />
+
       {/* Section bienvenue */}
       <section
         className="mx-auto mt-4 w-full rounded-xl 
@@ -65,7 +62,7 @@ export default function HomePage() {
                    dark:bg-gradient-to-br dark:from-[#121425] dark:to-[#0b0c12] dark:text-white 
                    p-3 sm:p-3 md:p-6 
                    ring-1 ring-black/5 dark:ring-white/5 
-                   transition-colors duration-300"
+                   transition-colors duration-300 ml-6"
       >
         <div className="text-lg sm:text-xl md:text-2xl font-extrabold">
           {t("welcome")}
@@ -84,24 +81,22 @@ export default function HomePage() {
       ) : (
         <>
           <TopGamesCarousel />
-          {/* <GameRow title={t("featuredGames")} items={featured} /> */}
           <GameRow
-            className="mb-8 ml-[10px]"
+            className="mb-8 ml-[10px] ml-8"
             title={t("newGames")}
             items={news}
           />
           <PlayWithFriendsSection />
-          <AllGamesPage className="mb-8" />
+          <AllGamesPage className="mb-8 ml-8" />
           <GameRow
-            className="ml-[10px]"
+            className="ml-[10px] ml-8"
             title={t("TmdisplayOriginals")}
             items={originals}
           />
           <LastSection />
-          {/* Section SEO multilingue */}
           <SeoSection />
         </>
       )}
-    </Layout>
+    </>
   );
 }

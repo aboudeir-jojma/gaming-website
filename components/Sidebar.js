@@ -2,10 +2,16 @@
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
+import { memo, useRef, useEffect } from "react";
 
-export default function Sidebar({ collapsed }) {
+function Sidebar({ collapsed }) {
   const { t } = useTranslation("common");
   const router = useRouter();
+  const prevCollapsedRef = useRef(collapsed);
+
+  useEffect(() => {
+    prevCollapsedRef.current = collapsed;
+  });
 
   const items = [
     { href: "/", label: t("sidebar.home"), icon: "🏠" },
@@ -26,29 +32,29 @@ export default function Sidebar({ collapsed }) {
     { href: "/category/multiplayer", label: t("sidebar.multiplayer"), icon: "🌐" },
   ];
 
-  // Active link detection
   const isActiveLink = (href) => {
     if (href === "/") {
       return router.pathname === "/";
     } else if (href.startsWith("/category/")) {
       const category = href.split("/")[2];
-      return router.pathname === "/category/[category]" && router.query.category === category;
+      return (
+        router.pathname === "/category/[category]" &&
+        router.query.category === category
+      );
     }
     return false;
   };
 
   return (
     <aside
-      className={`flex flex-col shrink-0 
-      bg-gray-100 text-black dark:bg-gray-900 dark:text-white shadow-lg dark:shadow-xl
-      fixed 
-      top-[55px] sm:top-[75px]
-      left-0 
-      h-[calc(100vh-55px)] sm:h-[calc(100vh-75px)]
-      z-30 overflow-y-auto no-scrollbar`}
+className={`fixed left-0 flex flex-col shrink-0 
+  bg-gray-100 text-black dark:bg-gray-900 dark:text-white shadow-lg dark:shadow-xl
+  h-screen overflow-y-auto no-scrollbar z-40
+  mt-[30px] md:mt-[50px]`}  
       style={{
         width: collapsed ? "64px" : "192px",
         transition: "width 0.3s ease",
+        
       }}
     >
       <nav className="flex flex-col flex-1 gap-2 p-3">
@@ -61,7 +67,6 @@ export default function Sidebar({ collapsed }) {
           const activeClasses =
             "bg-gradient-to-br from-indigo-500 to-purple-600 text-white shadow-md";
 
-          // ✅ Active item
           if (isActive) {
             return (
               <div
@@ -76,13 +81,12 @@ export default function Sidebar({ collapsed }) {
             );
           }
 
-          // ✅ Inactive item
           return (
             <Link
               key={i.href}
               href={i.href}
               locale={router.locale}
-              prefetch={i.href === "/"} // 🔹 préfetch uniquement la home
+              prefetch={i.href === "/"}
               scroll={false}
               shallow={i.href.startsWith("/category/")}
               className={`${baseClasses} hover:bg-gray-300 dark:hover:bg-gray-600 hover:shadow-md hover:scale-105`}
@@ -97,3 +101,5 @@ export default function Sidebar({ collapsed }) {
     </aside>
   );
 }
+
+export default memo(Sidebar);

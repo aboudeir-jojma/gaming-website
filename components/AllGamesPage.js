@@ -19,10 +19,10 @@ export default function AllGamesPage() {
   }, []);
 
   return (
-    <section className="mx-auto w-full px-4 py-6">
+    <section className="mx-auto w-full px-4 py-6 ml-6">
   
 
-      <h1 className="text-3xl font-bold mb-6">{t("allGames")}</h1>
+      <h1 className="text-3xl font-bold mb-6 ml-6">{t("allGames")}</h1>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
         {allGames.map((game) => (

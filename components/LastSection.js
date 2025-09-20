@@ -42,7 +42,7 @@ export default function LastSection() {
   return (
     <section
       className="mx-auto mt-6 w-full rounded-xl bg-white dark:bg-[#1e1e2f] 
-                 p-4 sm:p-6 text-black dark:text-white shadow-lg"
+                 p-4 sm:p-6 text-black dark:text-white shadow-lg ml-6"
     >
       <div className="flex flex-col items-center gap-6 md:flex-row">
         {/* Colonne gauche */}
