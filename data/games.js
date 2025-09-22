@@ -20,7 +20,16 @@ export const games = [
   tag: "New",
   category: ["Card", "Multiplayer"],
   iframe: "https://games-gules-nu.vercel.app/Uno/index.html",
-},
+},{
+    slug: "subway-runner",
+    title: "Subway Runner",
+    name: "Subway Runner",
+    thumb: "/imggames/subway-runner/images.jpg",
+    tag: "Top",
+    category: "Racing",
+    iframe: "https://games-gules-nu.vercel.app/subway-runner/index.html",
+                  
+  },
 
  {
     slug: "fruit-bucket",
@@ -150,16 +159,7 @@ export const games = [
                     
   }, 
 
-    {
-    slug: "subway-runner",
-    title: "Subway Runner",
-    name: "Subway Runner",
-    thumb: "/imggames/subway-runner/images.jpg",
-    tag: "Top",
-    category: "Racing",
-    iframe: "https://games-gules-nu.vercel.app/subway-runner/index.html",
-                  
-  },
+    
       {
     slug: "traffic-command",
     title: "Traffic Command",
