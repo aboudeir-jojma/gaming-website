@@ -52,7 +52,7 @@ export const games = [
   
   },
     {
-    slug: "car-game",
+    slug: "street-car-racing",
     title: "Street Car Racing",
       name: "Street Car Racing",
     thumb: "/imggames/street-car-racing/street-car-racing.png",
