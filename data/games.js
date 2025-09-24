@@ -61,16 +61,16 @@ export const games = [
     iframe: "https://games-gules-nu.vercel.app/car-game/index.html"  ,
   
   },
-    {
-    slug: "ludo-king",
-    title: "Ludo King",
-      name: "ludo King",
-    thumb: "/imggames/ludo-king/ludo-king.png",
-    tag: "New",
-     category: ["Puzzle", "Brain"], // ← tableau au lieu d’un seul string
-    iframe: "https://games-gules-nu.vercel.app/ludo-king/index.html"  ,
+  //   {
+  //   slug: "ludo-king",
+  //   title: "Ludo King",
+  //     name: "ludo King",
+  //   thumb: "/imggames/ludo-king/ludo-king.png",
+  //   tag: "New",
+  //    category: ["Puzzle", "Brain"], // ← tableau au lieu d’un seul string
+  //   iframe: "https://games-gules-nu.vercel.app/ludo-king/index.html"  ,
   
-  },
+  // },
      {
     slug: "philosophers-merge",
     title: "Philosophers Merge",
