@@ -1,4 +1,3 @@
-import Layout from "../components/Layout";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Head from "next/head";
@@ -15,7 +14,7 @@ export default function TermsPage() {
   const { t } = useTranslation("common");
 
   return (
-    <Layout>
+    <>
       <Head>
         <link
           rel="stylesheet"
@@ -23,7 +22,7 @@ export default function TermsPage() {
         />
       </Head>
 
-      <section className="mx-auto mt-6 max-w-7xl rounded-2xl bg-white text-black dark:bg-gradient-to-br dark:from-[#121425] dark:to-[#0b0c12] dark:text-white p-6 ring-1 ring-black/5 dark:ring-white/5 transition-colors duration-300">
+      <section className="mx-auto mt-6 ml-18 max-w-7xl rounded-2xl bg-white text-black dark:bg-gradient-to-br dark:from-[#121425] dark:to-[#0b0c12] dark:text-white p-6 ring-1 ring-black/5 dark:ring-white/5 transition-colors duration-300">
         <h1 className="text-3xl font-bold mb-4 flex items-center gap-2">
           <i className="fa-solid fa-file-contract text-blue-600"></i> {t("terms")}
         </h1>
@@ -103,6 +102,6 @@ export default function TermsPage() {
           <li>📧 {t("terms_contact_email")}</li>
         </ul>
       </section>
-    </Layout>
+    </>
   );
 }
