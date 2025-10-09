@@ -89,7 +89,7 @@ export const games = [
      slug: "FreeCell",
       title: "FreeCell",
       name: "FreeCell",
-     thumb: "/imggames/Freecell/freecell.jpg",
+     thumb: "/imggames/FreeCell/freecell.jpg",
       tag: "New",
       category: "Card",
       iframe:  "https://games-dun-one.vercel.app/freecell/index.html",
@@ -130,7 +130,7 @@ export const games = [
     slug: "street-car-racing",
     title: "Street Car Racing",
       name: "Street Car Racing",
-    thumb: "/imggames/street-car-racing/street-car-racing.png",
+    thumb: "/imggames/street-car-racing/street-car-racing.jpg",
     tag: "New",
      category: ["Racing"], // ← tableau au lieu d’un seul string
     iframe: "https://games-gules-nu.vercel.app/car-game/index.html"  ,
@@ -172,7 +172,7 @@ export const games = [
     slug: "street-skater",
     title: "Street Skater",
       name: "Street Skater",
-    thumb: "/imggames/street-skater/street-skater.jpg", // mets une image réelle du dossier (ou remplace par une URL)
+    thumb: "/imggames/street-skater/street-skater.png", // mets une image réelle du dossier (ou remplace par une URL)
     tag: "Trending",
     category: "Sports",
     iframe: "https://games-gules-nu.vercel.app/street-skater/index.html",
