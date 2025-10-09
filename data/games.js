@@ -1,7 +1,5 @@
 export const games = [
-
-
-   {
+  {
     slug: "fruit-ninja",
     title: "Fruit Ninja",
     name: "Fruit Ninja",
@@ -20,7 +18,84 @@ export const games = [
   tag: "New",
   category: ["Card", "Multiplayer"],
   iframe: "https://games-gules-nu.vercel.app/Uno/index.html",
-},{
+},
+
+   {
+     slug: "Wednesday",
+      title: "Wednesday",
+      name: "Wednesday",
+     thumb: "/imggames/Wednesday/Wednesday.jpg",
+      tag: "New",
+      category: "girls",
+      iframe: "https://games-dun-one.vercel.app/Wednesday/index.html",
+    },
+{
+     slug: "Roblox",
+      title: "Roblox",
+      name: "Roblox",
+     thumb: "/imggames/Roblox/roblox.jpg",
+      tag: "New",
+      category: "drawing",
+      iframe: "https://games-dun-one.vercel.app/Roblox/index.html",
+    },
+   {
+     slug: "DrawPixels",
+      title: "Draw Pixels",
+      name: "DrawPixels",
+     thumb: "/imggames/DrawPixels/draw-pixels.jpg",
+      tag: "New",
+      category: "drawing",
+      iframe:  "https://games-dun-one.vercel.app/DrawPixels/index.html",
+    },
+   {
+     slug: "DrawingSpace",
+      title: "Drawing Space",
+      name: "DrawingSpace",
+     thumb: "/imggames/DrawingSpace/drawing-space.jpg",
+      tag: "New",
+      category: "drawing",
+      iframe: "https://games-dun-one.vercel.app/DrawingSpace/index.html",
+    },
+   {
+     slug: "LearnDrawing",
+      title: "Learn Drawing",
+      name: "LearnDrawing",
+     thumb: "/imggames/LearnDrawing/learn-drawing.jpg",
+      tag: "New",
+      category: "drawing",
+      iframe: "https://games-dun-one.vercel.app/LearnDrawing/index.html",
+    },
+   {
+     slug: "DrawLine",
+      title: "Draw Line",
+      name: "DrawLine",
+     thumb: "/imggames/DrawLine/draw-line.jpg",
+      tag: "New",
+      category: "drawing",
+      iframe:  "https://games-dun-one.vercel.app/DrawLine/index.html",
+    },
+
+    {
+     slug: "DrawingandPaint",
+      title: "Drawing and Paint",
+      name: "DrawingandPaint",
+     thumb: "/imggames/DrawingandPaint/drawing-paint.jpg",
+      tag: "New",
+      category: "Drawing",
+      iframe:   "https://games-dun-one.vercel.app/DrawingandPaint/index.html",
+    },
+   
+{
+     slug: "FreeCell",
+      title: "FreeCell",
+      name: "FreeCell",
+     thumb: "/imggames/freecell/freecell.jpg",
+      tag: "New",
+      category: "Card",
+      iframe:  "https://games-dun-one.vercel.app/freecell/index.html",
+    },
+
+   {
     slug: "subway-runner",
     title: "Subway Runner",
     name: "Subway Runner",
@@ -97,7 +172,7 @@ export const games = [
     slug: "street-skater",
     title: "Street Skater",
       name: "Street Skater",
-    thumb: "/imggames/street-skater/street-skater.png", // mets une image réelle du dossier (ou remplace par une URL)
+    thumb: "/imggames/street-skater/street-skater.jpg", // mets une image réelle du dossier (ou remplace par une URL)
     tag: "Trending",
     category: "Sports",
     iframe: "https://games-gules-nu.vercel.app/street-skater/index.html",
