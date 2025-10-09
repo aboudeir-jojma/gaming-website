@@ -23,6 +23,8 @@ function Sidebar({ collapsed }) {
     { href: "/category/simulation", label: t("sidebar.simulation"), icon: "🧑‍💻" },
     { href: "/category/food", label: t("sidebar.food"), icon: "🥗" },
     { href: "/category/nature", label: t("sidebar.nature"), icon: "🌍" },
+    { href: "/category/girls", label: t("sidebar.girls"), icon: "👧" },
+    { href: "/category/drawing", label: t("sidebar.drawing"), icon: "✏️" },
     { href: "/category/animals", label: t("sidebar.animals"), icon: "🦋" },
     { href: "/category/arcade", label: t("sidebar.arcade"), icon: "👾" },
     { href: "/category/brain", label: t("sidebar.brain"), icon: "🧠" },
@@ -30,6 +32,7 @@ function Sidebar({ collapsed }) {
     { href: "/category/creative", label: t("sidebar.creative"), icon: "🎨" },
     { href: "/category/shooter", label: t("sidebar.shooter"), icon: "💣" },
     { href: "/category/multiplayer", label: t("sidebar.multiplayer"), icon: "🌐" },
+    
   ];
 
   const isActiveLink = (href) => {
