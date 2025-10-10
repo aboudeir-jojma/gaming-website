@@ -140,7 +140,7 @@ export const games = [
     slug: "ludo-king",
     title: "Ludo King",
       name: "ludo King",
-    thumb: "/imggames/ludo-king/ludo-king.png",
+    thumb: "/imggames/ludo-king/ludo-king.jpg",
     tag: "New",
      category: ["Puzzle", "Brain"], // ← tableau au lieu d’un seul string
     iframe: "https://games-gules-nu.vercel.app/ludo-king/index.html"  ,
