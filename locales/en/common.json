@@ -74,17 +74,24 @@
   "gameNotFound": "Game not found.",
 
   "misc": "Misc",
-
-   "about": "About",
-  "about_title": "About Tmdisplay",
-  "about_intro": "✨ Welcome to <strong>Tmdisplay</strong> – your ultimate destination for <span class='font-semibold'>free online games</span>. 🎮 Whether you love puzzles, action, racing, or retro classics, our platform brings together the best gaming experiences in one place. ⚡ No downloads, no sign-ups – just pure fun, anywhere, anytime!",
-  "about_endless_title": "✨ Endless Fun",
-  "about_endless_text": "⭐ Explore hundreds of games across every genre. 🎯 From quick adventures to relaxing puzzles, there’s always something new to play.",
-  "about_everyone_title": "👥 For Everyone",
-  "about_everyone_text": "🌍 Tmdisplay is designed for players of all ages. 👦👩 Kids, teens, and adults can enjoy safe and fun experiences every day.",
-  "about_anywhere_title": "🌐 Play Anywhere",
-  "about_anywhere_text": "💻 Our games run directly in your browser. 📱 Whether on computer, tablet, or mobile, the fun is always just one click away.",
-  "about_footer": "✨ At <strong>Tmdisplay</strong>, we believe gaming should be simple, accessible, and exciting. 🚀 Start exploring now and let the fun begin!"
+  
+ "about": "About",
+  "about_title": "About TMDisplay",
+  "about_intro": "✨ Welcome to <strong>TMDisplay</strong> — the ultimate destination for <span class='font-semibold'>free online games</span> that you can play instantly without downloads, ads, or sign-ups. 🎮 Whether you enjoy fast-paced action games, brain-teasing puzzles, thrilling racing games, relaxing casual experiences, or classic retro arcade fun, TMDisplay brings the best HTML5 and browser games together in one place — ready to play on any device.",
+  
+  "about_endless_title": "✨ Thousands of Games, Endless Fun",
+  "about_endless_text": "⭐ Explore a constantly growing library of online games across every genre: platformers, strategy games, multiplayer battles, idle clickers, sports challenges, card games, and more. 🎯 Our team hand-picks only the best free games to ensure fast loading, smooth performance, and hours of non-stop fun — without annoying ads or paywalls.",
+  
+  "about_everyone_title": "👥 Safe Gaming for Everyone",
+  "about_everyone_text": "🌍 TMDisplay is designed for all types of players — kids, teens, adults, casual gamers, and competitive players alike. 👦👩 All our games are family-friendly, secure, and carefully tested to offer a safe and enjoyable gaming experience. Whether you’re playing alone or challenging your friends, you’ll always find something fun to play.",
+  
+  "about_anywhere_title": "🌐 Play Anywhere, Anytime",
+  "about_anywhere_text": "💻 TMDisplay works directly in your browser — no downloads, no installations, and no heavy apps. 📱 Just open and play instantly on your phone, tablet, laptop, or desktop. Whether you’re at home, at school, at work (we won’t tell!), or traveling, your favorite games are always one click away.",
+  
+  "about_multiplayer_title": "🎮 Local & Online Multiplayer",
+  "about_multiplayer_text": "🔥 Want to play with friends? TMDisplay offers both <strong>local multiplayer games</strong> you can enjoy on the same device, and <strong>online multiplayer games</strong> that let you compete or cooperate remotely. From racing duels to fighting games and party challenges, there’s always a way to battle or team up!",
+  
+  "about_footer": "🚀 At <strong>TMDisplay</strong>, we believe gaming should be <strong>simple, accessible, and 100% free</strong>. No barriers, no limits — just pure entertainment. Start exploring now and discover your new favorite game!"
 
   ,
 
