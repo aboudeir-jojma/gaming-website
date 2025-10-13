@@ -43,7 +43,7 @@ export default function PlayWithFriendsSection() {
             </p>
             <Link href="/all" legacyBehavior>
               <a className="rounded-full bg-purple-600 px-3 sm:px-4 py-1.5 sm:py-2 
-                             text-xs sm:text-sm font-semibold hover:bg-purple-700">
+                             text-xs sm:text-sm font-semibold hover:bg-purple-700 mt-10">
                 {t("exploreGames")}
               </a>
             </Link>
