@@ -22,19 +22,11 @@ export default function SidebarCarousel({ games, currentGameSlug }) {
   const scrollByAmount = (dir = 1) => {
     const el = trackRef.current;
     if (!el) return;
-
-    // To avoid forced reflow, use transform translateX for smooth scrolling instead of scrollBy
-    // Maintain current translateX state
-    if (!el._translateX) el._translateX = 0;
-
-    const scrollAmount = dir * (5 * 120 + 4 * 12); // 5 items width + gaps
-
-    el._translateX = Math.min(
-      0,
-      Math.max(el._translateX - scrollAmount, -((carouselGames.length / 5 - 1) * scrollAmount))
-    );
-
-    el.style.transform = `translateX(${el._translateX}px)`;
+    const scrollAmount = 5 * 120 + 4 * 12; // 5 items width + gaps
+    el.scrollBy({
+      left: dir * scrollAmount,
+      behavior: "smooth",
+    });
   };
 
   const imgSrc = (g) => {
