@@ -81,13 +81,14 @@ export default function HomePage() {
       ) : (
         <>
           <TopGamesCarousel />
+            <AllGamesPage className="mb-8 ml-8" />
           <GameRow
             className="mb-8 ml-[10px] ml-8"
             title={t("newGames")}
             items={news}
           />
           <PlayWithFriendsSection />
-          <AllGamesPage className="mb-8 ml-8" />
+      
           <GameRow
             className="ml-[10px] ml-8"
             title={t("TmdisplayOriginals")}
